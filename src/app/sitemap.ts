@@ -1,6 +1,7 @@
 import type { MetadataRoute } from "next";
 import { publishedGuides } from "@/data/guides";
 import { SITE } from "@/data/siteConfig";
+import { roadTrafficPages } from "@/data/roadTrafficPages";
 
 export const dynamic = "force-static";
 
@@ -36,5 +37,12 @@ export default function sitemap(): MetadataRoute.Sitemap {
     lastModified: new Date(g.dateModified),
   }));
 
-  return [...staticPages, ...guidePages];
+  const roadTrafficDetailPages = roadTrafficPages.map((page) => ({
+    url: `${SITE.url}/${page.slug}`,
+    changeFrequency: "monthly" as const,
+    priority: 0.8,
+    lastModified: new Date("2026-07-29"),
+  }));
+
+  return [...staticPages, ...roadTrafficDetailPages, ...guidePages];
 }

@@ -811,7 +811,7 @@ export function getGuideContent(slug: string): ReactNode {
     <div className="answer-box">
       <p className="text-blue-800">
         Full article content for this guide will be published shortly. In the meantime, please{" "}
-        <a href="/contact" className="underline font-medium">contact us</a> for advice on this topic.
+        <Link href="/contact" className="underline font-medium">contact us</Link> for advice on this topic.
       </p>
     </div>
   );

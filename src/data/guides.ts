@@ -101,8 +101,8 @@ export const guides: Guide[] = [
   },
   {
     slug: "road-traffic-accident-claims-scotland",
-    title: "Road Traffic Accident Claims in Scotland",
-    description: "Everything you need to know about making a road traffic accident claim in Scotland — car accidents, motorcycle claims, whiplash, MIB claims and the claims process.",
+    title: "Road Accident Evidence and Insurance Checklist for Scotland",
+    description: "A practical post-collision checklist covering scene evidence, dashcam and CCTV, medical records, insurers and uninsured or untraced drivers in Scotland.",
     category: "Road Accidents",
     datePublished: "2025-04-10",
     dateModified: "2026-07-29",

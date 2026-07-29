@@ -1,5 +1,6 @@
 import { publishedGuides } from "@/data/guides";
 import { CLAIM_TYPES, LOCATIONS, NAV_LINKS } from "@/data/siteConfig";
+import { roadTrafficPageSlugs } from "@/data/roadTrafficPages";
 
 const STATIC_ROUTES = new Set([
   "/",
@@ -17,6 +18,7 @@ const STATIC_ROUTES = new Set([
     item.href,
     ...(item.children?.map((child) => child.href) ?? []),
   ]),
+  ...roadTrafficPageSlugs,
 ]);
 
 const GUIDE_ROUTES = new Map(

@@ -119,6 +119,40 @@ export default function RoadTrafficAccidentPage() {
           content:
             "Compensation can cover your pain and suffering (solatium), loss of earnings, medical treatment and rehabilitation, vehicle repair or replacement, car hire costs, travel expenses and other financial losses arising from your injury. In serious injury cases, future care costs and pension loss may also be recovered.",
         },
+        {
+          heading: "Scottish Road Casualty Context",
+          content: (
+            <>
+              <p>
+                Transport Scotland&apos;s provisional 2025 figures record 5,535 road casualties: 134 fatalities,
+                1,906 people seriously injured and 3,495 slightly injured. Car users accounted for 3,092
+                casualties, while pedestrians, motorcyclists and cyclists face a disproportionate risk of
+                serious harm.
+              </p>
+              <p>
+                <a
+                  href="https://www.transport.gov.scot/publication/key-reported-road-casualties-scotland-2025/key-findings/"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  className="text-red-700 font-medium hover:underline"
+                >
+                  Read Transport Scotland&apos;s 2025 key findings
+                </a>
+              </p>
+            </>
+          ),
+        },
+        {
+          heading: "Authoritative Road Claim Sources",
+          content: (
+            <ul>
+              <li><a href="https://www.gov.uk/guidance/the-highway-code" target="_blank" rel="noopener noreferrer" className="text-red-700 hover:underline">The Highway Code</a> — official road-user rules and guidance.</li>
+              <li><a href="https://www.mib.org.uk/making-a-claim/" target="_blank" rel="noopener noreferrer" className="text-red-700 hover:underline">Motor Insurers&apos; Bureau</a> — uninsured and untraced-driver routes.</li>
+              <li><a href="https://www.legislation.gov.uk/ukpga/1973/52/contents" target="_blank" rel="noopener noreferrer" className="text-red-700 hover:underline">Prescription and Limitation (Scotland) Act 1973</a> — Scottish limitation framework.</li>
+              <li><a href="https://www.scotcourts.gov.uk/courts-and-tribunals/sheriff-and-justice-of-the-peace-courts/national-personal-injury-court/" target="_blank" rel="noopener noreferrer" className="text-red-700 hover:underline">All-Scotland Sheriff Personal Injury Court</a> — official court information.</li>
+            </ul>
+          ),
+        },
       ]}
       subpages={{
         title: "Specialist Road Traffic Accident Claim Types",
@@ -131,6 +165,11 @@ export default function RoadTrafficAccidentPage() {
           { label: "Whiplash Claims Scotland", href: "/whiplash-claims-scotland", desc: "Soft tissue injury after collision" },
           { label: "Hit and Run Claims", href: "/hit-and-run-claims-scotland", desc: "MIB untraced driver claims" },
           { label: "Uninsured Driver Claims", href: "/uninsured-driver-claims-scotland", desc: "MIB uninsured driver agreement" },
+          { label: "Serious Road Injuries", href: "/serious-road-traffic-injury-claims-scotland", desc: "Rehabilitation and lifetime needs" },
+          { label: "Fatal Road Accidents", href: "/fatal-road-accident-claims-scotland", desc: "Executor, relatives and dependency" },
+          { label: "Road Defect Accidents", href: "/road-defect-accident-claims-scotland", desc: "Potholes, surfaces and roadworks" },
+          { label: "Children Injured on Roads", href: "/child-road-accident-claims-scotland", desc: "Child passengers, pedestrians and cyclists" },
+          { label: "Early Insurer Offers", href: "/early-insurer-offers-road-accident-scotland", desc: "What to check before accepting" },
         ],
       }}
       guideCategory="Road Accidents"
