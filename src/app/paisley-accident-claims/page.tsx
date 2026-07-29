@@ -5,11 +5,12 @@ export const metadata: Metadata = {
   title: "Paisley Accident Claims | Personal Injury Solicitors Paisley",
   description: "Accident claims solicitors serving Paisley. Personal injury, workplace accident and medical negligence claims for Paisley residents. Free enquiry, no win no fee.",
   alternates: { canonical: "/paisley-accident-claims" },
+  robots: { index: false, follow: true },
 };
 
 const faqs = [
   { question: "What personal injury claims can I make in Paisley?", answer: "You can make a claim for any personal injury that was caused by another party's negligence while you were in Paisley or the surrounding area. Common claim types include road traffic accident claims, workplace accident claims, medical negligence claims and public place accident claims. The general time limit is three years from the accident or date of knowledge." },
-  { question: "Can I claim if my accident happened near Paisley?", answer: "Yes. We handle claims for people across the wider Paisley area and the surrounding region. The accident does not need to have happened in Paisley city centre — claims can arise from accidents anywhere in the area." },
+  { question: "Can I claim if my accident happened near Paisley?", answer: "Potentially. The accident does not need to have happened in Paisley town centre; eligibility depends on fault, causation, loss and the applicable time limit." },
   { question: "How long does a claim take in Paisley?", answer: "The timescale depends on the complexity of your claim and whether liability is disputed. Straightforward claims may settle in a few months; more complex cases can take two to three years or more. Your solicitor will advise on the expected timescale for your specific circumstances." },
 ];
 
@@ -18,7 +19,7 @@ export default function PaisleyPage() {
     <LocationPageTemplate
       city="Paisley"
       slug="paisley-accident-claims"
-      intro="If you have been injured in Paisley or the surrounding area and the accident was not your fault, you may be entitled to claim compensation. Our Scottish solicitors handle personal injury, medical negligence, workplace accident and industrial disease claims for Paisley residents — with no win, no fee options available."
+      intro="If you have been injured in Paisley or the surrounding area and the accident was not your fault, you may be entitled to claim compensation. This page explains personal injury, medical negligence, workplace accident and industrial disease claims relevant to Paisley residents."
       localContext="This page provides general information about personal injury and accident compensation claims relevant to people in Paisley and the wider area, including accidents on local roads, in workplaces, in public places or during medical treatment."
       faqs={faqs}
     />

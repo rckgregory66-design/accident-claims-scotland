@@ -6,6 +6,7 @@ export const metadata: Metadata = {
   description:
     "Accident claims solicitors serving Edinburgh. Personal injury, workplace accident and medical negligence claims for Edinburgh residents. Free enquiry, no win no fee.",
   alternates: { canonical: "/edinburgh-accident-claims" },
+  robots: { index: false, follow: true },
 };
 
 const faqs = [
@@ -36,7 +37,7 @@ export default function EdinburghPage() {
     <LocationPageTemplate
       city="Edinburgh"
       slug="edinburgh-accident-claims"
-      intro="If you have been injured in Edinburgh or the Lothians and the accident was not your fault, you may be entitled to claim compensation. Our Scottish solicitors handle personal injury, medical negligence, workplace accident and industrial disease claims for Edinburgh residents."
+      intro="If you have been injured in Edinburgh or the Lothians and the accident was not your fault, you may be entitled to claim compensation. This page explains personal injury, medical negligence, workplace accident and industrial disease claims relevant to Edinburgh residents."
       localContext="Edinburgh is Scotland's capital city and a major centre for finance, tourism, public services and healthcare. Accidents in Edinburgh range from road traffic incidents on the City Bypass and inner city routes to workplace accidents in the construction, hospitality and financial services sectors. NHS Lothian, one of Scotland's largest health boards, operates major facilities including the Royal Infirmary of Edinburgh and Western General Hospital. The Court of Session — Scotland's highest civil court — is based in Edinburgh, making it the centre of Scots personal injury law at the highest level."
       faqs={faqs}
     />

@@ -5,6 +5,7 @@ export const metadata: Metadata = {
   title: "Aberdeen Accident Claims | Personal Injury Solicitors Aberdeen",
   description: "Accident claims solicitors serving Aberdeen. Personal injury, offshore accident, workplace and medical negligence claims. Free enquiry, no win no fee.",
   alternates: { canonical: "/aberdeen-accident-claims" },
+  robots: { index: false, follow: true },
 };
 
 const faqs = [
@@ -18,7 +19,7 @@ export default function AberdeenPage() {
     <LocationPageTemplate
       city="Aberdeen"
       slug="aberdeen-accident-claims"
-      intro="If you have been injured in Aberdeen or Aberdeenshire and the accident was not your fault, you may be entitled to claim compensation. We handle offshore accident, road traffic, workplace, medical negligence and industrial disease claims for Aberdeen residents."
+      intro="If you have been injured in Aberdeen or Aberdeenshire and the accident was not your fault, you may be entitled to claim compensation. This page explains offshore accident, road traffic, workplace, medical negligence and industrial disease claims relevant to Aberdeen residents."
       localContext="Aberdeen is Scotland's third-largest city and the centre of the UK's North Sea oil and gas industry. Many personal injury claims arising in the Aberdeen area relate to offshore accidents, industrial injuries, road accidents on the A90, A96 and other major routes, and medical negligence claims against NHS Grampian facilities including Aberdeen Royal Infirmary. Aberdeen Sheriff Court handles civil claims for the Sheriffdom of Grampian, Highland and Islands."
       faqs={faqs}
     />

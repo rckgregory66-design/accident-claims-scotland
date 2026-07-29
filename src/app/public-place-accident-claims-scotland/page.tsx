@@ -48,7 +48,7 @@ export default function PublicPlaceAccidentPage() {
       dateModified="2026-06-16"
       breadcrumbs={[{ label: "Public Place Accident Claims Scotland" }]}
       h1="Public Place Accident Claims Scotland"
-      intro="If you have been injured in an accident in a public place in Scotland — including a supermarket, shop, pavement, park, restaurant or public building — and the accident was caused by an occupier's negligence, you may be entitled to claim compensation. Our Scottish solicitors handle slip, trip and fall claims with no win, no fee options available."
+      intro="If you have been injured in an accident in a public place in Scotland — including a supermarket, shop, pavement, park, restaurant or public building — and the accident was caused by an occupier's negligence, you may be entitled to claim compensation. This page explains the evidence and legal issues in slip, trip and fall claims."
       tldr={[
         "Occupiers of premises owe a duty of care under the Occupiers' Liability (Scotland) Act 1960.",
         "Councils can be held liable for pavement and road defects under the Roads (Scotland) Act 1984.",

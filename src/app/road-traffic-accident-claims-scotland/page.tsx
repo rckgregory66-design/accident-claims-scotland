@@ -48,7 +48,7 @@ export default function RoadTrafficAccidentPage() {
       dateModified="2026-06-16"
       breadcrumbs={[{ label: "Road Traffic Accident Claims Scotland" }]}
       h1="Road Traffic Accident Claims Scotland"
-      intro="If you were injured in a road traffic accident in Scotland that was not your fault, you may be entitled to claim compensation. Our Scottish solicitors handle claims for car accident victims, motorcycle riders, cyclists, pedestrians and passengers — with no win, no fee options available."
+      intro="If you were injured in a road traffic accident in Scotland that was not your fault, you may be entitled to claim compensation. This page explains claims involving car occupants, motorcycle riders, cyclists, pedestrians and passengers."
       tldr={[
         "You can claim if you were injured in a road accident in Scotland within the last three years.",
         "Scotland's whiplash rules are different from England and Wales — the 2018 reforms do not apply here.",

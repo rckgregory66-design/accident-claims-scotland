@@ -28,6 +28,9 @@
 }
 
 @layer components {
+  .skip-link {
+    @apply fixed left-4 top-4 z-[100] -translate-y-24 rounded-md bg-white px-4 py-2 font-semibold text-[#0f2044] shadow-lg focus:translate-y-0;
+  }
   .btn-primary {
     @apply bg-red-700 hover:bg-red-800 text-white font-semibold px-7 py-3.5 rounded-lg transition-colors duration-200 inline-block text-center shadow-sm;
   }
@@ -65,3 +68,7 @@
 details summary { cursor: pointer; list-style: none; }
 details summary::-webkit-details-marker { display: none; }
 details[open] summary { color: #b91c1c; }
+summary:focus-visible {
+  outline: 3px solid #facc15;
+  outline-offset: -3px;
+}
