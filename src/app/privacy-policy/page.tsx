@@ -20,9 +20,13 @@ export default function PrivacyPolicyPage() {
       <div className="max-w-4xl mx-auto px-4 sm:px-6 py-10 prose-legal">
         <h2>Who We Are</h2>
         <p>
-          This privacy notice applies to {SITE.name}. The verified identity and contact details of the website
-          operator must be published here before personal data is collected. We are committed to complying with the UK General Data Protection
-          Regulation (UK GDPR) and the Data Protection Act 2018.
+          This privacy notice applies to {SITE.name}. The website is operated by Ola Consultants Ltd,
+          which is the data controller for information submitted through this website. Data-protection
+          enquiries can be sent to rckgregory66@gmail.com.
+        </p>
+        <p>
+          Ola Consultants Ltd is not presented on this website as a firm of solicitors. Submitting an
+          enquiry does not create a solicitor-client relationship.
         </p>
 
         <h2>What Data We Collect</h2>
@@ -34,34 +38,48 @@ export default function PrivacyPolicyPage() {
           <li>Details of your accident or injury</li>
           <li>Any other information you choose to provide</li>
         </ul>
-        <p>We also collect basic technical data (IP address, browser type, pages visited) through cookies.</p>
+        <p>
+          Our infrastructure providers may also process limited technical information, including IP
+          address, browser information and security logs, when an enquiry is submitted.
+        </p>
 
         <h2>How We Use Your Data</h2>
         <p>We use your personal data to:</p>
         <ul>
-          <li>Respond to your enquiry and assess whether we can assist with your claim</li>
-          <li>Provide legal services if you instruct us</li>
+          <li>Respond to your enquiry and make an initial assessment of the information supplied</li>
+          <li>Contact you about the enquiry and, where appropriate, discuss its onward handling</li>
           <li>Comply with legal obligations</li>
         </ul>
         <p>
           We do not sell your personal data to third parties. We do not share your data with marketing
-          companies. Data shared with third parties is limited to what is necessary for us to provide
-          legal services — for example, medical agencies for expert evidence.
+          companies.
+        </p>
+
+        <h2>Enquiry Delivery Providers</h2>
+        <p>
+          Enquiries are processed through Cloudflare, which hosts and protects the website, and Resend,
+          which delivers the enquiry by email to Ola Consultants Ltd. These providers act as data
+          processors for this delivery. Their processing may involve infrastructure outside the United
+          Kingdom, subject to the contractual safeguards made available by those providers.
+        </p>
+        <p>
+          Do not upload or include medical records, identity documents or other highly sensitive
+          documents in the initial enquiry form.
         </p>
 
         <h2>Legal Basis for Processing</h2>
         <p>We process your data on the basis of:</p>
         <ul>
           <li>Your consent — for initial enquiries</li>
-          <li>Performance of a contract — if you instruct us as your solicitor</li>
+          <li>Steps requested before entering a contract, where applicable</li>
           <li>Legal obligation — where required by law or regulatory requirements</li>
         </ul>
 
         <h2>Data Retention</h2>
         <p>
           We retain personal data for as long as is necessary for the purpose for which it was collected,
-          and in compliance with applicable legal and operational requirements. A specific retention schedule
-          will be published when the website operator and enquiry-handling arrangements are confirmed.
+          including responding to the enquiry, maintaining appropriate records and meeting applicable
+          legal obligations. Information that is not required will be deleted or anonymised.
         </p>
 
         <h2>Your Rights</h2>
@@ -74,7 +92,9 @@ export default function PrivacyPolicyPage() {
           <li>Data portability</li>
           <li>Withdraw consent at any time</li>
         </ul>
-        <p>Verified contact details for exercising these rights must be published before personal data is collected.</p>
+        <p>
+          To exercise these rights, contact Ola Consultants Ltd at rckgregory66@gmail.com.
+        </p>
 
         <h2>Complaints</h2>
         <p>
@@ -84,7 +104,8 @@ export default function PrivacyPolicyPage() {
 
         <h2>Contact</h2>
         <p>
-          Verified data-protection contact details will be published when the website operator is confirmed.
+          Data controller: Ola Consultants Ltd<br />
+          Email: rckgregory66@gmail.com
         </p>
       </div>
     </>

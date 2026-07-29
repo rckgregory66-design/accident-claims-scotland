@@ -1,5 +1,3 @@
-import { EmailMessage } from "cloudflare:email";
-
 const JSON_HEADERS = {
   "content-type": "application/json; charset=utf-8",
   "access-control-allow-methods": "POST, OPTIONS",
@@ -35,7 +33,7 @@ const worker = {
     if (request.method === "OPTIONS") return new Response(null, { status: 204, headers: responseHeaders(origin) });
     if (request.method !== "POST") return json({ error: "Method not allowed." }, 405, origin);
 
-    if (!ENDPOINT_HOSTS.has(requestUrl.hostname) || (origin && !ALLOWED_HOSTS.has(new URL(origin).hostname))) {
+    if (!origin || !ENDPOINT_HOSTS.has(requestUrl.hostname) || !ALLOWED_HOSTS.has(new URL(origin).hostname)) {
       return json({ error: "Request origin was not accepted." }, 403, origin);
     }
 
@@ -73,23 +71,30 @@ const worker = {
           `Incident/date of knowledge: ${enquiry.incidentDate || "Not provided"}`,
           `Already instructed: ${enquiry.hasSolicitor || "Not provided"}`, "", "Description:", enquiry.description,
         ].join("\n");
-      const rawMessage = [
-        "From: Accident Claims Scotland <enquiries@accident-claims-scotland.com>",
-        "To: rckgregory66@gmail.com",
-        `Reply-To: ${enquiry.email}`,
-        `Subject: ${subject}`,
-        "MIME-Version: 1.0",
-        "Content-Type: text/plain; charset=utf-8",
-        "Content-Transfer-Encoding: 8bit",
-        "",
-        messageText,
-      ].join("\r\n");
-      await env.ENQUIRY_EMAIL.send(new EmailMessage(
-        "enquiries@accident-claims-scotland.com",
-        "rckgregory66@gmail.com",
-        rawMessage,
-      ));
-      return json({ ok: true }, 200, origin);
+      const resendResponse = await fetch("https://api.resend.com/emails", {
+        method: "POST",
+        headers: {
+          authorization: `Bearer ${env.RESEND_API_KEY}`,
+          "content-type": "application/json",
+          "idempotency-key": crypto.randomUUID(),
+        },
+        body: JSON.stringify({
+          from: env.ENQUIRY_FROM,
+          to: ["rckgregory66@gmail.com"],
+          reply_to: enquiry.email,
+          subject,
+          text: messageText,
+        }),
+      });
+
+      if (!resendResponse.ok) {
+        const resendError = await resendResponse.text();
+        console.error("Resend delivery failed", resendResponse.status, resendError);
+        return json({ error: "Delivery failed. Please try again later." }, 503, origin);
+      }
+
+      const delivery = await resendResponse.json();
+      return json({ ok: true, id: delivery.id }, 200, origin);
     } catch (error) {
       console.error("Enquiry email delivery failed", error);
       return json({ error: "Delivery failed. Please try again later." }, 503, origin);

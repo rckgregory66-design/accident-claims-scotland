@@ -3,7 +3,5 @@ main = "workers/enquiry.js"
 compatibility_date = "2026-06-19"
 workers_dev = true
 
-[[send_email]]
-name = "ENQUIRY_EMAIL"
-destination_address = "rckgregory66@gmail.com"
-allowed_sender_addresses = ["enquiries@accident-claims-scotland.com"]
+[vars]
+ENQUIRY_FROM = "Accident Claims Scotland <onboarding@resend.dev>"
