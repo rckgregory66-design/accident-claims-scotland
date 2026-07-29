@@ -1,0 +1,48 @@
+import type { MetadataRoute } from "next";
+import { publishedGuides } from "@/data/guides";
+import { SITE } from "@/data/siteConfig";
+
+export default function sitemap(): MetadataRoute.Sitemap {
+  const staticPages = [
+    { url: `${SITE.url}/`, changeFrequency: "weekly" as const, priority: 1.0 },
+    { url: `${SITE.url}/personal-injury-claims-scotland`, changeFrequency: "monthly" as const, priority: 0.9 },
+    { url: `${SITE.url}/road-traffic-accident-claims-scotland`, changeFrequency: "monthly" as const, priority: 0.9 },
+    { url: `${SITE.url}/accident-at-work-claims-scotland`, changeFrequency: "monthly" as const, priority: 0.9 },
+    { url: `${SITE.url}/medical-negligence-claims-scotland`, changeFrequency: "monthly" as const, priority: 0.9 },
+    { url: `${SITE.url}/industrial-disease-claims-scotland`, changeFrequency: "monthly" as const, priority: 0.9 },
+    { url: `${SITE.url}/serious-injury-claims-scotland`, changeFrequency: "monthly" as const, priority: 0.9 },
+    { url: `${SITE.url}/public-place-accident-claims-scotland`, changeFrequency: "monthly" as const, priority: 0.9 },
+    { url: `${SITE.url}/criminal-injury-compensation-scotland`, changeFrequency: "monthly" as const, priority: 0.8 },
+    { url: `${SITE.url}/no-win-no-fee-solicitors-scotland`, changeFrequency: "monthly" as const, priority: 0.8 },
+    { url: `${SITE.url}/how-to-claim-compensation-scotland`, changeFrequency: "monthly" as const, priority: 0.8 },
+    { url: `${SITE.url}/personal-injury-compensation-scotland`, changeFrequency: "monthly" as const, priority: 0.8 },
+    { url: `${SITE.url}/personal-injury-claim-time-limits-scotland`, changeFrequency: "monthly" as const, priority: 0.8 },
+    { url: `${SITE.url}/glasgow-accident-claims`, changeFrequency: "monthly" as const, priority: 0.8 },
+    { url: `${SITE.url}/edinburgh-accident-claims`, changeFrequency: "monthly" as const, priority: 0.8 },
+    { url: `${SITE.url}/aberdeen-accident-claims`, changeFrequency: "monthly" as const, priority: 0.7 },
+    { url: `${SITE.url}/dundee-accident-claims`, changeFrequency: "monthly" as const, priority: 0.7 },
+    { url: `${SITE.url}/inverness-accident-claims`, changeFrequency: "monthly" as const, priority: 0.7 },
+    { url: `${SITE.url}/stirling-accident-claims`, changeFrequency: "monthly" as const, priority: 0.7 },
+    { url: `${SITE.url}/perth-accident-claims`, changeFrequency: "monthly" as const, priority: 0.7 },
+    { url: `${SITE.url}/paisley-accident-claims`, changeFrequency: "monthly" as const, priority: 0.7 },
+    { url: `${SITE.url}/ayr-accident-claims`, changeFrequency: "monthly" as const, priority: 0.7 },
+    { url: `${SITE.url}/falkirk-accident-claims`, changeFrequency: "monthly" as const, priority: 0.7 },
+    { url: `${SITE.url}/guides`, changeFrequency: "weekly" as const, priority: 0.8 },
+    { url: `${SITE.url}/about`, changeFrequency: "monthly" as const, priority: 0.6 },
+    { url: `${SITE.url}/contact`, changeFrequency: "monthly" as const, priority: 0.8 },
+    { url: `${SITE.url}/privacy-policy`, changeFrequency: "yearly" as const, priority: 0.3 },
+    { url: `${SITE.url}/cookie-policy`, changeFrequency: "yearly" as const, priority: 0.3 },
+    { url: `${SITE.url}/terms`, changeFrequency: "yearly" as const, priority: 0.3 },
+    { url: `${SITE.url}/complaints`, changeFrequency: "yearly" as const, priority: 0.4 },
+    { url: `${SITE.url}/accessibility`, changeFrequency: "yearly" as const, priority: 0.3 },
+  ];
+
+  const guidePages = publishedGuides.map((g) => ({
+    url: `${SITE.url}/guides/${g.slug}`,
+    changeFrequency: "monthly" as const,
+    priority: 0.7,
+    lastModified: new Date(g.dateModified),
+  }));
+
+  return [...staticPages, ...guidePages];
+}

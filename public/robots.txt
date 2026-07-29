@@ -1,0 +1,4 @@
+User-agent: *
+Allow: /
+
+Sitemap: https://www.accident-claims-scotland.com/sitemap.xml
