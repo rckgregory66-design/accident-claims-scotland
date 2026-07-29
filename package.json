@@ -9,6 +9,7 @@
     "lint": "eslint",
     "typecheck": "tsc --noEmit",
     "check:placeholders": "node scripts/check-placeholders.mjs",
+    "indexnow": "node scripts/submit-indexnow.mjs",
     "check": "npm run check:placeholders && npm run lint && npm run typecheck && npm run build"
   },
   "dependencies": {
