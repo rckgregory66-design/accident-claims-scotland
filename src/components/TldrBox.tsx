@@ -12,11 +12,11 @@ export default function TldrBox({ points }: Props) {
       <p className="text-yellow-400 font-bold text-sm uppercase tracking-wide mb-3">
         Key Points — Quick Summary
       </p>
-      <ul className="space-y-2">
+      <ul className="space-y-2 list-none pl-0 mb-0 text-white">
         {points.map((p, i) => (
-          <li key={i} className="flex gap-2.5 text-sm leading-snug">
+          <li key={i} className="flex gap-2.5 text-sm leading-snug text-white">
             <span className="text-yellow-400 font-bold mt-0.5 flex-shrink-0">✓</span>
-            <span>{p}</span>
+            <span className="text-white">{p}</span>
           </li>
         ))}
       </ul>

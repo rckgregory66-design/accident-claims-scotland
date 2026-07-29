@@ -52,6 +52,23 @@
   .prose-legal h3 { @apply text-xl font-semibold text-[#0f2044] mt-7 mb-3; }
   .prose-legal ul { @apply list-disc pl-6 mb-4 text-gray-700 space-y-1.5; }
   .prose-legal ol { @apply list-decimal pl-6 mb-4 text-gray-700 space-y-1.5; }
+
+  /* Dark summary panels sit inside .prose-legal, whose list styles otherwise
+     override inherited foreground colours. Keep every summary line readable. */
+  .prose-legal #tldr ul,
+  .prose-legal #tldr li,
+  .prose-legal #tldr li span {
+    color: #ffffff;
+  }
+  .prose-legal #tldr > p,
+  .prose-legal #tldr li > span:first-child {
+    color: #facc15;
+  }
+  .prose-legal #tldr ul {
+    list-style: none;
+    margin-bottom: 0;
+    padding-left: 0;
+  }
 }
 
 /* Sticky mobile bar */
