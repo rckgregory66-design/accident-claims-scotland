@@ -6,7 +6,7 @@ export const metadata: Metadata = {
   description:
     "Accident claims solicitors serving Edinburgh. Personal injury, workplace accident and medical negligence claims for Edinburgh residents. Free enquiry, no win no fee.",
   alternates: { canonical: "/edinburgh-accident-claims" },
-  robots: { index: false, follow: true },
+  robots: { index: true, follow: true },
 };
 
 const faqs = [

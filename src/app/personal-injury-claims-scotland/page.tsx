@@ -45,7 +45,7 @@ export default function PersonalInjuryPage() {
   return (
     <ClaimPageTemplate
       metaUrl="/personal-injury-claims-scotland"
-      dateModified="2026-06-16"
+      dateModified="2026-08-11"
       breadcrumbs={[{ label: "Personal Injury Claims Scotland" }]}
       h1="Personal Injury Claims Scotland"
       intro="If you have suffered a personal injury in Scotland that was caused by someone else's negligence, you may have the right to claim compensation. Our specialist solicitors handle personal injury claims across Scotland under Scots law, with no win, no fee options available."
@@ -107,6 +107,7 @@ export default function PersonalInjuryPage() {
             { text: "Medical treatment and rehabilitation costs", href: "/personal-injury-compensation-scotland" },
             { text: "Care and assistance from family members or paid carers", href: "/personal-injury-compensation-scotland" },
             { text: "Provisional damages where your condition may deteriorate", href: "/personal-injury-compensation-scotland" },
+            { text: "Use the compensation planner to identify evidence and potential heads of loss", href: "/compensation-calculator-scotland" },
           ],
         },
         {
@@ -147,6 +148,7 @@ export default function PersonalInjuryPage() {
         { label: "Time Limits", href: "/personal-injury-claim-time-limits-scotland" },
         { label: "How to Claim", href: "/how-to-claim-compensation-scotland" },
         { label: "No Win No Fee", href: "/no-win-no-fee-solicitors-scotland" },
+        { label: "Compensation Planner", href: "/compensation-calculator-scotland" },
       ]}
     />
   );

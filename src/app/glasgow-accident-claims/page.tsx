@@ -6,7 +6,7 @@ export const metadata: Metadata = {
   description:
     "Accident claims solicitors serving Glasgow. Personal injury, workplace accident and medical negligence claims for Glasgow residents. Free enquiry, no win no fee.",
   alternates: { canonical: "/glasgow-accident-claims" },
-  robots: { index: false, follow: true },
+  robots: { index: true, follow: true },
 };
 
 const faqs = [

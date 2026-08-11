@@ -21,6 +21,7 @@ export default function sitemap(): MetadataRoute.Sitemap {
     { url: `${SITE.url}/no-win-no-fee-solicitors-scotland`, changeFrequency: "monthly" as const, priority: 0.8 },
     { url: `${SITE.url}/how-to-claim-compensation-scotland`, changeFrequency: "monthly" as const, priority: 0.8 },
     { url: `${SITE.url}/personal-injury-compensation-scotland`, changeFrequency: "monthly" as const, priority: 0.8 },
+    { url: `${SITE.url}/compensation-calculator-scotland`, changeFrequency: "monthly" as const, priority: 0.8 },
     { url: `${SITE.url}/personal-injury-claim-time-limits-scotland`, changeFrequency: "monthly" as const, priority: 0.8 },
     { url: `${SITE.url}/guides`, changeFrequency: "weekly" as const, priority: 0.8 },
     { url: `${SITE.url}/about`, changeFrequency: "monthly" as const, priority: 0.6 },
@@ -32,17 +33,12 @@ export default function sitemap(): MetadataRoute.Sitemap {
     { url: `${SITE.url}/accessibility`, changeFrequency: "yearly" as const, priority: 0.3 },
   ];
 
+  // Only the two location pages with distinct, substantial local content are
+  // indexable. The other useful navigation pages remain noindex and therefore
+  // must not be advertised in the sitemap.
   const locationPages = [
     "glasgow-accident-claims",
     "edinburgh-accident-claims",
-    "aberdeen-accident-claims",
-    "dundee-accident-claims",
-    "inverness-accident-claims",
-    "stirling-accident-claims",
-    "perth-accident-claims",
-    "paisley-accident-claims",
-    "ayr-accident-claims",
-    "falkirk-accident-claims",
   ].map((slug) => ({
     url: `${SITE.url}/${slug}`,
     changeFrequency: "monthly" as const,

@@ -4,22 +4,23 @@ Accident Claims Scotland is a marketing and information website about personal i
 
 ## Core guides
 
-- Personal injury claims: https://www.accident-claims-scotland.com/personal-injury-claims-scotland
-- Road traffic accidents: https://www.accident-claims-scotland.com/road-traffic-accident-claims-scotland
-- Accidents at work: https://www.accident-claims-scotland.com/accident-at-work-claims-scotland
-- Public place accidents: https://www.accident-claims-scotland.com/public-place-accident-claims-scotland
-- Medical negligence: https://www.accident-claims-scotland.com/medical-negligence-claims-scotland
-- Serious injury: https://www.accident-claims-scotland.com/serious-injury-claims-scotland
-- Industrial disease: https://www.accident-claims-scotland.com/industrial-disease-claims-scotland
-- Criminal injury and CICA: https://www.accident-claims-scotland.com/criminal-injury-compensation-scotland
+- Personal injury claims: https://accident-claims-scotland.com/personal-injury-claims-scotland
+- Road traffic accidents: https://accident-claims-scotland.com/road-traffic-accident-claims-scotland
+- Accidents at work: https://accident-claims-scotland.com/accident-at-work-claims-scotland
+- Public place accidents: https://accident-claims-scotland.com/public-place-accident-claims-scotland
+- Medical negligence: https://accident-claims-scotland.com/medical-negligence-claims-scotland
+- Serious injury: https://accident-claims-scotland.com/serious-injury-claims-scotland
+- Industrial disease: https://accident-claims-scotland.com/industrial-disease-claims-scotland
+- Criminal injury and CICA: https://accident-claims-scotland.com/criminal-injury-compensation-scotland
 
 ## Essential claims information
 
-- Claims process: https://www.accident-claims-scotland.com/how-to-claim-compensation-scotland
-- Personal injury time limits: https://www.accident-claims-scotland.com/personal-injury-claim-time-limits-scotland
-- Compensation: https://www.accident-claims-scotland.com/personal-injury-compensation-scotland
-- No win, no fee: https://www.accident-claims-scotland.com/no-win-no-fee-solicitors-scotland
-- Article library: https://www.accident-claims-scotland.com/guides
+- Claims process: https://accident-claims-scotland.com/how-to-claim-compensation-scotland
+- Personal injury time limits: https://accident-claims-scotland.com/personal-injury-claim-time-limits-scotland
+- Compensation: https://accident-claims-scotland.com/personal-injury-compensation-scotland
+- Compensation planning tool: https://accident-claims-scotland.com/compensation-calculator-scotland
+- No win, no fee: https://accident-claims-scotland.com/no-win-no-fee-solicitors-scotland
+- Article library: https://accident-claims-scotland.com/guides
 
 ## Interpretation notes
 

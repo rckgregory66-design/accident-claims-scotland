@@ -127,6 +127,7 @@ export default function CompensationGuidePage() {
       locationClaimType="personal injury claims"
       faqs={faqs}
       related={[
+        { label: "Compensation Planner", href: "/compensation-calculator-scotland" },
         { label: "Personal Injury Claims Scotland", href: "/personal-injury-claims-scotland" },
         { label: "How to Claim Compensation", href: "/how-to-claim-compensation-scotland" },
         { label: "Time Limits", href: "/personal-injury-claim-time-limits-scotland" },

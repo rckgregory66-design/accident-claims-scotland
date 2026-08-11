@@ -39,18 +39,43 @@ export default function AboutPage() {
           disease and workplace accident claims in Scotland.
         </p>
         <p>
+          The website is operated by Ola Consultants Ltd. It is being prepared as a marketing and information
+          resource for Scottish solicitors, but is not currently presented as a regulated law firm. Firm,
+          solicitor and regulatory details will be added only when they can be verified.
+        </p>
+        <p>
           The content explains general Scots-law concepts and common claims processes. Individual cases require
           advice from a suitably qualified Scottish solicitor.
         </p>
 
-        <h2>Our Values</h2>
+        <h2>How the content is prepared</h2>
+        <p>
+          Pages are written for a Scottish audience, separated by claim type and checked against primary or
+          official sources where available. These include legislation.gov.uk, the Scottish Courts and Tribunals
+          Service, GOV.UK, CICA, HSE, NHS inform, the Motor Insurers&apos; Bureau, the ICO and the Scottish Legal
+          Complaints Commission. Source links appear on substantive pages so readers can check the underlying material.
+        </p>
+        <p>
+          We distinguish general information from advice on an individual case, avoid publishing generic settlement
+          promises, and state important qualifications where rules or outcomes depend on evidence. Content is reviewed
+          when official guidance changes and material corrections are made as soon as they are identified.
+        </p>
+
+        <h2>Our publishing standards</h2>
         <ul>
-          <li><strong>Honesty:</strong> We give clear, realistic advice about your claim — never inflated promises.</li>
-          <li><strong>Transparency:</strong> We explain funding arrangements, processes and prospects honestly and in plain English.</li>
+          <li><strong>Honesty:</strong> We provide clear, realistic information and avoid inflated promises.</li>
+          <li><strong>Transparency:</strong> We explain funding arrangements, processes and material qualifications in plain English.</li>
           <li><strong>Clarity:</strong> We explain general claims terminology and processes in plain English.</li>
           <li><strong>Accessibility:</strong> We aim to make general information accessible to people from all backgrounds.</li>
-          <li><strong>Compassion:</strong> We understand that an injury can affect every aspect of your life and treat every client with respect and sensitivity.</li>
+          <li><strong>Care:</strong> We recognise that injury can affect every aspect of a person&apos;s life and use respectful, sensitive language.</li>
         </ul>
+
+        <h2>Corrections and feedback</h2>
+        <p>
+          If you believe a page is inaccurate, out of date or unclear, use the <Link href="/contact">contact page</Link>
+          and identify the page and passage concerned. Website and privacy concerns can also be raised through the
+          routes described in our <Link href="/complaints">complaints information</Link> and <Link href="/privacy-policy">privacy policy</Link>.
+        </p>
 
         <h2>Important status information</h2>
         <p>
@@ -63,6 +88,14 @@ export default function AboutPage() {
         <p>
           The website contains information relevant to people across Scotland, including Glasgow, Edinburgh,
           Aberdeen, Dundee, Inverness, Stirling, Perth, Paisley, Ayr and Falkirk.
+        </p>
+
+        <h2>Explore the core Scottish claims resources</h2>
+        <p>
+          Start with the <Link href="/personal-injury-claims-scotland">personal injury claims hub</Link>, the detailed
+          <Link href="/road-traffic-accident-claims-scotland"> road traffic accident resource</Link>, the
+          <Link href="/no-win-no-fee-solicitors-scotland"> no win, no fee explanation</Link> or the cautious
+          <Link href="/compensation-calculator-scotland"> compensation planning tool</Link>.
         </p>
 
         <h2>Contact Us</h2>

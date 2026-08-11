@@ -211,6 +211,10 @@ export default function ClaimPageTemplate({
               <p>
                 This page provides general information and is not individual legal advice.
               </p>
+              <p className="mt-2">
+                Reviewed for Scottish scope and official-source alignment. Last updated {new Intl.DateTimeFormat("en-GB", { day: "numeric", month: "long", year: "numeric" }).format(new Date(`${dateModified}T12:00:00Z`))}.{" "}
+                <Link href="/about" className="font-semibold underline">Read our publishing standards</Link>.
+              </p>
             </div>
           </div>
 

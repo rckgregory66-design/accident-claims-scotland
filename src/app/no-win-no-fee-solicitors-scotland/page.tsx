@@ -45,7 +45,7 @@ export default function NoWinNoFeePage() {
   return (
     <ClaimPageTemplate
       metaUrl="/no-win-no-fee-solicitors-scotland"
-      dateModified="2026-06-16"
+      dateModified="2026-08-11"
       breadcrumbs={[{ label: "No Win No Fee Solicitors Scotland" }]}
       h1="No Win No Fee Solicitors Scotland"
       intro="Many personal injury and accident claims in Scotland can be funded on a no win, no fee basis. This page explains clearly and transparently what no win, no fee means, how it works in Scotland, what costs may apply and what your alternatives are."
@@ -98,6 +98,30 @@ export default function NoWinNoFeePage() {
             "Before signing any funding agreement, you have the right to understand fully: what you will be required to pay if your claim succeeds; what, if anything, you may be required to pay if your claim fails; how any insurance products work; and how to end the agreement. Your solicitor must explain all of this to you in writing and in plain English. Do not feel pressured to sign anything you do not fully understand.",
         },
         {
+          heading: "Questions to Ask Before You Agree",
+          content: "Ask the provider to confirm every material term in writing, including:",
+          list: [
+            "Whether the agreement is a speculative fee agreement, damages-based agreement or another arrangement",
+            "Which fees, outlays, insurance premiums or other deductions may be taken after success",
+            "What you could have to pay if the claim ends, is withdrawn or an offer is rejected",
+            "Whether legal-expenses insurance, a trade union scheme or legal aid should be considered first",
+            "How complaints, cancellation and changing solicitor are handled",
+          ],
+        },
+        {
+          heading: "Scottish Rules and Independent Checks",
+          content: (
+            <>
+              <p>Funding language is sometimes used loosely. Read the signed terms rather than relying on an advert or headline. The following independent sources explain the regulatory and complaints context:</p>
+              <ul>
+                <li><a href="https://www.legislation.gov.uk/asp/2018/10/contents" target="_blank" rel="noopener noreferrer" className="text-red-700 hover:underline">Civil Litigation (Expenses and Group Proceedings) (Scotland) Act 2018</a></li>
+                <li><a href="https://www.scottishlegalcomplaints.org.uk/" target="_blank" rel="noopener noreferrer" className="text-red-700 hover:underline">Scottish Legal Complaints Commission</a></li>
+                <li><a href="https://www.slab.org.uk/" target="_blank" rel="noopener noreferrer" className="text-red-700 hover:underline">Scottish Legal Aid Board</a></li>
+              </ul>
+            </>
+          ),
+        },
+        {
           heading: "Is No Win, No Fee Available for All Claims?",
           content:
             "No win, no fee funding is not available in all cases. Eligibility depends on the merits and prospects of your claim. Your solicitor will assess your claim and advise honestly on whether no win, no fee funding is appropriate and available in your circumstances. If it is not, they will discuss alternative funding options.",
@@ -114,6 +138,7 @@ export default function NoWinNoFeePage() {
         { label: "Personal Injury Claims Scotland", href: "/personal-injury-claims-scotland" },
         { label: "How to Claim Compensation", href: "/how-to-claim-compensation-scotland" },
         { label: "Compensation Guide", href: "/personal-injury-compensation-scotland" },
+        { label: "Compensation Planner", href: "/compensation-calculator-scotland" },
         { label: "Time Limits", href: "/personal-injury-claim-time-limits-scotland" },
       ]}
     />

@@ -1,7 +1,7 @@
 export const SITE = {
   name: "Accident Claims Scotland",
   domain: "accident-claims-scotland.com",
-  url: "https://www.accident-claims-scotland.com",
+  url: "https://accident-claims-scotland.com",
   tagline: "Information about accident claims across Scotland",
   description:
     "Scottish accident-claim information covering personal injury, medical negligence, industrial disease and related compensation claims.",
@@ -25,6 +25,7 @@ export const NAV_LINKS = [
   { label: "No Win No Fee", href: "/no-win-no-fee-solicitors-scotland" },
   { label: "How to Claim", href: "/how-to-claim-compensation-scotland" },
   { label: "Compensation Guide", href: "/personal-injury-compensation-scotland" },
+  { label: "Calculator", href: "/compensation-calculator-scotland" },
   { label: "Time Limits", href: "/personal-injury-claim-time-limits-scotland" },
   { label: "Guides", href: "/guides" },
   { label: "About", href: "/about" },

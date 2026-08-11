@@ -1,4 +1,4 @@
-const host = "www.accident-claims-scotland.com";
+const host = "accident-claims-scotland.com";
 const key = "85bbed6cbe5d11d11409a9d53b134cd2";
 const keyLocation = `https://${host}/${key}.txt`;
 const sitemapUrl = `https://${host}/sitemap.xml`;
