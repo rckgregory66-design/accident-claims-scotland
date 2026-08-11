@@ -76,6 +76,10 @@ export default function AboutPage() {
           and identify the page and passage concerned. Website and privacy concerns can also be raised through the
           routes described in our <Link href="/complaints">complaints information</Link> and <Link href="/privacy-policy">privacy policy</Link>.
         </p>
+        <p>
+          Our dedicated <Link href="/editorial-methodology">editorial methodology</Link> explains the source hierarchy,
+          review process and standards used for legal and numerical claims.
+        </p>
 
         <h2>Important status information</h2>
         <p>

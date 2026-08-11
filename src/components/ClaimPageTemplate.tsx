@@ -213,7 +213,7 @@ export default function ClaimPageTemplate({
               </p>
               <p className="mt-2">
                 Reviewed for Scottish scope and official-source alignment. Last updated {new Intl.DateTimeFormat("en-GB", { day: "numeric", month: "long", year: "numeric" }).format(new Date(`${dateModified}T12:00:00Z`))}.{" "}
-                <Link href="/about" className="font-semibold underline">Read our publishing standards</Link>.
+                <Link href="/editorial-methodology" className="font-semibold underline">Read our publishing standards and source methodology</Link>.
               </p>
             </div>
           </div>

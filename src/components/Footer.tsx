@@ -20,6 +20,7 @@ export default function Footer() {
     { label: "Time Limits", href: "/personal-injury-claim-time-limits-scotland" },
     { label: "Guides & Articles", href: "/guides" },
     { label: "About Us", href: "/about" },
+    { label: "Editorial Methodology", href: "/editorial-methodology" },
     { label: "Contact", href: "/contact" },
   ];
 

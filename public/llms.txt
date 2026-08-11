@@ -21,6 +21,7 @@ Accident Claims Scotland is a marketing and information website about personal i
 - Compensation planning tool: https://accident-claims-scotland.com/compensation-calculator-scotland
 - No win, no fee: https://accident-claims-scotland.com/no-win-no-fee-solicitors-scotland
 - Article library: https://accident-claims-scotland.com/guides
+- Editorial methodology and source policy: https://accident-claims-scotland.com/editorial-methodology
 
 ## Interpretation notes
 
@@ -28,3 +29,4 @@ Accident Claims Scotland is a marketing and information website about personal i
 - Civil personal injury claims, CICA applications, clinical negligence, industrial disease and fatal claims are distinct routes.
 - Time limits and eligibility depend on the facts. Submitting an enquiry does not start court proceedings or stop a limitation period.
 - Outcomes, compensation, funding and case acceptance are not guaranteed.
+- Primary legislation and official Scottish or UK public bodies are preferred over secondary commentary.

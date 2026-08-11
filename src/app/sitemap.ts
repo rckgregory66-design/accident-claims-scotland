@@ -25,6 +25,7 @@ export default function sitemap(): MetadataRoute.Sitemap {
     { url: `${SITE.url}/personal-injury-claim-time-limits-scotland`, changeFrequency: "monthly" as const, priority: 0.8 },
     { url: `${SITE.url}/guides`, changeFrequency: "weekly" as const, priority: 0.8 },
     { url: `${SITE.url}/about`, changeFrequency: "monthly" as const, priority: 0.6 },
+    { url: `${SITE.url}/editorial-methodology`, changeFrequency: "monthly" as const, priority: 0.5 },
     { url: `${SITE.url}/contact`, changeFrequency: "monthly" as const, priority: 0.8 },
     { url: `${SITE.url}/privacy-policy`, changeFrequency: "yearly" as const, priority: 0.3 },
     { url: `${SITE.url}/cookie-policy`, changeFrequency: "yearly" as const, priority: 0.3 },

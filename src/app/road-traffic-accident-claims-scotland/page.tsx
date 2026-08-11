@@ -1,4 +1,5 @@
 import type { Metadata } from "next";
+import Link from "next/link";
 import ClaimPageTemplate from "@/components/ClaimPageTemplate";
 
 export const metadata: Metadata = {
@@ -99,6 +100,33 @@ export default function RoadTrafficAccidentPage() {
           heading: "Uninsured and Untraced Drivers — MIB Claims in Scotland",
           content:
             "If you were injured by an uninsured driver or a driver who cannot be traced (a hit and run), you may be able to claim through the Motor Insurers' Bureau (MIB). Specific time limits and procedural requirements apply to MIB claims. A solicitor will manage this process on your behalf.",
+        },
+        {
+          heading: "Which Scottish Road-Accident Route Applies?",
+          content: (
+            <div className="not-prose overflow-x-auto rounded-xl border border-slate-200">
+              <table className="w-full min-w-[680px] border-collapse text-left text-sm">
+                <thead className="bg-[#0f2044] text-white">
+                  <tr><th className="p-4">Situation</th><th className="p-4">Usual route</th><th className="p-4">Important distinction</th></tr>
+                </thead>
+                <tbody className="divide-y divide-slate-200">
+                  <tr><td className="p-4 font-semibold">Identified insured driver</td><td className="p-4">Claim against the responsible party, normally handled by an insurer</td><td className="p-4">Injury and vehicle losses should be evidenced separately even when discussed together.</td></tr>
+                  <tr className="bg-slate-50"><td className="p-4 font-semibold">Identified uninsured driver</td><td className="p-4"><Link className="text-red-700 underline" href="/uninsured-driver-claims-scotland">MIB Uninsured Drivers&apos; Agreement</Link></td><td className="p-4">The MIB investigates responsibility and insurance status; scheme conditions apply.</td></tr>
+                  <tr><td className="p-4 font-semibold">Hit-and-run or untraced vehicle</td><td className="p-4"><Link className="text-red-700 underline" href="/hit-and-run-claims-scotland">MIB Untraced Drivers&apos; Agreement</Link></td><td className="p-4">Prompt police reporting and reasonable tracing evidence are especially important.</td></tr>
+                  <tr className="bg-slate-50"><td className="p-4 font-semibold">Road defect</td><td className="p-4"><Link className="text-red-700 underline" href="/road-defect-accident-claims-scotland">Road authority, contractor, utility or private controller</Link></td><td className="p-4">A defect alone does not prove legal responsibility; inspection and notice evidence matters.</td></tr>
+                </tbody>
+              </table>
+            </div>
+          ),
+        },
+        {
+          heading: "Injury Compensation and Vehicle Loss Are Not Identical Claims",
+          content: (
+            <>
+              <p>They can arise from the same collision but depend on different evidence. The injury claim requires medical causation, prognosis and proof of financial consequences. Vehicle repair, total-loss value, excess, hire and loss-of-use questions depend on ownership, engineering and market evidence, insurance terms and reasonable mitigation.</p>
+              <p>An insurer payment for repairs is not automatically full settlement of an injury claim. Equally, proving vehicle damage does not by itself establish the nature or value of an injury. Ask what each offer covers and preserve the wording.</p>
+            </>
+          ),
         },
         {
           heading: "What to Do After a Road Accident in Scotland",
