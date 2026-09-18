@@ -198,6 +198,7 @@ export default function RoadTrafficAccidentPage() {
           { label: "Road Defect Accidents", href: "/road-defect-accident-claims-scotland", desc: "Potholes, surfaces and roadworks" },
           { label: "Children Injured on Roads", href: "/child-road-accident-claims-scotland", desc: "Child passengers, pedestrians and cyclists" },
           { label: "Early Insurer Offers", href: "/early-insurer-offers-road-accident-scotland", desc: "What to check before accepting" },
+          { label: "Contributory Negligence", href: "/contributory-negligence-road-accident-scotland", desc: "Partly at fault? You can still claim" },
         ],
       }}
       guideCategory="Road Accidents"

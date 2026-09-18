@@ -117,6 +117,7 @@ export default function CriminalInjuryPage() {
           { label: "Criminal Injuries Compensation", href: "/criminal-injury-compensation-scotland", desc: "CICA scheme and eligibility" },
           { label: "Knife Crime Claims", href: "/knife-crime-injury-claim-scotland", desc: "Stab wounds and blade injuries" },
           { label: "Hate Crime Claims", href: "/hate-crime-injury-claim-scotland", desc: "Racially and otherwise motivated crime" },
+          { label: "Child Abuse Compensation", href: "/child-abuse-injury-claim-scotland", desc: "Historic abuse, institutional abuse" },
         ],
       }}
       guideCategory="Criminal Injuries"
