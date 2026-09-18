@@ -255,6 +255,175 @@ const guideData: Record<string, Guide> = {
     ],
     parent: { href: "/how-to-claim-compensation-scotland", label: "How the claims process works" },
   },
+
+  "noise-induced-hearing-loss-claims-scotland": {
+    answer:
+      "Noise-induced hearing loss (NIHL) from workplace exposure is a compensable occupational disease in Scotland. The three-year limitation period runs from the date of knowledge — ordinarily when an audiologist or doctor first tells you that your hearing loss is work-related — not from the date of exposure. Claims can often be made against former employers no longer trading via their historic liability insurers.",
+    distinct:
+      "This guide focuses on date-of-knowledge limitation, the difference between NIHL and age-related loss, audiological evidence and routes to trace historic insurers. It does not repeat the general industrial-disease framework.",
+    sections: [
+      { heading: "How noise damages hearing", body: "Repeated or intense noise causes irreversible damage to the hair cells of the cochlea. Damage accumulates over time and may first become apparent as difficulty following conversation in background noise, tinnitus or a muffled quality to sound. Because the change is gradual, many people do not identify a cause or seek assessment until years after the exposure has ended." },
+      { heading: "The date of knowledge and limitation", body: "Under the Prescription and Limitation (Scotland) Act 1973, the three years run from the date the pursuer knew — or ought reasonably to have known — that the condition was significant, work-related and attributable to an identifiable employer. A formal audiological diagnosis linking the loss to occupational noise is usually the starting point. An audiogram alone is not enough if it does not identify a cause." },
+      { heading: "Distinguishing occupational NIHL from age-related loss", body: "Age-related hearing loss (presbycusis) causes a similar high-frequency pattern. Expert audiology evidence must distinguish the noise-induced component from the background age-related decline. Employers will often argue the entire loss is presbycusis. A specialist audiologist or ENT expert is usually required to give an opinion on the likely noise-induced element." },
+      { heading: "Evidence to support a claim", bullets: ["Employment history identifying where and when exposure occurred", "Records of noise levels, complaints, risk assessments or ear protection provision", "Witness statements from former colleagues", "Audiograms and specialist medical opinion on causation", "NIHL disability assessment for quantum purposes"] },
+      { heading: "Tracing former employers and insurers", body: "Many NIHL claims involve employers that have ceased trading. Employers were legally required to hold employers' liability insurance. The Employers' Liability Tracing Office (ELTO) database and Companies House records can help identify historic insurers. A solicitor experienced in occupational disease claims will manage this process." },
+      { heading: "Industrial Injuries Disablement Benefit", body: "NIHL caused by workplace noise is a prescribed industrial disease (A10). Industrial Injuries Disablement Benefit may be available through DWP alongside a civil claim, subject to the level of assessed disablement. A civil claim and a IIDB award are separate processes." },
+    ],
+    sources: [
+      { label: "HSE: noise-induced hearing loss", href: "https://www.hse.gov.uk/noise/hearingloss.htm", note: "Official occupational health guidance on NIHL causes, prevention and assessment." },
+      { label: "Employers' Liability Tracing Office (ELTO)", href: "https://www.elto.org.uk/", note: "Database for tracing employers' liability insurers for historic employers." },
+      { label: "Industrial Injuries Disablement Benefit — GOV.UK", href: "https://www.gov.uk/industrial-injuries-disablement-benefit", note: "State benefit available alongside a civil claim for certain prescribed diseases including NIHL." },
+      commonSources.limitation,
+    ],
+    parent: { href: "/industrial-disease-claims-scotland", label: "Industrial disease claims Scotland" },
+  },
+
+  "gp-negligence-claims-scotland": {
+    answer:
+      "A claim against a GP in Scotland requires proof that the doctor's conduct fell below the standard of a reasonably competent GP, and that the departure from that standard caused avoidable harm. The most common bases are failure to diagnose, delayed referral, prescribing errors and failure to follow up abnormal results. Independent GP expert evidence is essential in every case.",
+    distinct:
+      "This guide examines the GP-specific standard of care, the common failure patterns, causation difficulties in delayed-diagnosis cases and how NHS Scotland claims are handled by the Central Legal Office. It assumes familiarity with the general medical negligence framework.",
+    sections: [
+      { heading: "The standard of care for a GP", body: "The Scottish test derives from Hunter v Hanley (1955 SC 200): whether the GP failed to exercise the ordinary skill of a competent GP exercising that particular branch of practice. A GP is not required to achieve the standard of a specialist, but must recognise when to refer. The test is not whether another doctor would have acted differently — it is whether the course taken was one no competent GP would have adopted." },
+      { heading: "Common failure patterns", bullets: ["Failure to diagnose — not identifying a condition that was or should have been apparent from the history and examination", "Delayed diagnosis — identifying the condition but at a point where earlier action would have made a material difference", "Delayed or absent referral — failing to refer to a specialist or secondary care in time", "Prescribing errors — wrong drug, dose, interaction or monitoring failure", "Failure to follow up abnormal test results — abnormal bloods, imaging or investigation not acted upon"] },
+      { heading: "Causation in delayed-diagnosis cases", body: "Even where a failure of care is established, the pursuer must prove that the GP's failure caused or materially contributed to the harm suffered. In delayed-diagnosis cases this requires evidence of what would have happened had the correct diagnosis been made at the earlier date — the stage of disease, treatment available, and the difference in prognosis. This is usually the hardest element to prove and requires specialist expert evidence." },
+      { heading: "NHS Scotland claims and the Central Legal Office", body: "Claims against NHS GPs in Scotland are handled by the Central Legal Office (CLO), which acts on behalf of NHS Scotland health boards. The CLO has specialist legal teams and will commission its own expert evidence. A pre-litigation letter of claim and medical records request is the normal starting point." },
+      { heading: "Medical records and evidence", bullets: ["Full GP records including electronic clinical notes", "Out-of-hours and NHS 24 records", "Hospital and specialist records for comparison", "Any relevant laboratory, radiology or investigation results", "Independent expert GP and specialist opinion on breach and causation"] },
+    ],
+    sources: [
+      { label: "NHS Central Legal Office — NHS Scotland clinical negligence claims", href: "https://www.clo.scot.nhs.uk/", note: "Handles claims against NHS Scotland boards and practitioners." },
+      { label: "General Medical Council — duties of a doctor", href: "https://www.gmc-uk.org/professional-standards/professional-standards-for-doctors/good-medical-practice", note: "Professional standards framework relevant to assessing GP conduct." },
+      commonSources.limitation,
+    ],
+    parent: { href: "/medical-negligence-claims-scotland", label: "Medical negligence claims Scotland" },
+  },
+
+  "serious-injury-rehabilitation-scotland": {
+    answer:
+      "In serious injury claims, early rehabilitation can significantly improve long-term outcomes. The Rehabilitation Code provides a framework for early intervention funded by the defendant's insurer. In Scotland, interim payments can be obtained in cases where liability is not seriously disputed, providing funds for private treatment, care and equipment before the claim is resolved.",
+    distinct:
+      "This guide focuses on rehabilitation access, the Rehabilitation Code, interim payments under Scots law, case management and the expert disciplines involved. It supplements the general serious injury page.",
+    sections: [
+      { heading: "Why rehabilitation matters in serious injury claims", body: "The earlier appropriate rehabilitation begins, the greater the potential for recovery and reduction of long-term disability. Rehabilitation should not be delayed until the claim is resolved. The cost of rehabilitation is recoverable as a head of loss, and early investment often reduces the overall claim cost by improving the claimant's condition before final assessment." },
+      { heading: "The Rehabilitation Code", body: "The Rehabilitation Code (2015) is a voluntary agreement between claimant and defendant solicitor groups. It applies where the defendant admits or is likely to admit liability for a serious injury. Under it, the defendant's insurer should fund or facilitate appropriate rehabilitation while the claim proceeds. Your solicitor will write to the other side's insurer at an early stage to invoke the Code." },
+      { heading: "Interim payments in Scotland", body: "Under Scots law, the court can order an interim payment where liability is admitted or where the pursuer is likely to succeed and the defender is insured or a public authority. An interim payment provides funds on account of the final award. It can be used to fund treatment, care, adapted accommodation, specialist equipment or any other need that cannot wait for the final resolution of the claim." },
+      { heading: "Expert disciplines typically required", bullets: ["Neurologist or neurosurgeon — for brain or spinal injury", "Rehabilitation medicine consultant", "Neuropsychologist — cognitive and psychological effects", "Occupational therapist — care needs, home adaptations, aids and equipment", "Employment consultant — earning capacity and vocational rehabilitation", "Care expert — past and future care and case management costs", "Accommodation expert — housing requirements and adaptation costs"] },
+      { heading: "Case management", body: "A specialist case manager (usually a nurse or allied health professional with experience in serious injury) coordinates the medical, therapeutic, social and legal aspects of the rehabilitation programme. They identify the rehabilitation team, monitor progress and ensure the client's needs are met throughout the claim. The cost of case management is recoverable as a loss." },
+      { heading: "Provisional damages", body: "Where there is a risk that the claimant's condition will deteriorate in a way that was not foreseeable at the time of settlement, the court can award provisional damages, with a right to return for a further award if the specified deterioration occurs. This is particularly relevant in cases involving risk of epilepsy, CRPS progression, or deteriorating neurological conditions." },
+    ],
+    sources: [
+      { label: "Rehabilitation Code 2015 — Headway", href: "https://www.headway.org.uk/media/3866/rehabilitation-code-2015.pdf", note: "The voluntary code governing rehabilitation access in serious injury claims." },
+      { label: "Scottish Courts — Court of Session for serious injury claims", href: "https://www.scotcourts.gov.uk/courts-and-tribunals/court-of-session/", note: "The Court of Session handles high-value and complex serious injury actions in Scotland." },
+      { label: "Damages (Scotland) Act 2011 — fatal accident and provisional damages provisions", href: "https://www.legislation.gov.uk/asp/2011/7/contents", note: "Statutory framework including provisional damages and fatal accident claims in Scotland." },
+    ],
+    parent: { href: "/serious-injury-claims-scotland", label: "Serious injury claims Scotland" },
+  },
+
+  "slip-trip-fall-claims-scotland": {
+    answer:
+      "A slip, trip or fall claim in Scotland requires proof that the occupier or responsible party failed to take reasonable care of the pursuer's safety, and that the failure caused injury. The governing statute for premises is the Occupiers' Liability (Scotland) Act 1960. The standard of care owed depends on whether the danger was known or foreseeable, what inspection or maintenance systems were in place, and what the occupier actually did.",
+    distinct:
+      "This guide focuses on the 1960 Act duty, the role of inspection systems, contributory negligence, the evidence needed for slips and trips respectively, and the common defences. It supplements the general public place accident page.",
+    sections: [
+      { heading: "The Occupiers' Liability (Scotland) Act 1960", body: "Under the 1960 Act, an occupier must show such care as is reasonable in all the circumstances to see that a person will not suffer injury by reason of any danger due to the state of the premises or anything done or omitted to be done on them. The duty applies to lawful visitors. It is a duty to take reasonable care — not a duty to guarantee safety. The pursuer must show the occupier failed that standard." },
+      { heading: "Slip claims: the hazard and the system", body: "Most slip claims arise from wet or contaminated floors. The pursuer must show the floor was in a dangerous condition and that the occupier knew or should have known of the hazard in time to deal with it. Courts will examine: how long the hazard existed, whether regular inspections were carried out, whether cleaning schedules were followed, whether warning signs were placed, and whether the surface itself was appropriate for the foreseeable use." },
+      { heading: "Trip claims: the defect and the duty to maintain", body: "Trip claims typically involve physical defects — uneven, broken, raised or damaged surfaces. On private premises the occupier must maintain the premises to a safe standard. On public roads and pavements, the Roads (Scotland) Act 1984 imposes a duty on local authorities to maintain roads and footways. The authority must have had notice of the defect — or it must have existed long enough that a system of reasonable inspection would have identified it." },
+      { heading: "Common defences", bullets: ["The hazard was temporary and arose shortly before the accident — the occupier could not reasonably have known of it", "Regular inspections were carried out and the defect was not detectable in the period before the accident", "Warning signs were adequately placed and visible", "Contributory negligence — the pursuer was not taking reasonable care for their own safety", "The defect was too minor (de minimis) to give rise to liability"] },
+      { heading: "Evidence to gather", bullets: ["Photographs of the hazard taken as soon as safely possible — before any repair", "A precise description of the location, time and circumstances", "Witness details from anyone who saw the hazard or the accident", "Accident book entry or incident report — ask for a copy immediately", "CCTV preservation request — sent promptly, before footage is overwritten", "Medical attention records from the date of the accident"] },
+      { heading: "Contributory negligence", body: "A pursuer's compensation may be reduced if they were partly responsible for their own fall — for example by not looking where they were walking, wearing inappropriate footwear or ignoring a warning sign. Contributory negligence reduces but does not necessarily defeat a claim. The court apportions responsibility between the parties." },
+    ],
+    sources: [
+      { label: "Occupiers' Liability (Scotland) Act 1960", href: "https://www.legislation.gov.uk/ukpga/1960/30/contents", note: "The primary statute governing the duty of care owed by occupiers in Scotland." },
+      { label: "Roads (Scotland) Act 1984 — local authority road and footway maintenance duties", href: "https://www.legislation.gov.uk/ukpga/1984/54/contents", note: "Imposes a duty on local authorities to maintain public roads and footways to a reasonable standard." },
+      commonSources.limitation,
+    ],
+    parent: { href: "/public-place-accident-claims-scotland", label: "Public place accident claims Scotland" },
+  },
+
+  "supermarket-accident-claims-scotland": {
+    answer:
+      "Supermarkets and retailers owe customers a duty under the Occupiers' Liability (Scotland) Act 1960 to take reasonable care to prevent injury. The most common incidents are wet floor slips, spillages, falling goods and trolley or racking hazards. A successful claim usually requires evidence that the hazard was known or should have been found by a reasonable inspection and cleaning system — and was not dealt with in time.",
+    distinct:
+      "This guide focuses on the specific evidence patterns for supermarket and retail premises claims, the role of inspection records and CCTV, and what common defences retailers raise. It supplements the general slip, trip and fall guide.",
+    sections: [
+      { heading: "The occupier's duty in a retail context", body: "Retailers know their premises carry higher-than-average slip and spill risks from customer activity, restocking and cleaning. A court will assess whether the retailer's inspection and cleaning regime was proportionate to that risk. A general policy of cleaning hourly may be inadequate if high-risk areas such as the fresh produce or chilled section are not inspected more frequently." },
+      { heading: "Wet floor and spillage evidence", body: "Key questions are: how did the spillage arise (customer, restocking, condensation, leak), how long was it there, and when was the area last inspected. Inspection records, cleaning schedules and the incident log all become important. If CCTV covers the area, it may show when the hazard appeared. A preservation request should be made to the store as soon as possible — retail CCTV is often overwritten within days." },
+      { heading: "Falling goods and racking hazards", body: "Goods must be stacked safely and racking maintained in good condition. Overstacking, poor racking, protruding packaging or inadequate weight distribution can all give rise to a claim. Evidence of inadequate stock replenishment training or racking inspection is relevant." },
+      { heading: "What the retailer's inspection records show", body: "Retailers are required to maintain inspection logs. These logs often become central to the case — a log showing no inspection for several hours before the accident, or a gap that is unexplained, can establish that the hazard had been present longer than the retailer claims and that reasonable inspection would have found it. The absence of a log entry for the relevant period can be equally significant." },
+      { heading: "Common retailer defences", bullets: ["The hazard arose seconds or minutes before the accident and could not reasonably have been found sooner", "Inspections were carried out at appropriate intervals and the hazard was not present at the last inspection", "Warning cones or wet floor signs were in place and were visible", "The customer was not looking where they were walking or was distracted", "The customer was wearing footwear unsuitable for ordinary retail premises"] },
+      { heading: "Evidence to preserve immediately", bullets: ["Photographs of the hazard — including the floor surface, any signage and the wider area — taken before leaving the store if safe", "An accident report made at the store — keep your copy", "Witness names and contact details", "Medical attention records from the date of the accident", "Clothing and footwear (do not wash or discard)", "CCTV preservation request to the store manager in writing"] },
+    ],
+    sources: [
+      { label: "Occupiers' Liability (Scotland) Act 1960", href: "https://www.legislation.gov.uk/ukpga/1960/30/contents", note: "The statutory duty owed by occupiers — including retailers — to their visitors." },
+      { label: "HSE: slips and trips in the retail sector", href: "https://www.hse.gov.uk/slips/retailsuperguidance.htm", note: "HSE guidance on slip prevention in retail, relevant to assessing reasonable care." },
+      commonSources.limitation,
+    ],
+    parent: { href: "/public-place-accident-claims-scotland", label: "Public place accident claims Scotland" },
+  },
+
+  "vibration-white-finger-claims-scotland": {
+    answer:
+      "Vibration white finger (VWF), also known as hand-arm vibration syndrome (HAVS), is an occupational disease caused by prolonged use of vibrating tools. A claim in Scotland requires proof that the employer knew or should have known of the risk, failed to take reasonable steps to prevent or reduce exposure, and that the failure caused the condition. The three-year limitation period runs from the date of knowledge — usually when a doctor links symptoms to occupational vibration.",
+    distinct:
+      "This guide focuses on the HAVS staging system, employer duties under the Control of Vibration at Work Regulations, date-of-knowledge limitation, and the medical evidence required. It supplements the industrial disease overview.",
+    sections: [
+      { heading: "What is vibration white finger / HAVS?", body: "Hand-arm vibration syndrome is a disorder of the blood vessels, nerves, muscles and joints of the hand, wrist and arm caused by regular use of hand-held vibrating tools. Classic symptoms include episodic whitening (blanching) of the fingers on cold exposure, numbness and tingling, reduced grip strength and pain. The vascular, neurological and musculoskeletal components are each separately assessed and staged under the Stockholm Workshop Scale." },
+      { heading: "Employer duties under the Vibration Regulations", body: "The Control of Vibration at Work Regulations 2005 require employers to assess vibration exposure, reduce exposure at source, provide health surveillance for at-risk workers, and take action when exposure levels are exceeded. Employers who issued vibrating tools without adequate controls, monitoring or health surveillance before and after 2005 may have been in breach of both the Regulations and the common-law duty of care." },
+      { heading: "The Stockholm Workshop Scale", body: "HAVS is staged separately for vascular symptoms (stage 0–3) and neurological/sensorineural symptoms (stage 0SN–3SN). The staging matters for both diagnosis and quantum. Medical expert evidence from a specialist — usually an occupational physician or rheumatologist — is required to assess and stage the condition." },
+      { heading: "Date of knowledge in HAVS claims", body: "Symptoms of VWF often develop gradually and workers may not associate them with work for years. The three-year period runs from when the claimant knew or ought to have known the condition was significant and work-related. A diagnosis by an occupational health physician, GP or specialist linking the symptoms to vibration exposure is usually the anchor for date of knowledge." },
+      { heading: "Common employer defences and how to counter them", bullets: ["The claimant's exposure was below the action value — occupational hygiene expert evidence on actual exposure levels is often required", "The symptoms are not HAVS but Raynaud's disease or another condition — specialist medical evidence distinguishes these", "The exposure was after the tools were compliant — employment history and equipment records are important", "The claim is out of time — date-of-knowledge analysis is key; medical records showing when symptoms were first linked to work are critical"] },
+      { heading: "Evidence to support a HAVS claim", bullets: ["Employment history and the specific tools and tasks involved", "Estimated vibration exposure levels from tool specifications or occupational hygiene assessment", "Health surveillance records from the employer", "Witness statements from former colleagues", "Medical records and specialist staging report (Stockholm Scale)", "Industrial Injuries Disablement Benefit (A11 — HAVS) assessment where applicable"] },
+    ],
+    sources: [
+      { label: "HSE: hand-arm vibration guidance", href: "https://www.hse.gov.uk/vibration/hav/index.htm", note: "HSE's authoritative guide to HAV risks, legal duties, assessment and health surveillance." },
+      { label: "Control of Vibration at Work Regulations 2005", href: "https://www.legislation.gov.uk/uksi/2005/1093/contents", note: "The Regulations setting employer duties for vibration exposure assessment and control." },
+      { label: "Industrial Injuries Disablement Benefit — GOV.UK", href: "https://www.gov.uk/industrial-injuries-disablement-benefit", note: "HAVS (A11) is a prescribed disease; IIDB may be claimed alongside a civil claim." },
+      commonSources.limitation,
+    ],
+    parent: { href: "/industrial-disease-claims-scotland", label: "Industrial disease claims Scotland" },
+  },
+
+  "care-home-negligence-claims-scotland": {
+    answer:
+      "Care homes in Scotland owe residents a duty of care under both common law and the Care Inspectorate regulatory regime. Claims typically arise from pressure sores, unexplained falls, poor nutrition and hydration, medication errors and inadequate supervision of residents with dementia. A claim requires evidence that care fell below the standard of a reasonably competent care provider and that the failure caused avoidable harm.",
+    distinct:
+      "This guide covers the Care Inspectorate framework, the common failure patterns in care homes, access to records, and the role of expert nursing and care evidence. It supplements the medical negligence overview.",
+    sections: [
+      { heading: "The regulatory framework for Scottish care homes", body: "Care homes in Scotland are regulated and inspected by the Care Inspectorate under the Public Services Reform (Scotland) Act 2010. The National Care Standards and the Health and Social Care Standards set out what good care looks like. Care Inspectorate inspection reports, improvement notices and enforcement actions are publicly available and can provide important context for the standard of care at a particular time and in a particular home." },
+      { heading: "Common failure patterns", bullets: ["Pressure sores — failure to carry out adequate pressure risk assessment, reposition regularly, use appropriate equipment and respond to early skin changes", "Unexplained falls — inadequate falls risk assessment, absence of bed rails or sensor mats, failure to supervise mobile residents with dementia", "Malnutrition and dehydration — failure to record food and fluid intake, assess nutritional risk (MUST tool) and act on concerns", "Medication errors — wrong drug, wrong dose, omitted doses or failure to obtain consent", "Failure to call for emergency medical help promptly when a resident's condition deteriorates"] },
+      { heading: "Accessing records", body: "A formal Subject Access Request under the UK GDPR should be made for all care home records — daily care notes, pressure risk assessments, falls logs, medication administration records, nutrition charts and incident reports. These often reveal the gap between the care plan and the care actually delivered. Hospital records will also be important where harm led to a hospital admission." },
+      { heading: "Fatal care home cases", body: "Where a resident has died, a fatal accident claim may be available to immediate family under the Damages (Scotland) Act 2011. In appropriate cases, the Procurator Fiscal may investigate the death and a Fatal Accident Inquiry (FAI) may be held under the Inquiries into Fatal Accidents and Sudden Deaths etc. (Scotland) Act 2016. FAI findings can be relevant evidence in a subsequent civil claim, though the two processes are entirely separate." },
+      { heading: "Expert evidence required", bullets: ["Care expert (registered nurse or senior care professional) — assessing the standard of care delivered against the care plan and national standards", "Medical expert — causation between the care failure and the harm suffered", "In fatal cases: pathology evidence on cause of death and the contribution of any care failure"] },
+    ],
+    sources: [
+      { label: "Care Inspectorate — Scottish care home regulator", href: "https://www.careinspectorate.com/", note: "Publishes inspection reports, ratings and enforcement information for registered care homes." },
+      { label: "Health and Social Care Standards (Scotland, 2017)", href: "https://www.gov.scot/publications/health-social-care-standards-support-life/", note: "The national standards by which care services in Scotland should be assessed." },
+      { label: "Damages (Scotland) Act 2011 — fatal accident claims", href: "https://www.legislation.gov.uk/asp/2011/7/contents", note: "Governs fatal accident claims by family members where a death results from negligence." },
+      commonSources.limitation,
+    ],
+    parent: { href: "/medical-negligence-claims-scotland", label: "Medical negligence claims Scotland" },
+  },
+
+  "prescription-error-claims-scotland": {
+    answer:
+      "Prescription and medication errors can cause serious harm and may give rise to a medical negligence claim in Scotland. Errors can occur at prescribing, dispensing or monitoring stage. A successful claim requires proof that the error fell below the standard of a reasonably competent practitioner and caused avoidable harm — not just that the error occurred.",
+    distinct:
+      "This guide distinguishes prescribing errors (by the doctor) from dispensing errors (by the pharmacist) and monitoring failures, explains causation in medication cases, and outlines the evidence required. It assumes familiarity with the general medical negligence framework.",
+    sections: [
+      { heading: "Types of prescription and medication error", bullets: ["Wrong drug — prescribing or dispensing a drug not indicated for the patient's condition or contraindicated by other medication", "Wrong dose — too high or too low, or failure to adjust for renal, hepatic or age-related factors", "Wrong patient — dispensing medication intended for a different patient", "Drug interaction — failing to identify a dangerous interaction with existing medication", "Failure to monitor — prescribing a drug that requires regular blood monitoring without doing so", "Failure to obtain informed consent — not warning the patient of material risks of the medication"] },
+      { heading: "Who can be liable?", body: "The prescriber (GP, hospital doctor, specialist nurse or other prescriber) and the dispenser (pharmacist or pharmacy technician) may each have separate duties of care. A pharmacist has an independent professional obligation to check prescriptions for apparent errors and to query doses that appear unsafe. If both make separate errors, both may be liable." },
+      { heading: "Causation: the hardest element", body: "Even where an error is established, the pursuer must prove that the error caused harm that would not otherwise have occurred. In over-prescribing cases, the question is what harm the excessive dose caused compared to the appropriate dose. In failure-to-prescribe cases, the question is whether the correct treatment would have prevented the harm. Medical expert evidence on the pharmacological effect of the error is essential." },
+      { heading: "Monitoring failures", body: "Some drugs — including anticoagulants (warfarin, heparin), lithium, methotrexate, anti-epileptics and certain antibiotics — require regular blood monitoring to ensure they remain within the therapeutic range. Failure to arrange or act on monitoring results is a recognised category of prescribing negligence. Records of monitoring (or its absence) are critical evidence." },
+      { heading: "Evidence to obtain", bullets: ["Full GP records including repeat prescription records and medication review notes", "Hospital and specialist prescribing records", "Pharmacy dispensing records and patient medication record", "Laboratory and monitoring results", "Independent expert evidence from a relevant specialist and/or pharmacologist"] },
+    ],
+    sources: [
+      { label: "General Medical Council — prescribing guidance", href: "https://www.gmc-uk.org/professional-standards/professional-standards-for-doctors/good-medical-practice", note: "Professional standards relevant to prescribing decisions and patient safety." },
+      { label: "General Pharmaceutical Council — standards for pharmacy professionals", href: "https://www.pharmacyregulation.org/standards/standards-for-pharmacy-professionals", note: "Regulatory standards governing pharmacist and pharmacy technician conduct." },
+      { label: "NHS inform — patient safety and medication", href: "https://www.nhsinform.scot/", note: "NHS Scotland's public health and patient information resource." },
+      commonSources.limitation,
+    ],
+    parent: { href: "/medical-negligence-claims-scotland", label: "Medical negligence claims Scotland" },
+  },
 };
 
 function GuideArticle({ guide }: { guide: Guide }) {
