@@ -126,6 +126,11 @@ export default function CompensationGuidePage() {
       ]}
       locationClaimType="personal injury claims"
       faqs={faqs}
+      authoritativeSources={[
+        { label: "Judicial College Guidelines (JSB Guidelines) — used to assess general damages", url: "https://www.judiciary.gov.uk/publications/judicial-college-guidelines-for-the-assessment-of-general-damages-in-personal-injury-cases/" },
+        { label: "Ogden Tables — actuarial tables for future loss calculations", url: "https://www.gov.uk/government/publications/ogden-tables-actuarial-compensation-tables-for-injury-and-death" },
+        { label: "Prescription and Limitation (Scotland) Act 1973 — time limits", url: "https://www.legislation.gov.uk/ukpga/1973/52/contents" },
+      ]}
       related={[
         { label: "Compensation Planner", href: "/compensation-calculator-scotland" },
         { label: "Personal Injury Claims Scotland", href: "/personal-injury-claims-scotland" },

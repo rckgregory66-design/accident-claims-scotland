@@ -124,6 +124,11 @@ export default function SeriousInjuryPage() {
       ]}
       locationClaimType="serious injury claims"
       faqs={faqs}
+      authoritativeSources={[
+        { label: "Scottish Courts and Tribunals — Court of Session (serious and high-value cases)", url: "https://www.scotcourts.gov.uk/courts-and-tribunals/court-of-session/" },
+        { label: "Ogden Tables — future loss calculations in serious injury claims", url: "https://www.gov.uk/government/publications/ogden-tables-actuarial-compensation-tables-for-injury-and-death" },
+        { label: "Damages (Scotland) Act 2011 — fatal accident claims and damages framework", url: "https://www.legislation.gov.uk/asp/2011/7/contents" },
+      ]}
       related={[
         { label: "Road Traffic Accident Claims", href: "/road-traffic-accident-claims-scotland" },
         { label: "Medical Negligence Claims", href: "/medical-negligence-claims-scotland" },

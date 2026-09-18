@@ -127,6 +127,11 @@ export default function CriminalInjuryPage() {
       ]}
       locationClaimType="criminal injury compensation claims"
       faqs={faqs}
+      authoritativeSources={[
+        { label: "Criminal Injuries Compensation Authority (CICA) — official scheme administrator", url: "https://www.gov.uk/government/organisations/criminal-injuries-compensation-authority" },
+        { label: "Criminal Injuries Compensation Scheme 2012 — the governing tariff scheme", url: "https://www.gov.uk/government/publications/criminal-injuries-compensation-scheme-2012" },
+        { label: "GOV.UK — how to apply to CICA", url: "https://www.gov.uk/claim-compensation-criminal-injury" },
+      ]}
       related={[
         { label: "Personal Injury Claims Scotland", href: "/personal-injury-claims-scotland" },
         { label: "Serious Injury Claims", href: "/serious-injury-claims-scotland" },

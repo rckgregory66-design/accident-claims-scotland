@@ -126,6 +126,11 @@ export default function TimeLimitsPage() {
       ]}
       locationClaimType="personal injury claims"
       faqs={faqs}
+      authoritativeSources={[
+        { label: "Prescription and Limitation (Scotland) Act 1973 — the governing statute for time limits", url: "https://www.legislation.gov.uk/ukpga/1973/52/contents" },
+        { label: "Damages (Scotland) Act 2011 — fatal accident claims", url: "https://www.legislation.gov.uk/asp/2011/7/contents" },
+        { label: "Scottish Courts and Tribunals — personal injury procedure", url: "https://www.scotcourts.gov.uk/courts-and-tribunals/sheriff-and-justice-of-the-peace-courts/national-personal-injury-court/" },
+      ]}
       related={[
         { label: "Personal Injury Claims Scotland", href: "/personal-injury-claims-scotland" },
         { label: "Medical Negligence Claims", href: "/medical-negligence-claims-scotland" },

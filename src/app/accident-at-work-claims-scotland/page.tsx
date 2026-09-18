@@ -142,6 +142,11 @@ export default function AccidentAtWorkPage() {
       ]}
       locationClaimType="accident at work claims"
       faqs={faqs}
+      authoritativeSources={[
+        { label: "Health and Safety at Work etc. Act 1974 — primary employer duty legislation", url: "https://www.legislation.gov.uk/ukpga/1974/37/contents" },
+        { label: "Health and Safety Executive — RIDDOR reporting and workplace injury statistics", url: "https://www.hse.gov.uk/riddor/" },
+        { label: "Prescription and Limitation (Scotland) Act 1973 — time limits", url: "https://www.legislation.gov.uk/ukpga/1973/52/contents" },
+      ]}
       related={[
         { label: "Industrial Disease Claims", href: "/industrial-disease-claims-scotland" },
         { label: "Serious Injury Claims", href: "/serious-injury-claims-scotland" },

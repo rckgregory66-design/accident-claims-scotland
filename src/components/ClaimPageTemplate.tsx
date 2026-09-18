@@ -16,6 +16,7 @@ import { resolveInternalHref } from "@/lib/internalLinks";
 export interface RelatedLink { label: string; href: string; }
 export interface FAQItem { question: string; answer: string; }
 export interface SubpageLink { label: string; href: string; desc?: string; }
+export interface AuthoritativeSource { label: string; url: string; }
 
 export interface Section {
   heading: string;
@@ -41,6 +42,7 @@ interface Props {
   guideCategory?: string;
   guideSlugs?: string[];
   locationClaimType?: string;
+  authoritativeSources?: AuthoritativeSource[];
 }
 
 export default function ClaimPageTemplate({
@@ -58,6 +60,7 @@ export default function ClaimPageTemplate({
   guideCategory,
   guideSlugs,
   locationClaimType,
+  authoritativeSources,
 }: Props) {
   const crumbsForSchema = [
     { name: "Home", url: SITE.url },
@@ -204,6 +207,19 @@ export default function ClaimPageTemplate({
                     </Link>
                   ))}
                 </div>
+              </div>
+            )}
+
+            {authoritativeSources && authoritativeSources.length > 0 && (
+              <div className="mt-8 p-5 bg-gray-50 rounded-xl border border-gray-200 not-prose">
+                <h3 className="font-bold text-[#0f2044] mb-3 text-sm">Key authoritative sources</h3>
+                <ul className="space-y-1.5">
+                  {authoritativeSources.map((s) => (
+                    <li key={s.url} className="text-sm">
+                      <a href={s.url} target="_blank" rel="noopener noreferrer" className="text-red-700 hover:underline">{s.label}</a>
+                    </li>
+                  ))}
+                </ul>
               </div>
             )}
 

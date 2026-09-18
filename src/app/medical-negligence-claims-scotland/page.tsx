@@ -145,6 +145,11 @@ export default function MedicalNegligencePage() {
       ]}
       locationClaimType="medical negligence claims"
       faqs={faqs}
+      authoritativeSources={[
+        { label: "NHS Central Legal Office — defends NHS Scotland clinical negligence claims", url: "https://www.clo.scot.nhs.uk/" },
+        { label: "Prescription and Limitation (Scotland) Act 1973 — time limits for clinical negligence", url: "https://www.legislation.gov.uk/ukpga/1973/52/contents" },
+        { label: "General Medical Council — professional standards for doctors", url: "https://www.gmc-uk.org/" },
+      ]}
       related={[
         { label: "Personal Injury Claims Scotland", href: "/personal-injury-claims-scotland" },
         { label: "Time Limits", href: "/personal-injury-claim-time-limits-scotland" },

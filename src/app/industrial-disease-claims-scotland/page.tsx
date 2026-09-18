@@ -132,6 +132,11 @@ export default function IndustrialDiseasePage() {
       ]}
       locationClaimType="industrial disease claims"
       faqs={faqs}
+      authoritativeSources={[
+        { label: "Health and Safety Executive — industrial disease and occupational illness information", url: "https://www.hse.gov.uk/index.htm" },
+        { label: "Industrial Injuries Disablement Benefit — GOV.UK", url: "https://www.gov.uk/industrial-injuries-disablement-benefit" },
+        { label: "Prescription and Limitation (Scotland) Act 1973 — date of knowledge and time limits", url: "https://www.legislation.gov.uk/ukpga/1973/52/contents" },
+      ]}
       related={[
         { label: "Accident at Work Claims", href: "/accident-at-work-claims-scotland" },
         { label: "Time Limits Scotland", href: "/personal-injury-claim-time-limits-scotland" },

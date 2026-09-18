@@ -134,6 +134,11 @@ export default function NoWinNoFeePage() {
       ]}
       locationClaimType="no win no fee claims"
       faqs={faqs}
+      authoritativeSources={[
+        { label: "Civil Litigation (Expenses and Group Proceedings) (Scotland) Act 2018 — Scottish funding rules", url: "https://www.legislation.gov.uk/asp/2018/10/contents" },
+        { label: "Law Society of Scotland — finding a solicitor", url: "https://www.lawscot.org.uk/find-a-solicitor/" },
+        { label: "Scottish Legal Aid Board — legal aid eligibility", url: "https://www.slab.org.uk/" },
+      ]}
       related={[
         { label: "Personal Injury Claims Scotland", href: "/personal-injury-claims-scotland" },
         { label: "How to Claim Compensation", href: "/how-to-claim-compensation-scotland" },

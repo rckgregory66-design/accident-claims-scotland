@@ -133,6 +133,11 @@ export default function PublicPlaceAccidentPage() {
       ]}
       locationClaimType="public place accident claims"
       faqs={faqs}
+      authoritativeSources={[
+        { label: "Occupiers' Liability (Scotland) Act 1960 — the governing statute for premises duty", url: "https://www.legislation.gov.uk/ukpga/1960/30/contents" },
+        { label: "Roads (Scotland) Act 1984 — local authority road maintenance duties", url: "https://www.legislation.gov.uk/ukpga/1984/54/contents" },
+        { label: "Prescription and Limitation (Scotland) Act 1973 — time limits", url: "https://www.legislation.gov.uk/ukpga/1973/52/contents" },
+      ]}
       related={[
         { label: "Personal Injury Claims Scotland", href: "/personal-injury-claims-scotland" },
         { label: "Accident at Work Claims", href: "/accident-at-work-claims-scotland" },
