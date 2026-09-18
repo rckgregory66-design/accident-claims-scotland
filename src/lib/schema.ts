@@ -106,6 +106,7 @@ export function articleSchema({
     url: `${SITE.url}${url}`,
     datePublished,
     dateModified,
+    inLanguage: "en-GB",
     isPartOf: { "@id": `${SITE.url}/#website` },
     about: { "@id": `${SITE.url}/#organization` },
     author: {

@@ -66,7 +66,7 @@ export default async function GuideArticlePage({
   return (
     <>
       <JsonLd data={[
-        articleSchema({ title: guide.title, description: guide.description, url: `/guides/${slug}`, datePublished: guide.datePublished, dateModified: guide.dateModified }),
+        articleSchema({ title: guide.title, description: guide.description, url: `/guides/${slug}`, datePublished: guide.datePublished, dateModified: guide.dateModified, speakableSelectors: ["h1", "article"] }),
         breadcrumbSchema(crumbs, `/guides/${slug}`),
       ]} />
       <Breadcrumbs crumbs={[{ label: "Guides", href: "/guides" }, { label: guide.title }]} />
@@ -94,6 +94,11 @@ export default async function GuideArticlePage({
           <article className="lg:col-span-2 prose-legal">
             {content}
             <GuidePathways category={guide.category} />
+            <p className="text-xs text-gray-500 mt-8 border-t border-gray-200 pt-4 not-prose">
+              General information only — not advice on an individual case. Reviewed for Scottish scope and official-source alignment. Last updated{" "}
+              {new Intl.DateTimeFormat("en-GB", { day: "numeric", month: "long", year: "numeric" }).format(new Date(`${guide.dateModified}T12:00:00Z`))}.{" "}
+              <Link href="/editorial-methodology" className="font-semibold underline">Read our publishing standards</Link>.
+            </p>
           </article>
 
           <aside className="lg:col-span-1">
