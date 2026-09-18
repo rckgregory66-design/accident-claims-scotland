@@ -133,6 +133,7 @@ export default function MedicalNegligencePage() {
           { label: "Care Home Negligence", href: "/care-home-negligence-claims-scotland", desc: "Falls, neglect, pressure sores" },
           { label: "Prescription Errors", href: "/prescription-error-claims-scotland", desc: "Wrong medication or dose" },
           { label: "Delayed Diagnosis", href: "/delayed-diagnosis-claims-scotland", desc: "Late diagnosis causing harm" },
+          { label: "Hospital Infection Claims", href: "/hospital-infection-claims-scotland", desc: "MRSA, C. diff, HAI negligence" },
           { label: "Fatal Medical Negligence", href: "/fatal-medical-negligence-claims-scotland", desc: "Bereavement and dependency claims" },
         ],
       }}

@@ -122,6 +122,7 @@ export default function PublicPlaceAccidentPage() {
           { label: "Restaurant Accident Claims", href: "/restaurant-accident-claims-scotland", desc: "Cafés and food venues" },
           { label: "School Accident Claims", href: "/school-accident-claims-scotland", desc: "Children injured on school premises" },
           { label: "Sports Injury Claims", href: "/sports-injury-claims-scotland", desc: "Gyms, pools, leisure centres" },
+          { label: "Hotel Accident Claims", href: "/hotel-accident-claims-scotland", desc: "Guest injuries, pool accidents" },
         ],
       }}
       guideCategory="Public Places"

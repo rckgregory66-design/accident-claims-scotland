@@ -131,6 +131,9 @@ export default function AccidentAtWorkPage() {
           { label: "Farm Accident Claims", href: "/farm-accident-claims-scotland", desc: "Agricultural and rural accidents" },
           { label: "Offshore Accident Claims", href: "/offshore-accident-claims-scotland", desc: "Oil platforms, supply vessels" },
           { label: "Industrial Disease Claims", href: "/industrial-disease-claims-scotland", desc: "Asbestos, hearing loss, vibration" },
+          { label: "Needlestick Injury Claims", href: "/needlestick-injury-claims-scotland", desc: "Sharps injuries in healthcare" },
+          { label: "Stress at Work Claims", href: "/stress-at-work-claims-scotland", desc: "Psychiatric injury and bullying" },
+          { label: "Self-Employed Injury Claims", href: "/self-employed-injury-claims-scotland", desc: "Contractors and sole traders" },
         ],
       }}
       guideCategory="Workplace Accidents"
