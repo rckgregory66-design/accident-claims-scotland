@@ -1,4 +1,5 @@
 import type { Metadata } from "next";
+import { Inter } from "next/font/google";
 import "./globals.css";
 import Header from "@/components/Header";
 import Footer from "@/components/Footer";
@@ -6,6 +7,8 @@ import MobileStickyCta from "@/components/MobileStickyCta";
 import JsonLd from "@/components/JsonLd";
 import { organizationSchema, webSiteSchema } from "@/lib/schema";
 import { SITE } from "@/data/siteConfig";
+
+const inter = Inter({ subsets: ["latin"], display: "swap" });
 
 export const metadata: Metadata = {
   metadataBase: new URL(SITE.url),
@@ -29,7 +32,7 @@ export const metadata: Metadata = {
 
 export default function RootLayout({ children }: { children: React.ReactNode }) {
   return (
-    <html lang="en-GB" className="h-full">
+    <html lang="en-GB" className={`h-full ${inter.className}`}>
       <head>
         <JsonLd data={[organizationSchema(), webSiteSchema()]} />
       </head>

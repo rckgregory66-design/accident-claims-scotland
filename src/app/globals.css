@@ -15,7 +15,6 @@
 @layer base {
   html { scroll-behavior: smooth; }
   body {
-    font-family: 'Inter', system-ui, -apple-system, sans-serif;
     color: #1a202c;
     line-height: 1.7;
     background: #ffffff;
@@ -88,4 +87,25 @@ details[open] summary { color: #b91c1c; }
 summary:focus-visible {
   outline: 3px solid #facc15;
   outline-offset: -3px;
+}
+
+/* Global focus-visible ring for keyboard users */
+:focus-visible {
+  outline: 3px solid #facc15;
+  outline-offset: 2px;
+}
+a:focus-visible,
+button:focus-visible {
+  outline: 3px solid #facc15;
+  outline-offset: 2px;
+  border-radius: 3px;
+}
+
+/* Respect reduced-motion preference */
+@media (prefers-reduced-motion: reduce) {
+  html { scroll-behavior: auto; }
+  *, *::before, *::after {
+    animation-duration: 0.01ms !important;
+    transition-duration: 0.01ms !important;
+  }
 }
