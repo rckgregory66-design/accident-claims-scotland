@@ -240,7 +240,7 @@ export default function ClaimPageTemplate({
               <ClaimForm />
 
               <div className="card border-l-4 border-l-amber-500">
-                <h3 className="font-bold text-[#0f2044] mb-2 text-base">⏱ Time limits apply</h3>
+                <h3 className="font-bold text-[#0f2044] mb-2 text-base">Time limits apply</h3>
                 <p className="text-sm text-gray-600 mb-3">
                   In Scotland, most personal injury claims must be started within three years of the accident
                   or date of knowledge. Do not delay.
@@ -254,7 +254,7 @@ export default function ClaimPageTemplate({
               </div>
 
               <div className="card border-l-4 border-l-[#0f2044]">
-                <h3 className="font-bold text-[#0f2044] mb-2 text-base">£ No win, no fee</h3>
+                <h3 className="font-bold text-[#0f2044] mb-2 text-base">No win, no fee</h3>
                 <p className="text-sm text-gray-600 mb-3">
                   Funding options may be available so you can pursue your claim without upfront financial risk.
                 </p>
@@ -267,7 +267,7 @@ export default function ClaimPageTemplate({
               </div>
 
               <div className="card border-l-4 border-l-green-500">
-                <h3 className="font-bold text-[#0f2044] mb-2 text-base">📋 Claim process</h3>
+                <h3 className="font-bold text-[#0f2044] mb-2 text-base">How claims work</h3>
                 <p className="text-sm text-gray-600 mb-3">
                   Not sure how the claims process works? Our step-by-step guide explains what to expect.
                 </p>

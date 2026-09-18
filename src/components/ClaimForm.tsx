@@ -1,7 +1,7 @@
 "use client";
 
 import Link from "next/link";
-import { useState } from "react";
+import { useState, useRef, useEffect } from "react";
 
 const CLAIM_TYPES = [
   "Road traffic accident",
@@ -24,6 +24,11 @@ export default function ClaimForm({ variant = "inline", title }: Props) {
   const [status, setStatus] = useState<"idle" | "sending" | "sent" | "error">("idle");
   const [error, setError] = useState("");
   const isHero = variant === "hero";
+  const successRef = useRef<HTMLDivElement>(null);
+
+  useEffect(() => {
+    if (status === "sent") successRef.current?.focus();
+  }, [status]);
 
   async function handleSubmit(event: React.FormEvent<HTMLFormElement>) {
     event.preventDefault();
@@ -50,13 +55,18 @@ export default function ClaimForm({ variant = "inline", title }: Props) {
 
   if (status === "sent") {
     return (
-      <div role="status" tabIndex={-1} className="bg-green-50 border border-green-300 rounded-xl p-8 text-center">
-        <div aria-hidden="true" className="text-4xl mb-3">✓</div>
-        <h2 className="text-xl font-bold text-green-900 mb-2">Enquiry sent</h2>
-        <p className="text-green-900">
-          Your enquiry has been accepted for delivery. Keep a copy of any deadline information and seek
-          urgent independent advice if a time limit may be approaching.
+      <div ref={successRef} role="status" tabIndex={-1} className="bg-green-50 border border-green-300 rounded-xl p-8">
+        <p aria-hidden="true" className="text-4xl mb-3 text-center">✓</p>
+        <h2 className="text-xl font-bold text-green-900 mb-2 text-center">Enquiry sent</h2>
+        <p className="text-green-800 mb-4 text-center">
+          Your enquiry has been received. We will review it and aim to be in touch as soon as possible.
         </p>
+        <ol className="text-sm text-green-900 space-y-2 list-decimal pl-5">
+          <li>Your enquiry is being reviewed.</li>
+          <li>A member of our team will contact you by phone or email.</li>
+          <li>Keep a note of any deadline information — time limits still apply while we are in contact.</li>
+          <li>If a time limit may be imminent, seek urgent independent advice from a qualified Scottish solicitor.</li>
+        </ol>
       </div>
     );
   }
@@ -73,7 +83,8 @@ export default function ClaimForm({ variant = "inline", title }: Props) {
         or stop a legal time limit.
       </p>
 
-      <form onSubmit={handleSubmit} className="space-y-4">
+      <p id="req-note" className="text-xs text-gray-500 mb-2">Fields marked * are required.</p>
+      <form onSubmit={handleSubmit} className="space-y-4" aria-describedby="req-note">
         <div className="hidden" aria-hidden="true">
           <label htmlFor="cf-company">Company</label>
           <input id="cf-company" name="company" type="text" tabIndex={-1} autoComplete="off" />
