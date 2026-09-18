@@ -23,6 +23,7 @@ export default function sitemap(): MetadataRoute.Sitemap {
     { url: `${SITE.url}/personal-injury-compensation-scotland`, changeFrequency: "monthly" as const, priority: 0.8 },
     { url: `${SITE.url}/compensation-calculator-scotland`, changeFrequency: "monthly" as const, priority: 0.8 },
     { url: `${SITE.url}/personal-injury-claim-time-limits-scotland`, changeFrequency: "monthly" as const, priority: 0.8 },
+    { url: `${SITE.url}/scotland-personal-injury-statistics`, changeFrequency: "monthly" as const, priority: 0.8 },
     { url: `${SITE.url}/guides`, changeFrequency: "weekly" as const, priority: 0.8 },
     { url: `${SITE.url}/about`, changeFrequency: "monthly" as const, priority: 0.6 },
     { url: `${SITE.url}/editorial-methodology`, changeFrequency: "monthly" as const, priority: 0.5 },
