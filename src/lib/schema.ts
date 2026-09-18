@@ -14,7 +14,8 @@ export function organizationSchema() {
       { "@type": "City", name: "Edinburgh" },
       { "@type": "City", name: "Aberdeen" },
       { "@type": "City", name: "Dundee" },
-      { "@type": "City", name: "Inverness" },
+      { "@type": "City", name: "The Borders" },
+      { "@type": "City", name: "Dumfries" },
     ],
     knowsAbout: [
       "Personal Injury Law Scotland",
