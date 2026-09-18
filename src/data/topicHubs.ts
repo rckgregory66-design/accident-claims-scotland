@@ -66,4 +66,9 @@ export const CATEGORY_HUBS: Record<string, TopicLink> = {
     href: "/public-place-accident-claims-scotland",
     description: "Occupiers, councils, slips, trips and the evidence needed after a public-place accident.",
   },
+  "Criminal Injuries": {
+    label: "Criminal injury compensation claims",
+    href: "/criminal-injury-compensation-scotland",
+    description: "CICA applications, tariff awards, eligibility and the criminal injuries compensation scheme.",
+  },
 };

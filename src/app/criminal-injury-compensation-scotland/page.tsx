@@ -84,7 +84,7 @@ export default function CriminalInjuryPage() {
             { text: "Robbery and mugging", href: "/robbery-injury-claim-scotland" },
             { text: "Knife crime and serious assault", href: "/knife-crime-injury-claim-scotland" },
             { text: "Hate crime injuries", href: "/hate-crime-injury-claim-scotland" },
-            { text: "Historic childhood abuse claims", href: "/historic-abuse-claim-scotland" },
+            { text: "Criminal injuries compensation — how to apply", href: "/criminal-injury-compensation-scotland" },
           ],
         },
         {
@@ -114,15 +114,13 @@ export default function CriminalInjuryPage() {
           { label: "Assault Claims", href: "/assault-injury-claim-scotland", desc: "Physical assault and common assault" },
           { label: "Domestic Abuse Claims", href: "/domestic-abuse-injury-claim-scotland", desc: "Domestic violence injuries" },
           { label: "Sexual Assault Claims", href: "/sexual-assault-injury-claim-scotland", desc: "Sexual violence and rape" },
-          { label: "Historic Abuse Claims", href: "/historic-abuse-claim-scotland", desc: "Childhood sexual and physical abuse" },
+          { label: "Criminal Injuries Compensation", href: "/criminal-injury-compensation-scotland", desc: "CICA scheme and eligibility" },
           { label: "Knife Crime Claims", href: "/knife-crime-injury-claim-scotland", desc: "Stab wounds and blade injuries" },
           { label: "Hate Crime Claims", href: "/hate-crime-injury-claim-scotland", desc: "Racially and otherwise motivated crime" },
         ],
       }}
       guideCategory="Criminal Injuries"
       guideSlugs={[
-        "cica-claims-scotland",
-        "historic-abuse-claims-scotland",
         "personal-injury-claim-time-limits-scotland",
       ]}
       locationClaimType="criminal injury compensation claims"

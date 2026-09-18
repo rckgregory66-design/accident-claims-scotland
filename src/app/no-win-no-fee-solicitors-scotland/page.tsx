@@ -129,7 +129,6 @@ export default function NoWinNoFeePage() {
       ]}
       guideSlugs={[
         "no-win-no-fee-scotland-explained",
-        "legal-expenses-insurance-scotland",
         "what-is-my-accident-claim-worth-scotland",
       ]}
       locationClaimType="no win no fee claims"

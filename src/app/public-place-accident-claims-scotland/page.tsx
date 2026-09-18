@@ -68,7 +68,7 @@ export default function PublicPlaceAccidentPage() {
           content: "We handle the following types of public place accident claims:",
           linkedList: [
             { text: "Supermarket slip and trip claims — wet floors, spillages, loose mats, raised tiles", href: "/supermarket-accident-claims-scotland" },
-            { text: "Pavement trip claims — uneven, cracked or broken pavements maintained by local authorities", href: "/pavement-trip-claims-scotland" },
+            { text: "Pavement trip claims — uneven, cracked or broken pavements maintained by local authorities", href: "/guides/council-pavement-trip-claims-scotland" },
             { text: "Council accident claims — parks, car parks, public buildings, roads", href: "/council-accident-claims-scotland" },
             { text: "Shop and retail accident claims — falling goods, poor lighting, cluttered aisles", href: "/shop-accident-claims-scotland" },
             { text: "Restaurant and café accident claims — wet floors, spilled food or drink", href: "/restaurant-accident-claims-scotland" },
@@ -116,7 +116,7 @@ export default function PublicPlaceAccidentPage() {
         title: "Specialist Public Place Accident Claim Types",
         pages: [
           { label: "Supermarket Accidents", href: "/supermarket-accident-claims-scotland", desc: "Wet floors, spillages, falling goods" },
-          { label: "Pavement Trip Claims", href: "/pavement-trip-claims-scotland", desc: "Cracked and uneven pavements" },
+          { label: "Pavement Trip Claims", href: "/guides/council-pavement-trip-claims-scotland", desc: "Cracked and uneven pavements" },
           { label: "Council Accident Claims", href: "/council-accident-claims-scotland", desc: "Parks, car parks, public roads" },
           { label: "Shop Accident Claims", href: "/shop-accident-claims-scotland", desc: "Retail premises injuries" },
           { label: "Restaurant Accident Claims", href: "/restaurant-accident-claims-scotland", desc: "Cafés and food venues" },
@@ -128,7 +128,7 @@ export default function PublicPlaceAccidentPage() {
       guideSlugs={[
         "slip-trip-fall-claims-scotland",
         "supermarket-accident-claims-scotland",
-        "pavement-trip-claims-scotland",
+        "council-pavement-trip-claims-scotland",
         "evidence-for-personal-injury-claim-scotland",
       ]}
       locationClaimType="public place accident claims"
