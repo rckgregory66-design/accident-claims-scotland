@@ -2,12 +2,12 @@ import type { Metadata } from "next";
 import ClaimPageTemplate from "@/components/ClaimPageTemplate";
 
 export const metadata: Metadata = {
-  title: "Criminal Injury Compensation Scotland | CICA Claims Solicitors",
+  title: "Criminal Injury Compensation Scotland — CICA Claims Guide",
   description:
-    "Claim criminal injury compensation in Scotland through the CICA. Specialist support for victims of violent crime including assault, domestic abuse and sexual violence.",
+    "Criminal injury compensation for victims of violence in Scotland. CICA tariff scheme, eligibility, two-year time limit, and what to do if compensation is refused. Free enquiry.",
   alternates: { canonical: "/criminal-injury-compensation-scotland" },
   openGraph: {
-    title: "Criminal Injury Compensation Scotland | CICA Claims Solicitors",
+    title: "Criminal Injury Compensation Scotland — CICA Claims Guide",
     description: "Claim criminal injury compensation in Scotland through the CICA. Free enquiry, sensitive support.",
     url: "/criminal-injury-compensation-scotland",
   },

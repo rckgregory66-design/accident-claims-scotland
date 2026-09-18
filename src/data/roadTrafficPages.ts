@@ -14,6 +14,7 @@ export interface RoadTrafficPage {
   sections: RoadSection[];
   sources: { label: string; href: string; note: string }[];
   related: { label: string; href: string }[];
+  faqs: { question: string; answer: string }[];
 }
 
 const limitation = {
@@ -48,6 +49,15 @@ export const roadTrafficPages: RoadTrafficPage[] = [
     ],
     sources: [highwayCode, limitation, { label: "GOV.UK: vehicle insurance after an accident", href: "https://www.gov.uk/vehicle-insurance/if-youre-in-an-accident", note: "Official information on exchanging details, reporting and insurance." }],
     related: [{ label: "Road traffic accident claims hub", href: "/road-traffic-accident-claims-scotland" }, { label: "Whiplash claims", href: "/guides/whiplash-claims-scotland" }, { label: "Evidence checklist", href: "/guides/evidence-for-personal-injury-claim-scotland" }],
+    faqs: [
+      { question: "How long do I have to make a car accident claim in Scotland?", answer: "In Scotland the general time limit is three years from the date of the accident. If you did not know at the time that you had suffered a significant injury, the three years may run from the date you gained that knowledge. Missing the deadline can bar your claim entirely, so seek advice promptly." },
+      { question: "Can I claim if the accident was partly my fault?", answer: "Yes. Scotland applies contributory negligence, which means your compensation may be reduced to reflect your share of responsibility, but a claim is not automatically defeated. Courts assess each party's contribution based on evidence, so a partial fault argument is no reason to avoid getting advice." },
+      { question: "What should I do at the scene of a car accident in Scotland?", answer: "Exchange names, addresses and insurance details with every driver involved. Photograph vehicles, road markings, damage, weather conditions and any visible injuries. Note the time, location and any witnesses, and preserve dashcam footage before it overwrites. Report to police if required by law or recommended by your insurer." },
+      { question: "Do I have to go to court for a car accident claim?", answer: "Most car accident claims in Scotland settle without a court hearing. Proceedings may be raised to protect limitation periods even where negotiation continues, and a hearing becomes more likely if liability or the value of losses is seriously disputed. Your adviser will explain when raising proceedings becomes necessary." },
+      { question: "Can a passenger in the at-fault car make a claim?", answer: "Yes. An innocent passenger can normally claim against whichever driver or drivers caused the collision, including the driver of the vehicle they were in. The insurer of the at-fault vehicle usually responds rather than the driver personally." },
+      { question: "How is compensation calculated after a car accident in Scotland?", answer: "Compensation covers general damages for pain, suffering and loss of amenity, and special damages for financial losses such as earnings, treatment costs, care and vehicle repair or replacement. The Judicial College Guidelines and Scots court awards are reference points, but the value of your specific claim depends on the medical evidence and your provable losses." },
+      { question: "What if the other driver disputes liability?", answer: "A liability dispute means you will need to build a case from dashcam footage, witness statements, police reports, accident reconstruction and photographic evidence. Your adviser can gather and present this. The claim may still succeed even without an admission from the other driver." },
+    ],
   },
   {
     slug: "pedestrian-accident-claims-scotland",
@@ -64,6 +74,14 @@ export const roadTrafficPages: RoadTrafficPage[] = [
     ],
     sources: [{ label: "Highway Code: pedestrians", href: "https://www.gov.uk/guidance/the-highway-code/rules-for-pedestrians-1-to-35", note: "Official pedestrian rules and crossing guidance." }, { label: "Highway Code: road users requiring extra care", href: "https://www.gov.uk/guidance/the-highway-code/road-users-requiring-extra-care-204-to-225", note: "Official guidance concerning vulnerable road users." }, limitation],
     related: [{ label: "Road traffic accident claims hub", href: "/road-traffic-accident-claims-scotland" }, { label: "Serious injury claims", href: "/serious-injury-claims-scotland" }, { label: "Partly at fault", href: "/guides/can-i-claim-if-partly-at-fault-scotland" }],
+    faqs: [
+      { question: "Can I claim if I was hit by a car while crossing the road in Scotland?", answer: "Yes. A driver must give way to pedestrians crossing or waiting to cross at a junction, and must not drive dangerously close to them at any crossing. If a driver failed in that duty and caused your injury, you can investigate a claim regardless of whether you were on a formal crossing." },
+      { question: "Does it matter that I wasn't at a pedestrian crossing when I was hit?", answer: "Not automatically. Crossing away from a formal crossing point may be raised as contributory negligence, but a driver still has a duty to see and avoid pedestrians who are reasonably visible. Courts will examine speed, visibility and the driver's opportunity to stop or swerve." },
+      { question: "How long do I have to claim after a pedestrian accident in Scotland?", answer: "The general time limit is three years from the accident date or, if later, from when you first knew the injury was significant. Children have extended time limits. Evidence such as CCTV footage is lost quickly, so instruct an adviser without delay even if proceedings do not need to be raised immediately." },
+      { question: "What if the driver said I ran out in front of them?", answer: "This is a standard insurer defence. It is tested against objective evidence including CCTV, witness accounts, sight lines, vehicle speed and impact marks. A driver's account of events is not automatically conclusive, and your version, supported by evidence, remains relevant." },
+      { question: "Can I claim compensation if I was hit on the pavement?", answer: "Yes, and the duty on drivers is particularly clear in such cases. A vehicle mounting a kerb or footway is almost always a serious breach. Document the exact location of impact and gather CCTV promptly." },
+      { question: "I was partly at fault — can I still get compensation?", answer: "Yes. Scotland uses contributory negligence rules, meaning compensation is reduced by the proportion of fault attributed to you, but you do not lose your entire claim. The precise reduction depends on the facts and the evidence of each party's conduct." },
+    ],
   },
   {
     slug: "passenger-accident-claims-scotland",
@@ -80,6 +98,14 @@ export const roadTrafficPages: RoadTrafficPage[] = [
     ],
     sources: [highwayCode, { label: "GOV.UK: seat belts and child restraints", href: "https://www.gov.uk/seat-belts-law", note: "Official information on seat-belt and child-restraint requirements." }, limitation],
     related: [{ label: "Car accident claims", href: "/car-accident-claims-scotland" }, { label: "Road traffic accident claims hub", href: "/road-traffic-accident-claims-scotland" }, { label: "Evidence checklist", href: "/guides/evidence-for-personal-injury-claim-scotland" }],
+    faqs: [
+      { question: "Can I claim against the driver of the car I was in?", answer: "Yes. An innocent passenger can investigate a claim against the driver of their own vehicle if that driver caused the accident through negligence. The claim is usually met by the driver's motor insurer rather than the driver personally, so the relationship between you and the driver need not prevent a claim." },
+      { question: "I was in a taxi when the accident happened — who do I claim against?", answer: "You may have a claim against the taxi driver, their employer or the operator, depending on who caused the accident and the employment or licensing arrangement. Preserve your booking receipt, the vehicle details and any onboard camera evidence. Other drivers involved may also be responsible." },
+      { question: "Does not wearing a seatbelt mean I can't claim?", answer: "Not wearing a seatbelt does not defeat a claim, but an insurer may argue your injuries would have been less severe if you had worn one. Any reduction in compensation must be based on medical evidence linking the absence of a seatbelt to the specific injuries you suffered, not on a fixed percentage." },
+      { question: "What if two drivers were both at fault for the accident I was injured in?", answer: "You can pursue claims against both drivers. In Scotland, defenders who are jointly liable may each be responsible for the full amount, and you are not required to apportion blame at the outset. Evidence of each driver's contribution will be relevant to how the claim is resolved." },
+      { question: "I was a bus passenger and the driver braked suddenly — can I claim?", answer: "Sudden braking that causes a passenger to fall or be thrown forward is not automatically negligent. The question is whether the driver had reasonable cause for the manoeuvre or whether it was avoidable. Onboard CCTV and operator maintenance records can be important evidence." },
+      { question: "How long do I have to make a passenger claim in Scotland?", answer: "The standard time limit is three years from the date of the accident or date of knowledge. Children have longer. Act promptly because onboard and road CCTV is typically overwritten within days." },
+    ],
   },
   {
     slug: "uninsured-driver-claims-scotland",
@@ -96,6 +122,14 @@ export const roadTrafficPages: RoadTrafficPage[] = [
     ],
     sources: [mib, { label: "GOV.UK: compensation for victims of uninsured drivers", href: "https://www.gov.uk/compensation-victim-uninsured-driver", note: "Official overview of the MIB route." }, limitation],
     related: [{ label: "Hit-and-run claims", href: "/hit-and-run-claims-scotland" }, { label: "Road traffic accident claims hub", href: "/road-traffic-accident-claims-scotland" }, { label: "Liability denied", href: "/guides/what-if-liability-denied-scotland" }],
+    faqs: [
+      { question: "What happens if the driver who hit me had no insurance?", answer: "If the driver is identified but uninsured, a claim may be made through the Motor Insurers' Bureau under the Uninsured Drivers' Agreement. The MIB investigates liability and covers injury compensation and qualifying property losses, subject to conditions in the current agreement." },
+      { question: "Do I need to report the accident to the police to claim against an uninsured driver?", answer: "Yes. Police reporting is a condition of the MIB Uninsured Drivers' Agreement. Keep the police incident reference number and any written confirmation of the report. Cooperate with any investigation as required by the agreement." },
+      { question: "How is an uninsured driver claim different from an ordinary car accident claim?", answer: "Instead of pursuing the driver's insurer directly, the claim goes through the MIB. The process has its own timescales, documentation requirements and exclusions. The MIB investigates both liability and insurance status, so cooperate fully and preserve all evidence." },
+      { question: "Can I claim for property damage as well as injury from an uninsured driver?", answer: "Property loss may be recoverable under the MIB agreement, but specific conditions and possible excesses apply. Check the current agreement for what vehicle and property damage is covered, because not all costs are automatically included." },
+      { question: "What if I knew the driver had no insurance and still got in the car?", answer: "If you voluntarily accepted a lift from someone you knew to be uninsured, the MIB may reduce or refuse your compensation under the agreement's conditions. Each case is assessed on its specific facts." },
+      { question: "How long does an MIB uninsured driver claim take in Scotland?", answer: "Timescales vary depending on the complexity of the injuries, the evidence available and whether liability is disputed. Simple claims can resolve within months; serious injury or disputed liability cases typically take longer. The MIB has its own procedural timelines separate from ordinary court limitation rules." },
+    ],
   },
   {
     slug: "hit-and-run-claims-scotland",
@@ -112,6 +146,14 @@ export const roadTrafficPages: RoadTrafficPage[] = [
     ],
     sources: [mib, { label: "GOV.UK: uninsured or hit-and-run drivers", href: "https://www.gov.uk/compensation-victim-uninsured-driver", note: "Official overview of compensation routes." }, limitation],
     related: [{ label: "Uninsured-driver claims", href: "/uninsured-driver-claims-scotland" }, { label: "Road-accident evidence", href: "/guides/evidence-for-personal-injury-claim-scotland" }, { label: "Road traffic accident claims hub", href: "/road-traffic-accident-claims-scotland" }],
+    faqs: [
+      { question: "Can I claim compensation after a hit-and-run in Scotland?", answer: "Yes. Where the responsible driver cannot be identified, you may be able to claim through the MIB Untraced Drivers' Agreement. You must report the incident to the police, take reasonable steps to trace the vehicle, and cooperate with the MIB's investigation." },
+      { question: "What if I only caught part of the number plate?", answer: "Any registration characters, vehicle description, direction, damage or identifying features should be noted immediately and provided to police. The MIB or police may be able to trace the vehicle from partial information. If tracing succeeds, the claim moves from the untraced to the uninsured driver route." },
+      { question: "How soon does CCTV footage need to be preserved after a hit-and-run?", answer: "Many systems overwrite footage within 24 to 72 hours. Ask police to request preservation of council, shop, business and doorbell camera footage as quickly as possible. Dashcam footage from other vehicles nearby can also be valuable." },
+      { question: "Do I need a witness for a hit-and-run claim?", answer: "A witness is helpful but not essential. The MIB will examine all available corroborating evidence including CCTV, scene marks, medical records and emergency call logs. Providing as much contemporaneous evidence as possible strengthens the application." },
+      { question: "Is there a time limit for making a hit-and-run claim through the MIB?", answer: "The MIB agreement has its own application deadlines which may differ from the standard Scottish court limitation period of three years. Apply to the MIB as soon as possible and seek legal advice promptly to ensure you meet all procedural requirements." },
+      { question: "Can I claim for my damaged vehicle in a hit-and-run?", answer: "Property damage may be claimed under the untraced drivers' agreement, but conditions and possible exclusions apply. Do not repair or dispose of your vehicle before its damage and value are properly documented." },
+    ],
   },
   {
     slug: "serious-road-traffic-injury-claims-scotland",
@@ -128,6 +170,14 @@ export const roadTrafficPages: RoadTrafficPage[] = [
     ],
     sources: [{ label: "SCTS: All-Scotland Sheriff Personal Injury Court", href: "https://www.scotcourts.gov.uk/courts-and-tribunals/sheriff-and-justice-of-the-peace-courts/national-personal-injury-court/", note: "Official information about Scotland’s specialist personal injury court." }, { label: "Transport Scotland: 2025 road casualty findings", href: "https://www.transport.gov.scot/publication/key-reported-road-casualties-scotland-2025/key-findings/", note: "Official provisional Scottish casualty statistics." }, limitation],
     related: [{ label: "Serious injury claims", href: "/serious-injury-claims-scotland" }, { label: "Road traffic accident claims hub", href: "/road-traffic-accident-claims-scotland" }, { label: "Compensation guide", href: "/personal-injury-compensation-scotland" }],
+    faqs: [
+      { question: "What counts as a serious road injury for a compensation claim in Scotland?", answer: "Serious road injuries typically include traumatic brain injury, spinal cord injury, amputations, severe multiple fractures, significant burns and major psychological disorders. The defining feature is that the injury has lasting consequences on daily life, work, care needs and independence." },
+      { question: "Should I settle my serious injury claim quickly?", answer: "No. Settling before prognosis and future needs are properly established risks significantly undervaluing your claim. Compensation for serious injuries needs to account for lifetime care, lost earnings, treatment, accommodation adaptations and other long-term costs. These cannot be reliably assessed until the medical picture is clear." },
+      { question: "Can I get an interim payment while my serious injury claim is ongoing?", answer: "Yes, in appropriate cases. Where liability is reasonably clear, an interim payment from the insurer may fund rehabilitation, equipment, care or accommodation while the claim is resolved. The request must be supported by evidence of need and cost." },
+      { question: "Who pays for my care and rehabilitation while my serious injury claim is ongoing?", answer: "Your existing NHS entitlement remains in place. Where liability is admitted or sufficiently clear, a structured rehabilitation agreement funded by the insurer may also be available. Interim payments can be used for private treatment or care when clinically justified and properly evidenced." },
+      { question: "Can family members who provide care after a serious road accident be compensated?", answer: "Yes. The cost of gratuitous care provided by family or friends is a recognised head of loss in Scotland. Keep a detailed record of the care provided — hours, tasks and the effect on the carer’s own work and life — from the date of the accident." },
+      { question: "How long does a serious road injury claim take in Scotland?", answer: "Complex serious injury cases routinely take two to five years or longer. Settling too early is a greater risk than delay when the medical position is still evolving. Your adviser should explain the timeline and the reasons for any recommendation to resolve before long-term prognosis is fully established." },
+    ],
   },
   {
     slug: "fatal-road-accident-claims-scotland",
@@ -144,6 +194,14 @@ export const roadTrafficPages: RoadTrafficPage[] = [
     ],
     sources: [{ label: "Damages (Scotland) Act 2011", href: "https://www.legislation.gov.uk/asp/2011/7/contents", note: "Primary legislation governing damages where personal injury results in death." }, { label: "SCTS: Fatal Accident Inquiries", href: "https://www.scotcourts.gov.uk/courts-and-tribunals/courts-and-tribunals/fatal-accident-inquiries/", note: "Official explanation of the FAI process." }, limitation],
     related: [{ label: "Fatal accident compensation guide", href: "/guides/fatal-accident-compensation-scotland" }, { label: "Road traffic accident claims hub", href: "/road-traffic-accident-claims-scotland" }, { label: "Serious injury claims", href: "/serious-injury-claims-scotland" }],
+    faqs: [
+      { question: "Who can claim compensation after a fatal road accident in Scotland?", answer: "The deceased's executor can claim for losses suffered before death. Qualifying relatives — including a spouse or civil partner, children, parents and certain other family members — can claim for loss of society and guidance, grief and sorrow, and financial dependency. Scottish law defines qualifying relatives specifically, so seek advice early." },
+      { question: "Do I need a criminal conviction to make a civil claim after a fatal road accident?", answer: "No. A civil claim for damages and a criminal prosecution are separate proceedings with different legal tests. A driver can be acquitted in a criminal court but still found liable in a civil action, and vice versa. A civil claim can proceed in parallel with, or independently of, any criminal case." },
+      { question: "What is a Fatal Accident Inquiry and how does it affect a compensation claim?", answer: "A Fatal Accident Inquiry (FAI) is a judicial public inquiry held in Scotland to establish the circumstances of certain deaths. Its findings may be relevant evidence in a civil damages claim, but the FAI's conclusions do not automatically determine civil liability. A civil claim can be raised before, during or after an FAI." },
+      { question: "How long do relatives have to make a claim after a fatal road accident in Scotland?", answer: "The general time limit under the Prescription and Limitation (Scotland) Act 1973 is three years from the date of death or from the date a relative first had knowledge that a claim was possible. Do not wait for criminal proceedings to conclude before taking civil advice." },
+      { question: "What financial losses can be claimed after a fatal road accident?", answer: "Claims can include the deceased's pre-death losses, financial dependency (income, pension, household services, childcare), loss of society and guidance, travel and funeral expenses. Each head of loss requires evidence such as employment and pension records, a schedule of the deceased's unpaid contributions and expert evidence where appropriate." },
+      { question: "Can I claim if a family member died in an accident that was partly their fault?", answer: "Yes, subject to a reduction for contributory negligence. If the deceased was partly responsible, the amount recoverable by relatives is reduced proportionally. This does not prevent a claim, but the proportion of responsibility must be assessed from the collision evidence." },
+    ],
   },
   {
     slug: "road-defect-accident-claims-scotland",
@@ -160,6 +218,14 @@ export const roadTrafficPages: RoadTrafficPage[] = [
     ],
     sources: [{ label: "Roads (Scotland) Act 1984", href: "https://www.legislation.gov.uk/ukpga/1984/54/contents", note: "Primary legislation concerning Scottish roads authorities." }, { label: "Transport Scotland: trunk road network", href: "https://www.transport.gov.scot/transport-network/roads/the-trunk-road-network/", note: "Official information about Scotland’s trunk-road network." }, limitation],
     related: [{ label: "Cycling accident claims", href: "/guides/cycling-accident-claims-scotland" }, { label: "Motorcycle accident claims", href: "/guides/motorcycle-accident-claims-scotland" }, { label: "Council pavement claims", href: "/guides/council-pavement-trip-claims-scotland" }],
+    faqs: [
+      { question: "Can I claim for an accident caused by a pothole in Scotland?", answer: "Yes, if the roads authority responsible for maintaining that road knew or should have known about the defect and failed to act within a reasonable time. The claim must establish that the defect caused your accident and that the authority’s inspection and maintenance record fell short of the required standard." },
+      { question: "Who is responsible for roads in Scotland — the council or the Scottish Government?", answer: "Trunk roads (major A roads and motorways) are managed by Transport Scotland through operating companies. Local roads are managed by the relevant local council. Private roads, car parks and roadworks areas may have different responsible parties. Identifying the correct defender early is essential." },
+      { question: "How do I prove a pothole caused my accident?", answer: "Photograph the defect with a scale object, record its exact position and GPS coordinates, note the time and conditions, and identify witnesses and nearby cameras. Preserve your damaged vehicle or bicycle components before repair. Inspection and repair records obtained from the roads authority can show how long the defect had been reported." },
+      { question: "What if the council says they inspected the road and it was fine?", answer: "Inspection records and dates are relevant but not conclusive. The question is whether the inspection was adequate — the correct frequency, standard and method for that road classification — and whether the defect was present and reportable at the inspection date. Expert analysis of the records may be needed." },
+      { question: "Can I claim if the accident was caused by roadworks?", answer: "Yes. The company or contractor responsible for the roadworks owes a duty to road users to sign, guard and manage the works safely. Claims may lie against the contractor, the road authority, a utility company or a combination, depending on who controlled the works." },
+      { question: "How long do I have to make a road defect claim in Scotland?", answer: "Three years from the date of the accident or date of knowledge. Evidence deteriorates quickly — roads are repaired, CCTV overwrites and witnesses’ memories fade — so investigate promptly even if proceedings do not need to be raised immediately." },
+    ],
   },
   {
     slug: "child-road-accident-claims-scotland",
@@ -176,6 +242,14 @@ export const roadTrafficPages: RoadTrafficPage[] = [
     ],
     sources: [{ label: "Highway Code: children", href: "https://www.gov.uk/guidance/the-highway-code/road-users-requiring-extra-care-204-to-225", note: "Official guidance on road users requiring extra care." }, { label: "Children and Young People (Scotland) Act 2014", href: "https://www.legislation.gov.uk/asp/2014/8/contents", note: "Broader Scottish legislation concerning children and young people." }, limitation],
     related: [{ label: "Pedestrian accident claims", href: "/pedestrian-accident-claims-scotland" }, { label: "Passenger accident claims", href: "/passenger-accident-claims-scotland" }, { label: "Road traffic accident claims hub", href: "/road-traffic-accident-claims-scotland" }],
+    faqs: [
+      { question: "Can I make a road accident claim on behalf of my child in Scotland?", answer: "Yes. A parent or other appropriate adult can instruct a solicitor and investigate a claim on a child's behalf. Any settlement involving a child must be approved by the court to protect the child's interests, and any award is managed for the benefit of the child." },
+      { question: "What is the time limit for a child's road accident claim in Scotland?", answer: "For a child, the three-year limitation period does not begin until their eighteenth birthday. This means a claim can generally be brought at any time before the child turns 21. However, delay causes evidence to be lost, so it is advisable to investigate early even if proceedings are not raised immediately." },
+      { question: "Is a child treated as partly at fault if they ran into the road?", answer: "Contributory negligence for a child is assessed by reference to the standard of behaviour expected of a child of that age, not an adult. Young children are held to a much lower standard. Drivers have a positive duty to anticipate that children may act unpredictably." },
+      { question: "My child was injured as a passenger in a school bus — can I claim?", answer: "Yes, if the driver or operator was negligent. Preserve the route details, operator information, driver identity and any onboard camera evidence. Report the incident to the school and the transport operator, and keep written records of all correspondence." },
+      { question: "What compensation can a child receive for a serious road accident injury in Scotland?", answer: "A child's claim can include pain and suffering, loss of amenity, the effect on education and development, care needs, future earnings loss and any long-term treatment or support requirements. Future losses are assessed over the child's anticipated working and care lifetime and can be substantial." },
+      { question: "Do I need the court's approval to settle my child's road accident claim?", answer: "Yes. In Scotland, any settlement of a personal injury claim on behalf of a child must be approved by the court. This protects the child from an inadequate settlement being accepted on their behalf. Court approval is a formal step that your adviser will guide you through." },
+    ],
   },
   {
     slug: "early-insurer-offers-road-accident-scotland",
@@ -192,6 +266,14 @@ export const roadTrafficPages: RoadTrafficPage[] = [
     ],
     sources: [{ label: "Financial Conduct Authority: insurance conduct rules", href: "https://www.handbook.fca.org.uk/handbook/ICOBS/", note: "Official rules governing insurers’ conduct of business." }, { label: "NHS inform: whiplash", href: "https://www.nhsinform.scot/illnesses-and-conditions/muscle-bone-and-joints/neck-and-back-problems-and-conditions/whiplash/", note: "Official health information about symptoms and recovery." }, limitation],
     related: [{ label: "Car accident claims", href: "/car-accident-claims-scotland" }, { label: "What is my claim worth?", href: "/guides/what-is-my-accident-claim-worth-scotland" }, { label: "Liability denied", href: "/guides/what-if-liability-denied-scotland" }],
+    faqs: [
+      { question: "Should I accept the insurer’s first offer after a road accident in Scotland?", answer: "Not without checking what it covers and whether your losses and prognosis are fully established. Early offers are sometimes made before medical evidence is complete. Accepting a full-and-final settlement prevents you from returning if symptoms worsen or new losses emerge." },
+      { question: "What does ‘full and final settlement’ mean?", answer: "A full-and-final settlement means you release all future claims arising from the accident in exchange for the agreed payment. Once signed, you cannot return for more compensation even if your condition deteriorates. Make sure all current and future losses are properly valued before agreeing." },
+      { question: "Can an insurer pressure me to settle quickly?", answer: "Insurers are regulated by the FCA and must treat customers fairly. However, they have a commercial interest in resolving claims quickly. You are entitled to take time to understand your losses and to take independent advice before accepting any offer." },
+      { question: "What if the insurer’s offer doesn’t cover all my losses?", answer: "You can reject or counter the offer. Prepare a schedule of all losses — injury, earnings, treatment, care, travel, vehicle — supported by evidence, and make a reasoned counter-proposal. If agreement cannot be reached, the claim can proceed to litigation." },
+      { question: "Does accepting compensation for vehicle damage affect my injury claim?", answer: "Vehicle and injury claims are separate. Accepting a vehicle damage payment should not affect your injury claim provided the insurer has not required you to sign a full-and-final release of all claims. Read any paperwork carefully before signing." },
+      { question: "How long do I have to decide whether to accept an insurer’s offer?", answer: "There is no fixed deadline to accept an offer, but the three-year limitation period for raising court proceedings continues to run. Do not let time pressure from an insurer cause you to miss the limitation deadline or accept an inadequate offer. Seek advice before the deadline expires." },
+    ],
   },
 ];
 

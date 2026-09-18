@@ -6,10 +6,12 @@ import ClaimForm from "@/components/ClaimForm";
 import CtaSection from "@/components/CtaSection";
 import JsonLd from "@/components/JsonLd";
 import GuidePathways from "@/components/GuidePathways";
-import { articleSchema, breadcrumbSchema } from "@/lib/schema";
+import { articleSchema, breadcrumbSchema, faqSchema } from "@/lib/schema";
 import { publishedGuides } from "@/data/guides";
 import { SITE } from "@/data/siteConfig";
 import { getGuideContent } from "@/data/guideContent";
+import { getGuideFaqs } from "@/data/guideFaqs";
+import FAQ from "@/components/FAQ";
 
 export async function generateStaticParams() {
   return publishedGuides.map((g) => ({ slug: g.slug }));
@@ -55,6 +57,7 @@ export default async function GuideArticlePage({
   if (!guide) notFound();
 
   const content = getGuideContent(slug);
+  const faqs = getGuideFaqs(slug);
   const related = publishedGuides.filter((g) => g.category === guide.category && g.slug !== slug).slice(0, 4);
 
   const crumbs = [
@@ -68,6 +71,7 @@ export default async function GuideArticlePage({
       <JsonLd data={[
         articleSchema({ title: guide.title, description: guide.description, url: `/guides/${slug}`, datePublished: guide.datePublished, dateModified: guide.dateModified, speakableSelectors: ["h1", "article"] }),
         breadcrumbSchema(crumbs, `/guides/${slug}`),
+        ...(faqs.length > 0 ? [faqSchema(faqs)] : []),
       ]} />
       <Breadcrumbs crumbs={[{ label: "Guides", href: "/guides" }, { label: guide.title }]} />
 
@@ -130,6 +134,7 @@ export default async function GuideArticlePage({
         </div>
       </div>
 
+      {faqs.length > 0 && <FAQ faqs={faqs} />}
       <CtaSection />
     </>
   );

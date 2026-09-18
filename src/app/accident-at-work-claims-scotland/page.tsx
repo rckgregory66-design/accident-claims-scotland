@@ -2,12 +2,12 @@ import type { Metadata } from "next";
 import ClaimPageTemplate from "@/components/ClaimPageTemplate";
 
 export const metadata: Metadata = {
-  title: "Accident at Work Claims Scotland | Work Injury Compensation Solicitors",
+  title: "Accident at Work Claims Scotland — Work Injury Compensation",
   description:
-    "General information about compensation claims for workplace accidents caused by employer negligence in Scotland.",
+    "Injured at work in Scotland? Information on employer negligence claims, RIDDOR, manual handling, falls and equipment failures under Scots law. Free enquiry, no win no fee available.",
   alternates: { canonical: "/accident-at-work-claims-scotland" },
   openGraph: {
-    title: "Accident at Work Claims Scotland | Work Injury Compensation Solicitors",
+    title: "Accident at Work Claims Scotland — Work Injury Compensation",
     description: "Injured at work in Scotland? Free enquiry, no win no fee available.",
     url: "/accident-at-work-claims-scotland",
   },

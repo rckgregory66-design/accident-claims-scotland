@@ -2,12 +2,12 @@ import type { Metadata } from "next";
 import ClaimPageTemplate from "@/components/ClaimPageTemplate";
 
 export const metadata: Metadata = {
-  title: "Industrial Disease Claims Scotland | Occupational Disease Solicitors",
+  title: "Industrial Disease Claims Scotland — Occupational Illness Compensation",
   description:
-    "Claim compensation for work-related illness in Scotland. Asbestos, mesothelioma, industrial deafness, vibration white finger and more. Free enquiry, no win no fee.",
+    "Work-related illness claims in Scotland: asbestos, mesothelioma, industrial deafness, vibration white finger, COPD. Time limit runs from diagnosis — free enquiry, no obligation.",
   alternates: { canonical: "/industrial-disease-claims-scotland" },
   openGraph: {
-    title: "Industrial Disease Claims Scotland | Occupational Disease Solicitors",
+    title: "Industrial Disease Claims Scotland — Occupational Illness Compensation",
     description: "Work-related illness claims in Scotland. Free enquiry, no win no fee available.",
     url: "/industrial-disease-claims-scotland",
   },

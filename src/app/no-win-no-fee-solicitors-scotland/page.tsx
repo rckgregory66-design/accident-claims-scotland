@@ -2,12 +2,12 @@ import type { Metadata } from "next";
 import ClaimPageTemplate from "@/components/ClaimPageTemplate";
 
 export const metadata: Metadata = {
-  title: "No Win No Fee Solicitors Scotland | No Win No Fee Injury Claims",
+  title: "No Win No Fee Claims Scotland — How Funding Works",
   description:
-    "Understand no win no fee personal injury claims in Scotland. Clear, transparent explanation of funding options. Speak to a Scottish solicitor today — free enquiry.",
+    "How no win, no fee funding works in Scotland: success fees, disbursements, ATE insurance and what you pay if you win or lose. Regulated under Scots law — free enquiry, no obligation.",
   alternates: { canonical: "/no-win-no-fee-solicitors-scotland" },
   openGraph: {
-    title: "No Win No Fee Solicitors Scotland | No Win No Fee Injury Claims",
+    title: "No Win No Fee Claims Scotland — How Funding Works",
     description: "Understand no win no fee personal injury claims in Scotland. Free enquiry — no obligation.",
     url: "/no-win-no-fee-solicitors-scotland",
   },

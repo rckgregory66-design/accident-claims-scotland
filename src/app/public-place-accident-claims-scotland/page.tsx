@@ -2,12 +2,12 @@ import type { Metadata } from "next";
 import ClaimPageTemplate from "@/components/ClaimPageTemplate";
 
 export const metadata: Metadata = {
-  title: "Public Place Accident Claims Scotland | Slip Trip Fall Solicitors",
+  title: "Public Place Accident Claims Scotland — Slips, Trips & Falls",
   description:
-    "Injured in a public place in Scotland? Claim for slips, trips and falls in supermarkets, pavements, shops and public buildings. Free enquiry, no win no fee available.",
+    "Injured in a public place in Scotland? Information on claims for slips, trips and falls in supermarkets, pavements, shops and public buildings. Free enquiry, no win no fee available.",
   alternates: { canonical: "/public-place-accident-claims-scotland" },
   openGraph: {
-    title: "Public Place Accident Claims Scotland | Slip Trip Fall Solicitors",
+    title: "Public Place Accident Claims Scotland — Slips, Trips & Falls",
     description: "Injured in a public place in Scotland? Free enquiry, no win no fee available.",
     url: "/public-place-accident-claims-scotland",
   },

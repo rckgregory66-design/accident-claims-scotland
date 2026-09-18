@@ -2,12 +2,12 @@ import type { Metadata } from "next";
 import ClaimPageTemplate from "@/components/ClaimPageTemplate";
 
 export const metadata: Metadata = {
-  title: "Serious Injury Claims Scotland | Catastrophic Injury Solicitors Scotland",
+  title: "Serious Injury Claims Scotland — Brain, Spinal & Catastrophic Injury",
   description:
-    "Specialist serious and catastrophic injury solicitors in Scotland. Brain injury, spinal injury, amputation and fatal accident claims. Sensitive, expert support throughout.",
+    "Information on serious and catastrophic injury claims in Scotland: brain injury, spinal cord injury, amputation, burns and fatal accidents. Sensitive support — free enquiry.",
   alternates: { canonical: "/serious-injury-claims-scotland" },
   openGraph: {
-    title: "Serious Injury Claims Scotland | Catastrophic Injury Solicitors Scotland",
+    title: "Serious Injury Claims Scotland — Brain, Spinal & Catastrophic Injury",
     description: "Specialist serious injury solicitors in Scotland. Brain injury, spinal injury, amputation, fatal accident claims.",
     url: "/serious-injury-claims-scotland",
   },

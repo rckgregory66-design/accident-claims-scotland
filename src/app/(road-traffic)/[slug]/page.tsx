@@ -4,7 +4,8 @@ import Link from "next/link";
 import Breadcrumbs from "@/components/Breadcrumbs";
 import ClaimForm from "@/components/ClaimForm";
 import JsonLd from "@/components/JsonLd";
-import { breadcrumbSchema, servicePageSchema } from "@/lib/schema";
+import { breadcrumbSchema, faqSchema, servicePageSchema } from "@/lib/schema";
+import FAQ from "@/components/FAQ";
 import { roadTrafficPages } from "@/data/roadTrafficPages";
 import { SITE } from "@/data/siteConfig";
 
@@ -42,6 +43,7 @@ export default async function RoadTrafficDetailPage({ params }: { params: Promis
       <JsonLd data={[
         servicePageSchema({ name: page.title, url, description: page.description, dateModified: "2026-07-29", speakableSelectors: ["#quick-answer", "h1"] }),
         breadcrumbSchema(crumbs, url),
+        faqSchema(page.faqs),
       ]} />
       <Breadcrumbs crumbs={[{ label: "Road Traffic Accident Claims", href: "/road-traffic-accident-claims-scotland" }, { label: page.title }]} />
       <section className="bg-[#0f2044] py-14 px-4 sm:px-6">
@@ -80,6 +82,14 @@ export default async function RoadTrafficDetailPage({ params }: { params: Promis
                 </li>
               ))}
             </ul>
+          </article>
+          <aside><div className="sticky top-24"><ClaimForm /></div></aside>
+        </div>
+      </div>
+      <FAQ faqs={page.faqs} />
+      <div className="max-w-7xl mx-auto px-4 sm:px-6 pb-12">
+        <div className="grid lg:grid-cols-3 gap-10">
+          <article className="lg:col-span-2 prose-legal">
             <nav aria-label="Related road accident guidance" className="not-prose mt-10 border-t border-gray-200 pt-8">
               <h2 className="text-2xl font-bold text-[#0f2044] mb-4">Related road accident guidance</h2>
               <div className="grid sm:grid-cols-2 gap-3">
@@ -87,7 +97,6 @@ export default async function RoadTrafficDetailPage({ params }: { params: Promis
               </div>
             </nav>
           </article>
-          <aside><div className="sticky top-24"><ClaimForm /></div></aside>
         </div>
       </div>
     </>

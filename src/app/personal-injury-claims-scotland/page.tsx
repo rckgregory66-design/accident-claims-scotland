@@ -2,12 +2,12 @@ import type { Metadata } from "next";
 import ClaimPageTemplate from "@/components/ClaimPageTemplate";
 
 export const metadata: Metadata = {
-  title: "Personal Injury Claims Scotland | Scottish Personal Injury Solicitors",
+  title: "Personal Injury Claims Scotland — Free Claim Enquiry",
   description:
-    "Make a personal injury claim in Scotland. Specialist Scottish solicitors for road accidents, work injuries, medical negligence and more. Free enquiry, no win no fee available.",
+    "Clear information on personal injury claims in Scotland. Road accidents, work injuries, medical negligence, industrial disease and more. Three-year time limit — free enquiry, no obligation.",
   alternates: { canonical: "/personal-injury-claims-scotland" },
   openGraph: {
-    title: "Personal Injury Claims Scotland | Scottish Personal Injury Solicitors",
+    title: "Personal Injury Claims Scotland — Free Claim Enquiry",
     description: "Make a personal injury claim in Scotland. Free enquiry, no win no fee available.",
     url: "/personal-injury-claims-scotland",
   },

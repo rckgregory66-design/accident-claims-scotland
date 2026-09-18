@@ -2,12 +2,12 @@ import type { Metadata } from "next";
 import ClaimPageTemplate from "@/components/ClaimPageTemplate";
 
 export const metadata: Metadata = {
-  title: "Medical Negligence Claims Scotland | Scottish Clinical Negligence Solicitors",
+  title: "Medical Negligence Claims Scotland — NHS & Clinical Negligence",
   description:
-    "Injured by medical negligence in Scotland? Get clear advice on NHS negligence, misdiagnosis, surgical errors, birth injury and delayed diagnosis claims. Free enquiry, no win no fee.",
+    "Harmed by medical negligence in Scotland? Information on NHS negligence, misdiagnosis, surgical errors, birth injuries and delayed diagnosis claims. Free enquiry, no win no fee.",
   alternates: { canonical: "/medical-negligence-claims-scotland" },
   openGraph: {
-    title: "Medical Negligence Claims Scotland | Scottish Clinical Negligence Solicitors",
+    title: "Medical Negligence Claims Scotland — NHS & Clinical Negligence",
     description: "Injured by medical negligence in Scotland? Free enquiry, no win no fee available.",
     url: "/medical-negligence-claims-scotland",
   },

@@ -2,7 +2,8 @@ import type { Metadata } from "next";
 import Link from "next/link";
 import Breadcrumbs from "@/components/Breadcrumbs";
 import JsonLd from "@/components/JsonLd";
-import { breadcrumbSchema, articleSchema } from "@/lib/schema";
+import { breadcrumbSchema, articleSchema, faqSchema } from "@/lib/schema";
+import FAQ from "@/components/FAQ";
 import { SITE } from "@/data/siteConfig";
 
 export const metadata: Metadata = {
@@ -22,6 +23,15 @@ export const metadata: Metadata = {
 const DATE_MODIFIED = "2026-09-18";
 
 export default function ScotlandPersonalInjuryStatisticsPage() {
+  const statsFaqs = [
+    { question: "How many people are injured at work in Scotland each year?", answer: "Scotland accounts for approximately 9% of the Great Britain workforce. Across GB, the HSE recorded around 604,000 non-fatal workplace injuries in 2023/24 according to the Labour Force Survey, suggesting roughly 54,000 in Scotland. HSE publishes Scotland-specific RIDDOR figures separately." },
+    { question: "How many people are killed on Scottish roads each year?", answer: "Transport Scotland recorded 155 road deaths in Scotland in 2023, with 1,706 people seriously injured and 7,160 slightly injured — a total of 9,021 casualties of all severities." },
+    { question: "How much does NHS Scotland pay out in clinical negligence claims?", answer: "The NHS Central Legal Office paid £50 million in damages and costs in 2022/23, of which £42.6 million was compensation to claimants. In the same year, 1,175 new claims were received." },
+    { question: "How much compensation does the CICA pay each year?", answer: "The Criminal Injuries Compensation Authority paid £154.2 million across England, Scotland and Wales in 2023/24. The mean award across resolved applications was approximately £9,600." },
+    { question: "Why does Scotland have such high rates of mesothelioma?", answer: "Scotland has historically high mesothelioma rates — around 300 deaths per year — due to its industrial heritage in Clydeside shipbuilding, heavy manufacturing and construction, where asbestos was used extensively until it was banned in 1999." },
+    { question: "What is the time limit for making a personal injury claim in Scotland?", answer: "The general time limit in Scotland is three years from the date of the accident or the date of knowledge. Industrial disease claims run from diagnosis or date of knowledge of the work connection. Do not delay — seek advice as soon as possible." },
+  ];
+
   const schemaData = [
     breadcrumbSchema(
       [
@@ -39,6 +49,7 @@ export default function ScotlandPersonalInjuryStatisticsPage() {
       dateModified: DATE_MODIFIED,
       speakableSelectors: ["h1", "article"],
     }),
+    faqSchema(statsFaqs),
   ];
 
   return (
@@ -347,6 +358,8 @@ export default function ScotlandPersonalInjuryStatisticsPage() {
           </p>
         </div>
       </article>
+
+      <FAQ faqs={statsFaqs} />
     </>
   );
 }
