@@ -2,6 +2,9 @@ import type { Metadata } from "next";
 import Link from "next/link";
 import Breadcrumbs from "@/components/Breadcrumbs";
 import CtaSection from "@/components/CtaSection";
+import JsonLd from "@/components/JsonLd";
+import { breadcrumbSchema, servicePageSchema } from "@/lib/schema";
+import { SITE } from "@/data/siteConfig";
 import { publishedGuides } from "@/data/guides";
 import { CATEGORY_HUBS } from "@/data/topicHubs";
 
@@ -24,6 +27,10 @@ const categories = Array.from(new Set(publishedGuides.map((g) => g.category)));
 export default function GuidesPage() {
   return (
     <>
+      <JsonLd data={[
+        breadcrumbSchema([{ name: "Home", url: SITE.url }, { name: "Guides & Articles", url: `${SITE.url}/guides` }], "/guides"),
+        servicePageSchema({ name: "Personal Injury Guides Scotland", url: "/guides", description: "Free, plain-English guides on personal injury claims, medical negligence, time limits, evidence and compensation in Scotland.", dateModified: "2026-08-11", speakableSelectors: ["h1"] }),
+      ]} />
       <Breadcrumbs crumbs={[{ label: "Guides & Articles" }]} />
 
       <section className="bg-[#0f2044] py-14 px-4 sm:px-6">

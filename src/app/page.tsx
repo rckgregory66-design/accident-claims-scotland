@@ -5,7 +5,7 @@ import FAQ from "@/components/FAQ";
 import TrustBar from "@/components/TrustBar";
 import CtaSection from "@/components/CtaSection";
 import JsonLd from "@/components/JsonLd";
-import { faqSchema, breadcrumbSchema } from "@/lib/schema";
+import { faqSchema, breadcrumbSchema, servicePageSchema } from "@/lib/schema";
 import { CLAIM_TYPES, LOCATIONS, SITE } from "@/data/siteConfig";
 
 export const metadata: Metadata = {
@@ -54,6 +54,13 @@ export default function HomePage() {
       <JsonLd data={[
         faqSchema(faqs),
         breadcrumbSchema([{ name: "Home", url: SITE.url }]),
+        servicePageSchema({
+          name: "Accident Claims Scotland",
+          url: "/",
+          description: SITE.description,
+          dateModified: "2026-08-11",
+          speakableSelectors: ["h1", ".answer-box"],
+        }),
       ]} />
 
       {/* HERO */}
