@@ -2,8 +2,8 @@ import type { Metadata } from "next";
 import LocationPageTemplate from "@/components/LocationPageTemplate";
 
 export const metadata: Metadata = {
-  title: "Aberdeen Accident Claims | Personal Injury Solicitors Aberdeen",
-  description: "Accident claims solicitors serving Aberdeen. Personal injury, offshore accident, workplace and medical negligence claims. Free enquiry, no win no fee.",
+  title: "Aberdeen Accident Claims | Personal Injury Claim Information for Aberdeen",
+  description: "Information on personal injury, offshore accident, workplace and medical negligence claims in Aberdeen: courts, time limits and next steps. General information, not legal advice.",
   alternates: { canonical: "/aberdeen-accident-claims" },
   robots: { index: false, follow: true },
 };

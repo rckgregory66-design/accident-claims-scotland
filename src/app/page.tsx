@@ -9,9 +9,9 @@ import { faqSchema, breadcrumbSchema, servicePageSchema } from "@/lib/schema";
 import { CLAIM_TYPES, LOCATIONS, SITE } from "@/data/siteConfig";
 
 export const metadata: Metadata = {
-  title: "Accident Claims Scotland | Personal Injury & Medical Negligence Solicitors",
+  title: "Accident Claims Scotland | Personal Injury & Medical Negligence Claim Information",
   description:
-    "Speak to Scottish accident claim solicitors about personal injury, medical negligence, industrial disease and workplace accident compensation claims. Start a free claim check today.",
+    "Plain-English information on personal injury, medical negligence, industrial disease and workplace accident claims in Scotland: time limits, evidence, funding and next steps. Not a law firm.",
   alternates: { canonical: "/" },
 };
 

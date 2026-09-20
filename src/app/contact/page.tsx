@@ -5,7 +5,7 @@ import Breadcrumbs from "@/components/Breadcrumbs";
 export const metadata: Metadata = {
   title: "Contact Accident Claims Scotland | Free Claim Enquiry",
   description:
-    "Contact Accident Claims Scotland for a free, no-obligation personal injury claim enquiry. Speak to Scottish solicitors today. Call, email or complete our online form.",
+    "Send a free, no-obligation enquiry about a personal injury or accident claim in Scotland using the online form. Accident Claims Scotland provides general information, not legal advice.",
   alternates: { canonical: "/contact" },
 };
 
@@ -18,8 +18,8 @@ export default function ContactPage() {
         <div className="max-w-4xl mx-auto">
           <h1 className="text-3xl sm:text-4xl font-bold text-white mb-4">Contact Accident Claims Scotland</h1>
           <p className="text-gray-300 text-lg">
-            Start your free, no-obligation claim enquiry today. We will assess your circumstances and
-            give you honest advice on whether you may have a valid claim.
+            Send a free, no-obligation enquiry about your accident. This website provides general
+            information and does not give legal advice on individual cases.
           </p>
         </div>
       </section>
@@ -30,8 +30,8 @@ export default function ContactPage() {
           <div>
             <h2 className="text-2xl font-bold text-[#0f2044] mb-2">Start Your Claim Enquiry</h2>
             <p className="text-gray-600 mb-6">
-              Complete the form below and a member of our team will be in touch. All enquiries are
-              free and carry no obligation.
+              Complete the form below. Sending an enquiry is free and carries no obligation, and it does
+              not create a solicitor-client relationship.
             </p>
             <ClaimForm title="Free Claim Assessment" />
           </div>
@@ -58,10 +58,10 @@ export default function ContactPage() {
             <div className="card">
               <h3 className="font-bold text-[#0f2044] mb-2">What happens next?</h3>
               <ol className="text-sm text-gray-700 space-y-2">
-                <li className="flex gap-2"><span className="font-bold text-[#0f2044]">1.</span> We receive your enquiry and review your details</li>
-                <li className="flex gap-2"><span className="font-bold text-[#0f2044]">2.</span> A member of our team contacts you by phone</li>
-                <li className="flex gap-2"><span className="font-bold text-[#0f2044]">3.</span> We carry out a free initial assessment of your claim</li>
-                <li className="flex gap-2"><span className="font-bold text-[#0f2044]">4.</span> We explain your options — no obligation to proceed</li>
+                <li className="flex gap-2"><span className="font-bold text-[#0f2044]">1.</span> Your enquiry is sent securely through this website</li>
+                <li className="flex gap-2"><span className="font-bold text-[#0f2044]">2.</span> You may be contacted using the details you provide</li>
+                <li className="flex gap-2"><span className="font-bold text-[#0f2044]">3.</span> Any assessment of your claim is carried out by the person or firm that contacts you</li>
+                <li className="flex gap-2"><span className="font-bold text-[#0f2044]">4.</span> You can ask questions and decide whether to proceed; there is no obligation</li>
               </ol>
             </div>
 

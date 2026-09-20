@@ -2,8 +2,8 @@ import type { Metadata } from "next";
 import LocationPageTemplate from "@/components/LocationPageTemplate";
 
 export const metadata: Metadata = {
-  title: "Borders Accident Claims | Personal Injury Solicitors Scottish Borders",
-  description: "Accident claims solicitors serving the Scottish Borders. Personal injury, workplace and medical negligence claims for Scottish Borders residents. Free enquiry, no win no fee.",
+  title: "Borders Accident Claims | Personal Injury Claim Information for Scottish Borders",
+  description: "Information on personal injury, workplace and medical negligence claims in the Scottish Borders: courts, time limits and next steps. General information, not legal advice.",
   alternates: { canonical: "/borders-accident-claims" },
   robots: { index: false, follow: true },
 };

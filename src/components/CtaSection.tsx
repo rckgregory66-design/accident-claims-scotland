@@ -8,7 +8,7 @@ interface Props {
 
 export default function CtaSection({
   title = "Ready to Check If You Can Claim?",
-  subtitle = "Speak to a Scottish claims specialist today. Your enquiry is free, confidential and carries no obligation.",
+  subtitle = "Send a free enquiry today. Your enquiry is treated as confidential and carries no obligation.",
   dark = true,
 }: Props) {
   return (

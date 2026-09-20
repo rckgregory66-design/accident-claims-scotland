@@ -2,8 +2,8 @@ import type { Metadata } from "next";
 import LocationPageTemplate from "@/components/LocationPageTemplate";
 
 export const metadata: Metadata = {
-  title: "Ayr Accident Claims | Personal Injury Solicitors Ayr",
-  description: "Accident claims solicitors serving Ayr. Personal injury, workplace accident and medical negligence claims for Ayr residents. Free enquiry, no win no fee.",
+  title: "Ayr Accident Claims | Personal Injury Claim Information for Ayr",
+  description: "Information on personal injury, workplace accident and medical negligence claims in Ayr: courts, time limits and next steps. General information, not legal advice.",
   alternates: { canonical: "/ayr-accident-claims" },
   robots: { index: false, follow: true },
 };

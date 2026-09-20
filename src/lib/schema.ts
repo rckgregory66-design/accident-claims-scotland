@@ -8,6 +8,7 @@ export function organizationSchema() {
     name: SITE.name,
     url: SITE.url,
     description: SITE.description,
+    parentOrganization: { "@type": "Organization", name: "Ola Consultants Ltd" },
     areaServed: [
       { "@type": "Country", name: "Scotland" },
       { "@type": "City", name: "Glasgow" },

@@ -2,8 +2,8 @@ import type { Metadata } from "next";
 import LocationPageTemplate from "@/components/LocationPageTemplate";
 
 export const metadata: Metadata = {
-  title: "Inverness Accident Claims | Personal Injury Solicitors Inverness",
-  description: "Accident claims solicitors serving Inverness. Personal injury, workplace accident and medical negligence claims for Inverness residents. Free enquiry, no win no fee.",
+  title: "Inverness Accident Claims | Personal Injury Claim Information for Inverness",
+  description: "Information on personal injury, workplace accident and medical negligence claims in Inverness: courts, time limits and next steps. General information, not legal advice.",
   alternates: { canonical: "/inverness-accident-claims" },
   robots: { index: false, follow: true },
 };

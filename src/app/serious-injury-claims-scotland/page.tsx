@@ -8,7 +8,7 @@ export const metadata: Metadata = {
   alternates: { canonical: "/serious-injury-claims-scotland" },
   openGraph: {
     title: "Serious Injury Claims Scotland — Brain, Spinal & Catastrophic Injury",
-    description: "Specialist serious injury solicitors in Scotland. Brain injury, spinal injury, amputation, fatal accident claims.",
+    description: "Information on serious injury claims in Scotland: brain injury, spinal injury, amputation and fatal accident claims.",
     url: "/serious-injury-claims-scotland",
   },
 };

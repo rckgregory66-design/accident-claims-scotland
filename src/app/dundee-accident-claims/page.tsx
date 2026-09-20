@@ -2,8 +2,8 @@ import type { Metadata } from "next";
 import LocationPageTemplate from "@/components/LocationPageTemplate";
 
 export const metadata: Metadata = {
-  title: "Dundee Accident Claims | Personal Injury Solicitors Dundee",
-  description: "Accident claims solicitors serving Dundee. Personal injury, workplace accident and medical negligence claims for Dundee residents. Free enquiry, no win no fee.",
+  title: "Dundee Accident Claims | Personal Injury Claim Information for Dundee",
+  description: "Information on personal injury, workplace accident and medical negligence claims in Dundee: courts, time limits and next steps. General information, not legal advice.",
   alternates: { canonical: "/dundee-accident-claims" },
   robots: { index: false, follow: true },
 };

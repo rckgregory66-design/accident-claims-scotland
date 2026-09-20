@@ -12,9 +12,9 @@ const inter = Inter({ subsets: ["latin"], display: "swap" });
 
 export const metadata: Metadata = {
   metadataBase: new URL(SITE.url),
-  title: "Accident Claims Scotland | Personal Injury & Medical Negligence Solicitors",
+  title: "Accident Claims Scotland | Personal Injury & Medical Negligence Claim Information",
   description:
-    "Speak to Scottish accident claim solicitors about personal injury, medical negligence, industrial disease and workplace accident compensation claims. Start a free claim check today.",
+    "Plain-English information on personal injury, medical negligence, industrial disease and workplace accident claims in Scotland: time limits, evidence, funding and next steps. Not a law firm.",
   openGraph: {
     type: "website",
     locale: "en_GB",

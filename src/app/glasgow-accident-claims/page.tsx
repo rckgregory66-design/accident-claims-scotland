@@ -2,9 +2,8 @@ import type { Metadata } from "next";
 import LocationPageTemplate from "@/components/LocationPageTemplate";
 
 export const metadata: Metadata = {
-  title: "Glasgow Accident Claims | Personal Injury Solicitors Glasgow",
-  description:
-    "Accident claims solicitors serving Glasgow. Personal injury, workplace accident and medical negligence claims for Glasgow residents. Free enquiry, no win no fee.",
+  title: "Glasgow Accident Claims | Personal Injury Claim Information for Glasgow",
+  description: "Information on personal injury, workplace accident and medical negligence claims in Glasgow: courts, time limits and next steps. General information, not legal advice.",
   alternates: { canonical: "/glasgow-accident-claims" },
   robots: { index: true, follow: true },
 };

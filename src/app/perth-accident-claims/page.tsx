@@ -2,8 +2,8 @@ import type { Metadata } from "next";
 import LocationPageTemplate from "@/components/LocationPageTemplate";
 
 export const metadata: Metadata = {
-  title: "Perth Accident Claims | Personal Injury Solicitors Perth",
-  description: "Accident claims solicitors serving Perth. Personal injury, workplace accident and medical negligence claims for Perth residents. Free enquiry, no win no fee.",
+  title: "Perth Accident Claims | Personal Injury Claim Information for Perth",
+  description: "Information on personal injury, workplace accident and medical negligence claims in Perth: courts, time limits and next steps. General information, not legal advice.",
   alternates: { canonical: "/perth-accident-claims" },
   robots: { index: false, follow: true },
 };

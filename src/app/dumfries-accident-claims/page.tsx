@@ -2,8 +2,8 @@ import type { Metadata } from "next";
 import LocationPageTemplate from "@/components/LocationPageTemplate";
 
 export const metadata: Metadata = {
-  title: "Dumfries Accident Claims | Personal Injury Solicitors Dumfries",
-  description: "Accident claims solicitors serving Dumfries and Galloway. Personal injury, workplace and medical negligence claims for Dumfries residents. Free enquiry, no win no fee.",
+  title: "Dumfries Accident Claims | Personal Injury Claim Information for Dumfries",
+  description: "Information on personal injury, workplace and medical negligence claims in Dumfries and Galloway: courts, time limits and next steps. General information, not legal advice.",
   alternates: { canonical: "/dumfries-accident-claims" },
   robots: { index: false, follow: true },
 };

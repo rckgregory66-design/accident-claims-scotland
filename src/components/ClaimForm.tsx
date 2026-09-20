@@ -63,7 +63,7 @@ export default function ClaimForm({ variant = "inline", title }: Props) {
         </p>
         <ol className="text-sm text-green-900 space-y-2 list-decimal pl-5">
           <li>Your enquiry is being reviewed.</li>
-          <li>A member of our team will contact you by phone or email.</li>
+          <li>You may be contacted by phone or email using the details you provided.</li>
           <li>Keep a note of any deadline information — time limits still apply while we are in contact.</li>
           <li>If a time limit may be imminent, seek urgent independent advice from a qualified Scottish solicitor.</li>
         </ol>

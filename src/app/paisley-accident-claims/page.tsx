@@ -2,8 +2,8 @@ import type { Metadata } from "next";
 import LocationPageTemplate from "@/components/LocationPageTemplate";
 
 export const metadata: Metadata = {
-  title: "Paisley Accident Claims | Personal Injury Solicitors Paisley",
-  description: "Accident claims solicitors serving Paisley. Personal injury, workplace accident and medical negligence claims for Paisley residents. Free enquiry, no win no fee.",
+  title: "Paisley Accident Claims | Personal Injury Claim Information for Paisley",
+  description: "Information on personal injury, workplace accident and medical negligence claims in Paisley: courts, time limits and next steps. General information, not legal advice.",
   alternates: { canonical: "/paisley-accident-claims" },
   robots: { index: false, follow: true },
 };

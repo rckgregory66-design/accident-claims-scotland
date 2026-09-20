@@ -2,9 +2,8 @@ import type { Metadata } from "next";
 import LocationPageTemplate from "@/components/LocationPageTemplate";
 
 export const metadata: Metadata = {
-  title: "Edinburgh Accident Claims | Personal Injury Solicitors Edinburgh",
-  description:
-    "Accident claims solicitors serving Edinburgh. Personal injury, workplace accident and medical negligence claims for Edinburgh residents. Free enquiry, no win no fee.",
+  title: "Edinburgh Accident Claims | Personal Injury Claim Information for Edinburgh",
+  description: "Information on personal injury, workplace accident and medical negligence claims in Edinburgh: courts, time limits and next steps. General information, not legal advice.",
   alternates: { canonical: "/edinburgh-accident-claims" },
   robots: { index: true, follow: true },
 };
