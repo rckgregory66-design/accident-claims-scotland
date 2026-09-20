@@ -37,7 +37,7 @@ const faqs = [
   {
     question: "Is there a time limit for personal injury claims in Scotland?",
     answer:
-      "Yes. In Scotland the general time limit is three years from the date of the accident or from the date of knowledge. Different rules apply for children and adults lacking capacity. Seek advice early — missing the deadline can extinguish your right to claim.",
+      "Yes. In Scotland the general time limit is three years from the date of the accident or from the date of knowledge. Different rules apply for children and adults lacking capacity. Seek advice early — missing the deadline can leave your claim time-barred.",
   },
 ];
 

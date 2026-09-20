@@ -121,7 +121,7 @@ export default function CompensationGuidePage() {
       ]}
       guideSlugs={[
         "what-is-my-accident-claim-worth-scotland",
-        "contributory-negligence-scotland",
+        "can-i-claim-if-partly-at-fault-scotland",
         "serious-injury-rehabilitation-scotland",
       ]}
       locationClaimType="personal injury claims"

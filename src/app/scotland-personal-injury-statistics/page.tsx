@@ -321,8 +321,8 @@ export default function ScotlandPersonalInjuryStatisticsPage() {
               discretion for late applications.
             </li>
             <li>
-              <strong>Children:</strong> the three-year period does not begin until the child's eighteenth birthday,
-              meaning claims may be brought up to age 21.
+              <strong>Children:</strong> the three-year period does not begin until the child's sixteenth birthday,
+              meaning claims may generally be brought up to their nineteenth birthday.
             </li>
           </ul>
           <p>

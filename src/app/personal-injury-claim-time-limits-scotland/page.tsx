@@ -32,7 +32,7 @@ const faqs = [
   {
     question: "What happens if I miss the time limit?",
     answer:
-      "In Scotland, if you do not bring your claim within the limitation period, the right to sue may be extinguished — this is called negative prescription. Once the prescriptive period has expired, it is generally not possible to pursue a claim, even if it would otherwise have succeeded. This is why it is vital to seek advice promptly.",
+      "If you do not raise court proceedings within the three-year limitation period, the claim is time-barred and the court will normally refuse to hear it, even if it would otherwise have succeeded. Section 19A of the Prescription and Limitation (Scotland) Act 1973 gives the court a discretion to allow a late action, but it is not automatic and should never be relied on. This is why it is vital to seek advice promptly.",
   },
   {
     question: "Is there a different time limit for medical negligence claims in Scotland?",
@@ -59,14 +59,14 @@ export default function TimeLimitsPage() {
         "In industrial disease cases the clock starts from diagnosis, not from the date of exposure.",
         "Children injured before age 16 have until their 19th birthday to claim.",
         "The CICA time limit for criminal injury claims is only two years — shorter than standard PI.",
-        "Missing the time limit in Scotland can permanently extinguish your right to claim.",
+        "Missing the time limit in Scotland can mean your claim is time-barred.",
       ]}
       answerBox="In Scotland, the general time limit for personal injury claims is three years from the date of the accident or the date of knowledge — whichever is later. The law governing time limits in Scotland is different from England and Wales. Missing the time limit can mean losing your right to claim. Seek legal advice as soon as possible."
       sections={[
         {
           heading: "The Three-Year Rule in Scotland",
           content:
-            "In Scotland, personal injury claims are subject to a five-year prescriptive period, but the courts apply a 'long stop' under the Prescription and Limitation (Scotland) Act 1973. In practice, the relevant limitation period for personal injury claims in Scotland is three years from the date of the accident or from the date of knowledge. This three-year period is known as the triennium. If you do not raise court proceedings within this period, your claim will generally be extinguished by negative prescription.",
+            "Under section 17 of the Prescription and Limitation (Scotland) Act 1973, a personal injury action must generally be raised within three years of the date of the injury or, if later, the date the pursuer became aware (or ought reasonably to have become aware) of the key facts. Raising court proceedings, not merely contacting a solicitor or sending a letter, is what stops the clock. If the period expires, the action is time-barred unless the court exercises its discretion under section 19A.",
         },
         {
           heading: "What is the Date of Knowledge?",
@@ -95,7 +95,7 @@ export default function TimeLimitsPage() {
         {
           heading: "Adults Lacking Legal Capacity",
           content:
-            "Different rules apply to adults who lack legal capacity due to mental incapacity. The prescriptive period is suspended while the individual lacks capacity. Seek advice if a family member or person you care for has suffered a personal injury and their legal capacity is in question.",
+            "Different rules apply to adults who lack legal capacity due to mental incapacity. The limitation period does not run while the individual lacks legal capacity because of mental incapacity, subject to the detail of the Act. Seek advice if a family member or person you care for has suffered a personal injury and their legal capacity is in question.",
         },
         {
           heading: "Fatal Accident Claims: Time Limits in Scotland",
@@ -110,16 +110,16 @@ export default function TimeLimitsPage() {
         {
           heading: "Why You Must Not Delay",
           content:
-            "Missing the time limit in Scotland can permanently extinguish your right to claim compensation, regardless of how strong your case is. Beyond legal time limits, delay can also cause evidence to be lost, witnesses to become unavailable, CCTV footage to be overwritten and memories to fade. Even if you have several years remaining, it is always in your interests to seek advice as early as possible after an accident or diagnosis.",
+            "Missing the time limit in Scotland can leave your claim time-barred, regardless of how strong your case is. Beyond legal time limits, delay can also cause evidence to be lost, witnesses to become unavailable, CCTV footage to be overwritten and memories to fade. Even if you have several years remaining, it is always in your interests to seek advice as early as possible after an accident or diagnosis.",
         },
         {
           heading: "What Happens if You Miss the Time Limit?",
           content:
-            "In Scotland, unlike in some other jurisdictions, the courts have very limited discretion to allow claims outside the three-year period. Once the prescriptive period has expired, the right to sue is generally extinguished by operation of law (negative prescription). For this reason, it is essential to act within the time limit. If you believe your claim may be time-barred, seek legal advice immediately — there may be grounds to argue for an alternative date of knowledge.",
+            "The court has a discretion under section 19A of the 1973 Act to allow an action raised outside the three-year period, but it is exercised case by case and cannot be relied on. For this reason, it is essential to act within the time limit. If you believe your claim may be time-barred, seek legal advice immediately — there may be grounds to argue for an alternative date of knowledge.",
         },
       ]}
       guideSlugs={[
-        "personal-injury-time-limits-scotland",
+        "personal-injury-claim-time-limit-scotland",
         "industrial-disease-delayed-symptoms-scotland",
         "medical-negligence-what-to-prove-scotland",
         "fatal-accident-compensation-scotland",
