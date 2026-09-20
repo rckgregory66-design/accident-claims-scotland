@@ -1,5 +1,7 @@
 import type { Metadata } from "next";
 import Breadcrumbs from "@/components/Breadcrumbs";
+import JsonLd from "@/components/JsonLd";
+import { breadcrumbSchema, servicePageSchema } from "@/lib/schema";
 import { SITE } from "@/data/siteConfig";
 
 export const metadata: Metadata = {
@@ -11,6 +13,10 @@ export const metadata: Metadata = {
 export default function TermsPage() {
   return (
     <>
+      <JsonLd data={[
+        breadcrumbSchema([{ name: "Home", url: SITE.url }, { name: "Terms of Use", url: `${SITE.url}/terms` }], "/terms"),
+        servicePageSchema({ name: "Terms of Use", url: "/terms", description: "Terms of use for the Accident Claims Scotland website.", dateModified: "2026-09-20" }),
+      ]} />
       <Breadcrumbs crumbs={[{ label: "Terms of Use" }]} />
       <section className="bg-[#0f2044] py-10 px-4">
         <div className="max-w-4xl mx-auto">

@@ -17,4 +17,19 @@ Disallow: /
 User-agent: Diffbot
 Disallow: /
 
+User-agent: ClaudeBot
+Disallow: /
+
+User-agent: anthropic-ai
+Disallow: /
+
+User-agent: Applebot-Extended
+Disallow: /
+
+User-agent: Bytespider
+Disallow: /
+
+User-agent: cohere-ai
+Disallow: /
+
 Sitemap: https://accident-claims-scotland.com/sitemap.xml

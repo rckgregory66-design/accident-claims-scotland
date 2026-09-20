@@ -1,6 +1,9 @@
 import type { Metadata } from "next";
 import ClaimForm from "@/components/ClaimForm";
 import Breadcrumbs from "@/components/Breadcrumbs";
+import JsonLd from "@/components/JsonLd";
+import { breadcrumbSchema, servicePageSchema } from "@/lib/schema";
+import { SITE } from "@/data/siteConfig";
 
 export const metadata: Metadata = {
   title: "Contact Accident Claims Scotland | Free Claim Enquiry",
@@ -12,6 +15,10 @@ export const metadata: Metadata = {
 export default function ContactPage() {
   return (
     <>
+      <JsonLd data={[
+        breadcrumbSchema([{ name: "Home", url: SITE.url }, { name: "Contact", url: `${SITE.url}/contact` }], "/contact"),
+        servicePageSchema({ name: "Contact", url: "/contact", description: "Contact page for Accident Claims Scotland, with the enquiry form.", dateModified: "2026-09-20" }),
+      ]} />
       <Breadcrumbs crumbs={[{ label: "Contact" }]} />
 
       <section className="bg-[#0f2044] py-14 px-4 sm:px-6">

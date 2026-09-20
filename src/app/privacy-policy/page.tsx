@@ -1,5 +1,7 @@
 import type { Metadata } from "next";
 import Breadcrumbs from "@/components/Breadcrumbs";
+import JsonLd from "@/components/JsonLd";
+import { breadcrumbSchema, servicePageSchema } from "@/lib/schema";
 import { SITE } from "@/data/siteConfig";
 
 export const metadata: Metadata = {
@@ -11,6 +13,10 @@ export const metadata: Metadata = {
 export default function PrivacyPolicyPage() {
   return (
     <>
+      <JsonLd data={[
+        breadcrumbSchema([{ name: "Home", url: SITE.url }, { name: "Privacy Policy", url: `${SITE.url}/privacy-policy` }], "/privacy-policy"),
+        servicePageSchema({ name: "Privacy Policy", url: "/privacy-policy", description: "How Accident Claims Scotland handles personal data.", dateModified: "2026-09-20" }),
+      ]} />
       <Breadcrumbs crumbs={[{ label: "Privacy Policy" }]} />
       <section className="bg-[#0f2044] py-10 px-4">
         <div className="max-w-4xl mx-auto">

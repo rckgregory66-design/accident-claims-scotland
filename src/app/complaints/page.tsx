@@ -1,5 +1,8 @@
 import type { Metadata } from "next";
 import Breadcrumbs from "@/components/Breadcrumbs";
+import JsonLd from "@/components/JsonLd";
+import { breadcrumbSchema, servicePageSchema } from "@/lib/schema";
+import { SITE } from "@/data/siteConfig";
 
 export const metadata: Metadata = {
   title: "Complaints Procedure | Accident Claims Scotland",
@@ -10,6 +13,10 @@ export const metadata: Metadata = {
 export default function ComplaintsPage() {
   return (
     <>
+      <JsonLd data={[
+        breadcrumbSchema([{ name: "Home", url: SITE.url }, { name: "Complaints", url: `${SITE.url}/complaints` }], "/complaints"),
+        servicePageSchema({ name: "Complaints", url: "/complaints", description: "How to raise a complaint about the Accident Claims Scotland website.", dateModified: "2026-09-20" }),
+      ]} />
       <Breadcrumbs crumbs={[{ label: "Complaints" }]} />
       <section className="bg-[#0f2044] py-10 px-4">
         <div className="max-w-4xl mx-auto">

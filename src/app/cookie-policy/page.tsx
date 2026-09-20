@@ -1,5 +1,8 @@
 import type { Metadata } from "next";
 import Breadcrumbs from "@/components/Breadcrumbs";
+import JsonLd from "@/components/JsonLd";
+import { breadcrumbSchema, servicePageSchema } from "@/lib/schema";
+import { SITE } from "@/data/siteConfig";
 
 export const metadata: Metadata = {
   title: "Cookie Policy | Accident Claims Scotland",
@@ -10,6 +13,10 @@ export const metadata: Metadata = {
 export default function CookiePolicyPage() {
   return (
     <>
+      <JsonLd data={[
+        breadcrumbSchema([{ name: "Home", url: SITE.url }, { name: "Cookie Policy", url: `${SITE.url}/cookie-policy` }], "/cookie-policy"),
+        servicePageSchema({ name: "Cookie Policy", url: "/cookie-policy", description: "How Accident Claims Scotland uses cookies.", dateModified: "2026-09-20" }),
+      ]} />
       <Breadcrumbs crumbs={[{ label: "Cookie Policy" }]} />
       <section className="bg-[#0f2044] py-10 px-4">
         <div className="max-w-4xl mx-auto">
