@@ -141,7 +141,7 @@ export const guides: Guide[] = [
     description: "How to claim for industrial deafness and noise-induced hearing loss in Scotland — including claims against former employers and long-past workplace exposure.",
     category: "Industrial Disease",
     datePublished: "2025-05-20",
-    dateModified: "2026-06-01",
+    dateModified: "2026-09-20",
     readTime: "8 min read",
   },
   {
@@ -150,7 +150,7 @@ export const guides: Guide[] = [
     description: "When can you claim against your GP in Scotland? Failure to diagnose, delayed referrals, prescribing errors and other forms of GP negligence explained.",
     category: "Medical Negligence",
     datePublished: "2025-06-01",
-    dateModified: "2026-06-01",
+    dateModified: "2026-09-20",
     readTime: "8 min read",
   },
   {
@@ -168,7 +168,7 @@ export const guides: Guide[] = [
     description: "How rehabilitation support works in serious injury claims in Scotland — interim payments, case management and accessing early treatment during your claim.",
     category: "Serious Injury",
     datePublished: "2025-06-15",
-    dateModified: "2026-06-01",
+    dateModified: "2026-09-20",
     readTime: "7 min read",
   },
   {
@@ -186,7 +186,7 @@ export const guides: Guide[] = [
     description: "How to claim for slips, trips and falls in Scotland — occupiers' liability, what you must prove and how to gather evidence after an accident.",
     category: "Public Place Accidents",
     datePublished: "2025-07-10",
-    dateModified: "2026-06-01",
+    dateModified: "2026-09-20",
     readTime: "7 min read",
   },
   {
@@ -195,7 +195,7 @@ export const guides: Guide[] = [
     description: "Injured in a supermarket in Scotland? A guide to making a claim for slips, trips and other supermarket accidents — preserving CCTV evidence and the claims process.",
     category: "Public Place Accidents",
     datePublished: "2025-07-20",
-    dateModified: "2026-06-01",
+    dateModified: "2026-09-20",
     readTime: "7 min read",
   },
   {
@@ -222,7 +222,7 @@ export const guides: Guide[] = [
     description: "How to claim for vibration white finger (HAVS) in Scotland — symptoms, diagnosis, proving workplace exposure and the date of knowledge time limit.",
     category: "Industrial Disease",
     datePublished: "2025-08-20",
-    dateModified: "2026-06-01",
+    dateModified: "2026-09-20",
     readTime: "8 min read",
   },
   {
@@ -231,7 +231,7 @@ export const guides: Guide[] = [
     description: "A guide to claiming compensation for care home negligence in Scotland — inadequate care, falls, pressure sores, malnutrition and neglect.",
     category: "Medical Negligence",
     datePublished: "2025-09-01",
-    dateModified: "2026-06-01",
+    dateModified: "2026-09-20",
     readTime: "8 min read",
   },
   {
@@ -240,7 +240,7 @@ export const guides: Guide[] = [
     description: "Can you claim for a prescription error in Scotland? Wrong medication, wrong dose, dangerous drug interactions — when pharmacy or GP errors become negligence.",
     category: "Medical Negligence",
     datePublished: "2025-09-10",
-    dateModified: "2026-06-01",
+    dateModified: "2026-09-20",
     readTime: "7 min read",
   },
   {
@@ -304,6 +304,14 @@ export const publishedGuideSlugs = new Set([
   "cycling-accident-claims-scotland",
   "motorcycle-accident-claims-scotland",
   "no-win-no-fee-scotland-explained",
+  "noise-induced-hearing-loss-claims-scotland",
+  "gp-negligence-claims-scotland",
+  "serious-injury-rehabilitation-scotland",
+  "slip-trip-fall-claims-scotland",
+  "supermarket-accident-claims-scotland",
+  "vibration-white-finger-claims-scotland",
+  "care-home-negligence-claims-scotland",
+  "prescription-error-claims-scotland",
 ]);
 
 export const publishedGuides = guides.filter((guide) => publishedGuideSlugs.has(guide.slug));
