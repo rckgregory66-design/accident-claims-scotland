@@ -112,8 +112,8 @@ export default function HospitalInfectionPage() {
       locationClaimType="hospital-acquired infection and HAI negligence claims"
       faqs={faqs}
       authoritativeSources={[
-        { label: "Healthcare Environment Inspectorate (HEI) — HAI inspection reports", url: "https://www.hepscotland.co.uk/" },
-        { label: "Scottish Government — HAI standards", url: "https://www.gov.scot/policies/health-and-social-care/healthcare-associated-infections/" },
+        { label: "Healthcare Improvement Scotland — Healthcare Environment Inspectorate (HAI inspections)", url: "https://www.healthcareimprovementscotland.scot/" },
+        { label: "NHS National Services Scotland — healthcare associated infection", url: "https://www.nss.nhs.scot/antimicrobial-resistance-and-healthcare-associated-infection/" },
         { label: "NHS Central Legal Office Scotland — clinical negligence", url: "https://www.clo.scot.nhs.uk/" },
       ]}
       related={[

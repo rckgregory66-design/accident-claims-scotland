@@ -146,7 +146,7 @@ export default function PersonalInjuryPage() {
       authoritativeSources={[
         { label: "Prescription and Limitation (Scotland) Act 1973 — governing time-limit statute", url: "https://www.legislation.gov.uk/ukpga/1973/52/contents" },
         { label: "Scottish Courts and Tribunals — National Personal Injury Court", url: "https://www.scotcourts.gov.uk/courts-and-tribunals/sheriff-and-justice-of-the-peace-courts/national-personal-injury-court/" },
-        { label: "NHS Inform — accessing medical records", url: "https://www.nhsinform.scot/care-support-and-rights/health-rights/access/medical-records/" },
+        { label: "NHS inform — your health rights", url: "https://www.nhsinform.scot/care-support-and-rights/health-rights/" },
       ]}
       related={[
         { label: "Compensation Guide", href: "/personal-injury-compensation-scotland" },

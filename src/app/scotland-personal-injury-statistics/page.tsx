@@ -282,12 +282,12 @@ export default function ScotlandPersonalInjuryStatisticsPage() {
           <p className="text-sm text-gray-600">
             Source:{" "}
             <a
-              href="https://www.hse.gov.uk/statistics/causdis/mesothelioma/"
+              href="https://www.hse.gov.uk/statistics/causdis/"
               target="_blank"
               rel="noopener noreferrer"
               className="text-red-700 underline"
             >
-              HSE — Mesothelioma Statistics
+              HSE — Work-related disease statistics (including mesothelioma)
             </a>
             .
           </p>

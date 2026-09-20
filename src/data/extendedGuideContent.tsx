@@ -135,7 +135,7 @@ const guideData: Record<string, Guide> = {
     ],
     sources: [
       { label: "Damages (Scotland) Act 2011", href: "https://www.legislation.gov.uk/asp/2011/7/contents", note: "Primary legislation governing damages where personal injury results in death." },
-      { label: "SCTS: Fatal Accident Inquiries", href: "https://www.scotcourts.gov.uk/courts-and-tribunals/courts-and-tribunals/fatal-accident-inquiries/", note: "Official explanation of the purpose and procedure of an FAI." },
+      { label: "SCTS: Fatal Accident Inquiries", href: "https://www.scotcourts.gov.uk/fatal-accident-inquiries/", note: "Official explanation of the purpose and procedure of an FAI." },
       commonSources.limitation,
     ],
     parent: { href: "/serious-injury-claims-scotland", label: "Serious injury claims" },
@@ -154,7 +154,7 @@ const guideData: Record<string, Guide> = {
     ],
     sources: [
       { label: "NHS inform: pregnancy and birth", href: "https://www.nhsinform.scot/ready-steady-baby/", note: "Official Scottish maternity and newborn health information." },
-      { label: "SCTS: clinical negligence court rules", href: "https://www.scotcourts.gov.uk/rules-and-practice/rules-of-court/sheriff-court---civil-procedure-rules/chapter-42a-clinical-negligence-actions", note: "Official rules for clinical-negligence actions in sheriff court." },
+      { label: "SCTS: rules of court (including clinical negligence actions)", href: "https://www.scotcourts.gov.uk/rules-and-practice/rules-of-court", note: "Official rules for clinical-negligence actions in sheriff court." },
       commonSources.limitation,
     ],
     parent: { href: "/medical-negligence-claims-scotland", label: "Medical negligence claims" },

@@ -130,7 +130,7 @@ export default function NeedlestickPage() {
       authoritativeSources={[
         { label: "Health and Safety (Sharp Instruments in Healthcare) Regulations 2013", url: "https://www.legislation.gov.uk/uksi/2013/645/contents" },
         { label: "HSE — Sharps injuries: guidance for employers and employees in health and social care", url: "https://www.hse.gov.uk/healthservices/needlesticks/" },
-        { label: "NHS — Needlestick injury guidance", url: "https://www.nhsinform.scot/care-support-and-rights/nhs-services/hospitals/needlestick-injuries" },
+        { label: "HSE — Needlestick injuries in healthcare", url: "https://www.hse.gov.uk/healthservices/needlesticks/" },
       ]}
       related={[
         { label: "Accident at Work Claims Scotland", href: "/accident-at-work-claims-scotland" },

@@ -120,7 +120,7 @@ export default function ShopAccidentPage() {
       authoritativeSources={[
         { label: "Occupiers' Liability (Scotland) Act 1960 — the governing statute", url: "https://www.legislation.gov.uk/ukpga/1960/30/contents" },
         { label: "Prescription and Limitation (Scotland) Act 1973 — time limits", url: "https://www.legislation.gov.uk/ukpga/1973/52/contents" },
-        { label: "HSE — Slips and trips in the retail sector", url: "https://www.hse.gov.uk/slips/retail.htm" },
+        { label: "HSE — Slips and trips", url: "https://www.hse.gov.uk/slips/" },
       ]}
       related={[
         { label: "Public Place Accident Claims Scotland", href: "/public-place-accident-claims-scotland" },
