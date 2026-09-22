@@ -123,6 +123,7 @@ export default function PublicPlaceAccidentPage() {
           { label: "School Accident Claims", href: "/school-accident-claims-scotland", desc: "Children injured on school premises" },
           { label: "Sports Injury Claims", href: "/sports-injury-claims-scotland", desc: "Gyms, pools, leisure centres" },
           { label: "Hotel Accident Claims", href: "/hotel-accident-claims-scotland", desc: "Guest injuries, pool accidents" },
+          { label: "Dog Bite Claims", href: "/dog-bite-claims-scotland", desc: "Keeper liability and evidence" },
         ],
       }}
       guideCategory="Public Places"

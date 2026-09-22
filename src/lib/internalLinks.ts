@@ -2,7 +2,31 @@ import { publishedGuides } from "@/data/guides";
 import { CLAIM_TYPES, LOCATIONS, NAV_LINKS } from "@/data/siteConfig";
 import { roadTrafficPageSlugs } from "@/data/roadTrafficPages";
 
+// Indexable pages that are not in the main navigation or claim-type lists.
+const LONG_TAIL_ROUTES = [
+  "/manual-handling-injury-claims-scotland",
+  "/needlestick-injury-claims-scotland",
+  "/stress-at-work-claims-scotland",
+  "/self-employed-injury-claims-scotland",
+  "/delayed-diagnosis-claims-scotland",
+  "/dental-negligence-claims-scotland",
+  "/hospital-infection-claims-scotland",
+  "/shop-accident-claims-scotland",
+  "/school-accident-claims-scotland",
+  "/hotel-accident-claims-scotland",
+  "/occupational-asthma-claims-scotland",
+  "/occupational-dermatitis-claims-scotland",
+  "/domestic-abuse-injury-claim-scotland",
+  "/child-abuse-injury-claim-scotland",
+  "/contributory-negligence-road-accident-scotland",
+  "/dog-bite-claims-scotland",
+  "/work-at-height-fall-claims-scotland",
+  "/scotland-personal-injury-statistics",
+  "/editorial-methodology",
+];
+
 const STATIC_ROUTES = new Set([
+  ...LONG_TAIL_ROUTES,
   "/",
   "/about",
   "/accessibility",

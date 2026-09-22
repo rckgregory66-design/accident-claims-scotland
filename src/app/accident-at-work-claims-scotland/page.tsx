@@ -134,6 +134,7 @@ export default function AccidentAtWorkPage() {
           { label: "Needlestick Injury Claims", href: "/needlestick-injury-claims-scotland", desc: "Sharps injuries in healthcare" },
           { label: "Stress at Work Claims", href: "/stress-at-work-claims-scotland", desc: "Psychiatric injury and bullying" },
           { label: "Self-Employed Injury Claims", href: "/self-employed-injury-claims-scotland", desc: "Contractors and sole traders" },
+          { label: "Fall From Height Claims", href: "/work-at-height-fall-claims-scotland", desc: "Ladders, scaffolds and roofs" },
         ],
       }}
       guideCategory="Workplace Accidents"

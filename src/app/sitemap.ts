@@ -39,6 +39,8 @@ export default function sitemap(): MetadataRoute.Sitemap {
     { url: `${SITE.url}/domestic-abuse-injury-claim-scotland`, changeFrequency: "monthly" as const, priority: 0.75 },
     { url: `${SITE.url}/child-abuse-injury-claim-scotland`, changeFrequency: "monthly" as const, priority: 0.75 },
     { url: `${SITE.url}/contributory-negligence-road-accident-scotland`, changeFrequency: "monthly" as const, priority: 0.75 },
+    { url: `${SITE.url}/dog-bite-claims-scotland`, changeFrequency: "monthly" as const, priority: 0.75 },
+    { url: `${SITE.url}/work-at-height-fall-claims-scotland`, changeFrequency: "monthly" as const, priority: 0.75 },
     { url: `${SITE.url}/guides`, changeFrequency: "weekly" as const, priority: 0.8 },
     { url: `${SITE.url}/about`, changeFrequency: "monthly" as const, priority: 0.6 },
     { url: `${SITE.url}/editorial-methodology`, changeFrequency: "monthly" as const, priority: 0.5 },
