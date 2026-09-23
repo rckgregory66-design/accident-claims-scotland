@@ -60,14 +60,16 @@ export default function SeriousInjuryPage() {
       sections={[
         {
           heading: "Types of Serious Injury Claim in Scotland",
-          content: "We have experience handling:",
+          content: "Serious injury claims in Scotland include:",
           linkedList: [
-            { text: "Brain injury claims — mild, moderate and severe traumatic brain injury (TBI)", href: "/brain-injury-claims-scotland" },
-            { text: "Spinal injury claims — spinal cord injuries and paralysis", href: "/spinal-injury-claims-scotland" },
-            { text: "Amputation claims — above and below knee, and upper limb amputation", href: "/amputation-claims-scotland" },
-            { text: "Complex regional pain syndrome (CRPS) claims", href: "/complex-regional-pain-syndrome-claims-scotland" },
-            { text: "Serious burn injury claims", href: "/serious-burn-injury-claims-scotland" },
-            { text: "Fatal accident claims under the Damages (Scotland) Act 2011", href: "/fatal-accident-claims-scotland" },
+            { text: "Brain injury claims — mild, moderate and severe traumatic brain injury (TBI)", href: "/serious-injury-claims-scotland/brain-injury-claims" },
+            { text: "Spinal injury claims — spinal cord injuries and paralysis", href: "/serious-injury-claims-scotland/spinal-injury-claims" },
+            { text: "Amputation claims — above and below knee, and upper limb amputation", href: "/serious-injury-claims-scotland/amputation-claims" },
+            { text: "Complex regional pain syndrome (CRPS) claims", href: "/serious-injury-claims-scotland/complex-regional-pain-syndrome-claims" },
+            { text: "Serious burn injury claims", href: "/serious-injury-claims-scotland/serious-burn-injury-claims" },
+            { text: "Periodical payments and the discount rate — how future losses are valued and paid", href: "/serious-injury-claims-scotland/periodical-payments-and-the-discount-rate" },
+            { text: "Capacity and guardianship after a serious injury", href: "/serious-injury-claims-scotland/capacity-and-guardianship-after-serious-injury" },
+            { text: "Fatal accident claims under the Damages (Scotland) Act 2011", href: "/fatal-accident-compensation-scotland" },
           ],
         },
         {
@@ -88,7 +90,7 @@ export default function SeriousInjuryPage() {
         {
           heading: "Rehabilitation and Case Management",
           content:
-            "In serious injury cases, early rehabilitation can make a significant difference to long-term outcomes. Interim payments can be arranged to fund treatment and rehabilitation while the claim proceeds. A specialist case manager may coordinate medical and support services. We work closely with rehabilitation experts to ensure clients receive the support needed from the earliest possible point.",
+            "In serious injury cases, early rehabilitation can make a significant difference to long-term outcomes. Interim payments can be arranged to fund treatment and rehabilitation while the claim proceeds. A specialist case manager may coordinate medical and support services. Rehabilitation experts, case managers and treating clinicians are often involved from an early stage.",
         },
         {
           heading: "What Compensation Can Be Claimed for Serious Injury?",
@@ -108,12 +110,14 @@ export default function SeriousInjuryPage() {
       subpages={{
         title: "Specialist Serious Injury Claim Types",
         pages: [
-          { label: "Brain Injury Claims", href: "/brain-injury-claims-scotland", desc: "TBI, cognitive and physical disability" },
-          { label: "Spinal Injury Claims", href: "/spinal-injury-claims-scotland", desc: "Paralysis, spinal cord damage" },
-          { label: "Amputation Claims", href: "/amputation-claims-scotland", desc: "Limb loss and prosthetic needs" },
-          { label: "Fatal Accident Claims", href: "/fatal-accident-claims-scotland", desc: "Damages (Scotland) Act 2011 claims" },
-          { label: "CRPS Claims", href: "/complex-regional-pain-syndrome-claims-scotland", desc: "Complex regional pain syndrome" },
-          { label: "Burn Injury Claims", href: "/serious-burn-injury-claims-scotland", desc: "Severe burns and scarring" },
+          { label: "Brain Injury Claims", href: "/serious-injury-claims-scotland/brain-injury-claims", desc: "TBI, cognitive and physical disability" },
+          { label: "Spinal Injury Claims", href: "/serious-injury-claims-scotland/spinal-injury-claims", desc: "Paralysis, spinal cord damage" },
+          { label: "Amputation Claims", href: "/serious-injury-claims-scotland/amputation-claims", desc: "Limb loss and prosthetic needs" },
+          { label: "Fatal Accident Claims", href: "/fatal-accident-compensation-scotland", desc: "Damages (Scotland) Act 2011 claims" },
+          { label: "CRPS Claims", href: "/serious-injury-claims-scotland/complex-regional-pain-syndrome-claims", desc: "Complex regional pain syndrome" },
+          { label: "Burn Injury Claims", href: "/serious-injury-claims-scotland/serious-burn-injury-claims", desc: "Severe burns and scarring" },
+          { label: "Periodical Payments and the Discount Rate", href: "/serious-injury-claims-scotland/periodical-payments-and-the-discount-rate", desc: "How future losses are valued" },
+          { label: "Capacity and Guardianship", href: "/serious-injury-claims-scotland/capacity-and-guardianship-after-serious-injury", desc: "When an adult cannot manage a claim" },
         ],
       }}
       guideCategory="Serious Injury"
