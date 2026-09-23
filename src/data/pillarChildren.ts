@@ -2,6 +2,7 @@ import type { AuthoritativeSource, FAQItem, RelatedLink, Section, SubpageLink } 
 import { accidentAtWorkChildren } from "@/data/pillars/accidentAtWork";
 import { industrialDiseaseChildren } from "@/data/pillars/industrialDisease";
 import { medicalNegligenceChildren } from "@/data/pillars/medicalNegligence";
+import { publicPlaceChildren } from "@/data/pillars/publicPlace";
 import { seriousInjuryChildren } from "@/data/pillars/seriousInjury";
 
 /**
@@ -17,7 +18,8 @@ export type PillarKey =
   | "industrial-disease-claims-scotland"
   | "accident-at-work-claims-scotland"
   | "medical-negligence-claims-scotland"
-  | "serious-injury-claims-scotland";
+  | "serious-injury-claims-scotland"
+  | "public-place-accident-claims-scotland";
 
 export interface PillarInfo {
   /** Hub page label used in breadcrumbs and "back to hub" links. */
@@ -73,6 +75,17 @@ export const PILLARS: Record<PillarKey, PillarInfo> = {
       { label: "No Win No Fee", href: "/no-win-no-fee-solicitors-scotland" },
     ],
   },
+  "public-place-accident-claims-scotland": {
+    name: "Public Place Accident Claims Scotland",
+    locationClaimType: "public place accident claims",
+    related: [
+      { label: "Accident at Work Claims", href: "/accident-at-work-claims-scotland" },
+      { label: "Road Traffic Accident Claims", href: "/road-traffic-accident-claims-scotland" },
+      { label: "Serious Injury Claims", href: "/serious-injury-claims-scotland" },
+      { label: "Time Limits Scotland", href: "/personal-injury-claim-time-limits-scotland" },
+      { label: "No Win No Fee", href: "/no-win-no-fee-solicitors-scotland" },
+    ],
+  },
 };
 
 export interface PillarChild {
@@ -101,7 +114,7 @@ export interface PillarChild {
   dateModified: string;
 }
 
-export const pillarChildren: PillarChild[] = [...industrialDiseaseChildren, ...accidentAtWorkChildren, ...medicalNegligenceChildren, ...seriousInjuryChildren];
+export const pillarChildren: PillarChild[] = [...industrialDiseaseChildren, ...accidentAtWorkChildren, ...medicalNegligenceChildren, ...seriousInjuryChildren, ...publicPlaceChildren];
 
 export function childPath(child: Pick<PillarChild, "pillar" | "slug">): string {
   return `/${child.pillar}/${child.slug}`;
