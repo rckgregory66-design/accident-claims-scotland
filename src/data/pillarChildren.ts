@@ -1,6 +1,7 @@
 import type { AuthoritativeSource, FAQItem, RelatedLink, Section, SubpageLink } from "@/components/ClaimPageTemplate";
 import { accidentAtWorkChildren } from "@/data/pillars/accidentAtWork";
 import { industrialDiseaseChildren } from "@/data/pillars/industrialDisease";
+import { medicalNegligenceChildren } from "@/data/pillars/medicalNegligence";
 
 /**
  * Pillar/child content architecture.
@@ -11,7 +12,10 @@ import { industrialDiseaseChildren } from "@/data/pillars/industrialDisease";
  * (`PillarChildRoute`) so structure, schema and internal links stay consistent.
  */
 
-export type PillarKey = "industrial-disease-claims-scotland" | "accident-at-work-claims-scotland";
+export type PillarKey =
+  | "industrial-disease-claims-scotland"
+  | "accident-at-work-claims-scotland"
+  | "medical-negligence-claims-scotland";
 
 export interface PillarInfo {
   /** Hub page label used in breadcrumbs and "back to hub" links. */
@@ -45,6 +49,17 @@ export const PILLARS: Record<PillarKey, PillarInfo> = {
       { label: "No Win No Fee", href: "/no-win-no-fee-solicitors-scotland" },
     ],
   },
+  "medical-negligence-claims-scotland": {
+    name: "Medical Negligence Claims Scotland",
+    locationClaimType: "medical negligence claims",
+    related: [
+      { label: "Serious Injury Claims", href: "/serious-injury-claims-scotland" },
+      { label: "Personal Injury Claims Scotland", href: "/personal-injury-claims-scotland" },
+      { label: "Industrial Disease Claims", href: "/industrial-disease-claims-scotland" },
+      { label: "Time Limits Scotland", href: "/personal-injury-claim-time-limits-scotland" },
+      { label: "No Win No Fee", href: "/no-win-no-fee-solicitors-scotland" },
+    ],
+  },
 };
 
 export interface PillarChild {
@@ -73,7 +88,7 @@ export interface PillarChild {
   dateModified: string;
 }
 
-export const pillarChildren: PillarChild[] = [...industrialDiseaseChildren, ...accidentAtWorkChildren];
+export const pillarChildren: PillarChild[] = [...industrialDiseaseChildren, ...accidentAtWorkChildren, ...medicalNegligenceChildren];
 
 export function childPath(child: Pick<PillarChild, "pillar" | "slug">): string {
   return `/${child.pillar}/${child.slug}`;
