@@ -1,16 +1,9 @@
 import type { PillarChild } from "@/data/pillarChildren";
+import { limitationAct, limitationDiscretion } from "@/data/pillars/sources";
 
 const PILLAR = "industrial-disease-claims-scotland" as const;
 const PUBLISHED = "2026-09-23";
 
-const limitationAct = {
-  label: "Prescription and Limitation (Scotland) Act 1973, section 17 — personal injury time limit",
-  url: "https://www.legislation.gov.uk/ukpga/1973/52/section/17",
-};
-const limitationDiscretion = {
-  label: "Prescription and Limitation (Scotland) Act 1973, section 19A — court discretion",
-  url: "https://www.legislation.gov.uk/ukpga/1973/52/section/19A",
-};
 const asbestosConditionsAct = {
   label: "Damages (Asbestos-related Conditions) (Scotland) Act 2009",
   url: "https://www.legislation.gov.uk/asp/2009/4/contents",

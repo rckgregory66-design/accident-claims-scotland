@@ -17,7 +17,7 @@ const faqs = [
   {
     question: "Can I claim against my employer in Scotland without losing my job?",
     answer:
-      "Your employer cannot legally dismiss you or subject you to detriment for making a legitimate personal injury claim. Your claim is handled by your employer's liability insurers — not your employer directly. If you are concerned about job security, speak to your solicitor.",
+      "Making a claim is a legal right, and it is normally dealt with by your employer's liability insurer rather than by your employer directly. Employment law gives some protection to workers who are treated badly for raising health and safety concerns, but how far it applies depends on your circumstances and length of service. If you are worried about your job, take advice from an employment adviser such as Acas or a solicitor.",
   },
   {
     question: "What are my employer's legal duties in Scotland?",
@@ -27,7 +27,7 @@ const faqs = [
   {
     question: "What if I was partly to blame for my accident at work?",
     answer:
-      "Contributory negligence may reduce the amount of compensation you receive, but does not necessarily prevent you from claiming. The court or insurers will apportion blame between the parties. Your solicitor will assess the likely impact on your claim.",
+      "Contributory negligence may reduce the amount of compensation you receive, but does not necessarily prevent you from claiming. The court or insurers will apportion blame between the parties. A solicitor can assess the likely impact on your claim.",
   },
   {
     question: "Can I claim if I am self-employed?",
@@ -51,7 +51,7 @@ export default function AccidentAtWorkPage() {
       intro="If you have been injured at work in Scotland, your employer may be legally responsible for your injuries. This guide explains workplace accident claims for employees across all industries — from construction and manufacturing to offices and retail — including how funding options such as no win, no fee arrangements work."
       tldr={[
         "Employers in Scotland have a legal duty of care to provide a safe working environment.",
-        "You cannot be legally dismissed for making a legitimate workplace injury claim.",
+        "Reporting the accident and having it entered in the accident book creates important evidence.",
         "Your claim is handled by your employer's liability insurers — not your employer personally.",
         "The general time limit is three years from the date of the accident.",
         "Evidence — accident reports, photographs, witness statements — should be gathered immediately.",
@@ -67,15 +67,16 @@ export default function AccidentAtWorkPage() {
           heading: "Common Workplace Accidents in Scotland",
           content: "Claims can arise from many types of workplace accident:",
           linkedList: [
-            { text: "Falls from height — scaffolding, ladders, elevated platforms", href: "/fall-from-height-claims-scotland" },
+            { text: "Falls from height — scaffolding, ladders, elevated platforms", href: "/work-at-height-fall-claims-scotland" },
             { text: "Manual handling injuries — lifting, carrying, pushing and pulling", href: "/manual-handling-injury-claims-scotland" },
-            { text: "Slips, trips and falls — wet floors, poor lighting, uneven surfaces", href: "/slips-trips-at-work-scotland" },
+            { text: "Slips, trips and falls — wet floors, poor lighting, uneven surfaces", href: "/accident-at-work-claims-scotland/slips-and-trips-at-work-claims" },
             { text: "Construction and site accidents", href: "/construction-accident-claims-scotland" },
-            { text: "Factory and manufacturing accidents", href: "/factory-accident-claims-scotland" },
-            { text: "Warehouse accidents", href: "/warehouse-accident-claims-scotland" },
-            { text: "Defective tools and equipment claims", href: "/defective-equipment-claims-scotland" },
-            { text: "Farm and agricultural accident claims", href: "/farm-accident-claims-scotland" },
-            { text: "Offshore and oil platform accident claims", href: "/offshore-accident-claims-scotland" },
+            { text: "Factory and manufacturing accidents", href: "/accident-at-work-claims-scotland/factory-accident-claims" },
+            { text: "Warehouse accidents", href: "/accident-at-work-claims-scotland/warehouse-accident-claims" },
+            { text: "Defective tools and equipment claims", href: "/accident-at-work-claims-scotland/defective-work-equipment-claims" },
+            { text: "Farm and agricultural accident claims", href: "/accident-at-work-claims-scotland/farm-accident-claims" },
+            { text: "Offshore and oil platform accident claims", href: "/offshore-injury-claims-scotland" },
+            { text: "Reporting an accident at work — the accident book and RIDDOR", href: "/accident-at-work-claims-scotland/reporting-an-accident-at-work" },
           ],
         },
         {
@@ -122,19 +123,19 @@ export default function AccidentAtWorkPage() {
         title: "Specialist Workplace Accident Claim Types",
         pages: [
           { label: "Construction Accident Claims", href: "/construction-accident-claims-scotland", desc: "Site accidents, scaffolding, plant" },
-          { label: "Fall from Height Claims", href: "/fall-from-height-claims-scotland", desc: "Scaffolding, ladders, platforms" },
+          { label: "Fall from Height Claims", href: "/work-at-height-fall-claims-scotland", desc: "Scaffolding, ladders, platforms" },
           { label: "Manual Handling Claims", href: "/manual-handling-injury-claims-scotland", desc: "Lifting, carrying, back injuries" },
-          { label: "Slips and Trips at Work", href: "/slips-trips-at-work-scotland", desc: "Wet floors, uneven surfaces" },
-          { label: "Factory Accident Claims", href: "/factory-accident-claims-scotland", desc: "Machinery, manufacturing injuries" },
-          { label: "Warehouse Accident Claims", href: "/warehouse-accident-claims-scotland", desc: "Forklift, racking, picking injuries" },
-          { label: "Defective Equipment Claims", href: "/defective-equipment-claims-scotland", desc: "Faulty tools and machinery" },
-          { label: "Farm Accident Claims", href: "/farm-accident-claims-scotland", desc: "Agricultural and rural accidents" },
-          { label: "Offshore Accident Claims", href: "/offshore-accident-claims-scotland", desc: "Oil platforms, supply vessels" },
+          { label: "Slips and Trips at Work", href: "/accident-at-work-claims-scotland/slips-and-trips-at-work-claims", desc: "Wet floors, uneven surfaces" },
+          { label: "Factory Accident Claims", href: "/accident-at-work-claims-scotland/factory-accident-claims", desc: "Machinery, manufacturing injuries" },
+          { label: "Warehouse Accident Claims", href: "/accident-at-work-claims-scotland/warehouse-accident-claims", desc: "Forklift, racking, picking injuries" },
+          { label: "Defective Equipment Claims", href: "/accident-at-work-claims-scotland/defective-work-equipment-claims", desc: "Faulty tools and machinery" },
+          { label: "Farm Accident Claims", href: "/accident-at-work-claims-scotland/farm-accident-claims", desc: "Agricultural and rural accidents" },
+          { label: "Offshore Accident Claims", href: "/offshore-injury-claims-scotland", desc: "Oil platforms, supply vessels" },
+          { label: "Reporting an Accident at Work", href: "/accident-at-work-claims-scotland/reporting-an-accident-at-work", desc: "Accident book and RIDDOR reports" },
           { label: "Industrial Disease Claims", href: "/industrial-disease-claims-scotland", desc: "Asbestos, hearing loss, vibration" },
           { label: "Needlestick Injury Claims", href: "/needlestick-injury-claims-scotland", desc: "Sharps injuries in healthcare" },
           { label: "Stress at Work Claims", href: "/stress-at-work-claims-scotland", desc: "Psychiatric injury and bullying" },
           { label: "Self-Employed Injury Claims", href: "/self-employed-injury-claims-scotland", desc: "Contractors and sole traders" },
-          { label: "Fall From Height Claims", href: "/work-at-height-fall-claims-scotland", desc: "Ladders, scaffolds and roofs" },
         ],
       }}
       guideCategory="Workplace Accidents"
