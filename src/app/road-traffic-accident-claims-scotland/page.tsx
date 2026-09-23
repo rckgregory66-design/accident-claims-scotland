@@ -65,8 +65,8 @@ export default function RoadTrafficAccidentPage() {
             "A road traffic accident claim is a personal injury claim made by someone injured in a collision on a public road in Scotland. Claims can arise from car accidents, van accidents, lorry accidents, motorcycle accidents, cycling accidents, pedestrian accidents and accidents involving passengers. The claim is generally made against the at-fault driver's insurer.",
         },
         {
-          heading: "Types of Road Accident Claims We Handle",
-          content: "We handle the full range of road traffic accident claims in Scotland:",
+          heading: "Types of Road Accident Claim",
+          content: "Road traffic accident claims in Scotland cover the full range of road users:",
           linkedList: [
             { text: "Car accident claims — rear-end shunts, junction accidents, multi-vehicle collisions", href: "/car-accident-claims-scotland" },
             { text: "Motorcycle accident claims — including accidents at junctions and on rural roads", href: "/motorcycle-accident-claims-scotland" },

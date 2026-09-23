@@ -1,6 +1,7 @@
 import { publishedGuides } from "@/data/guides";
 import { CLAIM_TYPES, LOCATIONS, NAV_LINKS } from "@/data/siteConfig";
 import { roadTrafficPageSlugs } from "@/data/roadTrafficPages";
+import { childPath, pillarChildren } from "@/data/pillarChildren";
 
 // Indexable pages that are not in the main navigation or claim-type lists.
 const LONG_TAIL_ROUTES = [
@@ -43,6 +44,7 @@ const STATIC_ROUTES = new Set([
     ...(item.children?.map((child) => child.href) ?? []),
   ]),
   ...roadTrafficPageSlugs,
+  ...pillarChildren.map(childPath),
 ]);
 
 const GUIDE_ROUTES = new Map(

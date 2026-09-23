@@ -59,7 +59,7 @@ export default function SeriousInjuryPage() {
       answerBox="In Scotland, serious injury claims are brought under Scots law and typically involve complex medical, care and financial evidence across multiple expert disciplines. If you or a family member has suffered a catastrophic injury, early specialist legal advice is essential. Our enquiry is free and carries no obligation."
       sections={[
         {
-          heading: "Types of Serious Injury Claims We Handle in Scotland",
+          heading: "Types of Serious Injury Claim in Scotland",
           content: "We have experience handling:",
           linkedList: [
             { text: "Brain injury claims — mild, moderate and severe traumatic brain injury (TBI)", href: "/brain-injury-claims-scotland" },
@@ -83,7 +83,7 @@ export default function SeriousInjuryPage() {
         {
           heading: "Fatal Accident Claims in Scotland",
           content:
-            "Under the Damages (Scotland) Act 2011, the immediate family of someone killed through another's negligence may claim. Relatives who may be entitled to claim include the deceased's spouse or civil partner, children, and parents. Claims can cover solatium for the deceased's own losses, loss of society awards for relatives, and financial dependency claims. We handle these cases with the sensitivity they demand.",
+            "Under the Damages (Scotland) Act 2011, the immediate family of someone killed through another's negligence may claim. Relatives who may be entitled to claim include the deceased's spouse or civil partner, children, and parents. Claims can cover solatium for the deceased's own losses, loss of society awards for relatives, and financial dependency claims. These cases call for care and sensitivity.",
         },
         {
           heading: "Rehabilitation and Case Management",

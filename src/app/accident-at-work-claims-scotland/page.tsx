@@ -48,7 +48,7 @@ export default function AccidentAtWorkPage() {
       dateModified="2026-06-16"
       breadcrumbs={[{ label: "Accident at Work Claims Scotland" }]}
       h1="Accident at Work Claims Scotland"
-      intro="If you have been injured at work in Scotland, your employer may be legally responsible for your injuries. Our specialist Scottish solicitors handle workplace accident claims for employees across all industries — from construction and manufacturing to offices and retail — with no win, no fee options available."
+      intro="If you have been injured at work in Scotland, your employer may be legally responsible for your injuries. This guide explains workplace accident claims for employees across all industries — from construction and manufacturing to offices and retail — including how funding options such as no win, no fee arrangements work."
       tldr={[
         "Employers in Scotland have a legal duty of care to provide a safe working environment.",
         "You cannot be legally dismissed for making a legitimate workplace injury claim.",
@@ -65,7 +65,7 @@ export default function AccidentAtWorkPage() {
         },
         {
           heading: "Common Workplace Accidents in Scotland",
-          content: "We handle claims arising from many types of workplace accident:",
+          content: "Claims can arise from many types of workplace accident:",
           linkedList: [
             { text: "Falls from height — scaffolding, ladders, elevated platforms", href: "/fall-from-height-claims-scotland" },
             { text: "Manual handling injuries — lifting, carrying, pushing and pulling", href: "/manual-handling-injury-claims-scotland" },

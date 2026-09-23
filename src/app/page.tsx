@@ -128,9 +128,9 @@ export default function HomePage() {
       <section className="section-pad bg-gray-50">
         <div className="container-max">
           <div className="text-center mb-10">
-            <h2 className="text-3xl sm:text-4xl font-bold text-[#0f2044] mb-3">Types of Claims We Handle</h2>
+            <h2 className="text-3xl sm:text-4xl font-bold text-[#0f2044] mb-3">Types of Claim Explained</h2>
             <p className="text-gray-600 text-lg max-w-2xl mx-auto">
-              We handle a wide range of personal injury and compensation claims across Scotland.
+              This site explains a wide range of personal injury and compensation claims across Scotland.
             </p>
           </div>
           <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-5">
@@ -250,7 +250,7 @@ export default function HomePage() {
               {
                 icon: "🏴󠁧󠁢󠁳󠁣󠁴󠁿",
                 title: "Scotland-wide coverage",
-                desc: "We handle claims from Glasgow and Edinburgh to Aberdeen, Inverness and everywhere in between.",
+                desc: "Guidance for injured people from Glasgow and Edinburgh to Aberdeen, Inverness and everywhere in between.",
               },
               {
                 icon: "🤝",
@@ -285,8 +285,8 @@ export default function HomePage() {
             Accident Claim Solicitors Across Scotland
           </h2>
           <p className="text-gray-600 mb-8 max-w-3xl">
-            We handle claims for people in every part of Scotland. Whether you are in Glasgow,
-            Edinburgh, Aberdeen, Dundee, Inverness or anywhere else in Scotland, we can help.
+            This guidance is for people in every part of Scotland. Whether you are in Glasgow,
+            Edinburgh, Aberdeen, Dundee, Inverness or anywhere else in Scotland, the same Scottish claims rules apply.
           </p>
           <div className="flex flex-wrap gap-3">
             {LOCATIONS.map((loc) => (

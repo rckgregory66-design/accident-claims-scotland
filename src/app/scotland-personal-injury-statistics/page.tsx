@@ -268,7 +268,7 @@ export default function ScotlandPersonalInjuryStatisticsPage() {
             </li>
             <li>
               Scotland has one of the <strong>highest mesothelioma rates per capita</strong> in the world, reflecting
-              Scotland's industrial heritage — particularly Clydeside shipbuilding.
+              Scotland&rsquo;s industrial heritage — particularly Clydeside shipbuilding.
             </li>
             <li>
               The <strong>average latency period</strong> between asbestos exposure and mesothelioma diagnosis is
@@ -276,7 +276,7 @@ export default function ScotlandPersonalInjuryStatisticsPage() {
             </li>
             <li>
               <strong>Vibration white finger (HAVS)</strong> and <strong>noise-induced hearing loss</strong> remain
-              common industrial disease claims across Scotland's manufacturing, construction and oil sectors.
+              common industrial disease claims across Scotland&rsquo;s manufacturing, construction and oil sectors.
             </li>
           </ul>
           <p className="text-sm text-gray-600">
@@ -321,7 +321,7 @@ export default function ScotlandPersonalInjuryStatisticsPage() {
               discretion for late applications.
             </li>
             <li>
-              <strong>Children:</strong> the three-year period does not begin until the child's sixteenth birthday,
+              <strong>Children:</strong> the three-year period does not begin until the child&rsquo;s sixteenth birthday,
               meaning claims may generally be brought up to their nineteenth birthday.
             </li>
           </ul>

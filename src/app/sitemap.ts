@@ -2,6 +2,7 @@ import type { MetadataRoute } from "next";
 import { publishedGuides } from "@/data/guides";
 import { SITE } from "@/data/siteConfig";
 import { roadTrafficPages } from "@/data/roadTrafficPages";
+import { childPath, pillarChildren } from "@/data/pillarChildren";
 
 export const dynamic = "force-static";
 
@@ -79,10 +80,18 @@ export default function sitemap(): MetadataRoute.Sitemap {
     lastModified: siteLastModified,
   }));
 
+  const pillarChildPages = pillarChildren.map((child) => ({
+    url: `${SITE.url}${childPath(child)}`,
+    changeFrequency: "monthly" as const,
+    priority: 0.75,
+    lastModified: new Date(child.dateModified),
+  }));
+
   return [
     ...staticPages.map((page) => ({ ...page, lastModified: siteLastModified })),
     ...locationPages,
     ...roadTrafficDetailPages,
+    ...pillarChildPages,
     ...guidePages,
   ];
 }

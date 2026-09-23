@@ -48,7 +48,7 @@ export default function IndustrialDiseasePage() {
       dateModified="2026-06-16"
       breadcrumbs={[{ label: "Industrial Disease Claims Scotland" }]}
       h1="Industrial Disease Claims Scotland"
-      intro="If you have developed a work-related illness in Scotland, you may be entitled to claim compensation from your former employer — even if the exposure occurred decades ago. Our specialist solicitors handle industrial disease claims including asbestos-related conditions, noise-induced hearing loss, vibration injuries and occupational lung disease."
+      intro="If you have developed a work-related illness in Scotland, you may be entitled to claim compensation from your former employer — even if the exposure occurred decades ago. This guide explains industrial disease claims including asbestos-related conditions, noise-induced hearing loss, vibration injuries and occupational lung disease, and points to more detailed pages on each."
       tldr={[
         "Industrial disease claims can be made even if your condition developed decades after workplace exposure.",
         "The three-year time limit runs from your date of knowledge — usually the date of diagnosis.",
@@ -64,20 +64,22 @@ export default function IndustrialDiseasePage() {
             "An industrial disease is a medical condition caused or materially worsened by exposure to harmful substances, conditions or practices in the workplace. Unlike traumatic accidents, industrial diseases often develop slowly over many years. Common examples include asbestos-related diseases, noise-induced hearing loss, vibration-related conditions, and occupational lung diseases.",
         },
         {
-          heading: "Industrial Diseases We Handle in Scotland",
-          content: "We handle claims for a wide range of occupational diseases:",
+          heading: "Industrial Diseases Covered in Scotland",
+          content: "This guide and its linked pages cover a wide range of occupational diseases:",
           linkedList: [
-            { text: "Mesothelioma claims — aggressive cancer caused by asbestos exposure", href: "/mesothelioma-claims-scotland" },
-            { text: "Asbestosis claims — chronic lung scarring caused by asbestos fibres", href: "/asbestosis-claims-scotland" },
+            { text: "Mesothelioma claims — aggressive cancer caused by asbestos exposure", href: "/industrial-disease-claims-scotland/mesothelioma-claims" },
+            { text: "Asbestosis claims — chronic lung scarring caused by asbestos fibres", href: "/industrial-disease-claims-scotland/asbestosis-claims" },
             { text: "Asbestos claims — all asbestos-related conditions", href: "/asbestos-claims-scotland" },
-            { text: "Pleural thickening and pleural plaques — asbestos-related lung lining conditions", href: "/pleural-thickening-claims-scotland" },
+            { text: "Pleural thickening claims — asbestos-related thickening of the lung lining", href: "/industrial-disease-claims-scotland/pleural-thickening-claims" },
+            { text: "Pleural plaques claims — why Scots law allows claims for asbestos plaques", href: "/industrial-disease-claims-scotland/pleural-plaques-claims" },
             { text: "Noise-induced hearing loss claims — from excessive workplace noise", href: "/noise-induced-hearing-loss-claims-scotland" },
             { text: "Industrial deafness claims — occupational hearing damage", href: "/industrial-deafness-claims-scotland" },
             { text: "Hand-arm vibration syndrome (HAVS) claims", href: "/hand-arm-vibration-claims-scotland" },
             { text: "Vibration white finger claims — vascular finger disorder from vibrating tools", href: "/vibration-white-finger-claims-scotland" },
             { text: "Occupational asthma claims", href: "/occupational-asthma-claims-scotland" },
             { text: "Occupational dermatitis claims", href: "/occupational-dermatitis-claims-scotland" },
-            { text: "Repetitive strain injury (RSI) claims", href: "/repetitive-strain-injury-claims-scotland" },
+            { text: "Repetitive strain injury (RSI) claims", href: "/industrial-disease-claims-scotland/repetitive-strain-injury-claims" },
+            { text: "Tracing employers' liability insurers when the employer has closed", href: "/industrial-disease-claims-scotland/tracing-employers-liability-insurers" },
           ],
         },
         {
@@ -111,16 +113,18 @@ export default function IndustrialDiseasePage() {
         title: "Specialist Industrial Disease Claim Types",
         pages: [
           { label: "Asbestos Claims", href: "/asbestos-claims-scotland", desc: "All asbestos-related conditions" },
-          { label: "Mesothelioma Claims", href: "/mesothelioma-claims-scotland", desc: "Asbestos cancer claims" },
-          { label: "Asbestosis Claims", href: "/asbestosis-claims-scotland", desc: "Chronic lung scarring" },
-          { label: "Pleural Thickening", href: "/pleural-thickening-claims-scotland", desc: "Lung lining thickening" },
+          { label: "Mesothelioma Claims", href: "/industrial-disease-claims-scotland/mesothelioma-claims", desc: "Asbestos cancer claims" },
+          { label: "Asbestosis Claims", href: "/industrial-disease-claims-scotland/asbestosis-claims", desc: "Chronic lung scarring" },
+          { label: "Pleural Thickening", href: "/industrial-disease-claims-scotland/pleural-thickening-claims", desc: "Lung lining thickening" },
+          { label: "Pleural Plaques", href: "/industrial-disease-claims-scotland/pleural-plaques-claims", desc: "Actionable in Scotland since 2009" },
           { label: "Industrial Deafness", href: "/industrial-deafness-claims-scotland", desc: "Occupational hearing loss" },
           { label: "Noise-Induced Hearing Loss", href: "/noise-induced-hearing-loss-claims-scotland", desc: "Excessive workplace noise" },
           { label: "Vibration White Finger", href: "/vibration-white-finger-claims-scotland", desc: "HAVS vascular disorder" },
           { label: "Hand-Arm Vibration (HAVS)", href: "/hand-arm-vibration-claims-scotland", desc: "Vibrating tools injuries" },
           { label: "Occupational Asthma", href: "/occupational-asthma-claims-scotland", desc: "Work-related asthma" },
           { label: "Occupational Dermatitis", href: "/occupational-dermatitis-claims-scotland", desc: "Workplace skin conditions" },
-          { label: "RSI Claims", href: "/repetitive-strain-injury-claims-scotland", desc: "Repetitive upper limb disorders" },
+          { label: "RSI Claims", href: "/industrial-disease-claims-scotland/repetitive-strain-injury-claims", desc: "Repetitive upper limb disorders" },
+          { label: "Tracing Employers' Liability Insurers", href: "/industrial-disease-claims-scotland/tracing-employers-liability-insurers", desc: "When the employer has closed" },
         ],
       }}
       guideCategory="Industrial Disease"

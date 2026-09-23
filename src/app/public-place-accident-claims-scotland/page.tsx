@@ -65,7 +65,7 @@ export default function PublicPlaceAccidentPage() {
         },
         {
           heading: "Types of Public Place Accident Claims in Scotland",
-          content: "We handle the following types of public place accident claims:",
+          content: "Public place accident claims can include the following:",
           linkedList: [
             { text: "Supermarket slip and trip claims — wet floors, spillages, loose mats, raised tiles", href: "/supermarket-accident-claims-scotland" },
             { text: "Pavement trip claims — uneven, cracked or broken pavements maintained by local authorities", href: "/guides/council-pavement-trip-claims-scotland" },

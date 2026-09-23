@@ -9,7 +9,7 @@ import TldrBox from "./TldrBox";
 import LocationLinks from "./LocationLinks";
 import RelatedGuides from "./RelatedGuides";
 import SubpageGrid from "./SubpageGrid";
-import { breadcrumbSchema, faqSchema, servicePageSchema } from "@/lib/schema";
+import { articleSchema, breadcrumbSchema, faqSchema, servicePageSchema } from "@/lib/schema";
 import { SITE } from "@/data/siteConfig";
 import { resolveInternalHref } from "@/lib/internalLinks";
 
@@ -39,6 +39,8 @@ interface Props {
   subpages?: { title: string; pages: SubpageLink[] };
   metaUrl: string;
   dateModified?: string;
+  /** When set, Article schema is emitted alongside the WebPage schema. */
+  datePublished?: string;
   guideCategory?: string;
   guideSlugs?: string[];
   locationClaimType?: string;
@@ -57,6 +59,7 @@ export default function ClaimPageTemplate({
   subpages,
   metaUrl,
   dateModified = "2026-06-16",
+  datePublished,
   guideCategory,
   guideSlugs,
   locationClaimType,
@@ -80,6 +83,9 @@ export default function ClaimPageTemplate({
       dateModified,
       speakableSelectors: ["#answer-box", "#tldr", "h1"],
     }),
+    ...(datePublished
+      ? [articleSchema({ title: h1, description: intro, url: metaUrl, datePublished, dateModified })]
+      : []),
   ];
 
   return (

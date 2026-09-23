@@ -53,7 +53,7 @@ export default function MedicalNegligencePage() {
       dateModified="2026-06-16"
       breadcrumbs={[{ label: "Medical Negligence Claims Scotland" }]}
       h1="Medical Negligence Claims Scotland"
-      intro="If you or a family member has suffered avoidable harm as a result of substandard medical care in Scotland, you may have the right to make a clinical negligence claim. Our specialist solicitors handle claims against NHS Scotland, hospitals, GPs, surgeons and other healthcare providers."
+      intro="If you or a family member has suffered avoidable harm as a result of substandard medical care in Scotland, you may have the right to make a clinical negligence claim. This guide explains how claims against NHS Scotland, hospitals, GPs, surgeons and other healthcare providers work."
       tldr={[
         "Medical negligence requires proof of duty of care, breach of duty and causation.",
         "Claims can be made against NHS Scotland, private hospitals, GPs, surgeons and dentists.",
@@ -79,7 +79,7 @@ export default function MedicalNegligencePage() {
         },
         {
           heading: "Types of Medical Negligence Claims in Scotland",
-          content: "We handle the full range of clinical negligence claims:",
+          content: "Clinical negligence claims cover a wide range of situations:",
           linkedList: [
             { text: "NHS negligence claims — against NHS Scotland boards and hospitals", href: "/nhs-negligence-claims-scotland" },
             { text: "GP negligence — failure to diagnose, delayed referral, prescribing errors", href: "/gp-negligence-claims-scotland" },

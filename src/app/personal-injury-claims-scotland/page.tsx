@@ -48,7 +48,7 @@ export default function PersonalInjuryPage() {
       dateModified="2026-08-11"
       breadcrumbs={[{ label: "Personal Injury Claims Scotland" }]}
       h1="Personal Injury Claims Scotland"
-      intro="If you have suffered a personal injury in Scotland that was caused by someone else's negligence, you may have the right to claim compensation. Our specialist solicitors handle personal injury claims across Scotland under Scots law, with no win, no fee options available."
+      intro="If you have suffered a personal injury in Scotland that was caused by someone else's negligence, you may have the right to claim compensation. This guide explains how personal injury claims work across Scotland under Scots law, including how no win, no fee funding options operate."
       tldr={[
         "You can claim if your injury was caused by another party's negligence within the last three years.",
         "Claims are governed by Scots law and handled in the Scottish courts.",
@@ -74,7 +74,7 @@ export default function PersonalInjuryPage() {
           ],
         },
         {
-          heading: "Types of Personal Injury Claim We Handle in Scotland",
+          heading: "Types of Personal Injury Claim in Scotland",
           content: "Personal injury claims in Scotland can include:",
           linkedList: [
             { text: "Road traffic accident claims — car, motorcycle, cycling, pedestrian and passenger accidents", href: "/road-traffic-accident-claims-scotland" },
