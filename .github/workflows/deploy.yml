@@ -1,0 +1,52 @@
+name: Deploy
+
+# Publishes the static export to Cloudflare Pages on every push to main.
+# Needs repository secrets CLOUDFLARE_API_TOKEN (Cloudflare Pages: Edit) and
+# CLOUDFLARE_ACCOUNT_ID. Until both exist the deploy steps are skipped.
+
+on:
+  push:
+    branches: [main]
+  workflow_dispatch:
+
+permissions:
+  contents: read
+
+concurrency:
+  group: deploy-production
+  cancel-in-progress: false
+
+jobs:
+  deploy:
+    runs-on: ubuntu-latest
+    env:
+      HAS_CLOUDFLARE: ${{ secrets.CLOUDFLARE_API_TOKEN != '' && secrets.CLOUDFLARE_ACCOUNT_ID != '' }}
+    steps:
+      - uses: actions/checkout@v4
+        with:
+          # Full history so sitemap lastmod uses real per-file commit dates.
+          fetch-depth: 0
+      - uses: actions/setup-node@v4
+        with:
+          node-version: 22
+          cache: npm
+      - run: npm ci
+      - run: npm run check
+
+      - name: Report missing Cloudflare secrets
+        if: env.HAS_CLOUDFLARE != 'true'
+        run: echo "::notice::CLOUDFLARE_API_TOKEN or CLOUDFLARE_ACCOUNT_ID is not set; skipping deploy."
+
+      - name: Deploy to Cloudflare Pages
+        if: env.HAS_CLOUDFLARE == 'true'
+        uses: cloudflare/wrangler-action@v3
+        with:
+          apiToken: ${{ secrets.CLOUDFLARE_API_TOKEN }}
+          accountId: ${{ secrets.CLOUDFLARE_ACCOUNT_ID }}
+          command: pages deploy out --project-name=accident-claims-scotland --branch=main --commit-dirty=true
+
+      - name: Notify IndexNow
+        if: env.HAS_CLOUDFLARE == 'true'
+        # Cloudflare needs a moment to serve the new sitemap; a failed ping must not fail the deploy.
+        continue-on-error: true
+        run: sleep 30 && npm run indexnow
