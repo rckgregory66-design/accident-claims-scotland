@@ -1,4 +1,5 @@
 import type { MetadataRoute } from "next";
+import { execFileSync } from "node:child_process";
 import { publishedGuides } from "@/data/guides";
 import { SITE } from "@/data/siteConfig";
 import { roadTrafficPages } from "@/data/roadTrafficPages";
@@ -6,9 +7,37 @@ import { childPath, pillarChildren } from "@/data/pillarChildren";
 
 export const dynamic = "force-static";
 
-export default function sitemap(): MetadataRoute.Sitemap {
-  const siteLastModified = new Date("2026-07-29");
+// Fallback when git history is unavailable or shallow (e.g. a CI checkout),
+// where every file would otherwise report the clone date.
+const FALLBACK_LAST_MODIFIED = new Date("2026-07-29");
 
+function isFullGitHistory(): boolean {
+  try {
+    return execFileSync("git", ["rev-parse", "--is-shallow-repository"], { encoding: "utf8" }).trim() === "false";
+  } catch {
+    return false;
+  }
+}
+
+const useGitDates = isFullGitHistory();
+
+/** Last commit date of the file(s) that hold a page's content. */
+function gitLastModified(...files: string[]): Date {
+  if (!useGitDates) return FALLBACK_LAST_MODIFIED;
+  try {
+    const iso = execFileSync("git", ["log", "-1", "--format=%cI", "--", ...files], { encoding: "utf8" }).trim();
+    return iso ? new Date(iso) : FALLBACK_LAST_MODIFIED;
+  } catch {
+    return FALLBACK_LAST_MODIFIED;
+  }
+}
+
+function pageFile(url: string): string {
+  const path = url.slice(SITE.url.length);
+  return path === "/" ? "src/app/page.tsx" : `src/app${path}/page.tsx`;
+}
+
+export default function sitemap(): MetadataRoute.Sitemap {
   const staticPages = [
     { url: `${SITE.url}/`, changeFrequency: "weekly" as const, priority: 1.0 },
     { url: `${SITE.url}/personal-injury-claims-scotland`, changeFrequency: "monthly" as const, priority: 0.9 },
@@ -63,7 +92,7 @@ export default function sitemap(): MetadataRoute.Sitemap {
     url: `${SITE.url}/${slug}`,
     changeFrequency: "monthly" as const,
     priority: 0.7,
-    lastModified: siteLastModified,
+    lastModified: gitLastModified(`src/app/${slug}/page.tsx`),
   }));
 
   const guidePages = publishedGuides.map((g) => ({
@@ -77,7 +106,7 @@ export default function sitemap(): MetadataRoute.Sitemap {
     url: `${SITE.url}/${page.slug}`,
     changeFrequency: "monthly" as const,
     priority: 0.8,
-    lastModified: siteLastModified,
+    lastModified: gitLastModified("src/data/roadTrafficPages.ts"),
   }));
 
   const pillarChildPages = pillarChildren.map((child) => ({
@@ -88,7 +117,7 @@ export default function sitemap(): MetadataRoute.Sitemap {
   }));
 
   return [
-    ...staticPages.map((page) => ({ ...page, lastModified: siteLastModified })),
+    ...staticPages.map((page) => ({ ...page, lastModified: gitLastModified(pageFile(page.url)) })),
     ...locationPages,
     ...roadTrafficDetailPages,
     ...pillarChildPages,

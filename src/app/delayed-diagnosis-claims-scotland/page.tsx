@@ -127,7 +127,7 @@ export default function DelayedDiagnosisPage() {
         { label: "Medical Negligence Claims Scotland", href: "/medical-negligence-claims-scotland" },
         { label: "NHS Negligence Claims Scotland", href: "/nhs-negligence-claims-scotland" },
         { label: "Cancer Misdiagnosis Claims", href: "/cancer-misdiagnosis-claims-scotland" },
-        { label: "Fatal Accident Claims", href: "/fatal-accident-claims-scotland" },
+        { label: "Fatal Medical Negligence Claims", href: "/medical-negligence-claims-scotland/fatal-medical-negligence-claims" },
         { label: "No Win No Fee", href: "/no-win-no-fee-solicitors-scotland" },
       ]}
     />

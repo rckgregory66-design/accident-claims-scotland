@@ -9,9 +9,9 @@ import { faqSchema, breadcrumbSchema, servicePageSchema } from "@/lib/schema";
 import { CLAIM_TYPES, LOCATIONS, SITE } from "@/data/siteConfig";
 
 export const metadata: Metadata = {
-  title: "Accident Claims Scotland | Personal Injury & Medical Negligence Claim Information",
+  title: "Accident Claims Scotland | Personal Injury Claim Information",
   description:
-    "Plain-English information on personal injury, medical negligence, industrial disease and workplace accident claims in Scotland: time limits, evidence, funding and next steps. Not a law firm.",
+    "How personal injury claims work in Scotland: the three-year time limit, evidence, no win no fee funding and compensation. Plain-English guidance on Scots law. Not a law firm.",
   alternates: { canonical: "/" },
 };
 
@@ -53,7 +53,7 @@ export default function HomePage() {
     <>
       <JsonLd data={[
         faqSchema(faqs),
-        breadcrumbSchema([{ name: "Home", url: SITE.url }]),
+        breadcrumbSchema([{ name: "Home", url: SITE.url }], "/"),
         servicePageSchema({
           name: "Accident Claims Scotland",
           url: "/",
@@ -74,7 +74,7 @@ export default function HomePage() {
                 <span>✓</span> Scotland-focused claims information
               </div>
               <h1 className="text-3xl sm:text-4xl lg:text-5xl font-bold text-white leading-tight mb-5">
-                Accident Claims Scotland: Personal Injury Solicitors Helping People Claim Compensation
+                Accident Claims in Scotland: How Personal Injury Compensation Works
               </h1>
               <p className="text-gray-300 text-lg leading-relaxed mb-6">
                 If you have been injured in an accident in Scotland that was not your fault, you may be
@@ -114,11 +114,10 @@ export default function HomePage() {
           <div className="answer-box max-w-3xl">
             <p className="font-semibold text-blue-900 mb-1">Can I claim compensation in Scotland?</p>
             <p className="text-blue-800">
-              In Scotland, you may be able to claim compensation if you were injured because of someone else&apos;s
-              negligence and the accident occurred within the last three years (or within three years of
-              discovering your injury was caused by negligence). Claims are handled under Scots law.
-              Eligibility depends on the facts of your case, the evidence available, liability and causation.
-              A free enquiry will give you a clear initial assessment with no obligation to proceed.
+              Usually, yes, if someone else&apos;s negligence caused your injury and you act within three
+              years. Under Scots law that period runs from the accident or, if later, the date you knew the
+              injury was serious enough to claim and was caused by someone else. Time under 16 does not count.
+              You must prove fault and that it caused your injury.
             </p>
           </div>
         </div>
@@ -255,12 +254,12 @@ export default function HomePage() {
               {
                 icon: "🤝",
                 title: "No obligation enquiry",
-                desc: "Your initial enquiry is free and carries no obligation. We will give you an honest assessment of your claim.",
+                desc: "Your initial enquiry is free and carries no obligation to go on with a claim.",
               },
               {
                 icon: "📋",
-                title: "Expert guidance",
-                desc: "Personal injury, medical negligence, industrial disease and serious injury claims handled with specialist knowledge of Scots law.",
+                title: "Sourced guidance",
+                desc: "Personal injury, medical negligence, industrial disease and serious injury guides that cite legislation and official sources.",
               },
               {
                 icon: "🔒",
@@ -282,7 +281,7 @@ export default function HomePage() {
       <section className="section-pad bg-white">
         <div className="container-max">
           <h2 className="text-3xl font-bold text-[#0f2044] mb-3">
-            Accident Claim Solicitors Across Scotland
+            Accident Claim Information Across Scotland
           </h2>
           <p className="text-gray-600 mb-8 max-w-3xl">
             This guidance is for people in every part of Scotland. Whether you are in Glasgow,

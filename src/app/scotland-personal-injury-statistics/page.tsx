@@ -7,7 +7,7 @@ import FAQ from "@/components/FAQ";
 import { SITE } from "@/data/siteConfig";
 
 export const metadata: Metadata = {
-  title: "Scotland Personal Injury Statistics — Official Data & Figures | Accident Claims Scotland",
+  title: "Scotland Personal Injury Statistics — Official Data & Figures",
   description:
     "Key statistics on workplace injuries, road casualties, clinical negligence, criminal injuries and industrial disease in Scotland. All figures drawn from official government and public-body sources.",
   alternates: { canonical: `${SITE.url}/scotland-personal-injury-statistics` },

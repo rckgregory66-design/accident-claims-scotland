@@ -18,6 +18,7 @@ export default function Footer() {
     { label: "How to Claim", href: "/how-to-claim-compensation-scotland" },
     { label: "Compensation Guide", href: "/personal-injury-compensation-scotland" },
     { label: "Time Limits", href: "/personal-injury-claim-time-limits-scotland" },
+    { label: "Injury Statistics", href: "/scotland-personal-injury-statistics" },
     { label: "Guides & Articles", href: "/guides" },
     { label: "About Us", href: "/about" },
     { label: "Editorial Methodology", href: "/editorial-methodology" },

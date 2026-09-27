@@ -204,7 +204,7 @@ export const guides: Guide[] = [
     description: "How to claim against a Scottish council for a pavement trip — the Roads (Scotland) Act 1984 duty, what councils must prove and how to build your evidence.",
     category: "Public Place Accidents",
     datePublished: "2025-08-01",
-    dateModified: "2026-07-29",
+    dateModified: "2026-09-23",
     readTime: "7 min read",
   },
   {

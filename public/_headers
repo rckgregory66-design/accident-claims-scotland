@@ -1,3 +1,5 @@
+# "! Link" drops Link headers so Cloudflare stops sending the stale Early Hint
+# preload for /images/hero-bg.jpg (404). The static export sets none itself.
 /*
   Strict-Transport-Security: max-age=63072000; includeSubDomains; preload
   X-Frame-Options: SAMEORIGIN
@@ -5,3 +7,7 @@
   Referrer-Policy: strict-origin-when-cross-origin
   Permissions-Policy: camera=(), microphone=(), geolocation=()
   Content-Security-Policy: default-src 'self'; script-src 'self' 'unsafe-inline' 'unsafe-eval'; style-src 'self' 'unsafe-inline'; img-src 'self' data: https:; font-src 'self' data: https://fonts.gstatic.com; connect-src 'self'; frame-ancestors 'none'
+  ! Link
+
+/_next/static/*
+  Cache-Control: public, max-age=31536000, immutable

@@ -118,7 +118,7 @@ export default function ContributoryNegligenceRoadAccidentPage() {
       ]}
       related={[
         { label: "Road Traffic Accident Claims Scotland", href: "/road-traffic-accident-claims-scotland" },
-        { label: "Uninsured Driver Claims", href: "/uninsured-driver-claim-scotland" },
+        { label: "Uninsured Driver Claims", href: "/uninsured-driver-claims-scotland" },
         { label: "Pedestrian Accident Claims", href: "/pedestrian-accident-claims-scotland" },
         { label: "No Win No Fee", href: "/no-win-no-fee-solicitors-scotland" },
         { label: "Time Limits", href: "/personal-injury-claim-time-limits-scotland" },
