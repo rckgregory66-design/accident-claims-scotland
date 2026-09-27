@@ -8,16 +8,13 @@ export function organizationSchema() {
     name: SITE.name,
     url: SITE.url,
     description: SITE.description,
-    parentOrganization: { "@type": "Organization", name: "Ola Consultants Ltd" },
-    areaServed: [
-      { "@type": "Country", name: "Scotland" },
-      { "@type": "City", name: "Glasgow" },
-      { "@type": "City", name: "Edinburgh" },
-      { "@type": "City", name: "Aberdeen" },
-      { "@type": "City", name: "Dundee" },
-      { "@type": "City", name: "The Borders" },
-      { "@type": "City", name: "Dumfries" },
-    ],
+    parentOrganization: {
+      "@type": "Organization",
+      "@id": `${SITE.url}/#operator`,
+      name: "Ola Consultants Ltd",
+      legalName: "Ola Consultants Ltd",
+    },
+    areaServed: { "@type": "Country", name: "Scotland", sameAs: "https://www.wikidata.org/wiki/Q22" },
     knowsAbout: [
       "Personal Injury Law Scotland",
       "Medical Negligence Claims",
@@ -36,6 +33,7 @@ export function webSiteSchema() {
     "@id": `${SITE.url}/#website`,
     name: SITE.name,
     url: SITE.url,
+    inLanguage: "en-GB",
     publisher: { "@id": `${SITE.url}/#organization` },
   };
 }
@@ -109,7 +107,7 @@ export function articleSchema({
     dateModified,
     inLanguage: "en-GB",
     isPartOf: { "@id": `${SITE.url}/#website` },
-    about: { "@id": `${SITE.url}/#organization` },
+    mainEntityOfPage: `${SITE.url}${url}`,
     author: {
       "@type": "Organization",
       "@id": `${SITE.url}/#organization`,
@@ -149,9 +147,10 @@ export function servicePageSchema({
     description,
     url: `${SITE.url}${url}`,
     dateModified,
+    inLanguage: "en-GB",
     isPartOf: { "@id": `${SITE.url}/#website` },
-    about: { "@id": `${SITE.url}/#organization` },
-    breadcrumb: `${SITE.url}${url}#breadcrumb`,
+    publisher: { "@id": `${SITE.url}/#organization` },
+    breadcrumb: { "@id": `${SITE.url}${url}#breadcrumb` },
     ...(speakableSelectors && {
       speakable: {
         "@type": "SpeakableSpecification",

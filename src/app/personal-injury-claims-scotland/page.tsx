@@ -2,13 +2,13 @@ import type { Metadata } from "next";
 import ClaimPageTemplate from "@/components/ClaimPageTemplate";
 
 export const metadata: Metadata = {
-  title: "Personal Injury Claims Scotland — Free Claim Enquiry",
+  title: "Personal Injury Claims Scotland — Time Limits, Proof and Funding",
   description:
-    "Clear information on personal injury claims in Scotland. Road accidents, work injuries, medical negligence, industrial disease and more. Three-year time limit — free enquiry, no obligation.",
+    "How a personal injury claim works in Scotland: who can claim, the three-year time limit, what must be proved, how no win no fee funding works and what compensation covers.",
   alternates: { canonical: "/personal-injury-claims-scotland" },
   openGraph: {
-    title: "Personal Injury Claims Scotland — Free Claim Enquiry",
-    description: "Make a personal injury claim in Scotland. Free enquiry, no win no fee available.",
+    title: "Personal Injury Claims Scotland — Time Limits, Proof and Funding",
+    description: "How a personal injury claim works in Scotland: the three-year time limit, proof, funding and compensation.",
     url: "/personal-injury-claims-scotland",
   },
 };

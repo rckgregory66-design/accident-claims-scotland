@@ -203,7 +203,12 @@ export default function ClaimPageTemplate({
               <div className="mt-8 p-5 bg-gray-50 rounded-xl border border-gray-200 not-prose">
                 <h3 className="font-bold text-[#0f2044] mb-3 text-sm">Related Claim Types</h3>
                 <div className="flex flex-wrap gap-2">
-                  {related.map((r) => (
+                  {related.flatMap((r) => {
+                    // Same resolver as section links: maps guide slugs to /guides/* and
+                    // drops targets that are not built, so pills can never emit a 404.
+                    const href = resolveInternalHref(r.href);
+                    return href ? [{ ...r, href }] : [];
+                  }).map((r) => (
                     <Link
                       key={r.href}
                       href={r.href}

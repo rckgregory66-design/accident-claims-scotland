@@ -46,8 +46,8 @@ export default function NoWinNoFeePage() {
     <ClaimPageTemplate
       metaUrl="/no-win-no-fee-solicitors-scotland"
       dateModified="2026-08-11"
-      breadcrumbs={[{ label: "No Win No Fee Solicitors Scotland" }]}
-      h1="No Win No Fee Solicitors Scotland"
+      breadcrumbs={[{ label: "No Win No Fee Claims Scotland" }]}
+      h1="No Win No Fee Claims in Scotland: How Funding Works"
       intro="Many personal injury and accident claims in Scotland can be funded on a no win, no fee basis. This page explains clearly and transparently what no win, no fee means, how it works in Scotland, what costs may apply and what your alternatives are."
       tldr={[
         "No win, no fee means you pay no solicitor fees if your claim is unsuccessful.",

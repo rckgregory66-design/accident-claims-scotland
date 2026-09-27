@@ -119,7 +119,7 @@ export default function HospitalInfectionPage() {
       related={[
         { label: "Medical Negligence Claims Scotland", href: "/medical-negligence-claims-scotland" },
         { label: "NHS Negligence Claims Scotland", href: "/nhs-negligence-claims-scotland" },
-        { label: "Fatal Accident Claims", href: "/fatal-accident-claims-scotland" },
+        { label: "Fatal Medical Negligence Claims", href: "/medical-negligence-claims-scotland/fatal-medical-negligence-claims" },
         { label: "Delayed Diagnosis Claims", href: "/delayed-diagnosis-claims-scotland" },
         { label: "No Win No Fee", href: "/no-win-no-fee-solicitors-scotland" },
       ]}
