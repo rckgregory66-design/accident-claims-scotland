@@ -22,10 +22,10 @@ Site: https://accident-claims-scotland.com. Builds on `reports/audit-2026-09-20/
 | 8 | Sitemap `lastmod` is a fixed date for 49 URLs | Recommended | **Fixed** |
 | 9 | A guide's legal correction is not reflected in its `dateModified` | Recommended | **Fixed** |
 | 10 | Content-hashed JS/CSS bundles have no long-lived cache policy | Recommended | **Fixed** (inference, see below) |
-| 11 | Cloudflare Early Hint preloads a 404 image | Recommended | Open (dashboard setting) |
-| 12 | Two noindex location pages are orphaned | Recommended | Open (your decision) |
+| 11 | Cloudflare Early Hint preloads a 404 image | Recommended | **Fixed** (`! Link` in `_headers`; verify after deploy) |
+| 12 | Two noindex location pages are orphaned | Recommended | **Fixed** (added to `LOCATIONS`, still noindex) |
 | 13 | Articles have no named author or reviewer, and the Organization has no `logo` or `sameAs` | Recommended (YMYL E-E-A-T) | Open (needs real data) |
-| 14 | Weak internal linking to 8 detail pages (1 inlink each) | Recommended | Open |
+| 14 | Weak internal linking to 8 detail pages (1 inlink each) | Recommended | **Fixed for 6** (solicitor-approved links); 2 pages still need a link |
 | 15 | FAQPage, HowTo, Speakable and llms.txt: what to expect from each | Informational | No change |
 
 Checked and found correct: every indexable URL has one H1 and a self-referencing canonical. Every sitemap URL returns a built page, and no noindex page is in the sitemap. All JSON-LD parses. All 112 URLs in `llms.txt` resolve. Critical content and links are in the initial HTML, so nothing depends on client-side rendering. Lighthouse lab results: LCP 0.40 s, CLS 0, total blocking time is negligible, and the SEO score is 100. robots.txt matches the stated policy (details under item 15).
@@ -59,14 +59,14 @@ Checked and found correct: every indexable URL has one H1 and a self-referencing
   ```
   The page is now at depth 1 from every page.
 
-### 12. Orphaned noindex location pages (open)
+### 12. Orphaned noindex location pages (fixed 27 Sep)
 
 - **Target URL / Template:** `/borders-accident-claims`, `/dumfries-accident-claims`
 - **Element / Signal:** Unlinked resources.
 - **Diagnostic Finding & Evidence:** Both are built and set to `noindex, follow`, and neither is in `LOCATIONS` or linked anywhere (0 inlinks). They cannot rank, and no user can reach them. They were also listed as "City" entities in the Organization `areaServed` (fixed in item 7).
-- **Implementation / Code Fix:** Your decision. Either delete `src/app/borders-accident-claims/` and `src/app/dumfries-accident-claims/`, which makes the URLs 404 (Google treats 404 and 410 almost the same), or add them to `LOCATIONS` so users can reach them. No change was made.
+- **Implementation / Code Fix (shipped):** Added `{ label: "Scottish Borders", href: "/borders-accident-claims" }` and `{ label: "Dumfries", href: "/dumfries-accident-claims" }` to `LOCATIONS` in `src/data/siteConfig.ts`. They now appear with the other location links on the homepage, in the footer and in claim-page location boxes. They stay `noindex, follow` and out of the sitemap, like the other 8 non-indexable city pages. A re-crawl finds no orphan pages.
 
-### 14. Detail pages with a single inlink (open)
+### 14. Detail pages with a single inlink (6 of 8 fixed 27 Sep)
 
 - **Target URL / Template:** `/contributory-negligence-road-accident-scotland`, `/early-insurer-offers-road-accident-scotland`, `/fatal-road-accident-claims-scotland`, `/serious-road-traffic-injury-claims-scotland`, `/child-road-accident-claims-scotland`, `/needlestick-injury-claims-scotland`, `/dental-negligence-claims-scotland`, `/occupational-dermatitis-claims-scotland`
 - **Element / Signal:** Low internal link equity (depth 2, 1 inlink each, from the hub only).
@@ -82,7 +82,9 @@ Checked and found correct: every indexable URL has one H1 and a self-referencing
   | nhs-negligence-claims-scotland-explained | `/dental-negligence-claims-scotland` |
   | noise-induced-hearing-loss / vibration-white-finger | `/occupational-dermatitis-claims-scotland` |
 
-  Not shipped: this is editorial copy and should go into the planned solicitor review.
+  **Shipped 27 Sep after solicitor review of these links.** In the three JSX guides (`guideContent.tsx`), each link is a one-line sentence under the relevant heading. The four data guides (`extendedGuideContent.tsx`) use a new optional `seeAlso` field, rendered as a "Related claim pages" list. The added text only points to the page and adds no legal statement. Result: each of the six targets now has 2 or more inlinks (occupational dermatitis has 3).
+
+  **Still open:** `/child-road-accident-claims-scotland` and `/needlestick-injury-claims-scotland` were in the list of 8 but this table gave them no guide link, so they still have 1 inlink each. Proposed pairs for the solicitor to approve: `/guides/road-traffic-accident-claims-scotland` → child road accident claims, and `/guides/accident-at-work-claim-scotland` → needlestick injury claims.
 
 ### Page-type intent map (reference)
 
@@ -230,12 +232,12 @@ Proposed, not shipped (low priority): 8 of the 10 location templates are noindex
     Cache-Control: public, max-age=31536000, immutable
   ```
 
-### 11. Early Hint preloads a 404 (open)
+### 11. Early Hint preloads a 404 (fixed 27 Sep)
 
 - **Target URL / Template:** All pages → `Link: </images/hero-bg.jpg>; rel=preload`
 - **Element / Signal:** Resource that returns 404.
 - **Diagnostic Finding & Evidence:** Still live: a DataForSEO fetch of `/images/hero-bg.jpg` returned **404** today. Nothing in the repository emits this header, so it comes from Cloudflare's Early Hints cache (first raised on 20 Sep). Every visit wastes a request.
-- **Implementation / Code Fix:** In the Cloudflare dashboard, go to Speed → Optimization → Content Optimization and purge the cache, or turn Early Hints off and on again. Code cannot fix this.
+- **Implementation / Code Fix (shipped):** `public/_headers` now removes the `Link` header on `/*` (`! Link`), Cloudflare Pages' documented way to stop Early Hints for a project. The static export sets no `Link` header of its own, so nothing the site needs is lost. After deploy, run `curl -sI https://accident-claims-scotland.com/ | grep -i '^link'`, which should print nothing. If browsers still get the 103 preload, purge the cache once in the Cloudflare dashboard.
 
 ### Rendering and mobile (checked, no issue)
 

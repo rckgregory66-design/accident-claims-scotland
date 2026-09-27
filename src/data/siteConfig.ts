@@ -94,6 +94,8 @@ export const LOCATIONS = [
   { label: "Paisley", href: "/paisley-accident-claims" },
   { label: "Ayr", href: "/ayr-accident-claims" },
   { label: "Falkirk", href: "/falkirk-accident-claims" },
+  { label: "Scottish Borders", href: "/borders-accident-claims" },
+  { label: "Dumfries", href: "/dumfries-accident-claims" },
 ];
 
 export const TRUST_BADGES = [

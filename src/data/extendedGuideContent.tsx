@@ -9,6 +9,8 @@ type Guide = {
   sections: Section[];
   sources: Source[];
   parent: { href: string; label: string };
+  /** Contextual links to related claim pages, rendered after the sections. */
+  seeAlso?: { href: string; label: string }[];
 };
 
 const commonSources = {
@@ -139,6 +141,7 @@ const guideData: Record<string, Guide> = {
       commonSources.limitation,
     ],
     parent: { href: "/serious-injury-claims-scotland", label: "Serious injury claims" },
+    seeAlso: [{ href: "/fatal-road-accident-claims-scotland", label: "Fatal road accident claims in Scotland" }],
   },
   "birth-injury-claims-scotland": {
     answer:
@@ -276,6 +279,7 @@ const guideData: Record<string, Guide> = {
       commonSources.limitation,
     ],
     parent: { href: "/industrial-disease-claims-scotland", label: "Industrial disease claims Scotland" },
+    seeAlso: [{ href: "/occupational-dermatitis-claims-scotland", label: "Occupational dermatitis claims in Scotland" }],
   },
 
   "gp-negligence-claims-scotland": {
@@ -316,6 +320,7 @@ const guideData: Record<string, Guide> = {
       { label: "Scottish Courts — Court of Session for serious injury claims", href: "https://www.scotcourts.gov.uk/courts-and-tribunals/the-supreme-courts/the-court-of-session/", note: "The Court of Session handles high-value and complex serious injury actions in Scotland." },
     ],
     parent: { href: "/serious-injury-claims-scotland", label: "Serious injury claims Scotland" },
+    seeAlso: [{ href: "/serious-road-traffic-injury-claims-scotland", label: "Serious road traffic injury claims in Scotland" }],
   },
 
   "slip-trip-fall-claims-scotland": {
@@ -380,6 +385,7 @@ const guideData: Record<string, Guide> = {
       commonSources.limitation,
     ],
     parent: { href: "/industrial-disease-claims-scotland", label: "Industrial disease claims Scotland" },
+    seeAlso: [{ href: "/occupational-dermatitis-claims-scotland", label: "Occupational dermatitis claims in Scotland" }],
   },
 
   "care-home-negligence-claims-scotland": {
@@ -448,6 +454,19 @@ function GuideArticle({ guide }: { guide: Guide }) {
           )}
         </section>
       ))}
+
+      {guide.seeAlso && guide.seeAlso.length > 0 && (
+        <>
+          <h2>Related claim pages</h2>
+          <ul>
+            {guide.seeAlso.map((item) => (
+              <li key={item.href}>
+                <Link href={item.href} className="text-red-700 font-medium hover:underline">{item.label}</Link>
+              </li>
+            ))}
+          </ul>
+        </>
+      )}
 
       <h2>Authoritative sources</h2>
       <p>

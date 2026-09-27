@@ -436,6 +436,12 @@ const articles: Record<string, ReactNode> = {
         <li>Anaesthetic errors</li>
         <li>Care home and nursing home negligence</li>
       </ul>
+      <p>
+        Dental treatment is covered separately in{" "}
+        <Link href="/dental-negligence-claims-scotland" className="text-red-700 font-medium hover:underline">
+          dental negligence claims in Scotland
+        </Link>.
+      </p>
 
       <h2>Before You Make a Formal Claim: NHS Complaints</h2>
       <p>
@@ -602,6 +608,12 @@ const articles: Record<string, ReactNode> = {
         it cannot be guaranteed. Your solicitor will give you an honest range once the medical evidence
         is available.
       </p>
+      <p>
+        After a road accident, read{" "}
+        <Link href="/early-insurer-offers-road-accident-scotland" className="text-red-700 font-medium hover:underline">
+          early insurer offers after a road accident in Scotland
+        </Link>.
+      </p>
 
       <p>
         <Link href="/personal-injury-compensation-scotland" className="text-red-700 font-medium hover:underline">
@@ -643,6 +655,12 @@ const articles: Record<string, ReactNode> = {
         <li>Ignoring safety instructions or wearing protective equipment provided by your employer</li>
         <li>Being aware of a hazard but failing to take reasonable care for your own safety</li>
       </ul>
+      <p>
+        For road collisions specifically, see{" "}
+        <Link href="/contributory-negligence-road-accident-scotland" className="text-red-700 font-medium hover:underline">
+          contributory negligence in road accidents in Scotland
+        </Link>.
+      </p>
 
       <h2>Even if Partly At Fault, You May Still Receive Significant Compensation</h2>
       <p>
