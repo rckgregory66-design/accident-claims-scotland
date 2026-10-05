@@ -71,6 +71,7 @@ export default function RoadTrafficAccidentPage() {
             { text: "Car accident claims — rear-end shunts, junction accidents, multi-vehicle collisions", href: "/car-accident-claims-scotland" },
             { text: "Motorcycle accident claims — including accidents at junctions and on rural roads", href: "/motorcycle-accident-claims-scotland" },
             { text: "Cycling accident claims — involving motor vehicles, poor road surfaces and road defects", href: "/cycling-accident-claims-scotland" },
+            { text: "Bus accident claims — passengers injured by sudden braking, falls and collisions", href: "/bus-accident-claims-scotland" },
             { text: "Pedestrian accident claims — being struck by vehicles while crossing or walking", href: "/pedestrian-accident-claims-scotland" },
             { text: "Passenger claims — injured while travelling as a passenger in any vehicle", href: "/passenger-accident-claims-scotland" },
             { text: "Hit and run claims — through the Motor Insurers' Bureau", href: "/hit-and-run-claims-scotland" },

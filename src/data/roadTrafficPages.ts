@@ -275,6 +275,308 @@ export const roadTrafficPages: RoadTrafficPage[] = [
       { question: "How long do I have to decide whether to accept an insurer’s offer?", answer: "There is no fixed deadline to accept an offer, but the three-year limitation period for raising court proceedings continues to run. Do not let time pressure from an insurer cause you to miss the limitation deadline or accept an inadequate offer. Seek advice before the deadline expires." },
     ],
   },
+  {
+    "slug": "motorcycle-accident-claims-scotland",
+    "title": "Motorcycle Accident Claims in Scotland",
+    "description": "A Scottish guide to motorcycle accident claims: junction collisions, rural roads, helmets and contributory negligence, evidence, losses and time limits.",
+    "category": "Motorcycle accidents",
+    "answer": "A motorcyclist injured in Scotland may claim where another road user, a roads authority or another responsible party failed to take reasonable care. Riders are vulnerable road users, and many collisions happen at junctions where a driver does not see them. Preserve scene, vehicle, helmet, insurer and medical evidence before it is repaired, replaced or lost.",
+    "keyPoints": [
+      "Riders are vulnerable road users under the Highway Code, but fault is still decided from evidence.",
+      "Junction collisions, where another driver says they did not see the rider, are common.",
+      "Wearing a helmet is a legal requirement and can be considered if head injuries are in issue.",
+      "Keep the motorcycle, helmet and protective clothing unrepaired until they have been recorded.",
+      "The general Scottish time limit for personal injury is three years."
+    ],
+    "sections": [
+      {
+        "heading": "Common motorcycle collision patterns",
+        "paragraphs": [
+          "Claims often arise where a vehicle turns across a rider's path, pulls out of a side road, changes lane, opens a door, or where a rider is caught by a road defect, poor surface or debris. Rural roads add risks such as bends, mud, gravel and livestock. The analysis considers speed, lookout, road layout, signals and what each person could reasonably have seen."
+        ]
+      },
+      {
+        "heading": "Helmets, clothing and contributory negligence",
+        "paragraphs": [
+          "Motorcyclists must wear a protective helmet on a public road, with limited exceptions. If a rider was not wearing one, or it was not properly fastened, the other side may argue that injuries were made worse, which can lead to a reduction in compensation rather than defeating the claim. A rider who did everything required can say so, and the evidence about what caused each injury matters."
+        ]
+      },
+      {
+        "heading": "What to preserve immediately",
+        "paragraphs": [
+          "Keep the motorcycle, helmet, gloves, jacket and boots as they were after the collision, photograph the scene and road layout, save dashcam or helmet-camera footage, and collect witness details. Ask about nearby CCTV quickly because it is often overwritten. Record symptoms accurately and attend medical review."
+        ]
+      },
+      {
+        "heading": "Injuries and losses",
+        "paragraphs": [
+          "Motorcycle injuries can be serious, including fractures, road rash, spinal and head injuries. Compensation can include pain, suffering and loss of amenity, lost earnings, treatment, care, and the cost of repairing or replacing the motorcycle and equipment. Where injuries are severe, see our guide to serious road traffic injury claims."
+        ]
+      }
+    ],
+    "sources": [
+      highwayCode,
+      limitation,
+      {
+        "label": "Road Traffic Act 1988, section 16: wearing of protective headgear",
+        "href": "https://www.legislation.gov.uk/ukpga/1988/52/section/16",
+        "note": "The statutory requirement to wear a helmet on a public road."
+      }
+    ],
+    "related": [
+      {
+        "label": "Serious road traffic injury claims",
+        "href": "/serious-road-traffic-injury-claims-scotland"
+      },
+      {
+        "label": "Car accident claims",
+        "href": "/car-accident-claims-scotland"
+      },
+      {
+        "label": "Road traffic accident claims hub",
+        "href": "/road-traffic-accident-claims-scotland"
+      },
+      {
+        "label": "Evidence checklist",
+        "href": "/guides/evidence-for-personal-injury-claim-scotland"
+      },
+      {
+        "label": "Contributory negligence in road accidents",
+        "href": "/contributory-negligence-road-accident-scotland"
+      },
+      {
+        "label": "No win no fee in Scotland",
+        "href": "/no-win-no-fee-solicitors-scotland"
+      }
+    ],
+    "faqs": [
+      {
+        "question": "How long do I have to make a motorcycle accident claim in Scotland?",
+        "answer": "In Scotland the general time limit is three years from the date of the accident. If you did not know at the time that you had suffered a significant injury, the three years can run from when you first knew, and different rules can apply to children. Take advice early rather than relying on an extension."
+      },
+      {
+        "question": "Can I claim if the driver says they did not see me?",
+        "answer": "Yes. Not seeing a rider is not a defence in itself, because drivers must keep a proper lookout. The court considers what the driver could reasonably have seen, the road layout and your own speed and position."
+      },
+      {
+        "question": "Will my claim be reduced if I was not wearing a helmet?",
+        "answer": "It may be, if the evidence shows that not wearing a helmet made your injuries worse. This is a question of contributory negligence and does not automatically defeat a claim. Take advice about the specific injuries involved."
+      },
+      {
+        "question": "Can I claim if the accident was partly my fault?",
+        "answer": "Yes. Scotland applies contributory negligence, which means compensation may be reduced to reflect your share of responsibility, but a claim is not automatically defeated. The reduction depends on the evidence."
+      },
+      {
+        "question": "What if the driver cannot be traced or was uninsured?",
+        "answer": "You may still be able to claim through the Motor Insurers' Bureau. See our guides on hit-and-run and uninsured driver claims."
+      },
+      {
+        "question": "Should I repair my motorcycle straight away?",
+        "answer": "Not before it has been photographed and, where liability is disputed, inspected. Repairs can destroy evidence. Keep the helmet and clothing as well."
+      }
+    ]
+  },
+  {
+    "slug": "cycling-accident-claims-scotland",
+    "title": "Cycling Accident Claims in Scotland",
+    "description": "Scottish cycling accident claims: collisions with vehicles, dooring, road defects, evidence, contributory negligence and the three-year time limit.",
+    "category": "Cycling accidents",
+    "answer": "A cyclist injured in Scotland may claim where a driver, a roads authority or another responsible party failed to take reasonable care. Common causes include vehicles turning across a cyclist's path, opening car doors, close passes and road defects. Helmets are not a legal requirement for cyclists in Scotland, but evidence about protective equipment can still be raised in a dispute.",
+    "keyPoints": [
+      "Cyclists are vulnerable road users in the Highway Code, which sets out how drivers should behave around them.",
+      "Dooring, close passes, left- and right-turn collisions and road defects are common causes.",
+      "Keep the bicycle and any damaged equipment as they were after the accident.",
+      "Dashcam, helmet-camera and CCTV footage should be saved quickly.",
+      "The general Scottish time limit for personal injury is three years."
+    ],
+    "sections": [
+      {
+        "heading": "Common cycling collision patterns",
+        "paragraphs": [
+          "Claims arise where a driver turns across a cyclist, overtakes too closely, opens a door into the cyclist's path, or emerges from a junction without seeing them. Poor road surfaces, potholes and drain covers can also cause falls. Each situation is analysed from the evidence: positions, speed, visibility, signals and what each person could reasonably have seen."
+        ]
+      },
+      {
+        "heading": "Road defects and falls without another vehicle",
+        "paragraphs": [
+          "Where a cyclist falls because of a defect in the road, the claim may be against the roads authority responsible for maintenance. These claims turn on whether the defect was dangerous and whether the authority took reasonable care to inspect and repair. See our guide to road defect accident claims."
+        ]
+      },
+      {
+        "heading": "Helmets and contributory negligence",
+        "paragraphs": [
+          "There is no legal requirement for adult or child cyclists to wear a helmet in Scotland. If a defendant argues that a missing helmet made head injuries worse, it is a contributory negligence argument that depends on the medical and factual evidence, and it does not automatically defeat a claim."
+        ]
+      },
+      {
+        "heading": "What to preserve",
+        "paragraphs": [
+          "Keep the bicycle, helmet, clothing and any lights or cameras without repairing them, photograph the scene and any road defect with a reference for scale, record witnesses and note the driver's details and insurer. Ask about CCTV promptly. Keep receipts for damaged equipment, medical costs and travel."
+        ]
+      }
+    ],
+    "sources": [
+      highwayCode,
+      limitation,
+      {
+        "label": "Roads (Scotland) Act 1984",
+        "href": "https://www.legislation.gov.uk/ukpga/1984/54/contents",
+        "note": "The roads authority's duty to manage and maintain public roads."
+      }
+    ],
+    "related": [
+      {
+        "label": "Road defect accident claims",
+        "href": "/road-defect-accident-claims-scotland"
+      },
+      {
+        "label": "Hit-and-run claims",
+        "href": "/hit-and-run-claims-scotland"
+      },
+      {
+        "label": "Road traffic accident claims hub",
+        "href": "/road-traffic-accident-claims-scotland"
+      },
+      {
+        "label": "Evidence checklist",
+        "href": "/guides/evidence-for-personal-injury-claim-scotland"
+      },
+      {
+        "label": "Contributory negligence in road accidents",
+        "href": "/contributory-negligence-road-accident-scotland"
+      },
+      {
+        "label": "No win no fee in Scotland",
+        "href": "/no-win-no-fee-solicitors-scotland"
+      }
+    ],
+    "faqs": [
+      {
+        "question": "How long do I have to make a cycling accident claim in Scotland?",
+        "answer": "In Scotland the general time limit is three years from the date of the accident. If you did not know at the time that you had suffered a significant injury, the three years can run from when you first knew, and different rules can apply to children. Take advice early rather than relying on an extension."
+      },
+      {
+        "question": "Do I have to wear a helmet to make a claim?",
+        "answer": "No. There is no legal requirement to wear a helmet when cycling in Scotland, and not wearing one does not by itself prevent a claim. If head injuries are involved, the other side may argue that a helmet would have reduced them, which is a contributory negligence argument."
+      },
+      {
+        "question": "Can I claim if a car door was opened into my path?",
+        "answer": "Yes. The person opening the door has a responsibility to check for approaching road users. A claim is usually against that person's insurer."
+      },
+      {
+        "question": "Can I claim for a fall caused by a pothole?",
+        "answer": "Possibly. The claim would normally be against the roads authority and depends on whether the defect was dangerous and whether the authority took reasonable care. Record and photograph the defect as soon as possible."
+      },
+      {
+        "question": "Can I claim if the accident was partly my fault?",
+        "answer": "Yes. Scotland applies contributory negligence, which means compensation may be reduced to reflect your share of responsibility, but a claim is not automatically defeated. The reduction depends on the evidence."
+      },
+      {
+        "question": "What if the driver left the scene?",
+        "answer": "You may still be able to claim through the Motor Insurers' Bureau. Report the incident to the police promptly and keep any evidence."
+      }
+    ]
+  },
+  {
+    "slug": "bus-accident-claims-scotland",
+    "title": "Bus Accident Claims in Scotland",
+    "description": "Scottish bus accident claims: injuries to passengers and other road users, bus operators, CCTV, evidence, losses and time limits.",
+    "category": "Bus accidents",
+    "answer": "A passenger injured on a bus in Scotland, or someone hit by a bus, may claim where the operator, the driver or another road user failed to take reasonable care. Typical incidents include sudden braking, falls while boarding or alighting, doors closing on passengers and collisions with other vehicles. Buses usually carry CCTV, which can be overwritten quickly, so request it early.",
+    "keyPoints": [
+      "Bus operators and drivers owe a duty of care to passengers.",
+      "Falls from sudden braking, door injuries and collisions are common claims.",
+      "Another driver or a roads authority may be responsible instead of, or as well as, the operator.",
+      "CCTV on the bus and nearby should be requested quickly.",
+      "The general Scottish time limit for personal injury is three years."
+    ],
+    "sections": [
+      {
+        "heading": "Who may be responsible",
+        "paragraphs": [
+          "Where a driver brakes or accelerates harshly, drives too fast for conditions or fails to ensure passengers are safe before moving off, the operator may be responsible for the driver's conduct. If another vehicle caused the collision, that driver's insurer may be responsible. Poorly maintained steps, handrails, floors or doors can also give rise to claims."
+        ]
+      },
+      {
+        "heading": "Passengers, pedestrians and other road users",
+        "paragraphs": [
+          "Passengers are not usually blamed for sudden movements outside their control, though evidence about whether they were seated, holding on or moving about can be raised. Pedestrians, cyclists and motorcyclists hit by a bus may have separate claims and are considered vulnerable road users."
+        ]
+      },
+      {
+        "heading": "Evidence to secure",
+        "paragraphs": [
+          "Note the route, number and registration of the bus, the operator, the time and location, and ask staff to record the incident. Get names of witnesses, photograph injuries and the place of the accident, and write a request for bus and roadside CCTV as early as possible. Keep tickets or pass details and medical records."
+        ]
+      },
+      {
+        "heading": "Injuries and losses",
+        "paragraphs": [
+          "Bus accidents can cause whiplash, fractures, head injuries and soft-tissue injuries, particularly for older passengers. Compensation can cover pain, suffering and loss of amenity, lost earnings, treatment and travel costs, and care where needed."
+        ]
+      }
+    ],
+    "sources": [
+      highwayCode,
+      limitation
+    ],
+    "related": [
+      {
+        "label": "Passenger accident claims",
+        "href": "/passenger-accident-claims-scotland"
+      },
+      {
+        "label": "Pedestrian accident claims",
+        "href": "/pedestrian-accident-claims-scotland"
+      },
+      {
+        "label": "Whiplash claims",
+        "href": "/guides/whiplash-claims-scotland"
+      },
+      {
+        "label": "Road traffic accident claims hub",
+        "href": "/road-traffic-accident-claims-scotland"
+      },
+      {
+        "label": "Evidence checklist",
+        "href": "/guides/evidence-for-personal-injury-claim-scotland"
+      },
+      {
+        "label": "Contributory negligence in road accidents",
+        "href": "/contributory-negligence-road-accident-scotland"
+      },
+      {
+        "label": "No win no fee in Scotland",
+        "href": "/no-win-no-fee-solicitors-scotland"
+      }
+    ],
+    "faqs": [
+      {
+        "question": "How long do I have to make a bus accident claim in Scotland?",
+        "answer": "In Scotland the general time limit is three years from the date of the accident. If you did not know at the time that you had suffered a significant injury, the three years can run from when you first knew, and different rules can apply to children. Take advice early rather than relying on an extension."
+      },
+      {
+        "question": "Who do I claim against after a bus accident?",
+        "answer": "It depends on what caused the accident. It may be the bus operator, another driver, or in some cases a roads authority. An adviser can identify the right defendant from the evidence."
+      },
+      {
+        "question": "Can I claim if I fell on a bus after it braked suddenly?",
+        "answer": "Possibly. The question is whether the driver's braking or driving was reasonable in the circumstances. Evidence such as CCTV, witness accounts and the circumstances on the road is important."
+      },
+      {
+        "question": "Can I claim if I was hit by a bus as a pedestrian?",
+        "answer": "Yes, if the driver or operator failed to take reasonable care. Pedestrians are vulnerable road users, though your own conduct can be considered."
+      },
+      {
+        "question": "Can I claim if the accident was partly my fault?",
+        "answer": "Yes. Scotland applies contributory negligence, which means compensation may be reduced to reflect your share of responsibility, but a claim is not automatically defeated. The reduction depends on the evidence."
+      },
+      {
+        "question": "How do I get the bus CCTV?",
+        "answer": "Ask the operator in writing as soon as possible, giving the date, time, route and bus number. Retention periods can be short, so a prompt request matters. A solicitor can also request it for you."
+      }
+    ]
+  },
 ];
 
 export const roadTrafficPageSlugs = new Set(roadTrafficPages.map((page) => `/${page.slug}`));
