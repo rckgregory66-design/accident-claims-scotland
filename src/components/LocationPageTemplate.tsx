@@ -23,6 +23,11 @@ export default function LocationPageTemplate({
   localContext,
   faqs,
 }: Props) {
+  const fundingFaq = {
+    question: `Can I find a no win, no fee solicitor for an accident claim in ${city}?`,
+    answer: `Many personal injury claims from ${city} and the surrounding area can be taken on a no win, no fee basis, which means you should not have to pay your solicitor's fees if the claim is unsuccessful. Terms differ between arrangements, so ask for them in writing before you agree: what, if anything, is deducted from your compensation if you win, whether after-the-event insurance is involved, and which costs you could still be responsible for. Other funding options include legal expenses insurance on a home, car or travel policy, trade union legal assistance and, for some people, Scottish Legal Aid Board funding.`,
+  };
+  const allFaqs = [...faqs, fundingFaq];
   const crumbs = [
     { name: "Home", url: SITE.url },
     { name: `${city} Accident Claims`, url: `${SITE.url}/${slug}` },
@@ -32,7 +37,7 @@ export default function LocationPageTemplate({
     <>
       <JsonLd data={[
         breadcrumbSchema(crumbs, `/${slug}`),
-        faqSchema(faqs),
+        faqSchema(allFaqs),
         locationPageSchema(city, slug),
       ]} />
       <Breadcrumbs crumbs={[{ label: `${city} Accident Claims` }]} />
@@ -87,7 +92,7 @@ export default function LocationPageTemplate({
               </Link>
             </p>
 
-            <h2>No Win, No Fee Claims in {city}</h2>
+            <h2>No Win, No Fee Solicitors for {city} Claims: How Funding Works</h2>
             <p>
               Many personal injury claims for {city} residents can be funded on a no win, no fee basis.
               This means that if your claim is unsuccessful, you will not be required to pay your solicitor&apos;s fees.
@@ -131,7 +136,7 @@ export default function LocationPageTemplate({
         </div>
       </div>
 
-      <FAQ faqs={faqs} title={`Frequently Asked Questions — ${city} Accident Claims`} />
+      <FAQ faqs={allFaqs} title={`Frequently Asked Questions — ${city} Accident Claims`} />
       <CtaSection title={`Ready to Start Your ${city} Claim?`} />
     </>
   );
