@@ -279,6 +279,15 @@ export const guides: Guide[] = [
     dateModified: "2026-07-29",
     readTime: "8 min read",
   },
+  {
+    slug: "benefits-deducted-from-compensation-scotland",
+    title: "Will Benefits Be Deducted From Compensation in Scotland?",
+    description: "How DWP benefit recovery (CRU) works in Scottish injury claims: which benefits can reduce an award, what is protected, NHS charges and challenges.",
+    category: "Compensation",
+    datePublished: "2026-10-15",
+    dateModified: "2026-10-15",
+    readTime: "8 min read",
+  },
 ];
 
 export const publishedGuideSlugs = new Set([
@@ -312,6 +321,7 @@ export const publishedGuideSlugs = new Set([
   "vibration-white-finger-claims-scotland",
   "care-home-negligence-claims-scotland",
   "prescription-error-claims-scotland",
+  "benefits-deducted-from-compensation-scotland",
 ]);
 
 export const publishedGuides = guides.filter((guide) => publishedGuideSlugs.has(guide.slug));

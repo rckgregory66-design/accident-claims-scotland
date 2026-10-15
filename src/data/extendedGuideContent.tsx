@@ -428,6 +428,53 @@ const guideData: Record<string, Guide> = {
     ],
     parent: { href: "/medical-negligence-claims-scotland", label: "Medical negligence claims Scotland" },
   },
+  "benefits-deducted-from-compensation-scotland": {
+    answer:
+      "Usually not from the part of compensation that is for pain and suffering. When a Scottish injury claim settles, the paying insurer must repay certain DWP benefits you received because of the injury to the Compensation Recovery Unit (CRU). The insurer may then reduce only the matching parts of your award: past lost earnings, past care and past mobility costs, and only by benefits listed for that same need. NHS treatment charges are paid by the insurer and cannot be taken from your compensation.",
+    distinct:
+      "Most compensation pages list what you can claim. This guide explains what can later come off a settlement because of social security benefits, which parts of an award are protected, and how to check the CRU certificate. It is based on the DWP technical guidance updated on 1 October 2026 and the Social Security (Recovery of Benefits) Act 1997, which extends to Scotland.",
+    sections: [
+      { heading: "Why benefits come up at all", body: "The recovery scheme exists so that a person is not compensated twice for the same loss. A compensator (normally the defender's insurer) must apply to the CRU, part of the Department for Work and Pensions, for a certificate before making a compensation payment, and must repay the listed benefits shown on it. The CRU must issue the certificate within four weeks of receiving a request with all the information it needs. You or your representative receive a copy." },
+      { heading: "The recovery period", body: "For an accident or injury, recoverable benefits are counted from the day after the accident. For a disease, they are counted from the date a listed benefit was first claimed because of the disease. The period ends when the final compensation payment is made, or five years after it began, whichever comes first. Benefits paid after that point are not recoverable from the settlement." },
+      { heading: "Which benefits can reduce which part of the award", bullets: [
+        "Past lost earnings: Universal Credit, Employment and Support Allowance, Jobseeker's Allowance, Income Support, Industrial Injuries Disablement Benefit and certain older or closed benefits listed in Schedule 2 of the 1997 Act.",
+        "Past cost of care: the daily living component of Personal Independence Payment, the care component of Disability Living Allowance, Attendance Allowance, and Constant Attendance or Exceptionally Severe Disablement Allowance increases.",
+        "Past loss of mobility: the mobility component of Personal Independence Payment or Disability Living Allowance, and Mobility Allowance.",
+        "Each benefit can only be set against the head of loss it is listed against. If the benefit is larger than that part of the award, the insurer still repays the DWP but cannot take the difference from any other part of your compensation.",
+      ] },
+      { heading: "What is protected", bullets: [
+        "Solatium (pain, suffering and loss of amenity) cannot be reduced on account of listed benefits.",
+        "Future losses, such as future earnings and future care, fall outside the Schedule 2 heads and are not reduced for listed benefits.",
+        "Claims by relatives under section 1 of the Damages (Scotland) Act 1976 are exempt from the recovery of listed benefits.",
+        "State Pension and bereavement benefits are not recoverable benefits, although listed benefits paid after pension age can still be.",
+        "Criminal Injuries Compensation awards are prescribed exempt payments.",
+      ] },
+      { heading: "The exception: dust-disease lump sums", body: "If you received a lump sum under the Pneumoconiosis etc. (Workers' Compensation) Act 1979, the 2008 Diffuse Mesothelioma Scheme or the Mesothelioma Act 2014 payment scheme, the rules are different. That lump sum can be offset against any part of the compensation, including solatium, and must be taken from solatium first, but recovery cannot exceed the compensation paid. See our asbestos guide for the wider claim context." },
+      { heading: "NHS charges are a separate scheme", body: "For injuries on or after 29 January 2007, the compensator must also pay NHS hospital treatment and ambulance charges through the CRU under Part 3 of the Health and Social Care (Community Health and Standards) Act 2003, with Scottish regulations covering NHS Scotland. DWP guidance states that NHS charges cannot be offset against the compensation payment, so they should not reduce what you receive." },
+      { heading: "Checking and challenging the certificate", bullets: [
+        "Check the benefits, dates and amounts on the certificate against your own records, and tell your adviser if any benefit was paid for a reason unrelated to the injury.",
+        "You, the compensator or your representative may ask the CRU to review the certificate at any time.",
+        "After settlement, once the compensator has paid the CRU in full, a mandatory reconsideration can be requested within one month of that payment; an appeal can follow.",
+        "An injured person can only appeal where their compensation was reduced under section 8 of the 1997 Act. If a global settlement was agreed without a section 8 deduction, any later refund goes to the insurer, not to you.",
+      ] },
+      { heading: "If you are still on benefits when you are paid", body: "DWP guidance tells people receiving means-tested benefits such as Universal Credit, Employment and Support Allowance, Jobseeker's Allowance, Income Support, Housing Benefit or Pension Credit to tell the office that pays the benefit as soon as compensation is received, and to tell the local council if they receive a Council Tax Reduction. Ask for advice on how a lump sum may affect ongoing entitlement before you accept an offer." },
+      { heading: "Scottish benefits", body: "Schedule 2 of the 1997 Act, as published on legislation.gov.uk and checked on 15 October 2026, lists DWP benefits only. It does not name benefits delivered by Social Security Scotland, such as Adult Disability Payment. If you receive a Scottish benefit, ask your adviser to confirm how it is treated in your claim rather than assuming either way." },
+    ],
+    seeAlso: [
+      { href: "/personal-injury-compensation-scotland", label: "What personal injury compensation can cover in Scotland" },
+      { href: "/compensation-calculator-scotland", label: "Compensation planner: map your heads of loss" },
+      { href: "/guides/asbestos-claims-scotland", label: "Asbestos claims in Scotland" },
+      { href: "/guides/fatal-accident-compensation-scotland", label: "Fatal accident compensation for families" },
+    ],
+    sources: [
+      { label: "DWP: Recovery of benefits, lump sum payments and NHS charges — technical guidance (updated 1 October 2026)", href: "https://www.gov.uk/government/publications/recovery-of-benefits-and-or-lump-sum-payments-and-nhs-charges-technical-guidance", note: "Official CRU guidance on the recovery period, listed benefits, exempt payments, offsetting, reviews, appeals and NHS charges." },
+      { label: "Social Security (Recovery of Benefits) Act 1997, Schedule 2", href: "https://www.legislation.gov.uk/ukpga/1997/27/schedule/2", note: "The statutory table matching each recoverable benefit to the head of compensation it can reduce (extends to England, Wales and Scotland)." },
+      { label: "DWP: Compensation, social security benefits and lump sum payments", href: "https://www.gov.uk/government/publications/compensation-social-security-benefits-and-lump-sum-payments-technical-guide", note: "DWP guide for injured people, including the duty to report compensation to the benefit office." },
+      { label: "DWP: Compensation and repaying DWP — if you think our decision is wrong", href: "https://www.gov.uk/government/publications/compensation-and-repaying-dwp-if-you-think-our-decision-is-wrong", note: "Mandatory reconsideration and appeal guide for CRU certificates." },
+      { label: "Health and Social Care (Community Health and Standards) Act 2003, Part 3", href: "https://www.legislation.gov.uk/ukpga/2003/43/part/3", note: "The NHS injury costs recovery scheme." },
+    ],
+    parent: { href: "/personal-injury-compensation-scotland", label: "Personal injury compensation guide for Scotland" },
+  },
 };
 
 function GuideArticle({ guide }: { guide: Guide }) {

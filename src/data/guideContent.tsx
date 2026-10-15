@@ -614,6 +614,14 @@ const articles: Record<string, ReactNode> = {
           early insurer offers after a road accident in Scotland
         </Link>.
       </p>
+      <p>
+        If you have received benefits such as Universal Credit or Personal Independence Payment since the
+        injury, read{" "}
+        <Link href="/guides/benefits-deducted-from-compensation-scotland" className="text-red-700 font-medium hover:underline">
+          whether benefits will be deducted from your compensation
+        </Link>{" "}
+        before comparing offers.
+      </p>
 
       <p>
         <Link href="/personal-injury-compensation-scotland" className="text-red-700 font-medium hover:underline">

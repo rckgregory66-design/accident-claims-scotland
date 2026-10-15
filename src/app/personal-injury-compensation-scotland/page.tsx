@@ -123,6 +123,7 @@ export default function CompensationGuidePage() {
         "what-is-my-accident-claim-worth-scotland",
         "can-i-claim-if-partly-at-fault-scotland",
         "serious-injury-rehabilitation-scotland",
+        "benefits-deducted-from-compensation-scotland",
       ]}
       locationClaimType="personal injury claims"
       faqs={faqs}

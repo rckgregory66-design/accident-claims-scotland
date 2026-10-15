@@ -273,6 +273,14 @@ export const guideFaqs: Record<string, FaqItem[]> = {
     { question: "What compensation can I get for a pavement trip injury?", answer: "Compensation can include general damages for pain, suffering and loss of amenity, and special damages for lost earnings, medical and treatment costs, care provided by others, and other financial losses caused by the injury. The amount depends on the severity and duration of your injuries." },
   ],
 
+  "benefits-deducted-from-compensation-scotland": [
+    { question: "Will my benefits be taken off my personal injury compensation in Scotland?", answer: "Some may be. When the claim settles, the paying insurer must repay listed DWP benefits paid because of the injury to the Compensation Recovery Unit. The insurer can then reduce only the matching parts of your award for past lost earnings, past care and past mobility. Solatium for pain and suffering cannot be reduced for listed benefits." },
+    { question: "How far back does benefit recovery go?", answer: "For an accident or injury, from the day after the accident until the final compensation payment, up to a maximum of five years. For a disease, the period starts when a listed benefit was first claimed because of the disease." },
+    { question: "Are NHS treatment costs deducted from my compensation?", answer: "No. For injuries on or after 29 January 2007 the compensator pays NHS hospital and ambulance charges through the CRU, and DWP guidance states those charges cannot be offset against the compensation payment." },
+    { question: "Does benefit recovery affect a family's claim after a death in Scotland?", answer: "Payments made in respect of liability under section 1 of the Damages (Scotland) Act 1976 are exempt from recovery of listed benefits. Lump sums paid for certain dust-related diseases can still be recovered, so a CRU certificate may still be needed in those cases." },
+    { question: "What can I do if the CRU certificate looks wrong?", answer: "You or your representative can ask the CRU to review it at any time. After settlement, once the insurer has paid the CRU in full, you can request a mandatory reconsideration within one month of that payment and then appeal, provided your compensation was reduced under section 8 of the 1997 Act." },
+  ],
+
 };
 
 export function getGuideFaqs(slug: string): FaqItem[] {
