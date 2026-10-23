@@ -1,179 +1,17 @@
 # Accident Claims Scotland
 
-Accident Claims Scotland is a marketing and information website about personal injury and compensation claims in Scotland. It is not currently presented as a regulated law firm. Content is general information, not individual legal advice. Operated by Ola Consultants Ltd.
+> Accident Claims Scotland (accident-claims-scotland.com) is an information website about personal injury and compensation claims under Scots law, operated by Ola Consultants Ltd. It is not a regulated law firm; its content is general information, not individual legal advice.
 
-## Core service pages
+The site covers road traffic, workplace, public place, medical negligence, industrial disease, serious injury and criminal injury (CICA) claims in Scotland, together with time limits, compensation, funding and the claims process.
 
-- Personal injury claims: https://accident-claims-scotland.com/personal-injury-claims-scotland
-- Road traffic accidents: https://accident-claims-scotland.com/road-traffic-accident-claims-scotland
-- Accidents at work: https://accident-claims-scotland.com/accident-at-work-claims-scotland
-- Medical negligence: https://accident-claims-scotland.com/medical-negligence-claims-scotland
-- Industrial disease: https://accident-claims-scotland.com/industrial-disease-claims-scotland
-- Serious injury: https://accident-claims-scotland.com/serious-injury-claims-scotland
-- Public place accidents: https://accident-claims-scotland.com/public-place-accident-claims-scotland
-- Criminal injury and CICA: https://accident-claims-scotland.com/criminal-injury-compensation-scotland
-- No win, no fee: https://accident-claims-scotland.com/no-win-no-fee-solicitors-scotland
+Key facts stated on the site:
 
-## Essential claims information
+- Under section 17 of the Prescription and Limitation (Scotland) Act 1973, a personal injury action must generally be raised within three years of the injury or, if later, the date of knowledge. Section 19A gives the court a discretion to allow a late action.
+- For a child injured before 16, the three-year period does not start until 16, so the usual deadline is the 19th birthday.
+- Fatal accident claims by relatives are brought under the Damages (Scotland) Act 2011.
+- CICA applications must generally be made within two years of the crime.
 
-- Claims process: https://accident-claims-scotland.com/how-to-claim-compensation-scotland
-- Personal injury time limits: https://accident-claims-scotland.com/personal-injury-claim-time-limits-scotland
-- Compensation: https://accident-claims-scotland.com/personal-injury-compensation-scotland
-- Compensation planning tool: https://accident-claims-scotland.com/compensation-calculator-scotland
-- Scotland personal injury statistics: https://accident-claims-scotland.com/scotland-personal-injury-statistics
-- Article library: https://accident-claims-scotland.com/guides
-- Editorial methodology and source policy: https://accident-claims-scotland.com/editorial-methodology
-
-## Guide articles — General Advice
-
-- How long do I have to claim in Scotland: https://accident-claims-scotland.com/guides/personal-injury-claim-time-limit-scotland
-- Evidence for a personal injury claim: https://accident-claims-scotland.com/guides/evidence-for-personal-injury-claim-scotland
-- Can I claim if partly at fault: https://accident-claims-scotland.com/guides/can-i-claim-if-partly-at-fault-scotland
-- What happens if liability is denied: https://accident-claims-scotland.com/guides/what-if-liability-denied-scotland
-- Do I need to go to court: https://accident-claims-scotland.com/guides/do-i-need-to-go-to-court-scotland
-
-## Guide articles — Road Accidents
-
-- Road accident evidence and insurance checklist: https://accident-claims-scotland.com/guides/road-traffic-accident-claims-scotland
-- Whiplash claims in Scotland: https://accident-claims-scotland.com/guides/whiplash-claims-scotland
-- Cycling accident claims: https://accident-claims-scotland.com/guides/cycling-accident-claims-scotland
-- Motorcycle accident claims: https://accident-claims-scotland.com/guides/motorcycle-accident-claims-scotland
-
-## Guide articles — Workplace Accidents
-
-- Accident at work claim: https://accident-claims-scotland.com/guides/accident-at-work-claim-scotland
-- Construction accident claims: https://accident-claims-scotland.com/guides/construction-accident-claims-scotland
-- Offshore injury claims: https://accident-claims-scotland.com/guides/offshore-injury-claims-scotland
-
-## Guide articles — Medical Negligence
-
-- Medical negligence — what to prove: https://accident-claims-scotland.com/guides/medical-negligence-what-to-prove-scotland
-- NHS negligence claims explained: https://accident-claims-scotland.com/guides/nhs-negligence-claims-scotland-explained
-- GP negligence claims: https://accident-claims-scotland.com/guides/gp-negligence-claims-scotland
-- Birth injury claims: https://accident-claims-scotland.com/guides/birth-injury-claims-scotland
-- Cancer misdiagnosis claims: https://accident-claims-scotland.com/guides/cancer-misdiagnosis-claims-scotland
-- Care home negligence claims: https://accident-claims-scotland.com/guides/care-home-negligence-claims-scotland
-- Prescription error claims: https://accident-claims-scotland.com/guides/prescription-error-claims-scotland
-
-## Guide articles — Industrial Disease
-
-- Industrial disease — delayed symptoms: https://accident-claims-scotland.com/guides/industrial-disease-delayed-symptoms-scotland
-- Asbestos claims: https://accident-claims-scotland.com/guides/asbestos-claims-scotland
-- Noise-induced hearing loss claims: https://accident-claims-scotland.com/guides/noise-induced-hearing-loss-claims-scotland
-- Vibration white finger claims: https://accident-claims-scotland.com/guides/vibration-white-finger-claims-scotland
-
-## Industrial disease detailed pages
-
-- Mesothelioma compensation claims: https://accident-claims-scotland.com/industrial-disease-claims-scotland/mesothelioma-claims
-- Pleural plaques claims (Scotland's 2009 Act): https://accident-claims-scotland.com/industrial-disease-claims-scotland/pleural-plaques-claims
-- Asbestosis claims: https://accident-claims-scotland.com/industrial-disease-claims-scotland/asbestosis-claims
-- Pleural thickening claims: https://accident-claims-scotland.com/industrial-disease-claims-scotland/pleural-thickening-claims
-- Repetitive strain injury (RSI) claims: https://accident-claims-scotland.com/industrial-disease-claims-scotland/repetitive-strain-injury-claims
-- Tracing employers' liability insurers: https://accident-claims-scotland.com/industrial-disease-claims-scotland/tracing-employers-liability-insurers
-
-## Accident at work detailed pages
-
-- Factory and manufacturing accident claims: https://accident-claims-scotland.com/accident-at-work-claims-scotland/factory-accident-claims
-- Farm and agricultural accident claims: https://accident-claims-scotland.com/accident-at-work-claims-scotland/farm-accident-claims
-- Warehouse and logistics accident claims: https://accident-claims-scotland.com/accident-at-work-claims-scotland/warehouse-accident-claims
-- Defective work equipment claims: https://accident-claims-scotland.com/accident-at-work-claims-scotland/defective-work-equipment-claims
-- Slips and trips at work claims: https://accident-claims-scotland.com/accident-at-work-claims-scotland/slips-and-trips-at-work-claims
-- Reporting an accident at work (RIDDOR and the accident book): https://accident-claims-scotland.com/accident-at-work-claims-scotland/reporting-an-accident-at-work
-
-## Medical negligence detailed pages
-
-- Surgical negligence claims: https://accident-claims-scotland.com/medical-negligence-claims-scotland/surgical-negligence-claims
-- Hospital negligence claims: https://accident-claims-scotland.com/medical-negligence-claims-scotland/hospital-negligence-claims
-- Misdiagnosis claims: https://accident-claims-scotland.com/medical-negligence-claims-scotland/misdiagnosis-claims
-- Informed consent claims (Montgomery test): https://accident-claims-scotland.com/medical-negligence-claims-scotland/informed-consent-claims
-- NHS complaints and the duty of candour: https://accident-claims-scotland.com/medical-negligence-claims-scotland/nhs-complaints-and-duty-of-candour
-- Fatal medical negligence claims: https://accident-claims-scotland.com/medical-negligence-claims-scotland/fatal-medical-negligence-claims
-
-## Serious injury detailed pages
-
-- Brain injury claims: https://accident-claims-scotland.com/serious-injury-claims-scotland/brain-injury-claims
-- Spinal injury claims: https://accident-claims-scotland.com/serious-injury-claims-scotland/spinal-injury-claims
-- Amputation claims: https://accident-claims-scotland.com/serious-injury-claims-scotland/amputation-claims
-- Serious burn injury claims: https://accident-claims-scotland.com/serious-injury-claims-scotland/serious-burn-injury-claims
-- Complex regional pain syndrome (CRPS) claims: https://accident-claims-scotland.com/serious-injury-claims-scotland/complex-regional-pain-syndrome-claims
-- Periodical payments and the discount rate in Scotland: https://accident-claims-scotland.com/serious-injury-claims-scotland/periodical-payments-and-the-discount-rate
-- Capacity and guardianship after serious injury: https://accident-claims-scotland.com/serious-injury-claims-scotland/capacity-and-guardianship-after-serious-injury
-
-## Public place accident detailed pages
-
-- Council accident claims: https://accident-claims-scotland.com/public-place-accident-claims-scotland/council-accident-claims
-- Ice and snow accident claims: https://accident-claims-scotland.com/public-place-accident-claims-scotland/ice-and-snow-accident-claims
-- Occupiers' Liability (Scotland) Act 1960 explained: https://accident-claims-scotland.com/public-place-accident-claims-scotland/occupiers-liability-explained
-- Restaurant, pub and café accident claims: https://accident-claims-scotland.com/public-place-accident-claims-scotland/restaurant-pub-and-cafe-accident-claims
-- Sports and leisure injury claims: https://accident-claims-scotland.com/public-place-accident-claims-scotland/sports-and-leisure-injury-claims
-
-## Guide articles — Compensation and Funding
-
-- What is my accident claim worth: https://accident-claims-scotland.com/guides/what-is-my-accident-claim-worth-scotland
-- No win, no fee explained: https://accident-claims-scotland.com/guides/no-win-no-fee-scotland-explained
-- Will benefits be deducted from compensation: https://accident-claims-scotland.com/guides/benefits-deducted-from-compensation-scotland
-- Can I get legal aid for a personal injury claim: https://accident-claims-scotland.com/guides/legal-aid-personal-injury-claims-scotland
-
-## Guide articles — Serious Injury
-
-- Serious injury rehabilitation: https://accident-claims-scotland.com/guides/serious-injury-rehabilitation-scotland
-- Fatal accident compensation: https://accident-claims-scotland.com/guides/fatal-accident-compensation-scotland
-
-## Guide articles — Public Place Accidents
-
-- Slip, trip and fall claims: https://accident-claims-scotland.com/guides/slip-trip-fall-claims-scotland
-- Supermarket accident claims: https://accident-claims-scotland.com/guides/supermarket-accident-claims-scotland
-- Council pavement trip claims: https://accident-claims-scotland.com/guides/council-pavement-trip-claims-scotland
-
-## Road traffic accident sub-pages
-
-- Car accident claims: https://accident-claims-scotland.com/car-accident-claims-scotland
-- Pedestrian accident claims: https://accident-claims-scotland.com/pedestrian-accident-claims-scotland
-- Passenger accident claims: https://accident-claims-scotland.com/passenger-accident-claims-scotland
-- Uninsured driver claims: https://accident-claims-scotland.com/uninsured-driver-claims-scotland
-- Hit and run claims: https://accident-claims-scotland.com/hit-and-run-claims-scotland
-- Serious road traffic injury: https://accident-claims-scotland.com/serious-road-traffic-injury-claims-scotland
-- Fatal road accident claims: https://accident-claims-scotland.com/fatal-road-accident-claims-scotland
-- Road defect accident claims: https://accident-claims-scotland.com/road-defect-accident-claims-scotland
-- Child road accident claims: https://accident-claims-scotland.com/child-road-accident-claims-scotland
-- Early insurer offers: https://accident-claims-scotland.com/early-insurer-offers-road-accident-scotland
-
-## More claim-type pages
-
-- Manual handling injury claims: https://accident-claims-scotland.com/manual-handling-injury-claims-scotland
-- Needlestick injury claims: https://accident-claims-scotland.com/needlestick-injury-claims-scotland
-- Stress at work claims: https://accident-claims-scotland.com/stress-at-work-claims-scotland
-- Self-employed injury claims: https://accident-claims-scotland.com/self-employed-injury-claims-scotland
-- Delayed diagnosis claims: https://accident-claims-scotland.com/delayed-diagnosis-claims-scotland
-- Dental negligence claims: https://accident-claims-scotland.com/dental-negligence-claims-scotland
-- Hospital infection claims: https://accident-claims-scotland.com/hospital-infection-claims-scotland
-- Shop accident claims: https://accident-claims-scotland.com/shop-accident-claims-scotland
-- School accident claims: https://accident-claims-scotland.com/school-accident-claims-scotland
-- Hotel accident claims: https://accident-claims-scotland.com/hotel-accident-claims-scotland
-- Occupational asthma claims: https://accident-claims-scotland.com/occupational-asthma-claims-scotland
-- Occupational dermatitis claims: https://accident-claims-scotland.com/occupational-dermatitis-claims-scotland
-- Domestic abuse injury claims (CICA): https://accident-claims-scotland.com/domestic-abuse-injury-claim-scotland
-- Child abuse compensation (CICA): https://accident-claims-scotland.com/child-abuse-injury-claim-scotland
-- Contributory negligence in road accidents: https://accident-claims-scotland.com/contributory-negligence-road-accident-scotland
-- Dog bite claims: https://accident-claims-scotland.com/dog-bite-claims-scotland
-- Fall from height at work claims: https://accident-claims-scotland.com/work-at-height-fall-claims-scotland
-
-## Local information pages
-
-- Glasgow: https://accident-claims-scotland.com/glasgow-accident-claims
-- Edinburgh: https://accident-claims-scotland.com/edinburgh-accident-claims
-
-## About and policies
-
-- About: https://accident-claims-scotland.com/about
-- Contact: https://accident-claims-scotland.com/contact
-- Complaints: https://accident-claims-scotland.com/complaints
-- Privacy policy: https://accident-claims-scotland.com/privacy-policy
-- Cookie policy: https://accident-claims-scotland.com/cookie-policy
-- Terms: https://accident-claims-scotland.com/terms
-- Accessibility: https://accident-claims-scotland.com/accessibility
-
-## Interpretation notes
+Interpretation notes:
 
 - The website focuses on Scots law and should not be treated as guidance for England, Wales or Northern Ireland.
 - Civil personal injury claims, CICA applications, clinical negligence, industrial disease and fatal claims are distinct legal routes with different processes and time limits.
@@ -181,3 +19,178 @@ Accident Claims Scotland is a marketing and information website about personal i
 - Outcomes, compensation, funding and case acceptance are not guaranteed and depend on the facts, evidence and applicable law.
 - Primary legislation and official Scottish or UK public bodies are preferred sources over secondary commentary.
 - Content is reviewed when official guidance changes. Review dates appear on substantive pages.
+
+## Core service pages
+
+- [Accident Claims Scotland home](https://accident-claims-scotland.com/): How personal injury claims work in Scotland: the three-year time limit, evidence, no win no fee funding and compensation. Plain-English guidance on Scots law. Not a law firm.
+- [Personal injury claims](https://accident-claims-scotland.com/personal-injury-claims-scotland): How a personal injury claim works in Scotland: who can claim, the three-year time limit, what must be proved, how no win no fee funding works and what compensation covers.
+- [Road traffic accidents](https://accident-claims-scotland.com/road-traffic-accident-claims-scotland): Injured in a road accident in Scotland? Information on car, motorcycle, cycling, pedestrian and whiplash claims under Scots law. Three-year time limit — free enquiry, no obligation.
+- [Accidents at work](https://accident-claims-scotland.com/accident-at-work-claims-scotland): Injured at work in Scotland? Information on employer negligence claims, RIDDOR, manual handling, falls and equipment failures under Scots law. Free enquiry, no win no fee available.
+- [Medical negligence](https://accident-claims-scotland.com/medical-negligence-claims-scotland): Harmed by medical negligence in Scotland? Information on NHS negligence, misdiagnosis, surgical errors, birth injuries and delayed diagnosis claims. Free enquiry, no win no fee.
+- [Industrial disease](https://accident-claims-scotland.com/industrial-disease-claims-scotland): Work-related illness claims in Scotland: asbestos, mesothelioma, industrial deafness, vibration white finger, COPD. Time limit runs from diagnosis — free enquiry, no obligation.
+- [Serious injury](https://accident-claims-scotland.com/serious-injury-claims-scotland): Information on serious and catastrophic injury claims in Scotland: brain injury, spinal cord injury, amputation, burns and fatal accidents. Sensitive support — free enquiry.
+- [Public place accidents](https://accident-claims-scotland.com/public-place-accident-claims-scotland): Injured in a public place in Scotland? Information on claims for slips, trips and falls in supermarkets, pavements, shops and public buildings. Free enquiry, no win no fee available.
+- [Criminal injury and CICA](https://accident-claims-scotland.com/criminal-injury-compensation-scotland): Criminal injury compensation for victims of violence in Scotland. CICA tariff scheme, eligibility, two-year time limit, and what to do if compensation is refused. Free enquiry.
+- [No win, no fee](https://accident-claims-scotland.com/no-win-no-fee-solicitors-scotland): How no win, no fee funding works in Scotland: success fees, disbursements, ATE insurance and what you pay if you win or lose. Regulated under Scots law — free enquiry, no obligation.
+
+## Essential claims information
+
+- [Claims process](https://accident-claims-scotland.com/how-to-claim-compensation-scotland): Step-by-step guide to making a personal injury compensation claim in Scotland. How accident claims work, what to expect and how to get started.
+- [Personal injury time limits](https://accident-claims-scotland.com/personal-injury-claim-time-limits-scotland): Understand the time limits for personal injury and medical negligence claims in Scotland. The three year rule, date of knowledge, exceptions for children and fatal claims.
+- [Compensation](https://accident-claims-scotland.com/personal-injury-compensation-scotland): Understand what personal injury compensation covers in Scotland. General damages, wage loss, medical costs, care needs and more. No guarantee of amount — free honest assessment.
+- [Compensation planning tool](https://accident-claims-scotland.com/compensation-calculator-scotland): Use this Scottish personal injury compensation planning tool to identify potential heads of loss, evidence gaps and the factors that affect claim value.
+- [Scotland personal injury statistics](https://accident-claims-scotland.com/scotland-personal-injury-statistics): Key statistics on workplace injuries, road casualties, clinical negligence, criminal injuries and industrial disease in Scotland. All figures drawn from official government and public-body sources.
+- [Article library](https://accident-claims-scotland.com/guides): Free guides and articles on personal injury claims in Scotland — time limits, evidence, compensation, no win no fee, medical negligence and more.
+- [Editorial methodology and source policy](https://accident-claims-scotland.com/editorial-methodology): How Accident Claims Scotland researches, sources, reviews, updates and corrects its general Scottish claims information.
+
+## Guide articles — General Advice
+
+- [How long do I have to claim in Scotland](https://accident-claims-scotland.com/guides/personal-injury-claim-time-limit-scotland): Everything you need to know about the three-year time limit for personal injury claims in Scotland — including exceptions for children, industrial disease and medical negligence.
+- [Evidence for a personal injury claim](https://accident-claims-scotland.com/guides/evidence-for-personal-injury-claim-scotland): A guide to the evidence that supports personal injury and accident claims in Scotland — medical records, photographs, witnesses, and how to preserve it.
+- [Can I claim if partly at fault](https://accident-claims-scotland.com/guides/can-i-claim-if-partly-at-fault-scotland): How contributory negligence works in Scottish personal injury law — and what it means for the amount of compensation you may receive.
+- [What happens if liability is denied](https://accident-claims-scotland.com/guides/what-if-liability-denied-scotland): A guide to disputed liability in Scottish personal injury claims — gathering evidence, expert reports and what happens if your claim has to go to court.
+- [Do I need to go to court](https://accident-claims-scotland.com/guides/do-i-need-to-go-to-court-scotland): Most personal injury claims in Scotland settle without a court hearing. This guide explains when cases go to court, what the process involves and what to expect.
+
+## Guide articles — Road Accidents
+
+- [Road accident evidence and insurance checklist](https://accident-claims-scotland.com/guides/road-traffic-accident-claims-scotland): A practical post-collision checklist covering scene evidence, dashcam and CCTV, medical records, insurers and uninsured or untraced drivers in Scotland.
+- [Whiplash claims in Scotland](https://accident-claims-scotland.com/guides/whiplash-claims-scotland): How to claim for whiplash and soft tissue injuries after a road accident in Scotland — why Scotland's rules are different from England and Wales.
+- [Cycling accident claims](https://accident-claims-scotland.com/guides/cycling-accident-claims-scotland): How to claim compensation after a cycling accident in Scotland — collisions with motor vehicles, road defects, helmet use and the claims process.
+- [Motorcycle accident claims](https://accident-claims-scotland.com/guides/motorcycle-accident-claims-scotland): A guide to claiming compensation after a motorcycle accident in Scotland — common causes, injuries, protective equipment and what affects your claim.
+
+## Guide articles — Workplace Accidents
+
+- [Accident at work claim](https://accident-claims-scotland.com/guides/accident-at-work-claim-scotland): A practical guide to making an accident at work claim in Scotland — your employer's duty of care, what evidence you need, and how the claims process works.
+- [Construction accident claims](https://accident-claims-scotland.com/guides/construction-accident-claims-scotland): A guide to claiming compensation after a construction site accident in Scotland — falls from height, struck by objects, defective equipment and more.
+- [Offshore injury claims](https://accident-claims-scotland.com/guides/offshore-injury-claims-scotland): Injured working offshore from Scotland? A guide to claiming compensation for oil rig, supply vessel and helicopter accidents — regulations, time limits and the claims process.
+
+## Guide articles — Medical Negligence
+
+- [Medical negligence — what to prove](https://accident-claims-scotland.com/guides/medical-negligence-what-to-prove-scotland): Understand duty of care, breach, causation and avoidable harm in Scottish clinical negligence claims. What expert evidence is needed and how cases are assessed.
+- [NHS negligence claims explained](https://accident-claims-scotland.com/guides/nhs-negligence-claims-scotland-explained): How to bring a medical negligence claim against NHS Scotland — the Central Legal Office, NHS boards, time limits and what to expect from the process.
+- [GP negligence claims](https://accident-claims-scotland.com/guides/gp-negligence-claims-scotland): When can you claim against your GP in Scotland? Failure to diagnose, delayed referrals, prescribing errors and other forms of GP negligence explained.
+- [Birth injury claims](https://accident-claims-scotland.com/guides/birth-injury-claims-scotland): A guide to claiming compensation for birth injuries in Scotland — injuries to mothers, babies, cerebral palsy, shoulder dystocia and other birth complications.
+- [Cancer misdiagnosis claims](https://accident-claims-scotland.com/guides/cancer-misdiagnosis-claims-scotland): A guide to claiming compensation for delayed or missed cancer diagnosis in Scotland — the effect of delay on prognosis and how clinical negligence is established.
+- [Care home negligence claims](https://accident-claims-scotland.com/guides/care-home-negligence-claims-scotland): A guide to claiming compensation for care home negligence in Scotland — inadequate care, falls, pressure sores, malnutrition and neglect.
+- [Prescription error claims](https://accident-claims-scotland.com/guides/prescription-error-claims-scotland): Can you claim for a prescription error in Scotland? Wrong medication, wrong dose, dangerous drug interactions — when pharmacy or GP errors become negligence.
+
+## Guide articles — Industrial Disease
+
+- [Industrial disease — delayed symptoms](https://accident-claims-scotland.com/guides/industrial-disease-delayed-symptoms-scotland): How the 'date of knowledge' time limit works for industrial disease claims in Scotland — asbestos, hearing loss, vibration and other occupational conditions that develop years later.
+- [Asbestos claims](https://accident-claims-scotland.com/guides/asbestos-claims-scotland): How to make an asbestos-related disease claim in Scotland — mesothelioma, asbestosis, pleural thickening and how to claim even when the employer no longer exists.
+- [Noise-induced hearing loss claims](https://accident-claims-scotland.com/guides/noise-induced-hearing-loss-claims-scotland): How to claim for industrial deafness and noise-induced hearing loss in Scotland — including claims against former employers and long-past workplace exposure.
+- [Vibration white finger claims](https://accident-claims-scotland.com/guides/vibration-white-finger-claims-scotland): How to claim for vibration white finger (HAVS) in Scotland — symptoms, diagnosis, proving workplace exposure and the date of knowledge time limit.
+
+## Industrial disease detailed pages
+
+- [Mesothelioma compensation claims](https://accident-claims-scotland.com/industrial-disease-claims-scotland/mesothelioma-claims): How mesothelioma compensation works in Scotland: claims against employers and insurers, the government payment schemes, time limits and claims by family.
+- [Pleural plaques claims (Scotland's 2009 Act)](https://accident-claims-scotland.com/industrial-disease-claims-scotland/pleural-plaques-claims): Scots law lets people with asbestos-related pleural plaques claim damages. How the 2009 Act works, what must be proved, time limits and earlier settled claims.
+- [Asbestosis claims](https://accident-claims-scotland.com/industrial-disease-claims-scotland/asbestosis-claims): Asbestosis claims in Scotland: how the 2009 Act treats asbestosis, what to prove against an employer, time limits, provisional damages and payment schemes.
+- [Pleural thickening claims](https://accident-claims-scotland.com/industrial-disease-claims-scotland/pleural-thickening-claims): Asbestos-related pleural thickening claims in Scotland: the 2009 Act, what must be proved, time limits, provisional damages and family claims.
+- [Repetitive strain injury (RSI) claims](https://accident-claims-scotland.com/industrial-disease-claims-scotland/repetitive-strain-injury-claims): Work-related repetitive strain injury claims in Scotland: employer duties, why negligence must be proved, evidence, time limits and what compensation may cover.
+- [Tracing employers' liability insurers](https://accident-claims-scotland.com/industrial-disease-claims-scotland/tracing-employers-liability-insurers): How to trace the employers' liability insurer of a closed or dissolved Scottish employer: the ELTO database, the 2010 Act, FSCS protection and payment schemes.
+
+## Accident at work detailed pages
+
+- [Factory and manufacturing accident claims](https://accident-claims-scotland.com/accident-at-work-claims-scotland/factory-accident-claims): Injured in a factory or manufacturing plant in Scotland? How claims work for machinery, guarding, PPE and training failures, plus evidence and time limits.
+- [Farm and agricultural accident claims](https://accident-claims-scotland.com/accident-at-work-claims-scotland/farm-accident-claims): Farm accident claims in Scotland: who can claim, vehicles, livestock and falls from height, employee and self-employed positions, evidence and time limits.
+- [Warehouse and logistics accident claims](https://accident-claims-scotland.com/accident-at-work-claims-scotland/warehouse-accident-claims): Warehouse and logistics accident claims in Scotland: forklift, racking, manual handling and falls injuries, agency workers, evidence and time limits.
+- [Defective work equipment claims](https://accident-claims-scotland.com/accident-at-work-claims-scotland/defective-work-equipment-claims): Injured by faulty tools, machinery or equipment at work in Scotland? How employer duties, the 1969 Defective Equipment Act and product liability claims work.
+- [Slips and trips at work claims](https://accident-claims-scotland.com/accident-at-work-claims-scotland/slips-and-trips-at-work-claims): Slipped or tripped at work in Scotland? How employer duties on floors, contamination, cleaning and winter conditions affect a claim, with evidence and time limits.
+- [Reporting an accident at work (RIDDOR and the accident book)](https://accident-claims-scotland.com/accident-at-work-claims-scotland/reporting-an-accident-at-work): How to report an accident at work in Scotland: the accident book, what employers must report to HSE under RIDDOR, fatal accident inquiries and how it affects a claim.
+
+## Medical negligence detailed pages
+
+- [Surgical negligence claims](https://accident-claims-scotland.com/medical-negligence-claims-scotland/surgical-negligence-claims): How surgical negligence claims work in Scotland: the Hunter v Hanley test, consent, complications versus negligence, NHS and private claims, evidence and time limits.
+- [Hospital negligence claims](https://accident-claims-scotland.com/medical-negligence-claims-scotland/hospital-negligence-claims): Hospital negligence claims in Scotland: failures in emergency, ward and discharge care, falls, pressure sores and monitoring, who is responsible, evidence and time limits.
+- [Misdiagnosis claims](https://accident-claims-scotland.com/medical-negligence-claims-scotland/misdiagnosis-claims): Wrong, missed or late diagnosis in Scotland: when a diagnostic error is negligent, why causation decides many claims, evidence and time limits.
+- [Informed consent claims (Montgomery test)](https://accident-claims-scotland.com/medical-negligence-claims-scotland/informed-consent-claims): How informed consent claims work in Scotland after Montgomery v Lanarkshire Health Board: material risks, alternatives, what you must prove and time limits.
+- [NHS complaints and the duty of candour](https://accident-claims-scotland.com/medical-negligence-claims-scotland/nhs-complaints-and-duty-of-candour): How NHS complaints in Scotland, the organisational duty of candour and the Ombudsman relate to a negligence claim, including time limits and what each route can achieve.
+- [Fatal medical negligence claims](https://accident-claims-scotland.com/medical-negligence-claims-scotland/fatal-medical-negligence-claims): When a death may have been caused by medical negligence in Scotland: who can claim under the Damages (Scotland) Act 2011, what can be recovered, time limits and inquiries.
+
+## Serious injury detailed pages
+
+- [Brain injury claims](https://accident-claims-scotland.com/serious-injury-claims-scotland/brain-injury-claims): Brain injury compensation claims in Scotland: mild to severe injury, hidden cognitive and behavioural effects, expert evidence, capacity, care and time limits.
+- [Spinal injury claims](https://accident-claims-scotland.com/serious-injury-claims-scotland/spinal-injury-claims): Spinal cord injury claims in Scotland: causes, the national spinal unit, care and accommodation needs, expert evidence, provisional damages and time limits.
+- [Amputation claims](https://accident-claims-scotland.com/serious-injury-claims-scotland/amputation-claims): Amputation injury claims in Scotland: traumatic and surgical limb loss, prosthetic costs over a lifetime, phantom pain, work capacity, evidence and time limits.
+- [Serious burn injury claims](https://accident-claims-scotland.com/serious-injury-claims-scotland/serious-burn-injury-claims): Serious burn injury claims in Scotland: causes, scarring, skin grafts, psychological effects, compensation, evidence and time limits.
+- [Complex regional pain syndrome (CRPS) claims](https://accident-claims-scotland.com/serious-injury-claims-scotland/complex-regional-pain-syndrome-claims): Complex regional pain syndrome claims in Scotland: how CRPS is diagnosed, proving it followed an injury, disputed causation and prognosis, evidence and time limits.
+- [Periodical payments and the discount rate in Scotland](https://accident-claims-scotland.com/serious-injury-claims-scotland/periodical-payments-and-the-discount-rate): How future losses are valued in Scottish serious injury claims: the personal injury discount rate, Government Actuary, periodical payment orders and structured settlements.
+- [Capacity and guardianship after serious injury](https://accident-claims-scotland.com/serious-injury-claims-scotland/capacity-and-guardianship-after-serious-injury): What happens when a serious injury affects a person's capacity in Scotland: the Adults with Incapacity Act, guardianship, managing a claim and protecting compensation.
+
+## Public place accident detailed pages
+
+- [Council accident claims](https://accident-claims-scotland.com/public-place-accident-claims-scotland/council-accident-claims): Claiming against a Scottish council after an accident on a road, pavement, park or public building: roads authority duties, occupiers' liability, evidence, time limits.
+- [Ice and snow accident claims](https://accident-claims-scotland.com/public-place-accident-claims-scotland/ice-and-snow-accident-claims): Falls on ice and snow in Scotland: the council's duty under section 34 of the Roads (Scotland) Act 1984, occupiers and employers, what to prove, evidence and time limits.
+- [Occupiers' Liability (Scotland) Act 1960 explained](https://accident-claims-scotland.com/public-place-accident-claims-scotland/occupiers-liability-explained): How the Occupiers' Liability (Scotland) Act 1960 works: who is an occupier, the reasonable care standard, warning signs, landlords, children and what a claim must prove.
+- [Restaurant, pub and café accident claims](https://accident-claims-scotland.com/public-place-accident-claims-scotland/restaurant-pub-and-cafe-accident-claims): Injured in a restaurant, pub or café in Scotland? Slips, scalds, glass, stairs, allergens and food poisoning: what a claim needs, who is responsible, evidence and time limits.
+- [Sports and leisure injury claims](https://accident-claims-scotland.com/public-place-accident-claims-scotland/sports-and-leisure-injury-claims): Sports and leisure injury claims in Scotland: facility and equipment failures, organiser and coach duties, injuries from other players, risk acceptance and time limits.
+
+## Guide articles — Compensation and Funding
+
+- [What is my accident claim worth](https://accident-claims-scotland.com/guides/what-is-my-accident-claim-worth-scotland): A realistic guide to compensation values in Scottish personal injury claims — solatium, wage loss, care costs and what affects the amount you may receive.
+- [No win, no fee explained](https://accident-claims-scotland.com/guides/no-win-no-fee-scotland-explained): A clear and honest guide to no win, no fee funding for personal injury claims in Scotland — what it means, what it costs, and what alternatives are available.
+- [Will benefits be deducted from compensation](https://accident-claims-scotland.com/guides/benefits-deducted-from-compensation-scotland): How DWP benefit recovery (CRU) works in Scottish injury claims: which benefits can reduce an award, what is protected, NHS charges and challenges.
+- [Can I get legal aid for a personal injury claim](https://accident-claims-scotland.com/guides/legal-aid-personal-injury-claims-scotland): How Scottish civil legal aid is decided for injury claims: the SLAB tests, trade union and insurance funding, and what you may repay.
+
+## Guide articles — Serious Injury
+
+- [Serious injury rehabilitation](https://accident-claims-scotland.com/guides/serious-injury-rehabilitation-scotland): How rehabilitation support works in serious injury claims in Scotland — interim payments, case management and accessing early treatment during your claim.
+- [Fatal accident compensation](https://accident-claims-scotland.com/guides/fatal-accident-compensation-scotland): A guide to fatal accident claims under the Damages (Scotland) Act 2011 — who can claim, loss of society, financial dependency and the claims process.
+
+## Guide articles — Public Place Accidents
+
+- [Slip, trip and fall claims](https://accident-claims-scotland.com/guides/slip-trip-fall-claims-scotland): How to claim for slips, trips and falls in Scotland — occupiers' liability, what you must prove and how to gather evidence after an accident.
+- [Supermarket accident claims](https://accident-claims-scotland.com/guides/supermarket-accident-claims-scotland): Injured in a supermarket in Scotland? A guide to making a claim for slips, trips and other supermarket accidents — preserving CCTV evidence and the claims process.
+- [Council pavement trip claims](https://accident-claims-scotland.com/guides/council-pavement-trip-claims-scotland): How to claim against a Scottish council for a pavement trip — the Roads (Scotland) Act 1984 duty, what councils must prove and how to build your evidence.
+
+## Road traffic accident sub-pages
+
+- [Bus Accident Claims in Scotland](https://accident-claims-scotland.com/bus-accident-claims-scotland): Scottish bus accident claims: injuries to passengers and other road users, bus operators, CCTV, evidence, losses and time limits.
+- [Cycling Accident Claims in Scotland](https://accident-claims-scotland.com/cycling-accident-claims-scotland): Scottish cycling accident claims: collisions with vehicles, dooring, road defects, evidence, contributory negligence and the three-year time limit.
+- [Motorcycle Accident Claims in Scotland](https://accident-claims-scotland.com/motorcycle-accident-claims-scotland): A Scottish guide to motorcycle accident claims: junction collisions, rural roads, helmets and contributory negligence, evidence, losses and time limits.
+- [Car accident claims](https://accident-claims-scotland.com/car-accident-claims-scotland): A detailed Scottish guide to car accident liability, evidence, insurance, injuries, financial losses and the claims process.
+- [Pedestrian accident claims](https://accident-claims-scotland.com/pedestrian-accident-claims-scotland): Scottish pedestrian collision claims: crossings, junctions, reversing vehicles, vulnerable-road-user duties, evidence and contributory negligence.
+- [Passenger accident claims](https://accident-claims-scotland.com/passenger-accident-claims-scotland): A Scottish guide for passengers injured in cars, taxis, buses, coaches and other vehicles, including seatbelts, multiple drivers and insurance.
+- [Uninsured driver claims](https://accident-claims-scotland.com/uninsured-driver-claims-scotland): How Scottish claims involving uninsured drivers work through the Motor Insurers’ Bureau, including evidence, police reporting and insurance checks.
+- [Hit and run claims](https://accident-claims-scotland.com/hit-and-run-claims-scotland): Scottish hit-and-run claims under the MIB Untraced Drivers’ Agreement: reporting, tracing evidence, injuries, property loss and deadlines.
+- [Serious road traffic injury](https://accident-claims-scotland.com/serious-road-traffic-injury-claims-scotland): Scottish road claims involving brain, spinal, amputation, multiple fracture and other life-changing injuries, rehabilitation and future needs.
+- [Fatal road accident claims](https://accident-claims-scotland.com/fatal-road-accident-claims-scotland): A sensitive guide to Scottish fatal road claims, executors, relatives, dependency, loss of society, evidence and other investigations.
+- [Road defect accident claims](https://accident-claims-scotland.com/road-defect-accident-claims-scotland): Claims caused by potholes, unsafe surfaces, missing signs, roadworks and debris in Scotland, including authority, contractor and evidence issues.
+- [Child road accident claims](https://accident-claims-scotland.com/child-road-accident-claims-scotland): Scottish road claims involving children as passengers, pedestrians or cyclists, including responsibility, evidence, court approval and future needs.
+- [Early insurer offers](https://accident-claims-scotland.com/early-insurer-offers-road-accident-scotland): What to check before accepting an early road-accident settlement offer in Scotland, including prognosis, full-and-final wording and financial loss.
+
+## More claim-type pages
+
+- [Manual handling injury claims](https://accident-claims-scotland.com/manual-handling-injury-claims-scotland): Injured by manual handling at work in Scotland? Information on employer duties, MHOR regulations, lifting injuries, back injuries and compensation. Free enquiry, no win no fee.
+- [Needlestick injury claims](https://accident-claims-scotland.com/needlestick-injury-claims-scotland): Needlestick injury at work in Scotland? Information on employer duties, sharps regulations, blood-borne virus risk and compensation for healthcare and other workers. Free enquiry.
+- [Stress at work claims](https://accident-claims-scotland.com/stress-at-work-claims-scotland): Work-related stress, anxiety and psychiatric injury claims in Scotland. Employer duties, foreseeability, time limits and compensation for psychological injury at work. Free enquiry.
+- [Self-employed injury claims](https://accident-claims-scotland.com/self-employed-injury-claims-scotland): Injured as a self-employed worker in Scotland? Information on claiming against site owners, contractors and occupiers. Rights for sole traders, contractors and gig workers. Free enquiry.
+- [Delayed diagnosis claims](https://accident-claims-scotland.com/delayed-diagnosis-claims-scotland): Delayed or missed diagnosis in Scotland? Information on medical negligence claims for late cancer diagnosis, missed conditions and failure to refer. Free enquiry, three-year time limit.
+- [Dental negligence claims](https://accident-claims-scotland.com/dental-negligence-claims-scotland): Dental negligence claim in Scotland? Information on negligent dental treatment, nerve damage, incorrect extractions, failed implants and crowns. Free enquiry, three-year time limit.
+- [Hospital infection claims](https://accident-claims-scotland.com/hospital-infection-claims-scotland): Hospital-acquired infection claim in Scotland? MRSA, C. difficile, surgical site infection and HAI compensation. NHS negligence — free enquiry, three-year time limit.
+- [Shop accident claims](https://accident-claims-scotland.com/shop-accident-claims-scotland): Injured in a shop or retail premises in Scotland? Information on occupiers' liability, slips, falling goods, cluttered aisles and retail accident claims. Free enquiry, no win no fee.
+- [School accident claims](https://accident-claims-scotland.com/school-accident-claims-scotland): Child injured at school in Scotland? Information on school accident claims, duty of care, playground injuries, sports injuries and claiming on behalf of a child. Free enquiry.
+- [Hotel accident claims](https://accident-claims-scotland.com/hotel-accident-claims-scotland): Injured in a hotel in Scotland? Information on occupiers' liability, slips, falls, pool accidents and hotel accident compensation. Free enquiry, no win no fee available.
+- [Occupational asthma claims](https://accident-claims-scotland.com/occupational-asthma-claims-scotland): Developed asthma through work in Scotland? Information on occupational asthma claims, sensitisers, employer duties and industrial disease compensation. Free enquiry.
+- [Occupational dermatitis claims](https://accident-claims-scotland.com/occupational-dermatitis-claims-scotland): Developed occupational dermatitis or contact dermatitis through work in Scotland? Information on industrial skin disease claims, COSHH duties and compensation. Free enquiry.
+- [Domestic abuse injury claims (CICA)](https://accident-claims-scotland.com/domestic-abuse-injury-claim-scotland): Injured through domestic abuse or violence in Scotland? Information on CICA criminal injury compensation for domestic abuse victims. Sensitive support — free enquiry.
+- [Child abuse compensation (CICA)](https://accident-claims-scotland.com/child-abuse-injury-claim-scotland): Survivor of childhood abuse in Scotland? Information on CICA criminal injury compensation for historic child abuse victims. Sensitive and confidential — free enquiry.
+- [Contributory negligence in road accidents](https://accident-claims-scotland.com/contributory-negligence-road-accident-scotland): Partly to blame for a road accident in Scotland? Information on contributory negligence, apportionment of liability and how a share of blame affects your compensation. Free enquiry.
+- [Dog bite claims](https://accident-claims-scotland.com/dog-bite-claims-scotland): Information on dog bite and animal injury claims in Scotland: keeper liability under the Animals (Scotland) Act 1987, evidence, time limits and criminal injury routes.
+- [Fall from height at work claims](https://accident-claims-scotland.com/work-at-height-fall-claims-scotland): Information on falls from height at work in Scotland: the Work at Height Regulations 2005, employer duties, evidence, HSE reporting and time limits.
+
+## Local information pages
+
+- [Glasgow](https://accident-claims-scotland.com/glasgow-accident-claims): Information on personal injury, workplace accident and medical negligence claims in Glasgow: courts, time limits and next steps. General information, not legal advice.
+- [Edinburgh](https://accident-claims-scotland.com/edinburgh-accident-claims): Information on personal injury, workplace accident and medical negligence claims in Edinburgh: courts, time limits and next steps. General information, not legal advice.
+
+## Optional
+
+- [About](https://accident-claims-scotland.com/about): About Accident Claims Scotland and the general claims information published on this website.
+- [Contact](https://accident-claims-scotland.com/contact): Send a free, no-obligation enquiry about a personal injury or accident claim in Scotland using the online form. Accident Claims Scotland provides general information, not legal advice.
+- [Complaints](https://accident-claims-scotland.com/complaints): How to raise a concern about information published on Accident Claims Scotland.
+- [Privacy policy](https://accident-claims-scotland.com/privacy-policy): Privacy policy for Accident Claims Scotland — how we collect, use and protect your personal data.
+- [Cookie policy](https://accident-claims-scotland.com/cookie-policy): Cookie policy for accident-claims-scotland.com — what cookies we use and how to manage them.
+- [Terms](https://accident-claims-scotland.com/terms): Terms of use for the Accident Claims Scotland website.
+- [Accessibility](https://accident-claims-scotland.com/accessibility): Accessibility statement for accident-claims-scotland.com — our commitment to digital accessibility.

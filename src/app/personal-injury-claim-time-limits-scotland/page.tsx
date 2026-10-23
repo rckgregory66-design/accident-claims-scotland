@@ -62,6 +62,18 @@ export default function TimeLimitsPage() {
         "Missing the time limit in Scotland can mean your claim is time-barred.",
       ]}
       answerBox="In Scotland, the general time limit for personal injury claims is three years from the date of the accident or the date of knowledge — whichever is later. The law governing time limits in Scotland is different from England and Wales. Missing the time limit can mean losing your right to claim. Seek legal advice as soon as possible."
+      answerCapsules={[
+        {
+          question: "How long do I have to make a personal injury claim in Scotland?",
+          answer:
+            "Under section 17 of the Prescription and Limitation (Scotland) Act 1973, a personal injury action must generally be raised in court within three years of the injury or, if later, the date of knowledge. Raising proceedings, not just contacting a solicitor, stops the clock. Section 19A gives courts a discretion to allow late actions, but it cannot be relied on.",
+        },
+        {
+          question: "What is the time limit for a child's injury claim in Scotland?",
+          answer:
+            "In Scotland, the three-year limitation period under the Prescription and Limitation (Scotland) Act 1973 does not start running until an injured child reaches 16, so a child injured before 16 normally has until their 19th birthday to raise court proceedings. A parent or guardian can claim on the child's behalf earlier, preserving evidence while it is fresh.",
+        },
+      ]}
       sections={[
         {
           heading: "The Three-Year Rule in Scotland",

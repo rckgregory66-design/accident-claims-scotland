@@ -6,6 +6,7 @@ import CtaSection from "./CtaSection";
 import Breadcrumbs from "./Breadcrumbs";
 import JsonLd from "./JsonLd";
 import TldrBox from "./TldrBox";
+import RagAnswerCapsule, { type AnswerCapsule } from "./RagAnswerCapsule";
 import LocationLinks from "./LocationLinks";
 import RelatedGuides from "./RelatedGuides";
 import SubpageGrid from "./SubpageGrid";
@@ -33,6 +34,8 @@ interface Props {
   intro: string;
   tldr?: string[];
   answerBox?: string;
+  /** Question + 40–60 word answer passages rendered after the answer box. */
+  answerCapsules?: AnswerCapsule[];
   sections: Section[];
   faqs: FAQItem[];
   related?: RelatedLink[];
@@ -53,6 +56,7 @@ export default function ClaimPageTemplate({
   intro,
   tldr,
   answerBox,
+  answerCapsules,
   sections,
   faqs,
   related,
@@ -143,6 +147,10 @@ export default function ClaimPageTemplate({
                 <p className="text-blue-800">{answerBox}</p>
               </div>
             )}
+
+            {answerCapsules?.map((capsule) => (
+              <RagAnswerCapsule key={capsule.question} {...capsule} />
+            ))}
 
             {/* Sections */}
             {sections.map((sec, i) => (
