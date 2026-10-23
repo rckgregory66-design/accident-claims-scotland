@@ -475,6 +475,39 @@ const guideData: Record<string, Guide> = {
     ],
     parent: { href: "/personal-injury-compensation-scotland", label: "Personal injury compensation guide for Scotland" },
   },
+  "legal-aid-personal-injury-claims-scotland": {
+    answer:
+      "Civil legal aid can be available for a personal injury claim in Scotland, but it is not automatic. The Scottish Legal Aid Board (SLAB) must be satisfied that there is probable cause (a reasonable basis for the claim) and that it is reasonable for you to receive legal aid, and it also tests your income and capital. Your solicitor applies for you, and SLAB, not the solicitor, decides. For work and industrial disease claims, SLAB also asks about trade union funding.",
+    distinct:
+      "Our no win, no fee guide compares success-fee agreements. This guide covers the other route: how Scottish civil legal aid is decided for injury claims, what SLAB asks for, and what you may have to pay back. It is general information for Scots law as checked on 23 October 2026, not advice on your case.",
+    sections: [
+      { heading: "Who decides, and how you apply", body: "Legal aid is for matters of Scots law. You cannot apply directly in most cases: you find a solicitor who does legal aid work, they complete the forms and send them to SLAB, and SLAB decides whether to grant legal aid and what you will pay. A solicitor who does not do legal aid work cannot apply for you." },
+      { heading: "The two legal tests", body: "Section 14 of the Legal Aid (Scotland) Act 1986 says civil legal aid is available if SLAB is satisfied that the applicant has probable cause (a reasonable legal basis to raise or defend the case) and that it is reasonable in the particular circumstances that the applicant should receive legal aid. SLAB can attach conditions to a grant and review them as the case develops. If an application is refused, there is a review procedure." },
+      { heading: "The financial test", body: "Separately, SLAB assesses your disposable income and disposable capital under section 15 of the 1986 Act. People receiving Universal Credit, Income Support, income-based Jobseeker's Allowance or income-related Employment and Support Allowance are described on mygov.scot as paying nothing towards legal costs. Limits and contribution bands are updated from time to time, so use SLAB's current eligibility information or ask your solicitor rather than relying on any figure quoted in an article." },
+      { heading: "What SLAB looks at in an injury (reparation) case", bullets: [
+        "The value of the claim and the prospects of recovering damages.",
+        "Whether attempts were made to negotiate a settlement before going to court.",
+        "A statement setting out the loss or injury, an estimate of damages, earnings before and after the accident, time off work and future employability.",
+        "Medical reports in personal injury cases, and expert reports on liability or causation where available.",
+      ] },
+      { heading: "Trade union and other help comes first", body: "For accident-at-work and industrial disease claims, SLAB's guidance asks the solicitor to say whether you are a trade union member and, if you are, why union funding is not available. SLAB's guidance also covers other rights or facilities available to the client. Separately, it is sensible to check whether a home, motor or similar insurance policy includes legal expenses cover before you apply." },
+      { heading: "Paying money back", body: "mygov.scot explains that you may have to pay some money towards the cost of your case, or pay costs back later if you keep or gain money or property. In an injury claim that can mean part of what you recover is used to repay the Board. Ask your solicitor to explain, in writing, what you may owe at each possible outcome before you agree." },
+      { heading: "Legal aid or no win, no fee?", body: "Neither is better in every case. Compare who controls the case, what is deducted from damages, what happens if the claim fails, and whether the solicitor will take the case on that basis. Our guide to no win, no fee agreements in Scotland sets out the questions to ask about success fees, outlays and expenses." },
+    ],
+    seeAlso: [
+      { href: "/no-win-no-fee-solicitors-scotland", label: "No win, no fee solicitors in Scotland" },
+      { href: "/guides/no-win-no-fee-scotland-explained", label: "No win, no fee explained: questions before you sign" },
+      { href: "/how-to-claim-compensation-scotland", label: "How to claim compensation in Scotland" },
+      { href: "/personal-injury-claim-time-limits-scotland", label: "Personal injury time limits in Scotland" },
+    ],
+    sources: [
+      { label: "mygov.scot: Legal aid for civil cases", href: "https://www.mygov.scot/legal-aid/civil-cases", note: "Official Scottish Government guidance on who can apply, applying through a solicitor, contributions and repaying costs." },
+      { label: "Legal Aid (Scotland) Act 1986, section 14", href: "https://www.legislation.gov.uk/ukpga/1986/47/section/14", note: "The statutory availability test for civil legal aid: probable cause and reasonableness." },
+      { label: "SLAB: Civil legal aid, statutory tests for applications", href: "https://www.slab.org.uk/guidance/civil-legal-aid-statutory-tests-for-applications/", note: "The Board's guidance on how it applies the probable cause and reasonableness tests." },
+      { label: "SLAB: Merits guidance for different types of case (reparation cases)", href: "https://www.slab.org.uk/guidance/tool-merits-of-different-types-of-case/", note: "What the Board considers and the information solicitors must supply in damages claims, including trade union funding." },
+    ],
+    parent: { href: "/no-win-no-fee-solicitors-scotland", label: "No win, no fee solicitors in Scotland" },
+  },
 };
 
 function GuideArticle({ guide }: { guide: Guide }) {

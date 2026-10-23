@@ -107,6 +107,7 @@ export default function SelfEmployedInjuryPage() {
       guideSlugs={[
         "accident-at-work-claim-scotland",
         "no-win-no-fee-scotland-explained",
+        "legal-aid-personal-injury-claims-scotland",
         "what-is-my-accident-claim-worth-scotland",
       ]}
       locationClaimType="self-employed injury claims"

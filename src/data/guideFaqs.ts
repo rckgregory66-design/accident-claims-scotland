@@ -281,6 +281,13 @@ export const guideFaqs: Record<string, FaqItem[]> = {
     { question: "What can I do if the CRU certificate looks wrong?", answer: "You or your representative can ask the CRU to review it at any time. After settlement, once the insurer has paid the CRU in full, you can request a mandatory reconsideration within one month of that payment and then appeal, provided your compensation was reduced under section 8 of the 1997 Act." },
   ],
 
+  "legal-aid-personal-injury-claims-scotland": [
+    { question: "Can I get legal aid for a personal injury claim in Scotland?", answer: "Possibly. The Scottish Legal Aid Board must be satisfied that you have probable cause and that it is reasonable for you to receive legal aid, and your disposable income and capital are also assessed. It is not granted automatically." },
+    { question: "How do I apply for civil legal aid in Scotland?", answer: "Through a solicitor who does legal aid work. They complete the forms and send them to the Scottish Legal Aid Board, which decides the application and what you will pay." },
+    { question: "Do I have to pay anything back if I get legal aid?", answer: "You may have to pay a contribution towards the costs of your case, or pay costs back later if you keep or gain money or property. People on certain income-related benefits are described as paying nothing towards legal costs. Ask your solicitor to explain what you could owe." },
+    { question: "Does trade union or insurance funding affect legal aid?", answer: "Yes. For accident-at-work and industrial disease claims the Board asks whether you are a trade union member and, if so, why union funding is not available. The Board's guidance also covers other rights or facilities available to you, and it is sensible to check any legal expenses insurance you hold." },
+  ],
+
 };
 
 export function getGuideFaqs(slug: string): FaqItem[] {

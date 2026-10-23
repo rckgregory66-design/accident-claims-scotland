@@ -288,6 +288,15 @@ export const guides: Guide[] = [
     dateModified: "2026-10-15",
     readTime: "8 min read",
   },
+  {
+    slug: "legal-aid-personal-injury-claims-scotland",
+    title: "Can I Get Legal Aid for a Personal Injury Claim in Scotland?",
+    description: "How Scottish civil legal aid is decided for injury claims: the SLAB tests, trade union and insurance funding, and what you may repay.",
+    category: "Compensation",
+    datePublished: "2026-10-23",
+    dateModified: "2026-10-23",
+    readTime: "6 min read",
+  },
 ];
 
 export const publishedGuideSlugs = new Set([
@@ -322,6 +331,7 @@ export const publishedGuideSlugs = new Set([
   "care-home-negligence-claims-scotland",
   "prescription-error-claims-scotland",
   "benefits-deducted-from-compensation-scotland",
+  "legal-aid-personal-injury-claims-scotland",
 ]);
 
 export const publishedGuides = guides.filter((guide) => publishedGuideSlugs.has(guide.slug));

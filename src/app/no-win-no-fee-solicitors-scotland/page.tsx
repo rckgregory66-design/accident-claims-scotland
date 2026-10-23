@@ -129,6 +129,7 @@ export default function NoWinNoFeePage() {
       ]}
       guideSlugs={[
         "no-win-no-fee-scotland-explained",
+        "legal-aid-personal-injury-claims-scotland",
         "what-is-my-accident-claim-worth-scotland",
       ]}
       locationClaimType="no win no fee claims"
