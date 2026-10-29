@@ -84,7 +84,7 @@ const guideData: Record<string, Guide> = {
       { label: "Highway Code: road users requiring extra care", href: "https://www.gov.uk/guidance/the-highway-code/road-users-requiring-extra-care-204-to-225", note: "Official guidance concerning vulnerable road users." },
       commonSources.limitation,
     ],
-    parent: { href: "/road-traffic-accident-claims-scotland", label: "Road traffic accident claims" },
+    parent: { href: "/cycling-accident-claims-scotland", label: "Cycling accident claims in Scotland" },
   },
   "motorcycle-accident-claims-scotland": {
     answer:
@@ -103,7 +103,7 @@ const guideData: Record<string, Guide> = {
       { label: "Highway Code: using the road", href: "https://www.gov.uk/guidance/the-highway-code/using-the-road-159-to-203", note: "Official rules relevant to manoeuvres, junctions and road positioning." },
       commonSources.limitation,
     ],
-    parent: { href: "/road-traffic-accident-claims-scotland", label: "Road traffic accident claims" },
+    parent: { href: "/motorcycle-accident-claims-scotland", label: "Motorcycle accident claims in Scotland" },
   },
   "asbestos-claims-scotland": {
     answer:
