@@ -14,7 +14,7 @@ export default function Header() {
         <div className="max-w-7xl mx-auto flex justify-between items-center">
           <span className="hidden sm:block">Accident claims information for Scotland</span>
           <div className="flex items-center ml-auto">
-            <span>Free enquiry — no obligation</span>
+            <span>Information site, not a law firm</span>
           </div>
         </div>
       </div>

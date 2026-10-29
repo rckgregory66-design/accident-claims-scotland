@@ -4,11 +4,11 @@ import ClaimPageTemplate from "@/components/ClaimPageTemplate";
 export const metadata: Metadata = {
   title: "Contributory Negligence in Road Accidents Scotland — Can I Still Claim?",
   description:
-    "Partly to blame for a road accident in Scotland? Information on contributory negligence, apportionment of liability and how a share of blame affects your compensation. Free enquiry.",
+    "Partly to blame for a road accident in Scotland? Information on contributory negligence, apportionment of liability and how a share of blame affects your compensation. Information only, not legal advice.",
   alternates: { canonical: "/contributory-negligence-road-accident-scotland" },
   openGraph: {
     title: "Contributory Negligence in Road Accidents Scotland — Can I Still Claim?",
-    description: "Partly at fault for a road accident in Scotland? Contributory negligence explained. Free enquiry.",
+    description: "Partly at fault for a road accident in Scotland? Contributory negligence explained. Information only, not legal advice.",
     url: "/contributory-negligence-road-accident-scotland",
   },
 };
@@ -64,7 +64,7 @@ export default function ContributoryNegligenceRoadAccidentPage() {
         "Passengers can claim even against an uninsured or drunk driver, subject to possible deduction.",
         "Time limit: three years from the accident date.",
       ]}
-      answerBox="In Scotland, contributory negligence reduces your road accident compensation in proportion to your share of the blame — it does not prevent a claim. If another party was at least partly responsible, you can still recover. The time limit is three years. A free enquiry will assess the full circumstances of your accident."
+      answerBox="In Scotland, contributory negligence reduces your road accident compensation in proportion to your share of the blame — it does not prevent a claim. If another party was at least partly responsible, you can still recover. The time limit is three years. A solicitor can assess your position; this website cannot give legal advice."
       sections={[
         {
           heading: "What Is Contributory Negligence?",

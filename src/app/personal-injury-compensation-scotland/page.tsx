@@ -8,7 +8,7 @@ export const metadata: Metadata = {
   alternates: { canonical: "/personal-injury-compensation-scotland" },
   openGraph: {
     title: "Personal Injury Compensation Scotland | How Much Is My Claim Worth?",
-    description: "What personal injury compensation covers in Scotland. Honest assessment — free enquiry.",
+    description: "What personal injury compensation covers in Scotland. Honest assessment  Information only.",
     url: "/personal-injury-compensation-scotland",
   },
 };

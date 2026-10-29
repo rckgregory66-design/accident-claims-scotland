@@ -4,11 +4,11 @@ import ClaimPageTemplate from "@/components/ClaimPageTemplate";
 export const metadata: Metadata = {
   title: "Manual Handling Injury Claims Scotland — Lifting & Carrying Injuries",
   description:
-    "Injured by manual handling at work in Scotland? Information on employer duties, MHOR regulations, lifting injuries, back injuries and compensation. Free enquiry, no win no fee.",
+    "Injured by manual handling at work in Scotland? Information on employer duties, MHOR regulations, lifting injuries, back injuries and compensation. Information only, not legal advice.",
   alternates: { canonical: "/manual-handling-injury-claims-scotland" },
   openGraph: {
     title: "Manual Handling Injury Claims Scotland — Lifting & Carrying Injuries",
-    description: "Manual handling injury at work in Scotland? Free enquiry, no win no fee available.",
+    description: "Manual handling injury at work in Scotland? Information only, not legal advice.",
     url: "/manual-handling-injury-claims-scotland",
   },
 };
@@ -62,9 +62,9 @@ export default function ManualHandlingPage() {
         "Back injuries, hernias and shoulder injuries are common manual handling claims.",
         "Gradually developing conditions carry a three-year time limit from date of knowledge.",
         "Contributory negligence may reduce but not necessarily bar your claim.",
-        "Free enquiry — no win no fee available for eligible manual handling claims.",
+        "Sending an enquiry through this website is free; it is not legal advice.",
       ]}
-      answerBox="In Scotland, if you have been injured through manual handling at work — whether a single incident or a gradually developing condition — your employer may be liable if they failed to comply with the Manual Handling Operations Regulations 1992. The time limit is generally three years from the accident or date of knowledge. A free enquiry will assess your circumstances."
+      answerBox="In Scotland, if you have been injured through manual handling at work — whether a single incident or a gradually developing condition — your employer may be liable if they failed to comply with the Manual Handling Operations Regulations 1992. The time limit is generally three years from the accident or date of knowledge. A solicitor can assess your position; this website cannot give legal advice."
       sections={[
         {
           heading: "What Are Manual Handling Injuries?",

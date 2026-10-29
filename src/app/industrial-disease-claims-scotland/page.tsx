@@ -4,11 +4,11 @@ import ClaimPageTemplate from "@/components/ClaimPageTemplate";
 export const metadata: Metadata = {
   title: "Industrial Disease Claims Scotland — Occupational Illness Compensation",
   description:
-    "Work-related illness claims in Scotland: asbestos, mesothelioma, industrial deafness, vibration white finger, COPD. Time limit runs from diagnosis — free enquiry, no obligation.",
+    "Work-related illness claims in Scotland: asbestos, mesothelioma, industrial deafness, vibration white finger, COPD. Time limit runs from diagnosis. Information only.",
   alternates: { canonical: "/industrial-disease-claims-scotland" },
   openGraph: {
     title: "Industrial Disease Claims Scotland — Occupational Illness Compensation",
-    description: "Work-related illness claims in Scotland. Free enquiry, no win no fee available.",
+    description: "Work-related illness claims in Scotland. Information only, not legal advice.",
     url: "/industrial-disease-claims-scotland",
   },
 };
@@ -56,7 +56,7 @@ export default function IndustrialDiseasePage() {
         "Expert medical and occupational hygiene evidence is essential.",
         "Scotland's rules on date of knowledge give more flexibility than pure accident time limits.",
       ]}
-      answerBox="In Scotland, industrial disease claims can be made even if your condition developed years or decades after exposure. The three-year time limit runs from your date of knowledge — usually the date of diagnosis or when you became aware your illness was work-related. A free enquiry will assess your circumstances — no obligation."
+      answerBox="In Scotland, industrial disease claims can be made even if your condition developed years or decades after exposure. The three-year time limit runs from your date of knowledge — usually the date of diagnosis or when you became aware your illness was work-related. A solicitor can assess your position; this website cannot give legal advice."
       sections={[
         {
           heading: "What is an Industrial Disease?",

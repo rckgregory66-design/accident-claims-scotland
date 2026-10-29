@@ -4,11 +4,11 @@ import ClaimPageTemplate from "@/components/ClaimPageTemplate";
 export const metadata: Metadata = {
   title: "Dental Negligence Claims Scotland — Dentist Compensation Claims",
   description:
-    "Dental negligence claim in Scotland? Information on negligent dental treatment, nerve damage, incorrect extractions, failed implants and crowns. Free enquiry, three-year time limit.",
+    "Dental negligence claim in Scotland? Information on negligent dental treatment, nerve damage, incorrect extractions, failed implants and crowns. Information on the three-year time limit.",
   alternates: { canonical: "/dental-negligence-claims-scotland" },
   openGraph: {
     title: "Dental Negligence Claims Scotland — Dentist Compensation Claims",
-    description: "Dental negligence compensation in Scotland. Nerve damage, wrong tooth, failed implants. Free enquiry.",
+    description: "Dental negligence compensation in Scotland. Nerve damage, wrong tooth, failed implants. Information only, not legal advice.",
     url: "/dental-negligence-claims-scotland",
   },
 };
@@ -64,7 +64,7 @@ export default function DentalNegligencePage() {
         "Time limit: three years from the date of treatment or date of knowledge.",
         "Compensation covers remedial dental costs, pain and any lasting injury.",
       ]}
-      answerBox="In Scotland, dental negligence claims arise where a dentist fails to meet the standard of a reasonably competent practitioner, causing harm to the patient. Both NHS and private dental claims are available. The time limit is generally three years from the treatment date or date of knowledge. A free enquiry will assess your circumstances — no obligation."
+      answerBox="In Scotland, dental negligence claims arise where a dentist fails to meet the standard of a reasonably competent practitioner, causing harm to the patient. Both NHS and private dental claims are available. The time limit is generally three years from the treatment date or date of knowledge. A solicitor can assess your position; this website cannot give legal advice."
       sections={[
         {
           heading: "What Is Dental Negligence?",

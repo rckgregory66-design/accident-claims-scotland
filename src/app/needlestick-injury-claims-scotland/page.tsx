@@ -4,11 +4,11 @@ import ClaimPageTemplate from "@/components/ClaimPageTemplate";
 export const metadata: Metadata = {
   title: "Needlestick Injury Claims Scotland — Healthcare Worker Claims",
   description:
-    "Needlestick injury at work in Scotland? Information on employer duties, sharps regulations, blood-borne virus risk and compensation for healthcare and other workers. Free enquiry.",
+    "Needlestick injury at work in Scotland? Information on employer duties, sharps regulations, blood-borne virus risk and compensation for healthcare and other workers. Information only, not legal advice.",
   alternates: { canonical: "/needlestick-injury-claims-scotland" },
   openGraph: {
     title: "Needlestick Injury Claims Scotland — Healthcare Worker Claims",
-    description: "Needlestick injury claim in Scotland. Healthcare worker compensation — free enquiry.",
+    description: "Needlestick injury claim in Scotland. Healthcare worker compensation  Information only.",
     url: "/needlestick-injury-claims-scotland",
   },
 };
@@ -62,9 +62,9 @@ export default function NeedlestickPage() {
         "You can claim even if no infection resulted — psychological distress and PEP side effects are compensable.",
         "Claims apply in healthcare and in other sectors where sharps are encountered.",
         "Time limit: three years from the date of injury or date of knowledge.",
-        "Free enquiry — no win no fee available for eligible claims.",
+        "Sending an enquiry through this website is free; it is not legal advice.",
       ]}
-      answerBox="In Scotland, healthcare workers and others injured by needlestick or sharps accidents can claim compensation where the employer breached their legal duties. Claims can cover the anxiety and distress of the post-exposure monitoring period, even where no infection occurs. The time limit is generally three years. A free enquiry will assess your claim."
+      answerBox="In Scotland, healthcare workers and others injured by needlestick or sharps accidents can claim compensation where the employer breached their legal duties. Claims can cover the anxiety and distress of the post-exposure monitoring period, even where no infection occurs. The time limit is generally three years. A solicitor can assess your claim; this website cannot."
       sections={[
         {
           heading: "What Is a Needlestick Injury Claim?",

@@ -4,11 +4,11 @@ import ClaimPageTemplate from "@/components/ClaimPageTemplate";
 export const metadata: Metadata = {
   title: "Medical Negligence Claims Scotland — NHS & Clinical Negligence",
   description:
-    "Harmed by medical negligence in Scotland? Information on NHS negligence, misdiagnosis, surgical errors, birth injuries and delayed diagnosis claims. Free enquiry, no win no fee.",
+    "Harmed by medical negligence in Scotland? Information on NHS negligence, misdiagnosis, surgical errors, birth injuries and delayed diagnosis claims. Information only, not legal advice.",
   alternates: { canonical: "/medical-negligence-claims-scotland" },
   openGraph: {
     title: "Medical Negligence Claims Scotland — NHS & Clinical Negligence",
-    description: "Injured by medical negligence in Scotland? Free enquiry, no win no fee available.",
+    description: "Injured by medical negligence in Scotland? Information only, not legal advice.",
     url: "/medical-negligence-claims-scotland",
   },
 };
@@ -61,7 +61,7 @@ export default function MedicalNegligencePage() {
         "Independent expert medical evidence is essential in every clinical negligence case.",
         "Children and adults lacking capacity have special time limit protections.",
       ]}
-      answerBox="In Scotland, a medical negligence claim can be made if you received care that fell below the standard of a reasonably competent practitioner, and that failure caused you avoidable harm. The time limit is three years from the negligent treatment or your date of knowledge. A free enquiry will assess whether you have a viable claim — no obligation."
+      answerBox="In Scotland, a medical negligence claim can be made if you received care that fell below the standard of a reasonably competent practitioner, and that failure caused you avoidable harm. The time limit is three years from the negligent treatment or your date of knowledge. A solicitor can assess your position; this website cannot give legal advice."
       sections={[
         {
           heading: "What is Medical Negligence?",

@@ -4,11 +4,11 @@ import ClaimPageTemplate from "@/components/ClaimPageTemplate";
 export const metadata: Metadata = {
   title: "Shop Accident Claims Scotland — Retail Premises Injury Compensation",
   description:
-    "Injured in a shop or retail premises in Scotland? Information on occupiers' liability, slips, falling goods, cluttered aisles and retail accident claims. Free enquiry, no win no fee.",
+    "Injured in a shop or retail premises in Scotland? Information on occupiers' liability, slips, falling goods, cluttered aisles and retail accident claims. Information only, not legal advice.",
   alternates: { canonical: "/shop-accident-claims-scotland" },
   openGraph: {
     title: "Shop Accident Claims Scotland — Retail Premises Injury Compensation",
-    description: "Shop or retail accident claim in Scotland? Occupiers' liability — free enquiry.",
+    description: "Shop or retail accident claim in Scotland? Occupiers' liability  Information only.",
     url: "/shop-accident-claims-scotland",
   },
 };
@@ -64,7 +64,7 @@ export default function ShopAccidentPage() {
         "Warning cones do not automatically defeat a claim if the hazard was inadequately managed.",
         "Time limit: three years from the date of the accident.",
       ]}
-      answerBox="In Scotland, shop and retail accidents give rise to a claim under the Occupiers' Liability (Scotland) Act 1960 where the occupier failed to take reasonable care to prevent a foreseeable hazard. The time limit is three years. Request CCTV preservation immediately — footage can be overwritten within days. A free enquiry will assess your claim."
+      answerBox="In Scotland, shop and retail accidents give rise to a claim under the Occupiers' Liability (Scotland) Act 1960 where the occupier failed to take reasonable care to prevent a foreseeable hazard. The time limit is three years. Request CCTV preservation immediately — footage can be overwritten within days. A solicitor can assess your claim; this website cannot."
       sections={[
         {
           heading: "Occupiers' Liability in Scottish Retail Premises",

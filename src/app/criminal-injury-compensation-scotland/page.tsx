@@ -4,11 +4,11 @@ import ClaimPageTemplate from "@/components/ClaimPageTemplate";
 export const metadata: Metadata = {
   title: "Criminal Injury Compensation Scotland — CICA Claims Guide",
   description:
-    "Criminal injury compensation for victims of violence in Scotland. CICA tariff scheme, eligibility, two-year time limit, and what to do if compensation is refused. Free enquiry.",
+    "Criminal injury compensation for victims of violence in Scotland. CICA tariff scheme, eligibility, two-year time limit, and what to do if compensation is refused. Information only, not legal advice.",
   alternates: { canonical: "/criminal-injury-compensation-scotland" },
   openGraph: {
     title: "Criminal Injury Compensation Scotland — CICA Claims Guide",
-    description: "Claim criminal injury compensation in Scotland through the CICA. Free enquiry, sensitive support.",
+    description: "Claim criminal injury compensation in Scotland through the CICA. Information only.",
     url: "/criminal-injury-compensation-scotland",
   },
 };
@@ -56,7 +56,7 @@ export default function CriminalInjuryPage() {
         "CICA awards follow a fixed tariff, ranging from £1,000 to £500,000+.",
         "A civil claim against the perpetrator or a negligent third party may also be possible.",
       ]}
-      answerBox="In Scotland, victims of violent crime may be eligible to claim compensation through the Criminal Injuries Compensation Scheme, administered by the CICA. Claims must generally be made within two years of the crime. You do not need a criminal conviction to claim, but you must have reported the crime to the police and cooperated with any investigation. A free enquiry will assess your eligibility."
+      answerBox="In Scotland, victims of violent crime may be eligible to claim compensation through the Criminal Injuries Compensation Scheme, administered by the CICA. Claims must generally be made within two years of the crime. You do not need a criminal conviction to claim, but you must have reported the crime to the police and cooperated with any investigation. A solicitor can assess your position; this website cannot give legal advice."
       sections={[
         {
           heading: "What is the Criminal Injuries Compensation Scheme?",

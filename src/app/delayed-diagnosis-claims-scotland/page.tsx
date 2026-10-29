@@ -4,11 +4,11 @@ import ClaimPageTemplate from "@/components/ClaimPageTemplate";
 export const metadata: Metadata = {
   title: "Delayed Diagnosis Claims Scotland — Medical Negligence Compensation",
   description:
-    "Delayed or missed diagnosis in Scotland? Information on medical negligence claims for late cancer diagnosis, missed conditions and failure to refer. Free enquiry, three-year time limit.",
+    "Delayed or missed diagnosis in Scotland? Information on medical negligence claims for late cancer diagnosis, missed conditions and failure to refer. Information on the three-year time limit.",
   alternates: { canonical: "/delayed-diagnosis-claims-scotland" },
   openGraph: {
     title: "Delayed Diagnosis Claims Scotland — Medical Negligence Compensation",
-    description: "Delayed diagnosis medical negligence claim in Scotland. Free enquiry — sensitive support.",
+    description: "Delayed diagnosis medical negligence claim in Scotland. Information only.",
     url: "/delayed-diagnosis-claims-scotland",
   },
 };
@@ -64,7 +64,7 @@ export default function DelayedDiagnosisPage() {
         "Time limit: three years from the date of knowledge — usually from the correct diagnosis.",
         "Family members can claim if a delayed diagnosis contributed to a death.",
       ]}
-      answerBox="In Scotland, a delayed or missed diagnosis that caused a material worsening of your condition may give rise to a medical negligence claim. You must show that the delay fell below the standard of care and caused you harm. The time limit is generally three years from when you knew (or ought to have known) of the connection. A free enquiry will assess your case."
+      answerBox="In Scotland, a delayed or missed diagnosis that caused a material worsening of your condition may give rise to a medical negligence claim. You must show that the delay fell below the standard of care and caused you harm. The time limit is generally three years from when you knew (or ought to have known) of the connection. A solicitor can assess your position; this website cannot give legal advice."
       sections={[
         {
           heading: "What Is a Delayed Diagnosis Claim?",

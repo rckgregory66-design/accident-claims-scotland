@@ -4,11 +4,11 @@ import ClaimPageTemplate from "@/components/ClaimPageTemplate";
 export const metadata: Metadata = {
   title: "No Win No Fee Claims Scotland — How Funding Works",
   description:
-    "How no win, no fee funding works in Scotland: success fees, disbursements, ATE insurance and what you pay if you win or lose. Regulated under Scots law — free enquiry, no obligation.",
+    "How no win, no fee funding works in Scotland: success fees, disbursements, ATE insurance and what you pay if you win or lose. Not legal advice; enquiry form is free, no obligation.",
   alternates: { canonical: "/no-win-no-fee-solicitors-scotland" },
   openGraph: {
     title: "No Win No Fee Claims Scotland — How Funding Works",
-    description: "Understand no win no fee personal injury claims in Scotland. Free enquiry — no obligation.",
+    description: "Understand no win no fee personal injury claims in Scotland. Information only, not legal advice.",
     url: "/no-win-no-fee-solicitors-scotland",
   },
 };
@@ -48,7 +48,7 @@ export default function NoWinNoFeePage() {
       dateModified="2026-08-11"
       breadcrumbs={[{ label: "No Win No Fee Claims Scotland" }]}
       h1="No Win No Fee Claims in Scotland: How Funding Works"
-      intro="Many personal injury and accident claims in Scotland can be funded on a no win, no fee basis. This page explains clearly and transparently what no win, no fee means, how it works in Scotland, what costs may apply and what your alternatives are."
+      intro="Many personal injury and accident claims in Scotland can be funded on a no win, no fee basis. This page explains what no win, no fee means, how it works in Scotland, what costs may apply and what your alternatives are."
       tldr={[
         "No win, no fee means you pay no solicitor fees if your claim is unsuccessful.",
         "If you win, a percentage is typically deducted from your compensation to cover costs.",

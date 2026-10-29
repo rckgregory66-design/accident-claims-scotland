@@ -4,11 +4,11 @@ import ClaimPageTemplate from "@/components/ClaimPageTemplate";
 export const metadata: Metadata = {
   title: "Occupational Dermatitis Claims Scotland — Skin Disease at Work Compensation",
   description:
-    "Developed occupational dermatitis or contact dermatitis through work in Scotland? Information on industrial skin disease claims, COSHH duties and compensation. Free enquiry.",
+    "Developed occupational dermatitis or contact dermatitis through work in Scotland? Information on industrial skin disease claims, COSHH duties and compensation. Information only, not legal advice.",
   alternates: { canonical: "/occupational-dermatitis-claims-scotland" },
   openGraph: {
     title: "Occupational Dermatitis Claims Scotland — Skin Disease at Work Compensation",
-    description: "Occupational skin disease claim in Scotland. Contact dermatitis, industrial disease. Free enquiry.",
+    description: "Occupational skin disease claim in Scotland. Contact dermatitis, industrial disease. Information only, not legal advice.",
     url: "/occupational-dermatitis-claims-scotland",
   },
 };
@@ -64,7 +64,7 @@ export default function OccupationalDermatitisPage() {
         "Time limit: three years from when you knew the condition was work-related.",
         "Sensitisation can cause permanent employment restrictions — future loss is recoverable.",
       ]}
-      answerBox="In Scotland, if you developed occupational dermatitis through exposure to irritants or allergens at work, and your employer failed their COSHH duty to protect your skin, you may claim compensation. The time limit is three years from your date of knowledge. A free enquiry will assess your circumstances — no obligation."
+      answerBox="In Scotland, if you developed occupational dermatitis through exposure to irritants or allergens at work, and your employer failed their COSHH duty to protect your skin, you may claim compensation. The time limit is three years from your date of knowledge. A solicitor can assess your position; this website cannot give legal advice."
       sections={[
         {
           heading: "Types of Occupational Dermatitis",

@@ -4,11 +4,11 @@ import ClaimPageTemplate from "@/components/ClaimPageTemplate";
 export const metadata: Metadata = {
   title: "Hotel Accident Claims Scotland — Guest Injury Compensation",
   description:
-    "Injured in a hotel in Scotland? Information on occupiers' liability, slips, falls, pool accidents and hotel accident compensation. Free enquiry, no win no fee available.",
+    "Injured in a hotel in Scotland? Information on occupiers' liability, slips, falls, pool accidents and hotel accident compensation. Information only, not legal advice.",
   alternates: { canonical: "/hotel-accident-claims-scotland" },
   openGraph: {
     title: "Hotel Accident Claims Scotland — Guest Injury Compensation",
-    description: "Hotel accident claim in Scotland — slips, falls, pool injuries. Occupiers' liability. Free enquiry.",
+    description: "Hotel accident claim in Scotland — slips, falls, pool injuries. Occupiers' liability. Information only, not legal advice.",
     url: "/hotel-accident-claims-scotland",
   },
 };
@@ -64,7 +64,7 @@ export default function HotelAccidentPage() {
         "Report the accident and request an accident report before leaving the hotel.",
         "Time limit: three years from the date of the accident.",
       ]}
-      answerBox="In Scotland, hotels owe guests a legal duty of care as occupiers. If you were injured because the hotel failed to keep its premises reasonably safe — through a slippery floor, defective furnishings, unsafe pool or any other hazard — you may claim compensation. The time limit is three years. A free enquiry will assess your claim."
+      answerBox="In Scotland, hotels owe guests a legal duty of care as occupiers. If you were injured because the hotel failed to keep its premises reasonably safe — through a slippery floor, defective furnishings, unsafe pool or any other hazard — you may claim compensation. The time limit is three years. A solicitor can assess your claim; this website cannot."
       sections={[
         {
           heading: "Hotels and Occupiers' Liability in Scotland",

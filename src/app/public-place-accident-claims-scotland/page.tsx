@@ -4,11 +4,11 @@ import ClaimPageTemplate from "@/components/ClaimPageTemplate";
 export const metadata: Metadata = {
   title: "Public Place Accident Claims Scotland — Slips, Trips & Falls",
   description:
-    "Injured in a public place in Scotland? Information on claims for slips, trips and falls in supermarkets, pavements, shops and public buildings. Free enquiry, no win no fee available.",
+    "Injured in a public place in Scotland? Information on claims for slips, trips and falls in supermarkets, pavements, shops and public buildings. Information only, not legal advice.",
   alternates: { canonical: "/public-place-accident-claims-scotland" },
   openGraph: {
     title: "Public Place Accident Claims Scotland — Slips, Trips & Falls",
-    description: "Injured in a public place in Scotland? Free enquiry, no win no fee available.",
+    description: "Injured in a public place in Scotland? Information only, not legal advice.",
     url: "/public-place-accident-claims-scotland",
   },
 };
@@ -56,7 +56,7 @@ export default function PublicPlaceAccidentPage() {
         "The time limit is three years from the accident date; children have until age 19.",
         "Evidence — photographs, incident reports, medical records — is essential to success.",
       ]}
-      answerBox="In Scotland, occupiers of premises owe a duty of care to visitors under the Occupiers' Liability (Scotland) Act 1960. If you were injured on someone else's premises because of a foreseeable and preventable hazard, you may have a valid claim. The general time limit is three years from the accident date. A free enquiry will assess your circumstances — no obligation."
+      answerBox="In Scotland, occupiers of premises owe a duty of care to visitors under the Occupiers' Liability (Scotland) Act 1960. If you were injured on someone else's premises because of a foreseeable and preventable hazard, you may have a valid claim. The general time limit is three years from the accident date. A solicitor can assess your position; this website cannot give legal advice."
       sections={[
         {
           heading: "Occupiers' Liability in Scotland",

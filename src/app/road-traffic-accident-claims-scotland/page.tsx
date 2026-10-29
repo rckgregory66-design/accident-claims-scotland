@@ -5,11 +5,11 @@ import ClaimPageTemplate from "@/components/ClaimPageTemplate";
 export const metadata: Metadata = {
   title: "Road Traffic Accident Claims Scotland — Compensation Guide",
   description:
-    "Injured in a road accident in Scotland? Information on car, motorcycle, cycling, pedestrian and whiplash claims under Scots law. Three-year time limit — free enquiry, no obligation.",
+    "Injured in a road accident in Scotland? Information on car, motorcycle, cycling, pedestrian and whiplash claims under Scots law. Information on the three-year time limit.",
   alternates: { canonical: "/road-traffic-accident-claims-scotland" },
   openGraph: {
     title: "Road Traffic Accident Claims Scotland — Compensation Guide",
-    description: "Injured in a road traffic accident in Scotland? Free enquiry, no win no fee available.",
+    description: "Injured in a road traffic accident in Scotland? Information only, not legal advice.",
     url: "/road-traffic-accident-claims-scotland",
   },
 };
@@ -57,7 +57,7 @@ export default function RoadTrafficAccidentPage() {
         "Contributory negligence (e.g. not wearing a seatbelt) reduces but does not bar your claim.",
         "Compensation covers pain and suffering, earnings loss, medical costs and vehicle damage.",
       ]}
-      answerBox="In Scotland, you can make a road traffic accident claim if you were injured within the last three years and the accident was caused by another driver's negligence or a road defect. Claims can be made even if the other driver was uninsured. A free enquiry will assess your circumstances — no obligation."
+      answerBox="In Scotland, you can make a road traffic accident claim if you were injured within the last three years and the accident was caused by another driver's negligence or a road defect. Claims can be made even if the other driver was uninsured. A solicitor can assess your position; this website cannot give legal advice."
       sections={[
         {
           heading: "Road Traffic Accident Claims in Scotland",

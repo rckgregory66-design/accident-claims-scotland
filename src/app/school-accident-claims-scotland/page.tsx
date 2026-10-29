@@ -4,11 +4,11 @@ import ClaimPageTemplate from "@/components/ClaimPageTemplate";
 export const metadata: Metadata = {
   title: "School Accident Claims Scotland — Child Injury Compensation",
   description:
-    "Child injured at school in Scotland? Information on school accident claims, duty of care, playground injuries, sports injuries and claiming on behalf of a child. Free enquiry.",
+    "Child injured at school in Scotland? Information on school accident claims, duty of care, playground injuries, sports injuries and claiming on behalf of a child. Information only, not legal advice.",
   alternates: { canonical: "/school-accident-claims-scotland" },
   openGraph: {
     title: "School Accident Claims Scotland — Child Injury Compensation",
-    description: "School accident claim for a child in Scotland. Playground, sports and classroom injuries. Free enquiry.",
+    description: "School accident claim for a child in Scotland. Playground, sports and classroom injuries. Information only, not legal advice.",
     url: "/school-accident-claims-scotland",
   },
 };
@@ -64,7 +64,7 @@ export default function SchoolAccidentPage() {
         "Early action preserves school records, inspection reports and witness evidence.",
         "Parents or guardians can bring the claim on behalf of a child at any age.",
       ]}
-      answerBox="In Scotland, schools and local authorities owe pupils a duty of care. If your child was injured due to inadequate supervision, defective equipment or a failure to take reasonable precautions, you can make a claim on their behalf. The time limit does not run until the child turns 16 — but early action is important to preserve evidence. A free enquiry will assess your circumstances."
+      answerBox="In Scotland, schools and local authorities owe pupils a duty of care. If your child was injured due to inadequate supervision, defective equipment or a failure to take reasonable precautions, you can make a claim on their behalf. The time limit does not run until the child turns 16 — but early action is important to preserve evidence. A solicitor can assess your position; this website cannot give legal advice."
       sections={[
         {
           heading: "The School's Duty of Care in Scotland",

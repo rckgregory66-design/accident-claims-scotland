@@ -119,10 +119,9 @@ export default function ClaimPageTemplate({
       <div className="bg-gray-50 border-b border-gray-200 py-3 px-4">
         <div className="max-w-7xl mx-auto flex flex-wrap gap-x-8 gap-y-2">
           {[
-            "No win, no fee available",
-            "Free enquiry",
-            "No obligation",
-            "Scotland-focused claims guidance",
+            "Scots law information",
+            "Not a law firm",
+            "Sending an enquiry is free, no obligation",
           ].map((t) => (
             <span key={t} className="text-sm text-gray-600 flex items-center gap-1.5">
               <span className="text-red-600 font-bold">✓</span> {t}

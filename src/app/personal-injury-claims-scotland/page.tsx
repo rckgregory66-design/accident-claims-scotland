@@ -56,7 +56,7 @@ export default function PersonalInjuryPage() {
         "No win, no fee funding is available for qualifying claims.",
         "Time limits are strict — seek advice without delay.",
       ]}
-      answerBox="In Scotland, you can make a personal injury claim if you were injured within the last three years and the injury was caused by another person or organisation's negligence. Claims are governed by Scots law. A free initial enquiry will help establish whether you have a viable claim — there is no obligation to proceed."
+      answerBox="In Scotland, you can make a personal injury claim if you were injured within the last three years and the injury was caused by another person or organisation's negligence. Claims are governed by Scots law. A solicitor can advise whether you have a viable claim; sending an enquiry through this website is free and carries no obligation, but it is not legal advice."
       sections={[
         {
           heading: "What is a Personal Injury Claim?",
@@ -118,7 +118,7 @@ export default function PersonalInjuryPage() {
         {
           heading: "No Win, No Fee Personal Injury Claims in Scotland",
           content:
-            "Many personal injury claims in Scotland can be funded on a no win, no fee basis. This means that if your claim is unsuccessful, you will not be required to pay your solicitor's fees. The exact terms — including any deductions or success fees — will be clearly explained in writing before you proceed.",
+            "Many personal injury claims in Scotland can be funded on a no win, no fee basis. This means that if your claim is unsuccessful, you will not be required to pay your solicitor's fees. A solicitor should explain the exact terms, including any deductions or success fees, in writing before you proceed.",
         },
       ]}
       subpages={{

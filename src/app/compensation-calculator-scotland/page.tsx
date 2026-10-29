@@ -52,7 +52,7 @@ export default function CompensationCalculatorPage() {
         <div className="mt-10 grid gap-4 sm:grid-cols-3">
           <Link className="card font-semibold text-red-700" href="/personal-injury-compensation-scotland">Read the compensation guide →</Link>
           <Link className="card font-semibold text-red-700" href="/personal-injury-claim-time-limits-scotland">Check Scottish time limits →</Link>
-          <Link className="card font-semibold text-red-700" href="/contact">Make a free enquiry →</Link>
+          <Link className="card font-semibold text-red-700" href="/contact">Send an enquiry →</Link>
         </div>
       </main>
       <FAQ faqs={faqs} />

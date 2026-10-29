@@ -112,7 +112,7 @@ const articles: Record<string, ReactNode> = {
 
       <p>
         <Link href="/contact" className="text-red-700 font-medium hover:underline">
-          Contact us today for a free assessment →
+          Send an enquiry →
         </Link>
       </p>
     </Article>
@@ -836,8 +836,8 @@ export function getGuideContent(slug: string): ReactNode {
   return articles[slug] ?? extendedGuideArticles[slug] ?? (
     <div className="answer-box">
       <p className="text-blue-800">
-        Full article content for this guide will be published shortly. In the meantime, please{" "}
-        <Link href="/contact" className="underline font-medium">contact us</Link> for advice on this topic.
+        This guide is not yet available. For advice on this topic, speak to a Scottish solicitor; you can also{" "}
+        <Link href="/contact" className="underline font-medium">send an enquiry</Link> to the website operator.
       </p>
     </div>
   );

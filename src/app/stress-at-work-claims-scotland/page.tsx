@@ -4,11 +4,11 @@ import ClaimPageTemplate from "@/components/ClaimPageTemplate";
 export const metadata: Metadata = {
   title: "Stress at Work Claims Scotland — Psychiatric Injury & Work-Related Stress",
   description:
-    "Work-related stress, anxiety and psychiatric injury claims in Scotland. Employer duties, foreseeability, time limits and compensation for psychological injury at work. Free enquiry.",
+    "Work-related stress, anxiety and psychiatric injury claims in Scotland. Employer duties, foreseeability, time limits and compensation for psychological injury at work. Information only, not legal advice.",
   alternates: { canonical: "/stress-at-work-claims-scotland" },
   openGraph: {
     title: "Stress at Work Claims Scotland — Psychiatric Injury & Work-Related Stress",
-    description: "Psychiatric injury at work in Scotland? Information on stress claims. Free enquiry.",
+    description: "Psychiatric injury at work in Scotland? Information on stress claims. Information only, not legal advice.",
     url: "/stress-at-work-claims-scotland",
   },
 };
@@ -64,7 +64,7 @@ export default function StressAtWorkPage() {
         "Bullying and harassment causing psychiatric harm can also found a claim.",
         "Time limit: three years from the date of knowledge — usually from diagnosis.",
       ]}
-      answerBox="In Scotland, you may claim compensation for work-related psychiatric injury where your employer knew or should have known of the risk of harm and failed to act. A diagnosed condition — such as depression, PTSD or an anxiety disorder — is required. The time limit is generally three years from diagnosis or date of knowledge. A free enquiry will assess your circumstances."
+      answerBox="In Scotland, you may claim compensation for work-related psychiatric injury where your employer knew or should have known of the risk of harm and failed to act. A diagnosed condition — such as depression, PTSD or an anxiety disorder — is required. The time limit is generally three years from diagnosis or date of knowledge. A solicitor can assess your position; this website cannot give legal advice."
       sections={[
         {
           heading: "What Is a Work Stress Claim?",

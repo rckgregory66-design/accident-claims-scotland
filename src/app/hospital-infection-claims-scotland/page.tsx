@@ -4,11 +4,11 @@ import ClaimPageTemplate from "@/components/ClaimPageTemplate";
 export const metadata: Metadata = {
   title: "Hospital Infection Claims Scotland — MRSA, C. diff & HAI Compensation",
   description:
-    "Hospital-acquired infection claim in Scotland? MRSA, C. difficile, surgical site infection and HAI compensation. NHS negligence — free enquiry, three-year time limit.",
+    "Hospital-acquired infection claim in Scotland? MRSA, C. difficile, surgical site infection and HAI compensation. NHS negligence. Information only.",
   alternates: { canonical: "/hospital-infection-claims-scotland" },
   openGraph: {
     title: "Hospital Infection Claims Scotland — MRSA, C. diff & HAI Compensation",
-    description: "Hospital infection claim in Scotland — MRSA, C. diff, surgical site infection. Free enquiry.",
+    description: "Hospital infection claim in Scotland — MRSA, C. diff, surgical site infection. Information only, not legal advice.",
     url: "/hospital-infection-claims-scotland",
   },
 };
@@ -64,7 +64,7 @@ export default function HospitalInfectionPage() {
         "Time limit: three years from date of knowledge — usually from medical advice linking infection to negligence.",
         "Fatal infection claims are available under the Damages (Scotland) Act 2011.",
       ]}
-      answerBox="In Scotland, a hospital-acquired infection claim requires proof that the infection was caused by a breach of infection control duty — not merely that an infection occurred. The time limit is generally three years from when you knew (or ought to have known) that negligent care caused the infection. A free enquiry will assess your circumstances with sensitivity."
+      answerBox="In Scotland, a hospital-acquired infection claim requires proof that the infection was caused by a breach of infection control duty — not merely that an infection occurred. The time limit is generally three years from when you knew (or ought to have known) that negligent care caused the infection. A solicitor can assess your position; this website cannot give legal advice."
       sections={[
         {
           heading: "What Is a Hospital-Acquired Infection Claim?",

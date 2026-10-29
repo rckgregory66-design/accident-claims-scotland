@@ -19,7 +19,7 @@ const faqs = [
   {
     question: "How do I start a personal injury claim in Scotland?",
     answer:
-      "The first step is to get in touch with a Scottish personal injury solicitor for a free initial assessment. You do not need to have gathered all your evidence before contacting a solicitor — they will help you identify and gather what is needed. Your solicitor will explain whether you have a viable claim and what the process will involve.",
+      "The first step is to get in touch with a Scottish personal injury solicitor and ask whether the first conversation is free. You do not need to have gathered all your evidence before contacting a solicitor — they can help you identify and gather what is needed. A solicitor can explain whether you have a viable claim and what the process will involve.",
   },
   {
     question: "Do I need a solicitor to make a personal injury claim in Scotland?",

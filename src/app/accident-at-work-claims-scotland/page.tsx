@@ -4,11 +4,11 @@ import ClaimPageTemplate from "@/components/ClaimPageTemplate";
 export const metadata: Metadata = {
   title: "Accident at Work Claims Scotland — Work Injury Compensation",
   description:
-    "Injured at work in Scotland? Information on employer negligence claims, RIDDOR, manual handling, falls and equipment failures under Scots law. Free enquiry, no win no fee available.",
+    "Injured at work in Scotland? Information on employer negligence claims, RIDDOR, manual handling, falls and equipment failures under Scots law. Information only, not legal advice.",
   alternates: { canonical: "/accident-at-work-claims-scotland" },
   openGraph: {
     title: "Accident at Work Claims Scotland — Work Injury Compensation",
-    description: "Injured at work in Scotland? Free enquiry, no win no fee available.",
+    description: "Injured at work in Scotland? Information only, not legal advice.",
     url: "/accident-at-work-claims-scotland",
   },
 };
@@ -56,7 +56,7 @@ export default function AccidentAtWorkPage() {
         "The general time limit is three years from the date of the accident.",
         "Evidence — accident reports, photographs, witness statements — should be gathered immediately.",
       ]}
-      answerBox="In Scotland, you may be able to claim compensation if you were injured at work within the last three years and your employer (or a third party) was negligent. Employers have a legal duty to provide a safe workplace, safe equipment and adequate training. A free enquiry will assess whether you have a viable claim — no obligation to proceed."
+      answerBox="In Scotland, you may be able to claim compensation if you were injured at work within the last three years and your employer (or a third party) was negligent. Employers have a legal duty to provide a safe workplace, safe equipment and adequate training. A solicitor can assess your position; this website cannot give legal advice."
       sections={[
         {
           heading: "Your Employer's Legal Duty in Scotland",

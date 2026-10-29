@@ -4,7 +4,7 @@ import ClaimPageTemplate from "@/components/ClaimPageTemplate";
 export const metadata: Metadata = {
   title: "Serious Injury Claims Scotland — Brain, Spinal & Catastrophic Injury",
   description:
-    "Information on serious and catastrophic injury claims in Scotland: brain injury, spinal cord injury, amputation, burns and fatal accidents. Sensitive support — free enquiry.",
+    "Information on serious and catastrophic injury claims in Scotland: brain injury, spinal cord injury, amputation, burns and fatal accidents. Sensitive support. Information only.",
   alternates: { canonical: "/serious-injury-claims-scotland" },
   openGraph: {
     title: "Serious Injury Claims Scotland — Brain, Spinal & Catastrophic Injury",
@@ -56,7 +56,7 @@ export default function SeriousInjuryPage() {
         "These claims typically take two to five years due to the complexity of lifetime loss assessment.",
         "Early specialist legal advice is essential for the best rehabilitation and compensation outcome.",
       ]}
-      answerBox="In Scotland, serious injury claims are brought under Scots law and typically involve complex medical, care and financial evidence across multiple expert disciplines. If you or a family member has suffered a catastrophic injury, early specialist legal advice is essential. Our enquiry is free and carries no obligation."
+      answerBox="In Scotland, serious injury claims are brought under Scots law and typically involve complex medical, care and financial evidence across multiple expert disciplines. If you or a family member has suffered a catastrophic injury, early specialist legal advice is essential. The website enquiry form is free and carries no obligation, but it is not legal advice."
       sections={[
         {
           heading: "Types of Serious Injury Claim in Scotland",

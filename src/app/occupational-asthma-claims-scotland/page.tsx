@@ -4,11 +4,11 @@ import ClaimPageTemplate from "@/components/ClaimPageTemplate";
 export const metadata: Metadata = {
   title: "Occupational Asthma Claims Scotland — Work-Induced Asthma Compensation",
   description:
-    "Developed asthma through work in Scotland? Information on occupational asthma claims, sensitisers, employer duties and industrial disease compensation. Free enquiry.",
+    "Developed asthma through work in Scotland? Information on occupational asthma claims, sensitisers, employer duties and industrial disease compensation. Information only, not legal advice.",
   alternates: { canonical: "/occupational-asthma-claims-scotland" },
   openGraph: {
     title: "Occupational Asthma Claims Scotland — Work-Induced Asthma Compensation",
-    description: "Occupational asthma claim in Scotland. Industrial disease compensation — free enquiry.",
+    description: "Occupational asthma claim in Scotland. Industrial disease compensation  Information only.",
     url: "/occupational-asthma-claims-scotland",
   },
 };
@@ -62,9 +62,9 @@ export default function OccupationalAsthmaPage() {
         "Employer must comply with COSHH regulations to control sensitiser exposure.",
         "Time limit: three years from date of knowledge — usually from respiratory specialist diagnosis.",
         "Claims can be brought against current and former employers; insurers are traced if needed.",
-        "Free enquiry — no win no fee available for eligible industrial disease claims.",
+        "Sending an enquiry through this website is free; it is not legal advice.",
       ]}
-      answerBox="In Scotland, if you developed asthma through workplace exposure to a sensitising substance — and your employer failed to control that exposure under COSHH regulations — you may have an occupational asthma claim. The time limit is three years from when you knew the condition was work-related. A free enquiry will assess your case."
+      answerBox="In Scotland, if you developed asthma through workplace exposure to a sensitising substance — and your employer failed to control that exposure under COSHH regulations — you may have an occupational asthma claim. The time limit is three years from when you knew the condition was work-related. A solicitor can assess your position; this website cannot give legal advice."
       sections={[
         {
           heading: "What Is Occupational Asthma?",
