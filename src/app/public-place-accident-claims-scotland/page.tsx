@@ -56,7 +56,7 @@ export default function PublicPlaceAccidentPage() {
         "The time limit is three years from the accident date; children have until age 19.",
         "Evidence — photographs, incident reports, medical records — is essential to success.",
       ]}
-      answerBox="In Scotland, occupiers of premises owe a duty of care to visitors under the Occupiers' Liability (Scotland) Act 1960. If you were injured on someone else's premises because of a foreseeable and preventable hazard, you may have a valid claim. The general time limit is three years from the accident date. A free enquiry will assess your circumstances — no obligation."
+      answerBox="In Scotland, occupiers of premises owe a duty of care to visitors under the Occupiers' Liability (Scotland) Act 1960. If you were injured on someone else's premises because of a foreseeable and preventable hazard, you may have a valid claim. The general time limit is three years from the accident date."
       sections={[
         {
           heading: "Occupiers' Liability in Scotland",

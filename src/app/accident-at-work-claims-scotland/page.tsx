@@ -56,7 +56,7 @@ export default function AccidentAtWorkPage() {
         "The general time limit is three years from the date of the accident.",
         "Evidence — accident reports, photographs, witness statements — should be gathered immediately.",
       ]}
-      answerBox="In Scotland, you may be able to claim compensation if you were injured at work within the last three years and your employer (or a third party) was negligent. Employers have a legal duty to provide a safe workplace, safe equipment and adequate training. A free enquiry will assess whether you have a viable claim — no obligation to proceed."
+      answerBox="In Scotland, you may be able to claim compensation if you were injured at work within the last three years and your employer (or a third party) was negligent. Employers have a legal duty to provide a safe workplace, safe equipment and adequate training."
       sections={[
         {
           heading: "Your Employer's Legal Duty in Scotland",

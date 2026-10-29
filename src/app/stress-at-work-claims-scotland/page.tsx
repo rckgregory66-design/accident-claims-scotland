@@ -64,7 +64,7 @@ export default function StressAtWorkPage() {
         "Bullying and harassment causing psychiatric harm can also found a claim.",
         "Time limit: three years from the date of knowledge — usually from diagnosis.",
       ]}
-      answerBox="In Scotland, you may claim compensation for work-related psychiatric injury where your employer knew or should have known of the risk of harm and failed to act. A diagnosed condition — such as depression, PTSD or an anxiety disorder — is required. The time limit is generally three years from diagnosis or date of knowledge. A free enquiry will assess your circumstances."
+      answerBox="In Scotland, you may claim compensation for work-related psychiatric injury where your employer knew or should have known of the risk of harm and failed to act. A diagnosed condition — such as depression, PTSD or an anxiety disorder — is required. The time limit is generally three years from diagnosis or date of knowledge."
       sections={[
         {
           heading: "What Is a Work Stress Claim?",

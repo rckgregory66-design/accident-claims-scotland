@@ -688,7 +688,7 @@ const articles: Record<string, ReactNode> = {
 
       <p>
         <Link href="/contact" className="text-red-700 font-medium hover:underline">
-          Get a free, honest assessment of your claim →
+          Make a free, no-obligation enquiry →
         </Link>
       </p>
     </Article>

@@ -64,7 +64,7 @@ export default function HospitalInfectionPage() {
         "Time limit: three years from date of knowledge — usually from medical advice linking infection to negligence.",
         "Fatal infection claims are available under the Damages (Scotland) Act 2011.",
       ]}
-      answerBox="In Scotland, a hospital-acquired infection claim requires proof that the infection was caused by a breach of infection control duty — not merely that an infection occurred. The time limit is generally three years from when you knew (or ought to have known) that negligent care caused the infection. A free enquiry will assess your circumstances with sensitivity."
+      answerBox="In Scotland, a hospital-acquired infection claim requires proof that the infection was caused by a breach of infection control duty — not merely that an infection occurred. The time limit is generally three years from when you knew (or ought to have known) that negligent care caused the infection."
       sections={[
         {
           heading: "What Is a Hospital-Acquired Infection Claim?",

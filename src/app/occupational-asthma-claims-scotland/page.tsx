@@ -64,7 +64,7 @@ export default function OccupationalAsthmaPage() {
         "Claims can be brought against current and former employers; insurers are traced if needed.",
         "Free enquiry — no win no fee available for eligible industrial disease claims.",
       ]}
-      answerBox="In Scotland, if you developed asthma through workplace exposure to a sensitising substance — and your employer failed to control that exposure under COSHH regulations — you may have an occupational asthma claim. The time limit is three years from when you knew the condition was work-related. A free enquiry will assess your case."
+      answerBox="In Scotland, if you developed asthma through workplace exposure to a sensitising substance — and your employer failed to control that exposure under COSHH regulations — you may have an occupational asthma claim. The time limit is three years from when you knew the condition was work-related."
       sections={[
         {
           heading: "What Is Occupational Asthma?",

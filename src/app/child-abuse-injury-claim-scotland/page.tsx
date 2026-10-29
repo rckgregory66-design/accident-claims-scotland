@@ -64,7 +64,7 @@ export default function ChildAbuseInjuryPage() {
         "The perpetrator does not need to be alive, convicted or found for a CICA claim.",
         "Completely confidential — enquiry involves no court attendance in CICA cases.",
       ]}
-      answerBox="In Scotland, survivors of childhood abuse can apply for CICA criminal injury compensation — with extended time limits for childhood victims. Civil claims against institutions whose failures enabled abuse are also possible in some cases. Everything is handled with complete sensitivity and confidentiality. A free enquiry will assess your eligibility."
+      answerBox="In Scotland, survivors of childhood abuse can apply for CICA criminal injury compensation — with extended time limits for childhood victims. Civil claims against institutions whose failures enabled abuse are also possible in some cases. Everything is handled with complete sensitivity and confidentiality."
       sections={[
         {
           heading: "CICA Compensation for Child Abuse Survivors",
