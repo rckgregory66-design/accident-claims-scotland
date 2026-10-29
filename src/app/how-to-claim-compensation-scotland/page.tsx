@@ -117,6 +117,13 @@ export default function HowToClaimPage() {
             claims years. Court proceedings must normally start within three years.
           </p>
         </div>
+        <p className="mt-4 text-gray-700">
+          Not sure yet whether you can claim? Start with our guide to{" "}
+          <Link href="/personal-injury-claims-scotland" className="text-red-700 font-medium hover:underline">
+            personal injury claims in Scotland
+          </Link>
+          .
+        </p>
 
         <div className="space-y-8 mt-10">
           {steps.map((step) => (
