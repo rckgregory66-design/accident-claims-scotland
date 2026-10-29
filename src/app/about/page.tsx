@@ -48,7 +48,7 @@ export default function AboutPage() {
           disease and workplace accident claims in Scotland.
         </p>
         <p>
-          The website is operated by Ola Consultants Ltd. It is being prepared as a marketing and information
+          The website is operated by Ola Consultants Ltd (registered in England and Wales, company number 14446269). It is being prepared as a marketing and information
           resource for Scottish solicitors, but is not currently presented as a regulated law firm. Firm,
           solicitor and regulatory details will be added only when they can be verified.
         </p>

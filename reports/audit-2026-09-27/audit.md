@@ -24,7 +24,7 @@ Site: https://accident-claims-scotland.com. Builds on `reports/audit-2026-09-20/
 | 10 | Content-hashed JS/CSS bundles have no long-lived cache policy | Recommended | **Fixed** (inference, see below) |
 | 11 | Cloudflare Early Hint preloads a 404 image | Recommended | **Fixed** (`! Link` in `_headers`; verify after deploy) |
 | 12 | Two noindex location pages are orphaned | Recommended | **Fixed** (added to `LOCATIONS`, still noindex) |
-| 13 | Articles have no named author or reviewer, and the Organization has no `logo` or `sameAs` | Recommended (YMYL E-E-A-T) | Open (needs real data) |
+| 13 | Articles have no named author or reviewer, and the Organization has no `logo` or `sameAs` | Recommended (YMYL E-E-A-T) | **Logo and Companies House done 29 Oct**; named reviewer still open |
 | 14 | Weak internal linking to 8 detail pages (1 inlink each) | Recommended | **Fixed** (all 8, solicitor-approved links) |
 | 15 | FAQPage, HowTo, Speakable and llms.txt: what to expect from each | Informational | No change |
 
