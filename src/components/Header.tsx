@@ -80,7 +80,7 @@ export default function Header() {
               href="/contact"
               className="bg-red-700 hover:bg-red-800 text-white font-semibold px-5 py-2.5 rounded-lg text-sm transition-colors shadow-sm"
             >
-              Free Claim Check
+              Send an enquiry
             </Link>
           </div>
 
@@ -149,7 +149,7 @@ export default function Header() {
                 className="block bg-red-700 text-white text-center font-semibold py-3 rounded-lg text-sm"
                 onClick={() => setMobileOpen(false)}
               >
-                Free Claim Check — No Obligation
+                Send an enquiry
               </Link>
             </div>
           </nav>

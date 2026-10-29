@@ -7,8 +7,8 @@ interface Props {
 }
 
 export default function CtaSection({
-  title = "Ready to Check If You Can Claim?",
-  subtitle = "Send a free enquiry today. Your enquiry is treated as confidential and carries no obligation.",
+  title = "Want to Send an Enquiry?",
+  subtitle = "Sending an enquiry is free and carries no obligation. It is not legal advice and does not stop a time limit.",
   dark = true,
 }: Props) {
   return (
@@ -21,11 +21,11 @@ export default function CtaSection({
             href="/contact"
             className="bg-red-600 hover:bg-red-700 text-white font-bold px-8 py-4 rounded-lg text-lg transition-colors shadow-sm"
           >
-            Start Your Free Claim Check
+            Send an enquiry
           </Link>
         </div>
         <p className="text-gray-400 text-sm mt-6">
-          No win, no fee available. No obligation. Time limits apply.
+          Time limits apply. Take independent advice from a Scottish solicitor if a deadline may be close.
         </p>
       </div>
     </section>

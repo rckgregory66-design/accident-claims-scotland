@@ -99,9 +99,8 @@ export const LOCATIONS = [
 ];
 
 export const TRUST_BADGES = [
-  { icon: "✓", text: "No win, no fee available" },
-  { icon: "✓", text: "Free initial enquiry" },
-  { icon: "✓", text: "Clear claims information" },
-  { icon: "✓", text: "No obligation assessment" },
-  { icon: "✓", text: "Scotland-focused guidance" },
+  { icon: "✓", text: "Scots law information" },
+  { icon: "✓", text: "Official sources linked" },
+  { icon: "✓", text: "Not a law firm" },
+  { icon: "✓", text: "Sending an enquiry is free" },
 ];

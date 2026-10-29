@@ -59,12 +59,12 @@ export default function ClaimForm({ variant = "inline", title }: Props) {
         <p aria-hidden="true" className="text-4xl mb-3 text-center">✓</p>
         <h2 className="text-xl font-bold text-green-900 mb-2 text-center">Enquiry sent</h2>
         <p className="text-green-800 mb-4 text-center">
-          Your enquiry has been received. We will review it and aim to be in touch as soon as possible.
+          Your enquiry was accepted for delivery to the website operator. A reply is not guaranteed, and no solicitor has been instructed.
         </p>
         <ol className="text-sm text-green-900 space-y-2 list-decimal pl-5">
-          <li>Your enquiry is being reviewed.</li>
-          <li>You may be contacted by phone or email using the details you provided.</li>
-          <li>Keep a note of any deadline information — time limits still apply while we are in contact.</li>
+          <li>Your enquiry has been emailed to the website operator.</li>
+          <li>You may be contacted by phone or email using the details you provided, but there is no guarantee of a reply.</li>
+          <li>Keep a note of any deadline information — time limits keep running.</li>
           <li>If a time limit may be imminent, seek urgent independent advice from a qualified Scottish solicitor.</li>
         </ol>
       </div>
@@ -76,10 +76,10 @@ export default function ClaimForm({ variant = "inline", title }: Props) {
       {title ? (
         <h2 className="text-2xl font-bold text-[#0f2044] mb-2">{title}</h2>
       ) : (
-        <h3 className="text-xl font-bold text-[#0f2044] mb-1">Start Your Free Claim Check</h3>
+        <h3 className="text-xl font-bold text-[#0f2044] mb-1">Send an enquiry</h3>
       )}
       <p className="text-sm text-gray-600 mb-5">
-        General enquiry form. No obligation. Submitting it does not create a solicitor-client relationship
+        General enquiry form. No obligation. This website is not a law firm. Submitting it does not create a solicitor-client relationship
         or stop a legal time limit.
       </p>
 
@@ -145,7 +145,7 @@ export default function ClaimForm({ variant = "inline", title }: Props) {
         </div>
         {status === "error" && <p role="alert" className="rounded-lg bg-red-50 border border-red-300 p-3 text-sm text-red-900">{error}</p>}
         <button type="submit" disabled={status === "sending"} className="w-full bg-red-700 hover:bg-red-800 disabled:opacity-60 text-white font-bold py-4 rounded-lg text-lg">
-          {status === "sending" ? "Sending securely…" : "Send My Enquiry →"}
+          {status === "sending" ? "Sending securely…" : "Send enquiry →"}
         </button>
         <p className="text-xs text-gray-500 text-center">
           Time limits apply. A response is not guaranteed before any deadline.

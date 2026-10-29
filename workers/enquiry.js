@@ -15,10 +15,18 @@ function clean(value, max) {
   return typeof value === "string" ? value.trim().slice(0, max) : "";
 }
 
+function originHost(origin) {
+  try {
+    return origin ? new URL(origin).hostname : null;
+  } catch {
+    return null;
+  }
+}
+
 function responseHeaders(origin) {
   return {
     ...JSON_HEADERS,
-    ...(origin && ALLOWED_HOSTS.has(new URL(origin).hostname) ? { "access-control-allow-origin": origin } : {}),
+    ...(ALLOWED_HOSTS.has(originHost(origin)) ? { "access-control-allow-origin": origin } : {}),
   };
 }
 
@@ -33,7 +41,7 @@ const worker = {
     if (request.method === "OPTIONS") return new Response(null, { status: 204, headers: responseHeaders(origin) });
     if (request.method !== "POST") return json({ error: "Method not allowed." }, 405, origin);
 
-    if (!origin || !ENDPOINT_HOSTS.has(requestUrl.hostname) || !ALLOWED_HOSTS.has(new URL(origin).hostname)) {
+    if (!ENDPOINT_HOSTS.has(requestUrl.hostname) || !ALLOWED_HOSTS.has(originHost(origin))) {
       return json({ error: "Request origin was not accepted." }, 403, origin);
     }
 
@@ -41,8 +49,18 @@ const worker = {
       return json({ error: "The enquiry is too large." }, 413, origin);
     }
 
-    const body = await request.json().catch(() => null);
-    if (!body || clean(body.company, 100)) return json({ ok: true }, 200, origin);
+    const rawBody = await request.text().catch(() => "");
+    if (rawBody.length > 10_000) return json({ error: "The enquiry is too large." }, 413, origin);
+    let body = null;
+    try {
+      body = JSON.parse(rawBody);
+    } catch {
+      body = null;
+    }
+    if (!body || typeof body !== "object" || Array.isArray(body)) {
+      return json({ error: "Please complete all required fields correctly." }, 400, origin);
+    }
+    if (clean(body.company, 100)) return json({ ok: true }, 200, origin);
 
     const enquiry = {
       name: clean(body.name, 100),

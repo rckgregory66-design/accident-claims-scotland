@@ -24,27 +24,27 @@ const faqs = [
   {
     question: "What is no win no fee and what does it mean for me?",
     answer:
-      "A no win no fee arrangement means that if your claim is unsuccessful, you will not be required to pay your solicitor's fees. The exact terms of any funding arrangement will be explained to you clearly before you proceed. Some deductions or success fees may apply; these will be set out transparently in your agreement.",
+      "A no win no fee arrangement means that if your claim is unsuccessful, you will not be required to pay your solicitor's fees. A solicitor should explain the exact terms of any funding arrangement before you proceed. Deductions or success fees may apply, so ask for them in writing.",
   },
   {
     question: "Can I claim if I was partly to blame for my accident?",
     answer:
-      "Yes. In Scotland, contributory negligence may reduce the amount of compensation you receive, but it does not necessarily prevent you from claiming altogether. Your solicitor will assess the circumstances and advise on the likely impact on your claim.",
+      "Yes. In Scotland, contributory negligence may reduce the amount of compensation you receive, but it does not necessarily prevent you from claiming altogether. A solicitor can assess the circumstances and advise on the likely impact on your claim.",
   },
   {
     question: "How much compensation will I receive?",
     answer:
-      "Compensation depends on the nature and severity of your injuries, the impact on your life, your financial losses and other factors. We cannot guarantee any particular outcome. Your solicitor will give you an honest assessment of your claim based on the facts and evidence.",
+      "Compensation depends on the nature and severity of your injuries, the impact on your life, your financial losses and other factors. No outcome can be guaranteed. A solicitor can give you an assessment of your claim based on the facts and evidence.",
   },
   {
     question: "Do I need to go to court?",
     answer:
-      "Most personal injury claims in Scotland are settled out of court through negotiation between solicitors. A small number of claims proceed to litigation if liability is disputed or a fair settlement cannot be reached. Your solicitor will guide you through every step.",
+      "Most personal injury claims in Scotland are settled out of court through negotiation between solicitors. A small number of claims proceed to litigation if liability is disputed or a fair settlement cannot be reached. A solicitor can guide you through each step.",
   },
   {
     question: "What evidence do I need to support my claim?",
     answer:
-      "Useful evidence includes medical records, photographs of the scene and your injuries, witness details, accident report forms, payslips for wage loss calculations, and any correspondence with insurers. Your solicitor will help you gather and present the evidence needed.",
+      "Useful evidence includes medical records, photographs of the scene and your injuries, witness details, accident report forms, payslips for wage loss calculations, and any correspondence with insurers. A solicitor can help you gather and present the evidence needed.",
   },
 ];
 
@@ -71,7 +71,7 @@ export default function HomePage() {
             {/* Left: copy */}
             <div className="text-white">
               <div className="inline-flex items-center gap-2 bg-yellow-400/20 border border-yellow-400/30 text-yellow-300 text-sm font-medium px-3 py-1.5 rounded-full mb-5">
-                <span>✓</span> Scotland-focused claims information
+                Scotland-focused claims information
               </div>
               <h1 className="text-3xl sm:text-4xl lg:text-5xl font-bold text-white leading-tight mb-5">
                 Accident Claims in Scotland: How Personal Injury Compensation Works
@@ -81,26 +81,16 @@ export default function HomePage() {
                 able to seek compensation. This website provides general information about personal injury,
                 medical negligence, industrial disease and workplace accident claims across Scotland.
               </p>
-              <div className="grid grid-cols-2 gap-3 mb-8">
-                {[
-                  "Free initial enquiry",
-                  "No win, no fee available",
-                  "Clear claims information",
-                  "Scotland-focused guidance",
-                  "No obligation assessment",
-                  "Scotland-wide coverage",
-                ].map((t) => (
-                  <div key={t} className="flex items-center gap-2 text-sm text-gray-200">
-                    <span className="text-yellow-400 font-bold">✓</span> {t}
-                  </div>
-                ))}
-              </div>
+              <p className="text-gray-300 text-base leading-relaxed mb-8">
+                Accident Claims Scotland is an information website run by Ola Consultants Ltd. It is not a
+                law firm and does not give legal advice. If you send an enquiry, your details are emailed to
+                the website operator; sending one does not create a solicitor-client relationship or stop a
+                time limit.
+              </p>
             </div>
             {/* Right: form */}
             <div className="bg-white rounded-2xl p-6 sm:p-8 shadow-2xl">
-              <h2 className="text-xl font-bold text-[#0f2044] mb-1">Start Your Free Claim Check</h2>
-              <p className="text-sm text-gray-500 mb-5">General enquiry form. No obligation.</p>
-              <ClaimForm variant="hero" />
+              <ClaimForm variant="hero" title="Send an enquiry" />
             </div>
           </div>
         </div>
@@ -162,18 +152,18 @@ export default function HomePage() {
                 How the Scottish Claims Process Works
               </h2>
               <p className="text-gray-600 mb-6">
-                Making a personal injury claim in Scotland follows a structured process. Here is what to
-                expect when you instruct a solicitor.
+                A personal injury claim in Scotland usually follows the stages below once you have instructed a
+                solicitor. The order and detail vary with the claim.
               </p>
               <ol className="space-y-4">
                 {[
-                  ["Free enquiry", "Contact us for a no-obligation discussion about your circumstances."],
-                  ["Claim assessment", "Your solicitor reviews the facts, evidence, liability and time limits."],
-                  ["Evidence gathering", "We help gather medical records, witness statements and other evidence."],
+                  ["Initial contact", "You speak to a Scottish solicitor about your circumstances. Check how they fund the claim before you agree."],
+                  ["Claim assessment", "The solicitor reviews the facts, evidence, liability and time limits."],
+                  ["Evidence gathering", "The solicitor gathers medical records, witness statements and other evidence."],
                   ["Letter of claim", "A formal letter is sent to the other side setting out your claim."],
                   ["Medical evidence", "Independent medical evidence is obtained to support your claim."],
-                  ["Negotiation", "We negotiate with the other party's insurers to reach a fair settlement."],
-                  ["Settlement or court", "Most claims settle without going to court. If needed, we litigate on your behalf."],
+                  ["Negotiation", "The solicitor negotiates with the other party's insurers to try to reach a settlement."],
+                  ["Settlement or court", "Many claims settle without going to court. If not, the solicitor can raise court proceedings on your behalf."],
                   ["Compensation payment", "Once agreed, your compensation is paid to you."],
                 ].map(([step, desc], i) => (
                   <li key={i} className="flex gap-4">
@@ -214,7 +204,7 @@ export default function HomePage() {
                 <p className="font-semibold text-amber-800 mb-1">Time limits apply</p>
                 <p className="text-amber-700 text-sm">
                   In Scotland, most personal injury claims must be made within three years of the accident
-                  or the date of knowledge. Do not delay — contact us as early as possible.
+                  or the date of knowledge. Do not delay: take advice from a Scottish solicitor as early as you can.
                 </p>
                 <Link href="/personal-injury-claim-time-limits-scotland" className="text-amber-800 font-medium text-sm underline mt-2 inline-block">
                   Learn about time limits →
@@ -229,9 +219,9 @@ export default function HomePage() {
       <section className="section-pad bg-[#0f2044]">
         <div className="container-max">
           <div className="text-center mb-10">
-            <h2 className="text-3xl font-bold text-white mb-3">Why Choose Accident Claims Scotland?</h2>
+            <h2 className="text-3xl font-bold text-white mb-3">What This Website Offers</h2>
             <p className="text-gray-300 max-w-2xl mx-auto">
-              We provide general information about accident and personal injury claims in Scotland.
+              General information about accident and personal injury claims in Scotland, with sources.
             </p>
           </div>
           <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-6">
@@ -243,8 +233,8 @@ export default function HomePage() {
               },
               {
                 icon: "£",
-                title: "No win, no fee options",
-                desc: "Funding options are available so you can pursue your claim without upfront financial risk. All terms explained clearly before you proceed.",
+                title: "Funding explained",
+                desc: "A plain-English guide to no win, no fee agreements, deductions and expenses risk, so you know what to ask a solicitor.",
               },
               {
                 icon: "🏴󠁧󠁢󠁳󠁣󠁴󠁿",
@@ -253,8 +243,8 @@ export default function HomePage() {
               },
               {
                 icon: "🤝",
-                title: "No obligation enquiry",
-                desc: "Your initial enquiry is free and carries no obligation to go on with a claim.",
+                title: "Enquiry, no obligation",
+                desc: "Sending the enquiry form is free and commits you to nothing. It is not legal advice and does not stop a time limit.",
               },
               {
                 icon: "📋",
@@ -263,8 +253,8 @@ export default function HomePage() {
               },
               {
                 icon: "🔒",
-                title: "Scotland-focused",
-                desc: "Our guidance highlights where Scots law and Scottish claims procedures may differ.",
+                title: "Scots law, not England and Wales",
+                desc: "Pages flag where Scots law and Scottish procedure differ from the rules in the rest of the UK.",
               },
             ].map((item) => (
               <div key={item.title} className="bg-white/10 rounded-xl p-6 border border-white/10">
@@ -314,13 +304,13 @@ export default function HomePage() {
               This means that if your claim is unsuccessful, you will not be required to pay your solicitor&apos;s fees.
             </p>
             <p className="text-gray-700 mb-4">
-              We will explain the funding options available to you clearly and transparently before you
-              agree to proceed. Any deductions or success fees that may apply will be set out in your
-              written agreement so you know exactly where you stand.
+              A solicitor should explain the funding options clearly before you agree to proceed. Any
+              deductions or success fees that apply should be set out in your written agreement, so ask
+              for them in writing.
             </p>
             <p className="text-gray-700 mb-6">
               Eligibility for no win, no fee funding depends on the strength and merits of your claim.
-              Your solicitor will give you an honest assessment.
+              A solicitor can advise on the merits of your claim.
             </p>
             <Link
               href="/no-win-no-fee-solicitors-scotland"

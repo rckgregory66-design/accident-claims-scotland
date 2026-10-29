@@ -109,7 +109,7 @@ export default function ClaimPageTemplate({
               href="/contact"
               className="bg-red-700 hover:bg-red-800 text-white font-semibold px-6 py-3 rounded-lg transition-colors"
             >
-              Start Free Claim Check
+              Send an enquiry
             </Link>
           </div>
         </div>

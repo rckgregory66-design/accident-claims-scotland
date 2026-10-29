@@ -6,9 +6,9 @@ export default function MobileStickyCta() {
       <Link
         href="/contact"
         className="w-full bg-red-700 text-white text-center py-3.5 font-semibold text-sm flex items-center justify-center gap-2"
-        aria-label="Start your free claim check — go to enquiry form"
+        aria-label="Send an enquiry — go to enquiry form"
       >
-        Free Claim Check
+        Send an enquiry
       </Link>
     </div>
   );

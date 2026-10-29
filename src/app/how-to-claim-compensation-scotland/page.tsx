@@ -41,8 +41,8 @@ const faqs = [
 const steps = [
   {
     n: 1,
-    title: "Free initial enquiry",
-    detail: "Contact us by phone, email or online form. Tell us what happened, when, and what injuries you suffered. This is completely free and carries no obligation. Your solicitor will listen to your account and ask some initial questions to assess whether you may have a viable claim.",
+    title: "Initial contact with a solicitor",
+    detail: "Contact a Scottish solicitor. Tell them what happened, when, and what injuries you suffered. Ask whether the first conversation is free and how the claim would be funded. The solicitor will listen to your account and ask some initial questions to assess whether you may have a viable claim.",
   },
   {
     n: 2,
