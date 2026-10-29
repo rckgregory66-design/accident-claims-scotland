@@ -162,7 +162,7 @@ export default function HowToClaimPage() {
 
         <div className="mt-12">
           <h2 className="text-2xl font-bold text-[#0f2044] mb-6">Start Your Claim Enquiry</h2>
-          <ClaimForm title="Free claim assessment — no obligation" />
+          <ClaimForm title="Send an enquiry" />
         </div>
       </section>
 

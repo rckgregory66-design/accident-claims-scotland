@@ -2,6 +2,7 @@
 
 import Link from "next/link";
 import { useState, useRef, useEffect } from "react";
+import { trackEvent } from "@/lib/events";
 
 const CLAIM_TYPES = [
   "Road traffic accident",
@@ -25,6 +26,7 @@ export default function ClaimForm({ variant = "inline", title }: Props) {
   const [error, setError] = useState("");
   const isHero = variant === "hero";
   const successRef = useRef<HTMLDivElement>(null);
+  const startedRef = useRef(false);
 
   useEffect(() => {
     if (status === "sent") successRef.current?.focus();
@@ -32,6 +34,7 @@ export default function ClaimForm({ variant = "inline", title }: Props) {
 
   async function handleSubmit(event: React.FormEvent<HTMLFormElement>) {
     event.preventDefault();
+    if (status === "sending") return;
     setStatus("sending");
     setError("");
 
@@ -46,11 +49,13 @@ export default function ClaimForm({ variant = "inline", title }: Props) {
       const data = response ? await response.json().catch(() => null) : null;
       setError(data?.error ?? "Your enquiry could not be sent. Please try again later.");
       setStatus("error");
+      trackEvent("form_submit_error", { variant, reason: !response ? "network" : response.status >= 500 ? "server" : "rejected" });
       return;
     }
 
     form.reset();
     setStatus("sent");
+    trackEvent("form_submit_success", { variant });
   }
 
   if (status === "sent") {
@@ -84,7 +89,7 @@ export default function ClaimForm({ variant = "inline", title }: Props) {
       </p>
 
       <p id="req-note" className="text-xs text-gray-500 mb-2">Fields marked * are required.</p>
-      <form onSubmit={handleSubmit} className="space-y-4" aria-describedby="req-note">
+      <form onSubmit={handleSubmit} onFocus={() => { if (!startedRef.current) { startedRef.current = true; trackEvent("form_start", { variant }); } }} className="space-y-4" aria-describedby="req-note">
         <div className="hidden" aria-hidden="true">
           <label htmlFor="cf-company">Company</label>
           <input id="cf-company" name="company" type="text" tabIndex={-1} autoComplete="off" />

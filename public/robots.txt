@@ -1,13 +1,21 @@
 # robots.txt for accident-claims-scotland.com
 
-# AI search and answer agents: explicit access for citation and live answers
+# Policy notes (not directives):
+# - Googlebot and Bingbot are covered by the "*" group below. Blocking Google-Extended does not
+#   affect Google Search inclusion or AI Overviews.
+# - Google-Extended is a control token, not a separate crawler. Google documents it as governing
+#   use of crawled content for Gemini model training AND grounding, independently of Search.
+#   It is currently ALLOWED here. Whether to allow training use is the site owner's decision
+#   and has not been changed.
+# - OAI-SearchBot, ChatGPT-User and PerplexityBot fetch pages to cite or answer: allowed.
+
 User-agent: OAI-SearchBot
 User-agent: ChatGPT-User
 User-agent: PerplexityBot
 User-agent: Google-Extended
 Allow: /
 
-# Training-only crawlers stay blocked; search grounding remains allowed
+# Crawlers used mainly to collect model-training data: blocked
 User-agent: GPTBot
 User-agent: CCBot
 User-agent: Meta-ExternalAgent

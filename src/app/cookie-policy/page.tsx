@@ -15,7 +15,7 @@ export default function CookiePolicyPage() {
     <>
       <JsonLd data={[
         breadcrumbSchema([{ name: "Home", url: SITE.url }, { name: "Cookie Policy", url: `${SITE.url}/cookie-policy` }], "/cookie-policy"),
-        servicePageSchema({ name: "Cookie Policy", url: "/cookie-policy", description: "How Accident Claims Scotland uses cookies.", dateModified: "2026-09-20" }),
+        servicePageSchema({ name: "Cookie Policy", url: "/cookie-policy", description: "How Accident Claims Scotland uses cookies.", dateModified: "2026-10-29" }),
       ]} />
       <Breadcrumbs crumbs={[{ label: "Cookie Policy" }]} />
       <section className="bg-[#0f2044] py-10 px-4">
@@ -34,8 +34,7 @@ export default function CookiePolicyPage() {
         <p>This website uses the following types of cookies:</p>
         <ul>
           <li><strong>Strictly necessary cookies:</strong> Required for the website to function correctly. These cannot be disabled.</li>
-          <li><strong>Analytics cookies:</strong> We use analytics tools (such as Google Analytics) to understand how visitors use our website. This data is anonymised and aggregated.</li>
-          <li><strong>Preference cookies:</strong> To remember your preferences on subsequent visits.</li>
+          <li><strong>Analytics:</strong> The website&apos;s own code does not currently set analytics cookies or load an analytics tool. Our hosting provider, Cloudflare, may collect aggregate, cookie-free traffic statistics. If we add an analytics tool in future, this policy will be updated first.</li>
         </ul>
 
         <h2>Managing Cookies</h2>
@@ -47,8 +46,8 @@ export default function CookiePolicyPage() {
 
         <h2>Third-Party Cookies</h2>
         <p>
-          Some third-party services used on this website (such as Google Analytics) may set their own
-          cookies. We do not control these cookies. Please refer to the relevant third party&apos;s privacy
+          Some third-party services used on this website, such as our hosting and security provider, may
+          set their own cookies or similar technologies. We do not control these cookies. Please refer to the relevant third party&apos;s privacy
           and cookie policy for details.
         </p>
 
