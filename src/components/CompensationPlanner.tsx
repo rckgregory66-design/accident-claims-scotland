@@ -1,5 +1,6 @@
 "use client";
 
+import Link from "next/link";
 import { useMemo, useState } from "react";
 
 const lossGroups = [
@@ -10,6 +11,34 @@ const lossGroups = [
   { id: "travel", label: "Travel and other expenses", help: "Reasonable travel, parking, prescriptions and accident-related outlays." },
   { id: "future", label: "Long-term needs", help: "Equipment, accommodation, transport or support required in the future." },
 ];
+
+// Suggested documents per loss category. Preparation prompts only: none of these is a promise that the loss is recoverable.
+const documents: Record<string, { items: string[]; read: { label: string; href: string } }> = {
+  injury: {
+    items: ["GP, hospital and physiotherapy records", "Dated photographs of injuries and healing", "A short diary of symptoms and how daily life is affected", "Any medical reports you have been given"],
+    read: { label: "Compensation guide", href: "/personal-injury-compensation-scotland" },
+  },
+  earnings: {
+    items: ["Recent payslips and a P60", "Fit notes and sickness absence record", "Letters from your employer about pay or duties", "For self-employed work: tax returns and invoices"],
+    read: { label: "Self-employed injury claims", href: "/self-employed-injury-claims-scotland" },
+  },
+  care: {
+    items: ["A log of who helped, what they did and for how long", "Invoices or contracts for paid carers", "Statements from family or friends who helped"],
+    read: { label: "Serious injury claims", href: "/serious-injury-claims-scotland" },
+  },
+  treatment: {
+    items: ["Receipts and invoices for private treatment", "Prescription records", "Treatment plans or referral letters"],
+    read: { label: "How to claim", href: "/how-to-claim-compensation-scotland" },
+  },
+  travel: {
+    items: ["Receipts for parking, fares and fuel for appointments", "A mileage log with dates and destinations", "Receipts for accident-related purchases"],
+    read: { label: "Compensation guide", href: "/personal-injury-compensation-scotland" },
+  },
+  future: {
+    items: ["Reports from occupational therapists or other specialists", "Quotes for equipment, adaptations or transport", "Letters about expected future treatment or prognosis"],
+    read: { label: "Serious injury claims", href: "/serious-injury-claims-scotland" },
+  },
+};
 
 export default function CompensationPlanner() {
   const [selected, setSelected] = useState<string[]>([]);
@@ -55,8 +84,27 @@ export default function CompensationPlanner() {
       <div aria-live="polite" className="mt-6 rounded-xl bg-blue-50 p-5 text-blue-950">
         <p className="font-bold">Planning result</p>
         <p className="mt-1">{message}</p>
-        {selected.length > 0 && <p className="mt-3 text-sm">Checklist selected: {selected.length} of {lossGroups.length} potential heads of loss. Keep receipts, wage evidence, care notes and relevant medical records.</p>}
+        {selected.length > 0 && <p className="mt-3 text-sm">Checklist selected: {selected.length} of {lossGroups.length} potential heads of loss.</p>}
       </div>
+
+      {selected.length > 0 && (
+        <div className="mt-6" id="planner-checklist">
+          <h3 className="text-xl font-bold text-[#0f2044]">Documents worth gathering</h3>
+          <p className="mt-1 text-sm text-slate-600">Suggestions only. Having a document does not mean a loss is recoverable; a solicitor can advise on what matters in your case.</p>
+          {lossGroups.filter((g) => selected.includes(g.id)).map((g) => (
+            <div key={g.id} className="mt-4">
+              <h4 className="font-semibold text-[#0f2044]">{g.label}</h4>
+              <ul className="mt-1 list-disc space-y-1 pl-5 text-slate-700">
+                {documents[g.id].items.map((d) => <li key={d}>{d}</li>)}
+              </ul>
+              <p className="no-print mt-1 text-sm"><Link href={documents[g.id].read.href} className="text-red-700 underline">{documents[g.id].read.label}</Link></p>
+            </div>
+          ))}
+          <button type="button" onClick={() => window.print()} className="no-print mt-6 rounded-lg bg-[#0f2044] px-5 py-3 font-semibold text-white hover:bg-[#1a3366]">
+            Print this checklist
+          </button>
+        </div>
+      )}
     </div>
   );
 }

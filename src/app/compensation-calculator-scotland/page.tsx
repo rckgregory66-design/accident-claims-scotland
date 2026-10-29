@@ -38,7 +38,7 @@ export default function CompensationCalculatorPage() {
           <p className="mt-4 max-w-3xl text-lg text-slate-200">Map the parts of a potential claim and the evidence you may need. The tool deliberately avoids invented settlement estimates.</p>
         </div>
       </section>
-      <main className="mx-auto max-w-5xl px-4 py-12 sm:px-6">
+      <div className="mx-auto max-w-5xl px-4 py-12 sm:px-6">
         <div id="direct-answer" className="answer-box mb-8"><p className="text-blue-900">A Scottish personal injury claim is valued from evidence, not a single tariff. Injury severity and duration matter, but earnings, care, treatment and future needs can be equally important. Use this planner to identify possible gaps before reading the detailed compensation guide.</p></div>
         <CompensationPlanner />
         <div className="prose-legal mt-12">
@@ -54,7 +54,7 @@ export default function CompensationCalculatorPage() {
           <Link className="card font-semibold text-red-700" href="/personal-injury-claim-time-limits-scotland">Check Scottish time limits →</Link>
           <Link className="card font-semibold text-red-700" href="/contact">Send an enquiry →</Link>
         </div>
-      </main>
+      </div>
       <FAQ faqs={faqs} />
     </>
   );

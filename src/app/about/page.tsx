@@ -3,7 +3,7 @@ import Link from "next/link";
 import CtaSection from "@/components/CtaSection";
 import Breadcrumbs from "@/components/Breadcrumbs";
 import JsonLd from "@/components/JsonLd";
-import { organizationSchema, breadcrumbSchema, servicePageSchema } from "@/lib/schema";
+import { breadcrumbSchema, servicePageSchema } from "@/lib/schema";
 import { SITE } from "@/data/siteConfig";
 
 export const metadata: Metadata = {
@@ -17,7 +17,6 @@ export default function AboutPage() {
   return (
     <>
       <JsonLd data={[
-        organizationSchema(),
         breadcrumbSchema([{ name: "Home", url: SITE.url }, { name: "About Us", url: `${SITE.url}/about` }], "/about"),
         servicePageSchema({ name: "About Accident Claims Scotland", url: "/about", description: "About the Accident Claims Scotland information website, operated by Ola Consultants Ltd, covering personal injury and accident claims in Scotland.", dateModified: "2026-08-11" }),
       ]} />

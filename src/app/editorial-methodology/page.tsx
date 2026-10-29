@@ -33,7 +33,7 @@ export default function EditorialMethodologyPage() {
           <p className="mt-4 max-w-3xl text-lg text-slate-200">How this website researches, qualifies, updates and corrects general information about accident claims in Scotland.</p>
         </div>
       </section>
-      <main className="prose-legal mx-auto max-w-4xl px-4 py-12 sm:px-6">
+      <div className="prose-legal mx-auto max-w-4xl px-4 py-12 sm:px-6">
         <div id="methodology-answer" className="answer-box">
           <p className="text-blue-900">Accident Claims Scotland prioritises Scottish primary legislation and official public bodies, states important qualifications, links readers to the underlying source and separates general information from advice on an individual case. Content is updated when material law or official guidance changes and corrections are invited.</p>
         </div>
@@ -65,7 +65,7 @@ export default function EditorialMethodologyPage() {
 
         <h2>Commercial and regulatory status</h2>
         <p>Marketing wording does not replace verification of a legal provider. Firm identities, solicitor biographies, memberships, reviews and regulatory claims will only be published when genuine details can be checked. Read the current <Link href="/about">status information</Link>, <Link href="/terms">terms of use</Link> and <Link href="/privacy-policy">privacy policy</Link>.</p>
-      </main>
+      </div>
     </>
   );
 }

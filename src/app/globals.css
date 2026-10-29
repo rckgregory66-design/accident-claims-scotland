@@ -112,3 +112,9 @@ button:focus-visible {
 
 /* Keep focused fields clear of the sticky mobile CTA bar */
 @media (max-width: 767px) { html { scroll-padding-bottom: 5rem; } }
+
+/* Print view: hide site chrome and interactive extras */
+@media print {
+  header, footer, .mobile-sticky, .skip-link, .no-print, nav, details { display: none !important; }
+  body { background: #fff; color: #000; }
+}
