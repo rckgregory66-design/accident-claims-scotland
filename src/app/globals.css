@@ -109,3 +109,6 @@ button:focus-visible {
     transition-duration: 0.01ms !important;
   }
 }
+
+/* Keep focused fields clear of the sticky mobile CTA bar */
+@media (max-width: 767px) { html { scroll-padding-bottom: 5rem; } }

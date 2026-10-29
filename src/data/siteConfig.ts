@@ -18,6 +18,7 @@ export const NAV_LINKS = [
       { label: "Medical Negligence", href: "/medical-negligence-claims-scotland" },
       { label: "Industrial Disease", href: "/industrial-disease-claims-scotland" },
       { label: "Serious Injury", href: "/serious-injury-claims-scotland" },
+      { label: "Fatal Accident Claims", href: "/guides/fatal-accident-compensation-scotland" },
       { label: "Public Place Accidents", href: "/public-place-accident-claims-scotland" },
       { label: "Criminal Injury", href: "/criminal-injury-compensation-scotland" },
     ],
@@ -71,7 +72,7 @@ export const CLAIM_TYPES = [
   },
   {
     label: "Fatal Accident Claims",
-    href: "/serious-injury-claims-scotland#fatal",
+    href: "/guides/fatal-accident-compensation-scotland",
     icon: "🕊️",
     desc: "Bereavement claims and dependency claims for families",
   },

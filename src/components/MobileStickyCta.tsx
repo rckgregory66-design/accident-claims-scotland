@@ -1,6 +1,11 @@
+"use client";
+
 import Link from "next/link";
+import { usePathname } from "next/navigation";
 
 export default function MobileStickyCta() {
+  // The enquiry form is the page on /contact, so the bar would only cover it.
+  if (usePathname()?.replace(/\/$/, "") === "/contact") return null;
   return (
     <div className="mobile-sticky flex border-t border-gray-200 shadow-lg">
       <Link

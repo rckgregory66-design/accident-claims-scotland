@@ -127,9 +127,8 @@ export default function HomePage() {
               <Link
                 key={ct.href}
                 href={ct.href}
-                className="card hover:border-red-200 hover:shadow-red-100 group"
+                className="card border-t-4 border-t-red-700 hover:border-red-200 hover:shadow-red-100 group"
               >
-                <div className="text-3xl mb-3">{ct.icon}</div>
                 <h3 className="font-bold text-[#0f2044] text-base mb-2 group-hover:text-red-700 transition-colors">
                   {ct.label}
                 </h3>
@@ -227,38 +226,31 @@ export default function HomePage() {
           <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-6">
             {[
               {
-                icon: "⚖️",
                 title: "Scottish claims information",
                 desc: "Learn what information a Scottish personal injury solicitor may need when assessing a claim.",
               },
               {
-                icon: "£",
                 title: "Funding explained",
                 desc: "A plain-English guide to no win, no fee agreements, deductions and expenses risk, so you know what to ask a solicitor.",
               },
               {
-                icon: "🏴󠁧󠁢󠁳󠁣󠁴󠁿",
                 title: "Scotland-wide coverage",
                 desc: "Guidance for injured people from Glasgow and Edinburgh to Aberdeen, Inverness and everywhere in between.",
               },
               {
-                icon: "🤝",
                 title: "Enquiry, no obligation",
                 desc: "Sending the enquiry form is free and commits you to nothing. It is not legal advice and does not stop a time limit.",
               },
               {
-                icon: "📋",
                 title: "Sourced guidance",
                 desc: "Personal injury, medical negligence, industrial disease and serious injury guides that cite legislation and official sources.",
               },
               {
-                icon: "🔒",
                 title: "Scots law, not England and Wales",
                 desc: "Pages flag where Scots law and Scottish procedure differ from the rules in the rest of the UK.",
               },
             ].map((item) => (
               <div key={item.title} className="bg-white/10 rounded-xl p-6 border border-white/10">
-                <div className="text-3xl mb-3">{item.icon}</div>
                 <h3 className="text-white font-bold text-base mb-2">{item.title}</h3>
                 <p className="text-gray-300 text-sm leading-relaxed">{item.desc}</p>
               </div>

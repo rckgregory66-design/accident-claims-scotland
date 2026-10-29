@@ -11,8 +11,9 @@
     "check:placeholders": "node scripts/check-placeholders.mjs",
     "indexnow": "node scripts/submit-indexnow.mjs",
     "check:pillars": "node scripts/check-pillar-pages.mjs",
+    "check:links": "node scripts/check-internal-links.mjs",
     "test:worker": "node scripts/test-enquiry-worker.mjs",
-    "check": "npm run check:placeholders && npm run lint && npm run typecheck && npm run build && npm run check:pillars && npm run test:worker"
+    "check": "npm run check:placeholders && npm run lint && npm run typecheck && npm run build && npm run check:pillars && npm run check:links && npm run test:worker"
   },
   "dependencies": {
     "next": "16.2.9",

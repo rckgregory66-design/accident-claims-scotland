@@ -6,9 +6,9 @@ import { breadcrumbSchema, servicePageSchema } from "@/lib/schema";
 import { SITE } from "@/data/siteConfig";
 
 export const metadata: Metadata = {
-  title: "Contact Accident Claims Scotland | Free Claim Enquiry",
+  title: "Contact Accident Claims Scotland | Send an Enquiry",
   description:
-    "Send a free, no-obligation enquiry about a personal injury or accident claim in Scotland using the online form. Accident Claims Scotland provides general information, not legal advice.",
+    "Send an enquiry about a personal injury or accident claim in Scotland using the online form. Free, no obligation. This website provides general information, not legal advice.",
   alternates: { canonical: "/contact" },
 };
 
@@ -25,7 +25,7 @@ export default function ContactPage() {
         <div className="max-w-4xl mx-auto">
           <h1 className="text-3xl sm:text-4xl font-bold text-white mb-4">Contact Accident Claims Scotland</h1>
           <p className="text-gray-300 text-lg">
-            Send a free, no-obligation enquiry about your accident. This website provides general
+            Send an enquiry about your accident. It is free and carries no obligation. This website provides general
             information and does not give legal advice on individual cases.
           </p>
         </div>
@@ -35,12 +35,12 @@ export default function ContactPage() {
         <div className="grid lg:grid-cols-2 gap-12">
           {/* Form */}
           <div>
-            <h2 className="text-2xl font-bold text-[#0f2044] mb-2">Start Your Claim Enquiry</h2>
+            <h2 className="text-2xl font-bold text-[#0f2044] mb-2">Before you send an enquiry</h2>
             <p className="text-gray-600 mb-6">
               Complete the form below. Sending an enquiry is free and carries no obligation, and it does
               not create a solicitor-client relationship.
             </p>
-            <ClaimForm title="Free Claim Assessment" />
+            <ClaimForm title="Send an enquiry" />
           </div>
 
           {/* Contact details */}
