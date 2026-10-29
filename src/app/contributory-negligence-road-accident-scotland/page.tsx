@@ -64,7 +64,7 @@ export default function ContributoryNegligenceRoadAccidentPage() {
         "Passengers can claim even against an uninsured or drunk driver, subject to possible deduction.",
         "Time limit: three years from the accident date.",
       ]}
-      answerBox="In Scotland, contributory negligence reduces your road accident compensation in proportion to your share of the blame — it does not prevent a claim. If another party was at least partly responsible, you can still recover. The time limit is three years. A solicitor can assess your position; this website cannot give legal advice."
+      answerBox="In Scotland, contributory negligence reduces your road accident compensation in proportion to your share of the blame — it does not prevent a claim. If another party was at least partly responsible, you can still recover. The time limit is three years."
       sections={[
         {
           heading: "What Is Contributory Negligence?",

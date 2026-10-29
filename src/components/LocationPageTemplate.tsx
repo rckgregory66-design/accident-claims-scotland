@@ -45,7 +45,7 @@ export default function LocationPageTemplate({
       <section className="bg-[#0f2044] py-14 px-4 sm:px-6">
         <div className="max-w-7xl mx-auto">
           <h1 className="text-3xl sm:text-4xl lg:text-5xl font-bold text-white leading-tight mb-4 max-w-4xl">
-            Accident Claims {city}: Personal Injury Claim Information for {city} and Surrounding Areas
+            Accident Claims in {city}: Personal Injury Claim Information
           </h1>
           <p className="text-gray-300 text-lg max-w-3xl leading-relaxed">{intro}</p>
           <div className="flex flex-wrap gap-4 mt-7">
@@ -70,7 +70,7 @@ export default function LocationPageTemplate({
             <h2>Personal Injury Claims in {city}</h2>
             <p>{localContext}</p>
 
-            <h2>Claim Types Handled in {city}</h2>
+            <h2>Claim Types Covered in {city}</h2>
             <p>People in {city} may seek advice about a range of personal injury and accident compensation claims:</p>
             <ul>
               {CLAIM_TYPES.map((ct) => (

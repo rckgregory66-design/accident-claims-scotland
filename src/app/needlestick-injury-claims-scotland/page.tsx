@@ -64,7 +64,7 @@ export default function NeedlestickPage() {
         "Time limit: three years from the date of injury or date of knowledge.",
         "Sending an enquiry through this website is free; it is not legal advice.",
       ]}
-      answerBox="In Scotland, healthcare workers and others injured by needlestick or sharps accidents can claim compensation where the employer breached their legal duties. Claims can cover the anxiety and distress of the post-exposure monitoring period, even where no infection occurs. The time limit is generally three years. A solicitor can assess your claim; this website cannot."
+      answerBox="In Scotland, healthcare workers and others injured by needlestick or sharps accidents can claim compensation where the employer breached their legal duties. Claims can cover the anxiety and distress of the post-exposure monitoring period, even where no infection occurs. The time limit is generally three years."
       sections={[
         {
           heading: "What Is a Needlestick Injury Claim?",

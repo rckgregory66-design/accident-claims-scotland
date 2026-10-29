@@ -64,7 +64,7 @@ export default function ShopAccidentPage() {
         "Warning cones do not automatically defeat a claim if the hazard was inadequately managed.",
         "Time limit: three years from the date of the accident.",
       ]}
-      answerBox="In Scotland, shop and retail accidents give rise to a claim under the Occupiers' Liability (Scotland) Act 1960 where the occupier failed to take reasonable care to prevent a foreseeable hazard. The time limit is three years. Request CCTV preservation immediately — footage can be overwritten within days. A solicitor can assess your claim; this website cannot."
+      answerBox="In Scotland, shop and retail accidents give rise to a claim under the Occupiers' Liability (Scotland) Act 1960 where the occupier failed to take reasonable care to prevent a foreseeable hazard. The time limit is three years. Request CCTV preservation immediately — footage can be overwritten within days."
       sections={[
         {
           heading: "Occupiers' Liability in Scottish Retail Premises",

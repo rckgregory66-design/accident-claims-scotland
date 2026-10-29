@@ -64,7 +64,7 @@ export default function HotelAccidentPage() {
         "Report the accident and request an accident report before leaving the hotel.",
         "Time limit: three years from the date of the accident.",
       ]}
-      answerBox="In Scotland, hotels owe guests a legal duty of care as occupiers. If you were injured because the hotel failed to keep its premises reasonably safe — through a slippery floor, defective furnishings, unsafe pool or any other hazard — you may claim compensation. The time limit is three years. A solicitor can assess your claim; this website cannot."
+      answerBox="In Scotland, hotels owe guests a legal duty of care as occupiers. If you were injured because the hotel failed to keep its premises reasonably safe — through a slippery floor, defective furnishings, unsafe pool or any other hazard — you may claim compensation. The time limit is three years."
       sections={[
         {
           heading: "Hotels and Occupiers' Liability in Scotland",

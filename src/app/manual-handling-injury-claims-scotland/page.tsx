@@ -64,7 +64,7 @@ export default function ManualHandlingPage() {
         "Contributory negligence may reduce but not necessarily bar your claim.",
         "Sending an enquiry through this website is free; it is not legal advice.",
       ]}
-      answerBox="In Scotland, if you have been injured through manual handling at work — whether a single incident or a gradually developing condition — your employer may be liable if they failed to comply with the Manual Handling Operations Regulations 1992. The time limit is generally three years from the accident or date of knowledge. A solicitor can assess your position; this website cannot give legal advice."
+      answerBox="In Scotland, if you have been injured through manual handling at work — whether a single incident or a gradually developing condition — your employer may be liable if they failed to comply with the Manual Handling Operations Regulations 1992. The time limit is generally three years from the accident or date of knowledge."
       sections={[
         {
           heading: "What Are Manual Handling Injuries?",

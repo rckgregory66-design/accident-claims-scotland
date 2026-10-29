@@ -56,7 +56,7 @@ export default function NoWinNoFeePage() {
         "Always check your existing insurance policies — you may already have legal expenses cover.",
         "All funding terms must be set out in writing and explained clearly before you sign.",
       ]}
-      answerBox="In Scotland, no win, no fee means that if your personal injury or accident claim is unsuccessful, you will not have to pay your solicitor's fees. If your claim succeeds, a payment may be deducted from your compensation to cover legal costs — the exact amount will be set out in your written agreement before you proceed. All funding terms are explained clearly and there is no obligation."
+      answerBox="In Scotland, no win, no fee means you do not pay your solicitor's fees if your personal injury claim fails. If it succeeds, part of your compensation may go towards legal costs, capped by law for most personal injury claims. The exact deduction must be set out in a written agreement before the claim starts."
       sections={[
         {
           heading: "What is No Win, No Fee?",

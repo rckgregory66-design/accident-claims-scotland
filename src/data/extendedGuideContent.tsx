@@ -46,6 +46,7 @@ const guideData: Record<string, Guide> = {
       commonSources.court,
     ],
     parent: { href: "/road-traffic-accident-claims-scotland", label: "Road traffic accident service overview" },
+    seeAlso: [{ href: "/child-road-accident-claims-scotland", label: "Child road accident claims in Scotland" }],
   },
   "whiplash-claims-scotland": {
     answer:
@@ -88,7 +89,7 @@ const guideData: Record<string, Guide> = {
   },
   "motorcycle-accident-claims-scotland": {
     answer:
-      "Motorcycle claims require the same core proof as other road claims, but visibility, filtering, junction observation, road surface and protective equipment frequently need closer analysis. Serious injury also makes future care, earnings and rehabilitation evidence especially important.",
+      "A motorcycle claim in Scotland needs the same proof as any road claim: that another party failed to take reasonable care and caused your injury. Visibility, filtering, junction observation, road surface and protective clothing often need closer analysis. Because injuries are frequently serious, early evidence about future care, earnings and rehabilitation matters. The general time limit is three years.",
     distinct:
       "This guide concentrates on motorcycling evidence and arguments—not a repackaged car-accident page—including filtering, SMIDSY-type junction collisions and equipment preservation.",
     sections: [
@@ -186,7 +187,7 @@ const guideData: Record<string, Guide> = {
   },
   "construction-accident-claims-scotland": {
     answer:
-      "A construction injury claim may involve an employer, principal contractor, subcontractor, equipment supplier, occupier or another dutyholder. Identify who controlled the work and preserve site evidence before conditions, records and personnel change.",
+      "A construction injury claim in Scotland may be against an employer, principal contractor, subcontractor, equipment supplier or site occupier. The first task is to identify who controlled the work. The Construction (Design and Management) Regulations 2015 set out each party's safety duties. Preserve site evidence quickly, because conditions, records and personnel change fast. The general time limit is three years.",
     distinct:
       "This guide maps the construction dutyholder and evidence problem, including work at height, contractor status, method statements and RIDDOR—rather than repeating general workplace-claim content.",
     sections: [
@@ -224,7 +225,7 @@ const guideData: Record<string, Guide> = {
   },
   "council-pavement-trip-claims-scotland": {
     answer:
-      "A trip on a council-maintained pavement is not automatically the council’s fault. The claim must identify a dangerous defect, prove it caused the fall and address whether the roads authority’s inspection and maintenance response was reasonable.",
+      "A trip on a council pavement in Scotland is not automatically the council's fault. You must show there was a dangerous defect, that it caused your fall, and that the roads authority failed to take reasonable care in inspecting and repairing it. Photographs with measurements and the council's inspection records are usually decisive. The general time limit is three years.",
     distinct:
       "This guide focuses on the statutory roads duty, the inspection-system defence and the exact measurements and records needed in a pavement case.",
     sections: [
@@ -263,7 +264,7 @@ const guideData: Record<string, Guide> = {
 
   "noise-induced-hearing-loss-claims-scotland": {
     answer:
-      "Noise-induced hearing loss (NIHL) from workplace exposure is a compensable occupational disease in Scotland. The three-year limitation period runs from the date of knowledge — ordinarily when an audiologist or doctor first tells you that your hearing loss is work-related — not from the date of exposure. Claims can often be made against former employers no longer trading via their historic liability insurers.",
+      "Work-related noise-induced hearing loss can be claimed in Scotland. The three-year time limit runs from the date of knowledge, usually when a doctor or audiologist tells you the loss is linked to work, not from the date of exposure. If a former employer has closed, a claim can often be made against its historic liability insurer.",
     distinct:
       "This guide focuses on date-of-knowledge limitation, the difference between NIHL and age-related loss, audiological evidence and routes to trace historic insurers. It does not repeat the general industrial-disease framework.",
     sections: [
@@ -327,7 +328,7 @@ const guideData: Record<string, Guide> = {
 
   "slip-trip-fall-claims-scotland": {
     answer:
-      "A slip, trip or fall claim in Scotland requires proof that the occupier or responsible party failed to take reasonable care of the pursuer's safety, and that the failure caused injury. The governing statute for premises is the Occupiers' Liability (Scotland) Act 1960. The standard of care owed depends on whether the danger was known or foreseeable, what inspection or maintenance systems were in place, and what the occupier actually did.",
+      "A slip, trip or fall claim in Scotland must prove that the occupier or responsible party failed to take reasonable care for your safety and that this caused your injury. The Occupiers' Liability (Scotland) Act 1960 applies to premises. What counts as reasonable depends on whether the danger was known or foreseeable and what inspection systems existed.",
     distinct:
       "This guide focuses on the 1960 Act duty, the role of inspection systems, contributory negligence, the evidence needed for slips and trips respectively, and the common defences. It supplements the general public place accident page.",
     sections: [
@@ -348,7 +349,7 @@ const guideData: Record<string, Guide> = {
 
   "supermarket-accident-claims-scotland": {
     answer:
-      "Supermarkets and retailers owe customers a duty under the Occupiers' Liability (Scotland) Act 1960 to take reasonable care to prevent injury. The most common incidents are wet floor slips, spillages, falling goods and trolley or racking hazards. A successful claim usually requires evidence that the hazard was known or should have been found by a reasonable inspection and cleaning system — and was not dealt with in time.",
+      "Supermarkets in Scotland must take reasonable care to prevent injury to customers under the Occupiers' Liability (Scotland) Act 1960. Common incidents are wet floors, spillages, falling goods and trolley or racking hazards. A claim usually needs evidence that a reasonable inspection and cleaning system would have found and dealt with the hazard in time.",
     distinct:
       "This guide focuses on the specific evidence patterns for supermarket and retail premises claims, the role of inspection records and CCTV, and what common defences retailers raise. It supplements the general slip, trip and fall guide.",
     sections: [
@@ -369,7 +370,7 @@ const guideData: Record<string, Guide> = {
 
   "vibration-white-finger-claims-scotland": {
     answer:
-      "Vibration white finger (VWF), also known as hand-arm vibration syndrome (HAVS), is an occupational disease caused by prolonged use of vibrating tools. A claim in Scotland requires proof that the employer knew or should have known of the risk, failed to take reasonable steps to prevent or reduce exposure, and that the failure caused the condition. The three-year limitation period runs from the date of knowledge — usually when a doctor links symptoms to occupational vibration.",
+      "Vibration white finger, or hand-arm vibration syndrome, is caused by prolonged use of vibrating tools. A Scottish claim must prove the employer knew or should have known of the risk, failed to take reasonable steps to reduce exposure, and caused the condition. The three-year time limit usually runs from when a doctor links your symptoms to work.",
     distinct:
       "This guide focuses on the HAVS staging system, employer duties under the Control of Vibration at Work Regulations, date-of-knowledge limitation, and the medical evidence required. It supplements the industrial disease overview.",
     sections: [
@@ -392,7 +393,7 @@ const guideData: Record<string, Guide> = {
 
   "care-home-negligence-claims-scotland": {
     answer:
-      "Care homes in Scotland owe residents a duty of care under both common law and the Care Inspectorate regulatory regime. Claims typically arise from pressure sores, unexplained falls, poor nutrition and hydration, medication errors and inadequate supervision of residents with dementia. A claim requires evidence that care fell below the standard of a reasonably competent care provider and that the failure caused avoidable harm.",
+      "Care homes in Scotland owe residents a duty of care and are regulated by the Care Inspectorate. Claims often involve pressure sores, unexplained falls, poor nutrition or hydration, medication errors and inadequate dementia supervision. You must show that care fell below the standard of a reasonably competent care provider and that this caused avoidable harm.",
     distinct:
       "This guide covers the Care Inspectorate framework, the common failure patterns in care homes, access to records, and the role of expert nursing and care evidence. It supplements the medical negligence overview.",
     sections: [
@@ -432,7 +433,7 @@ const guideData: Record<string, Guide> = {
   },
   "benefits-deducted-from-compensation-scotland": {
     answer:
-      "Usually not from the part of compensation that is for pain and suffering. When a Scottish injury claim settles, the paying insurer must repay certain DWP benefits you received because of the injury to the Compensation Recovery Unit (CRU). The insurer may then reduce only the matching parts of your award: past lost earnings, past care and past mobility costs, and only by benefits listed for that same need. NHS treatment charges are paid by the insurer and cannot be taken from your compensation.",
+      "Benefits are not deducted from compensation for pain and suffering. When a Scottish claim settles, the insurer repays certain injury-related DWP benefits to the Compensation Recovery Unit. It may then reduce only your past lost earnings, past care and past mobility awards, by benefits paid for that same need. NHS charges are never taken from your compensation.",
     distinct:
       "Most compensation pages list what you can claim. This guide explains what can later come off a settlement because of social security benefits, which parts of an award are protected, and how to check the CRU certificate. It is based on the DWP technical guidance updated on 1 October 2026 and the Social Security (Recovery of Benefits) Act 1997, which extends to Scotland.",
     sections: [
@@ -479,7 +480,7 @@ const guideData: Record<string, Guide> = {
   },
   "legal-aid-personal-injury-claims-scotland": {
     answer:
-      "Civil legal aid can be available for a personal injury claim in Scotland, but it is not automatic. The Scottish Legal Aid Board (SLAB) must be satisfied that there is probable cause (a reasonable basis for the claim) and that it is reasonable for you to receive legal aid, and it also tests your income and capital. Your solicitor applies for you, and SLAB, not the solicitor, decides. For work and industrial disease claims, SLAB also asks about trade union funding.",
+      "Civil legal aid can be available for a Scottish personal injury claim, but it is not automatic. The Scottish Legal Aid Board must be satisfied there is probable cause, that legal aid is reasonable, and that your income and capital qualify. Your solicitor applies, and SLAB decides. SLAB may also ask whether trade union funding is available.",
     distinct:
       "Our no win, no fee guide compares success-fee agreements. This guide covers the other route: how Scottish civil legal aid is decided for injury claims, what SLAB asks for, and what you may have to pay back. It is general information for Scots law as checked on 23 October 2026, not advice on your case.",
     sections: [

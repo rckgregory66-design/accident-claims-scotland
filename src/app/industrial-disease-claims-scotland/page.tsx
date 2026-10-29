@@ -56,7 +56,7 @@ export default function IndustrialDiseasePage() {
         "Expert medical and occupational hygiene evidence is essential.",
         "Scotland's rules on date of knowledge give more flexibility than pure accident time limits.",
       ]}
-      answerBox="In Scotland, industrial disease claims can be made even if your condition developed years or decades after exposure. The three-year time limit runs from your date of knowledge — usually the date of diagnosis or when you became aware your illness was work-related. A solicitor can assess your position; this website cannot give legal advice."
+      answerBox="In Scotland, industrial disease claims can be made even if your condition developed years or decades after exposure. The three-year time limit runs from your date of knowledge — usually the date of diagnosis or when you became aware your illness was work-related."
       sections={[
         {
           heading: "What is an Industrial Disease?",

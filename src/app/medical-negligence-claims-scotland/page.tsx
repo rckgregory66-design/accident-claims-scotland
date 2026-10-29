@@ -61,7 +61,7 @@ export default function MedicalNegligencePage() {
         "Independent expert medical evidence is essential in every clinical negligence case.",
         "Children and adults lacking capacity have special time limit protections.",
       ]}
-      answerBox="In Scotland, a medical negligence claim can be made if you received care that fell below the standard of a reasonably competent practitioner, and that failure caused you avoidable harm. The time limit is three years from the negligent treatment or your date of knowledge. A solicitor can assess your position; this website cannot give legal advice."
+      answerBox="In Scotland, a medical negligence claim can be made if you received care that fell below the standard of a reasonably competent practitioner, and that failure caused you avoidable harm. The time limit is three years from the negligent treatment or your date of knowledge."
       sections={[
         {
           heading: "What is Medical Negligence?",

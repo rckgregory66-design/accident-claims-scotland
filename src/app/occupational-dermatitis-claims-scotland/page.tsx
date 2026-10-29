@@ -64,7 +64,7 @@ export default function OccupationalDermatitisPage() {
         "Time limit: three years from when you knew the condition was work-related.",
         "Sensitisation can cause permanent employment restrictions — future loss is recoverable.",
       ]}
-      answerBox="In Scotland, if you developed occupational dermatitis through exposure to irritants or allergens at work, and your employer failed their COSHH duty to protect your skin, you may claim compensation. The time limit is three years from your date of knowledge. A solicitor can assess your position; this website cannot give legal advice."
+      answerBox="In Scotland, if you developed occupational dermatitis through exposure to irritants or allergens at work, and your employer failed their COSHH duty to protect your skin, you may claim compensation. The time limit is three years from your date of knowledge."
       sections={[
         {
           heading: "Types of Occupational Dermatitis",

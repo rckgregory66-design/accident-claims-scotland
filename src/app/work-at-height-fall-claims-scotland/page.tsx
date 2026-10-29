@@ -64,7 +64,7 @@ export default function WorkAtHeightPage() {
         "Self-employed and agency workers may have claims against the site controller.",
         "The general limitation period is three years.",
       ]}
-      answerBox="If you were injured in a fall from height at work in Scotland, your employer or the person controlling the site may be liable if they failed to follow the Work at Height Regulations 2005 or otherwise failed to take reasonable care. The regulations require work at height to be avoided where practicable, falls to be prevented, and the consequences minimised. The general time limit is three years."
+      answerBox="If you were injured in a fall from height at work in Scotland, your employer or whoever controlled the site may be liable for failing to take reasonable care. The Work at Height Regulations 2005, which require such work to be avoided where practicable and falls prevented, are strong evidence of that duty. The general time limit is three years."
       sections={[
         {
           heading: "What counts as work at height",

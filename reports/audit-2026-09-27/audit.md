@@ -24,8 +24,8 @@ Site: https://accident-claims-scotland.com. Builds on `reports/audit-2026-09-20/
 | 10 | Content-hashed JS/CSS bundles have no long-lived cache policy | Recommended | **Fixed** (inference, see below) |
 | 11 | Cloudflare Early Hint preloads a 404 image | Recommended | **Fixed** (`! Link` in `_headers`; verify after deploy) |
 | 12 | Two noindex location pages are orphaned | Recommended | **Fixed** (added to `LOCATIONS`, still noindex) |
-| 13 | Articles have no named author or reviewer, and the Organization has no `logo` or `sameAs` | Recommended (YMYL E-E-A-T) | Open (needs real data) |
-| 14 | Weak internal linking to 8 detail pages (1 inlink each) | Recommended | **Fixed for 6** (solicitor-approved links); 2 pages still need a link |
+| 13 | Articles have no named author or reviewer, and the Organization has no `logo` or `sameAs` | Recommended (YMYL E-E-A-T) | **Logo and Companies House done 29 Oct**; named reviewer still open |
+| 14 | Weak internal linking to 8 detail pages (1 inlink each) | Recommended | **Fixed** (all 8, solicitor-approved links) |
 | 15 | FAQPage, HowTo, Speakable and llms.txt: what to expect from each | Informational | No change |
 
 Checked and found correct: every indexable URL has one H1 and a self-referencing canonical. Every sitemap URL returns a built page, and no noindex page is in the sitemap. All JSON-LD parses. All 112 URLs in `llms.txt` resolve. Critical content and links are in the initial HTML, so nothing depends on client-side rendering. Lighthouse lab results: LCP 0.40 s, CLS 0, total blocking time is negligible, and the SEO score is 100. robots.txt matches the stated policy (details under item 15).
@@ -84,7 +84,7 @@ Checked and found correct: every indexable URL has one H1 and a self-referencing
 
   **Shipped 27 Sep after solicitor review of these links.** In the three JSX guides (`guideContent.tsx`), each link is a one-line sentence under the relevant heading. The four data guides (`extendedGuideContent.tsx`) use a new optional `seeAlso` field, rendered as a "Related claim pages" list. The added text only points to the page and adds no legal statement. Result: each of the six targets now has 2 or more inlinks (occupational dermatitis has 3).
 
-  **Still open:** `/child-road-accident-claims-scotland` and `/needlestick-injury-claims-scotland` were in the list of 8 but this table gave them no guide link, so they still have 1 inlink each. Proposed pairs for the solicitor to approve: `/guides/road-traffic-accident-claims-scotland` → child road accident claims, and `/guides/accident-at-work-claim-scotland` → needlestick injury claims.
+  **Closed 29 Oct (solicitor-approved):** `/guides/road-traffic-accident-claims-scotland` now links to child road accident claims, and `/guides/accident-at-work-claim-scotland` links to needlestick injury claims. All eight pages now have at least two inlinks.
 
 ### Page-type intent map (reference)
 
@@ -255,10 +255,80 @@ Proposed, not shipped (low priority): 8 of the 10 location templates are noindex
 | HowTo (`/how-to-claim-compensation-scotland`) | Valid | Google removed HowTo rich results in September 2023. No SERP effect. |
 | Speakable | Present | Google calls it beta, for news publishers, US English. No effect for this site. The selectors are harmless. |
 | `llms.txt` | 112 URLs, all resolve | A community proposal. No major answer engine has confirmed it uses the file. Keep it accurate at low cost. |
-| robots.txt AI rules | Correct for the stated policy | GPTBot, ClaudeBot, CCBot and Google-Extended are training crawlers and are blocked. OAI-SearchBot (ChatGPT search), Claude-SearchBot, PerplexityBot and Googlebot (which also feeds AI Overviews) are allowed by `User-agent: *`. Blocking Google-Extended does not affect Search or AI Overviews (Google, "Common crawlers"). |
+| robots.txt AI rules | Updated 29 Oct (GEO batch 1) | GPTBot, ClaudeBot, CCBot and other training crawlers are blocked. OAI-SearchBot, ChatGPT-User, PerplexityBot and Google-Extended are explicitly allowed, and everything else is allowed by `User-agent: *`. Google-Extended covers both Gemini training and Gemini app grounding, so allowing it is the only way to be cited in Gemini app answers; it has no effect on Google Search or AI Overviews. |
 
 ## Validation
 
 `npm run check` passes: placeholder check, ESLint, `tsc`, `next build` (129 routes) and the pillar checker (30 children). A re-crawl of the build shows 0 broken internal links, 0 orphan indexable pages, one H1 per page, self-canonicals on all indexable pages, and every JSON-LD block parses with no dangling `@id`.
 
 Changes reach the live site only after a Cloudflare Pages deploy. After deploy, resubmit with `npm run indexnow` and request re-crawl of `/` in Search Console.
+
+---
+
+## Completion pass (29 October 2026)
+
+This pass closes the gaps left after 27 September: query clustering (Phase 1), copy for the remaining templates (Phase 2) and a mobile test (Phase 4). It starts from `main` at `12180a8`, which already includes GEO batch 1.
+
+### 16. Target query clustering (Phase 1)
+
+Source: DataForSEO, Google Ads search volume for the United Kingdom (average monthly searches, last 12 months), plus the domain's ranked keywords from DataForSEO Labs. Scotland-only volumes are not available, so these are UK totals for Scotland-specific queries.
+
+**Current visibility.** The domain ranks for 9 UK keywords, all between positions 36 and 93, so it gets almost no organic traffic yet. When the data was collected, Google's snippets for `/accident-at-work-claims-scotland` still showed the pre-audit text ("Our specialist Scottish solicitors handle…", "You cannot be legally dismissed…"). Request re-indexing of that URL in Search Console.
+
+| Cluster | Primary query (UK vol.) | Supporting queries (vol.) | Owner URL | Intent | Note |
+|---|---|---|---|---|---|
+| Criminal injury (CICA) | criminal injuries compensation scotland (480) | cica scotland (480), criminal compensation glasgow (90) | `/criminal-injury-compensation-scotland` | Informational | **Largest cluster on the site.** The hub ranks around 79. Five child pages it mentions (assault, sexual assault, knife crime, robbery, hate crime) are still unbuilt. |
+| Personal injury (head term) | personal injury claims scotland (210) | injury claim(s) scotland (70), accident claims scotland (40–50), compensation claims scotland (40) | `/personal-injury-claims-scotland` | Informational with commercial follow-on | Currently `/personal-injury-compensation-scotland` and `/how-to-claim-compensation-scotland` rank instead, which splits relevance. Keep the hub as the owner and link to it from both with the anchor "personal injury claims in Scotland". |
+| No win, no fee | no win no fee solicitors scotland (140) | no win no fee scotland (70), no win no fee solicitors glasgow (110), …edinburgh (70) | `/no-win-no-fee-solicitors-scotland`; city variants → Glasgow/Edinburgh pages | Commercial | Searchers want a firm. The page can rank by explaining funding, but must not present the site as a solicitor. The H1 fix from 27 Sep does that. |
+| Medical negligence | medical negligence solicitors scotland (140) | clinical negligence scotland (10), nhs negligence scotland (10) | `/medical-negligence-claims-scotland` | Commercial | Same constraint as above: it can answer the funding and process question but cannot claim to be a firm. |
+| Accident at work | accident at work scotland (50) | injury at work scotland (30), accident at work claims scotland (10) | `/accident-at-work-claims-scotland` | Informational | Searchers phrase it as "accident at work", not "…claims". The title already leads with "Accident at Work". |
+| City solicitors | personal injury solicitors glasgow (50), …edinburgh (50) | — | `/glasgow-accident-claims`, `/edinburgh-accident-claims` | Commercial or local | The local pack dominates. Without a physical office, an information page has a limited ceiling here. |
+| Road traffic | car accident claims scotland (30) | whiplash claims scotland (20), road traffic accident claims scotland (10) | `/car-accident-claims-scotland`, `/guides/whiplash-claims-scotland` | Informational | Low volume. Keep the current structure. |
+| Long-tail topics | loss of society claims scotland (20), compensation calculator scotland (20) | asbestos, mesothelioma, pleural plaques, solatium, contributory negligence (10 each) | Existing pillar children and guides | Informational | Volumes are small, but these questions are exactly what AI answer engines quote. Their value is in being cited, not in clicks. |
+
+Implication: by volume, the next content investment should be the **five CICA child pages**. Scheme rules (the 2012 Scheme as amended, eligibility, the two-year limit and its exceptions, and the tariff) must be checked against current GOV.UK sources and reviewed by a solicitor before publication. That is why they were not built in this pass.
+
+### 17. Assessment promises removed (Phase 2, shipped)
+
+- **Target URL / Template:** 22 pages. Five pillar hubs: accident at work, medical negligence, industrial disease, road traffic and public place. Criminal injury, child abuse and domestic abuse. Contributory negligence (road). Twelve long-tail service pages: shop, hotel, school, stress at work, manual handling, dental, hospital infection, needlestick, occupational dermatitis, occupational asthma, self-employed and delayed diagnosis. And `/guides/can-i-claim-if-partly-at-fault-scotland`.
+- **Element / Signal:** Opening summary copy that misrepresents the service.
+- **Diagnostic Finding & Evidence:** A scan of the built HTML found 20 summaries ending "A free enquiry will assess your claim/case/circumstances/eligibility", plus "Claims are handled in complete confidence" (domestic abuse page) and a guide link "Get a free, honest assessment of your claim". The site says it is not a law firm and does not give individual advice, so it cannot assess claims. This is the same issue fixed on the homepage on 27 September. (Body text saying "**Your** solicitor will…" refers to the reader's own solicitor and is fine.)
+- **Implementation / Code Fix (shipped):** The sentence was deleted from all 20 summaries and the domestic abuse page. The guide link now reads "Make a free, no-obligation enquiry →". No legal statement was changed.
+
+### 18. Opening summaries outside 40–60 words (Phase 2, ready for review)
+
+- **Target URL / Template:** 51 pages (listed in `reports/audit-2026-09-27/answer-summaries-for-review.md`).
+- **Element / Signal:** Extractable summary block (`.answer-box`).
+- **Diagnostic Finding & Evidence:** Of 125 pages with an answer block, 63 were 40–60 words, 51 were over 60 (up to 84) and 7 were under 40. A 40–60 word block is a recommendation from this audit's brief, not a Google requirement. Shorter, self-contained answers are simply easier for answer engines to lift whole (Google, "AI features and your website": write clear, helpful content that answers the question directly).
+- **Implementation / Code Fix:** 51 rewrites, each 40–60 words, presented side by side with the current text and a decision box per page. **Not shipped:** they restate legal rules, so they go to the solicitor first. Once they come back approved, each one is a single string change in the page source or `src/data/pillars/*.ts`.
+
+### 19. Mobile performance (Phase 4)
+
+DataForSEO's Lighthouse endpoint only runs as desktop, so Lighthouse 13 was run locally against the static build. It used its default mobile profile (simulated Moto G Power, slow 4G, 4× CPU slowdown) and the pre-installed Chromium.
+
+| Template | Perf | LCP | CLS | TBT (median of 3) | Transfer |
+|---|---|---|---|---|---|
+| `/` | 90–100 | 0.9 s | 0 | 95 ms | 251 KB |
+| `/medical-negligence-claims-scotland` (pillar) | 100 | 0.9 s | 0 | 54 ms | 254 KB |
+| `/industrial-disease-claims-scotland/mesothelioma-claims` (child) | 100 | 0.9 s | 0 | 61 ms | 265 KB |
+| `/guides/personal-injury-claim-time-limit-scotland` (guide) | 100 | 0.8 s | 0 | 56 ms | 260 KB |
+| `/car-accident-claims-scotland` (road) | 100 | 0.8 s | 0 | 36 ms | 262 KB |
+| `/criminal-injury-compensation-scotland` | 100 | 0.9 s | 0 | 54 ms | 252 KB |
+
+No bottleneck. A first homepage run showed 409 ms TBT. Three repeats gave 86–104 ms, so it was a cold-start outlier, not a finding. The heaviest script is React DOM (about 220 KB uncompressed, shared by every page). There are no images, so image formats don't apply. Real-user INP needs Search Console's Core Web Vitals report (field data); the site may not yet have enough traffic to report.
+
+### 20. Footer contrast fails WCAG AA on every page (shipped)
+
+- **Target URL / Template:** `src/components/Footer.tsx` (all pages)
+- **Element / Signal:** Text contrast.
+- **Diagnostic Finding & Evidence:** Lighthouse accessibility scored 96 on every template, because of a single failing audit. The disclaimer and copyright lines (`text-gray-500`, #6a7282 on #060e1f, 12 px) have a contrast ratio of 3.98:1. WCAG 2.2 SC 1.4.3 (AA) requires 4.5:1 for normal-size text. The disclaimer is legally important text, so it should be readable.
+- **Implementation / Code Fix (shipped):** `text-gray-500` → `text-gray-400` on both lines. Lighthouse accessibility is now 100 on the homepage.
+
+### Status after this pass
+
+| Phase | Status |
+|---|---|
+| 1. Architecture, entities, intent | Complete. Query clusters are mapped to owner URLs. The CICA child pages are the next content priority (they need source checks and solicitor review). |
+| 2. On-page copy | Titles, H1s and descriptions are complete. Assessment promises are removed. 51 opening summaries are drafted and **awaiting solicitor review**. |
+| 3. Structured data | Complete except the named reviewer, logo and Companies House number (**need your details**). |
+| 4. Crawl, rendering, delivery | Complete, including the mobile lab test. Field data needs Search Console. |

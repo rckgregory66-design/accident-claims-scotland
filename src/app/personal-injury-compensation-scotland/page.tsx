@@ -56,7 +56,7 @@ export default function CompensationGuidePage() {
         "Provisional damages preserve your right to return to court if your condition worsens.",
         "Contributory negligence reduces but does not bar your compensation claim.",
       ]}
-      answerBox="In Scotland, personal injury compensation covers two main categories: general damages (solatium) for pain, suffering and loss of amenity; and special damages for your financial losses. The total amount depends entirely on the facts of your case, the nature of your injuries, the evidence available and applicable legal principles. Your solicitor will give you an honest assessment — we do not promise or guarantee any specific outcome."
+      answerBox="Personal injury compensation in Scotland has two parts: solatium, for pain, suffering and loss of amenity, and patrimonial loss, for financial losses such as lost earnings, care and expenses. The amount depends on the injury, its effect on your life, the evidence and any contributory negligence. No outcome can be guaranteed before medical evidence is available."
       sections={[
         {
           heading: "General Damages: Solatium",
@@ -112,6 +112,12 @@ export default function CompensationGuidePage() {
           heading: "How Long Until I Receive Compensation?",
           content:
             "In straightforward claims where liability is admitted early, interim payments may be available and settlement can be reached within months. In complex cases involving serious injury, the claim may take two to five years or more — partly because it is important not to finalise a settlement before the full impact of your injury is known. Your solicitor will advise on the appropriate timing of settlement in your case.",
+        },
+        {
+          heading: "Can You Claim in the First Place?",
+          content:
+            "Compensation is only assessed once a claim is established. Who can claim, what has to be proved and the time limit are covered in our main guide:",
+          linkedList: [{ text: "Personal injury claims in Scotland", href: "/personal-injury-claims-scotland" }],
         },
         {
           heading: "Important Disclaimer",
