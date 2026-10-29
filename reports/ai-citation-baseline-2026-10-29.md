@@ -40,4 +40,4 @@ Repeat the same five questions in about 4 weeks, adding Google (AI Overviews, UK
 ## Limitation reform check (29 Oct 2026)
 - Section 17 of the Prescription and Limitation (Scotland) Act 1973 (three years, date of knowledge) is what the site relies on; I found no sign it has been changed.
 - Report No 266 (Dec 2024) recommends amending the 1973 Act, mainly to remove a limitation problem for asymptomatic conditions such as pleural plaques; a wider review of limitation is described as a later project. I could not confirm any enacted change or an introduced bill (the Scottish Parliament bills page I could reach was incomplete). Re-check the Scottish Parliament bill tracker before the next refresh.
-- The site does not discuss pleural plaques or asymptomatic conditions, so nothing needs changing now.
+- The site does have a pleural plaques page (/industrial-disease-claims-scotland/pleural-plaques-claims, built on the 2009 Act). It is the page most exposed if the Report 266 reforms are enacted; its limitation wording was not reviewed in this check. Nothing is known to need changing today.
