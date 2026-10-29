@@ -32,7 +32,7 @@ const faqs = [
   {
     question: "What percentage will be deducted from my compensation?",
     answer:
-      "The amount that may be deducted from your compensation — sometimes called a success fee — varies depending on the funding arrangement and the complexity of your claim. Any deduction will be clearly set out in your written agreement before you instruct. We do not provide generic figures here because funding terms vary. Your solicitor will explain exactly what, if anything, will be deducted before you decide to proceed.",
+      "For success fee agreements made on or after 27 April 2020, the success fee in a personal injury claim is capped at 20% of the first £100,000 of the financial benefit, 10% of the part between £100,000 and £500,000, and 2.5% of any part above £500,000, including VAT. These are maximums, not standard charges: the agreement can set a lower fee, and it should be in writing before you sign. How future loss is counted follows the 2018 Act, so ask for a worked example. Outlays and insurance premiums are separate questions.",
   },
   {
     question: "Are there other ways to fund a personal injury claim in Scotland?",
@@ -45,7 +45,7 @@ export default function NoWinNoFeePage() {
   return (
     <ClaimPageTemplate
       metaUrl="/no-win-no-fee-solicitors-scotland"
-      dateModified="2026-08-11"
+      dateModified="2026-10-29"
       breadcrumbs={[{ label: "No Win No Fee Claims Scotland" }]}
       h1="No Win No Fee Claims in Scotland: How Funding Works"
       intro="Many personal injury and accident claims in Scotland can be funded on a no win, no fee basis. This page explains what no win, no fee means, how it works in Scotland, what costs may apply and what your alternatives are."
@@ -81,7 +81,7 @@ export default function NoWinNoFeePage() {
         {
           heading: "What Will I Actually Receive?",
           content:
-            "The amount you receive after a successful claim depends on the amount of compensation awarded or agreed and any deductions under your funding arrangement. Your solicitor will explain the likely deductions clearly before you proceed, so you understand what your net compensation is likely to be. We do not provide generic deduction figures here because funding terms vary between cases.",
+            "The amount you receive after a successful claim depends on the amount of compensation awarded or agreed and any deductions under your funding arrangement. Your solicitor will explain the likely deductions clearly before you proceed, so you understand what your net compensation is likely to be. For a personal injury success fee agreement made on or after 27 April 2020, Scottish regulations cap the success fee, including VAT, at 20% of the first £100,000 of the financial benefit, 10% of the part from £100,000 to £500,000 and 2.5% of any part above £500,000. As an illustration only, on £50,000 the most a success fee could be is £10,000; on £150,000 it is £25,000 (£20,000 plus £5,000). These are ceilings, not standard fees, and the agreement may set a lower figure. How future loss and periodical payments are counted follows section 6 of the 2018 Act, so ask for a worked example using your own figures. Outlays, expert reports and any insurance premium are separate from the success fee, so ask who pays them.",
         },
         {
           heading: "Alternative Funding Options in Scotland",
@@ -114,6 +114,7 @@ export default function NoWinNoFeePage() {
             <>
               <p>Funding language is sometimes used loosely. Read the signed terms rather than relying on an advert or headline. The following independent sources explain the regulatory and complaints context:</p>
               <ul>
+                <li><a href="https://www.legislation.gov.uk/ssi/2020/110/made" target="_blank" rel="noopener noreferrer" className="text-red-700 hover:underline">Success Fee Agreements Regulations 2020 (SSI 2020/110): the caps</a></li>
                 <li><a href="https://www.legislation.gov.uk/asp/2018/10/contents" target="_blank" rel="noopener noreferrer" className="text-red-700 hover:underline">Civil Litigation (Expenses and Group Proceedings) (Scotland) Act 2018</a></li>
                 <li><a href="https://www.scottishlegalcomplaints.org.uk/" target="_blank" rel="noopener noreferrer" className="text-red-700 hover:underline">Scottish Legal Complaints Commission</a></li>
                 <li><a href="https://www.slab.org.uk/" target="_blank" rel="noopener noreferrer" className="text-red-700 hover:underline">Scottish Legal Aid Board</a></li>
