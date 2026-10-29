@@ -123,9 +123,11 @@ const articles: Record<string, ReactNode> = {
       <div className="answer-box">
         <p className="font-semibold text-blue-900 mb-1">Quick answer</p>
         <p className="text-blue-800">
-          Yes. In Scotland, you can claim compensation if you were injured at work within the last three years
-          and your employer (or another party) was negligent. You do not lose your job protection by making a
-          legitimate workplace injury claim. Your employer&apos;s liability insurers will handle the claim.
+          Possibly. In Scotland, you may be able to claim compensation if you were injured at work and your
+          employer (or another party) was negligent or in breach of a legal duty. The general time limit is
+          three years, but it can differ, for example for children or where an illness developed over time.
+          Most employers must carry employers&apos; liability insurance, and a claim is often dealt with by that
+          insurer.
         </p>
       </div>
 
@@ -165,10 +167,11 @@ const articles: Record<string, ReactNode> = {
 
       <h2>Will I Lose My Job If I Claim?</h2>
       <p>
-        Your employer cannot legally dismiss you or subject you to any detriment simply because you have made
-        a legitimate personal injury claim. Making a claim is a legal right. Furthermore, the claim will
-        generally be handled by your employer&apos;s employers&apos; liability insurers — not your employer directly.
-        If you are concerned about your employment position, speak to your solicitor.
+        Making a personal injury claim is a legal right, but how employment law protects you if you do so
+        depends on your circumstances, including your length of service and how your employer reacts. Claims
+        are often dealt with by the employer&apos;s liability insurer rather than the employer directly. If you
+        are worried about your job, take advice from a Scottish solicitor or free employment advice such as
+        <a href="https://www.acas.org.uk/" target="_blank" rel="noopener noreferrer"> Acas</a> before you act.
       </p>
 
       <h2>Reporting Your Accident at Work</h2>
@@ -192,6 +195,29 @@ const articles: Record<string, ReactNode> = {
         <li>Keep payslips and employment records for wage loss calculations</li>
         <li>Note any comments made by your employer or colleagues at the time</li>
       </ul>
+
+      <h3>Workplace evidence checklist</h3>
+      <p>Documents and records that are often relevant. Not all will exist or apply to your case.</p>
+      <ul>
+        <li>Accident book entry and any internal investigation or RIDDOR report</li>
+        <li>The risk assessment and safe system of work for the task you were doing</li>
+        <li>Training records, toolbox talks and your job description</li>
+        <li>Maintenance and inspection records for the equipment or area involved</li>
+        <li>Details of protective equipment you were given (or not given)</li>
+        <li>CCTV footage: ask in writing, as it is often overwritten quickly</li>
+        <li>Names of colleagues who saw the accident or knew of the hazard</li>
+        <li>Earlier complaints or near-miss reports about the same hazard</li>
+        <li>Fit notes, payslips for the period before and after, and sick pay letters</li>
+      </ul>
+      <p>
+        You can also use the{" "}
+        <Link href="/compensation-calculator-scotland#planner" className="text-red-700 font-medium hover:underline">
+          printable evidence checklist for losses
+        </Link>
+        . The{" "}
+        <a href="https://www.hse.gov.uk/riddor/" target="_blank" rel="noopener noreferrer">HSE RIDDOR guidance</a>{" "}
+        explains which injuries employers must report.
+      </p>
 
       <h2>Time Limits for Work Accident Claims in Scotland</h2>
       <p>

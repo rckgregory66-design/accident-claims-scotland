@@ -28,7 +28,7 @@ export default function CompensationCalculatorPage() {
       <JsonLd data={[
         breadcrumbSchema([{ name: "Home", url: SITE.url }, { name: "Compensation calculator", url: `${SITE.url}${url}` }], url),
         faqSchema(faqs),
-        servicePageSchema({ name: "Personal Injury Compensation Calculator Scotland", url, description: "A cautious planning tool for identifying the evidence and heads of loss relevant to a Scottish personal injury claim.", dateModified: "2026-08-11", speakableSelectors: ["#direct-answer", "h1"] }),
+        servicePageSchema({ name: "Personal Injury Compensation Calculator Scotland", url, description: "A cautious planning tool for identifying the evidence and heads of loss relevant to a Scottish personal injury claim.", dateModified: "2026-10-29", speakableSelectors: ["#direct-answer", "h1"] }),
       ]} />
       <Breadcrumbs crumbs={[{ label: "Compensation Calculator Scotland" }]} />
       <section className="bg-[#0f2044] px-4 py-14 sm:px-6">

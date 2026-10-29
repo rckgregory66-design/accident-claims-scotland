@@ -17,7 +17,7 @@ export default function ContactPage() {
     <>
       <JsonLd data={[
         breadcrumbSchema([{ name: "Home", url: SITE.url }, { name: "Contact", url: `${SITE.url}/contact` }], "/contact"),
-        servicePageSchema({ name: "Contact", url: "/contact", description: "Contact page for Accident Claims Scotland, with the enquiry form.", dateModified: "2026-09-20" }),
+        servicePageSchema({ name: "Contact", url: "/contact", description: "Contact page for Accident Claims Scotland, with the enquiry form.", dateModified: "2026-10-29" }),
       ]} />
       <Breadcrumbs crumbs={[{ label: "Contact" }]} />
 

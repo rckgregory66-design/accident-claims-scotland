@@ -18,7 +18,7 @@ export default function AboutPage() {
     <>
       <JsonLd data={[
         breadcrumbSchema([{ name: "Home", url: SITE.url }, { name: "About Us", url: `${SITE.url}/about` }], "/about"),
-        servicePageSchema({ name: "About Accident Claims Scotland", url: "/about", description: "About the Accident Claims Scotland information website, operated by Ola Consultants Ltd, covering personal injury and accident claims in Scotland.", dateModified: "2026-08-11" }),
+        servicePageSchema({ name: "About Accident Claims Scotland", url: "/about", description: "About the Accident Claims Scotland information website, operated by Ola Consultants Ltd, covering personal injury and accident claims in Scotland.", dateModified: "2026-10-29" }),
       ]} />
       <Breadcrumbs crumbs={[{ label: "About Us" }]} />
 

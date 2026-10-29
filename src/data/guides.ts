@@ -24,7 +24,7 @@ export const guides: Guide[] = [
     description: "A practical guide to making an accident at work claim in Scotland — your employer's duty of care, what evidence you need, and how the claims process works.",
     category: "Workplace Accidents",
     datePublished: "2025-01-15",
-    dateModified: "2026-06-01",
+    dateModified: "2026-10-29",
     readTime: "9 min read",
   },
   {
@@ -258,7 +258,7 @@ export const guides: Guide[] = [
     description: "Evidence to keep after a cycling accident in Scotland: bike and camera footage, road defects, helmet arguments and identifying who is responsible. See the main cycling claims page for the overview.",
     category: "Road Accidents",
     datePublished: "2025-10-01",
-    dateModified: "2026-07-29",
+    dateModified: "2026-10-29",
     readTime: "7 min read",
   },
   {
@@ -267,7 +267,7 @@ export const guides: Guide[] = [
     description: "Evidence and liability issues in Scottish motorcycle claims: filtering, junction collisions, preserving the bike and helmet, and serious-injury losses. See the main motorcycle claims page for the overview.",
     category: "Road Accidents",
     datePublished: "2025-10-10",
-    dateModified: "2026-07-29",
+    dateModified: "2026-10-29",
     readTime: "8 min read",
   },
   {

@@ -58,7 +58,7 @@ export default function HomePage() {
           name: "Accident Claims Scotland",
           url: "/",
           description: SITE.description,
-          dateModified: "2026-08-11",
+          dateModified: "2026-10-29",
           speakableSelectors: ["h1", ".answer-box"],
         }),
       ]} />
