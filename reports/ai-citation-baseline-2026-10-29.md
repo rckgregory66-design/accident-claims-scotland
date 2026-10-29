@@ -32,7 +32,12 @@ Patterns:
 ## Implications (hypotheses, not measured effects)
 - Citation share for generic questions looks driven by authority. This site's best route is being the clear, sourced, Scotland-specific page that links to the same primary sources; it already links to many.
 - The no-win-no-fee answers cited the statutory success-fee cap (20% / 10% / 2.5% bands) and Scottish Parliament briefings. Check that /no-win-no-fee-solicitors-scotland states the cap correctly and links the Scottish Parliament briefing.
-- Perplexity's sources include Scottish Law Commission reports dated Feb 2026 on limitation and on damages (e.g. scotlawcom.gov.uk .../2026-02/rep207.pdf). **Not verified here:** whether any reform has been enacted. Before relying on current limitation wording, check whether those reports have changed or will change the law.
+- Correction (same day): Perplexity's links to scotlawcom.gov.uk files in a "2026-02" folder are upload paths, not report dates. `rep207.pdf` is the December 2007 report (Scot Law Com No 207), not a new one. The Commission's Report on Damages for Personal Injury (No 266) is a separate, December 2024 report with a draft Damages (Scotland) Bill; I could not confirm that any bill has been introduced or enacted. See the limitation check below.
 
 ## Next sample
 Repeat the same five questions in about 4 weeks, adding Google (AI Overviews, UK) and Bing Copilot by hand, and record whether accident-claims-scotland.com appears.
+
+## Limitation reform check (29 Oct 2026)
+- Section 17 of the Prescription and Limitation (Scotland) Act 1973 (three years, date of knowledge) is what the site relies on; I found no sign it has been changed.
+- Report No 266 (Dec 2024) recommends amending the 1973 Act, mainly to remove a limitation problem for asymptomatic conditions such as pleural plaques; a wider review of limitation is described as a later project. I could not confirm any enacted change or an introduced bill (the Scottish Parliament bills page I could reach was incomplete). Re-check the Scottish Parliament bill tracker before the next refresh.
+- The site does not discuss pleural plaques or asymptomatic conditions, so nothing needs changing now.
