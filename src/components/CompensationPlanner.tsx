@@ -52,7 +52,7 @@ export default function CompensationPlanner() {
   }, [selected, duration]);
 
   return (
-    <div className="rounded-2xl border border-slate-200 bg-white p-5 sm:p-7 shadow-sm not-prose" aria-labelledby="planner-title">
+    <div id="planner" className="rounded-2xl border border-slate-200 bg-white p-5 sm:p-7 shadow-sm not-prose" aria-labelledby="planner-title">
       <h2 id="planner-title" className="text-2xl font-bold text-[#0f2044]">Build your compensation evidence checklist</h2>
       <p className="mt-2 text-slate-700">Choose the losses that may have followed the accident. No personal details are stored or sent.</p>
 
