@@ -64,7 +64,7 @@ export default function DogBitePage() {
         "Your own fault can reduce, but does not automatically remove, compensation.",
         "The general limitation period is three years; children are treated differently.",
       ]}
-      answerBox="In Scotland, the keeper of an animal can be liable for injury it causes under section 1 of the Animals (Scotland) Act 1987 if the animal belongs to a species likely, unless controlled or restrained, to injure severely or kill. Claims can also be brought in negligence. Evidence of the incident, the keeper's identity and your injuries matters, and the general time limit is three years."
+      answerBox="In Scotland, a dog's keeper can be strictly liable for injury under section 1 of the Animals (Scotland) Act 1987, because dogs are a species likely to injure severely if not controlled. You can also claim in negligence. Keep evidence of the incident, the keeper's identity and your injuries. The general time limit is three years."
       sections={[
         {
           heading: "The legal test in Scotland",

@@ -53,7 +53,7 @@ export const publicPlaceChildren: PillarChild[] = [
       "The general time limit is three years from the date of the accident.",
     ],
     answerBox:
-      "You may be able to claim against a Scottish council if you were injured by a dangerous defect on a road, pavement or council-run property and the council failed to take reasonable care. Local roads authorities must manage and maintain public roads under section 1 of the Roads (Scotland) Act 1984, and council-run premises are subject to the Occupiers' Liability (Scotland) Act 1960. The general time limit is three years from the accident.",
+      "You may be able to claim against a Scottish council if a dangerous road, pavement or property defect injured you and the council failed to take reasonable care. Roads authorities must maintain public roads under the Roads (Scotland) Act 1984, and council premises fall under the Occupiers' Liability (Scotland) Act 1960. The general time limit is three years.",
     sections: [
       {
         heading: "Which body is responsible",
@@ -175,7 +175,7 @@ export const publicPlaceChildren: PillarChild[] = [
       "Photograph the surface, your footwear and the surroundings immediately.",
     ],
     answerBox:
-      "You may be able to claim for a fall on ice or snow in Scotland if the body responsible for the area failed to take reasonable care. Roads authorities must take such steps as they consider reasonable to prevent snow and ice endangering safe passage over public roads (section 34, Roads (Scotland) Act 1984), and occupiers of premises must show reasonable care under the Occupiers' Liability (Scotland) Act 1960. The general time limit is three years from the fall.",
+      "You may be able to claim for a fall on ice or snow in Scotland if whoever was responsible failed to take reasonable care. Roads authorities must take reasonable steps against snow and ice on public roads under section 34 of the Roads (Scotland) Act 1984. Occupiers of premises owe reasonable care too. The time limit is three years.",
     sections: [
       {
         heading: "Public roads and pavements",
@@ -289,7 +289,7 @@ export const publicPlaceChildren: PillarChild[] = [
       "Landlords responsible for repairs can owe the same duty under section 3.",
     ],
     answerBox:
-      "Under section 2 of the Occupiers' Liability (Scotland) Act 1960, an occupier of premises must show such care as is reasonable in all the circumstances to see that a person entering will not suffer injury or damage by reason of dangers due to the state of the premises or anything done or omitted to be done on them. It is a standard of reasonable care, not strict liability, and the general limitation period for injury is three years.",
+      "Under section 2 of the Occupiers' Liability (Scotland) Act 1960, anyone occupying or controlling premises must take reasonable care that people entering are not injured by dangers from the state of the premises or anything done there. It is a duty of reasonable care, not strict liability. The general time limit for an injury claim is three years.",
     sections: [
       {
         heading: "What the Act says",
@@ -414,7 +414,7 @@ export const publicPlaceChildren: PillarChild[] = [
       "Ask for CCTV to be preserved and report the incident before you leave, if you can.",
     ],
     answerBox:
-      "You may be able to claim if you were injured in a Scottish restaurant, pub or café because the venue failed to take reasonable care, for example by leaving spills, defective floors, stairs or lighting, or by failing to manage hot food, glass or allergen risks. The occupier's duty comes from the Occupiers' Liability (Scotland) Act 1960, and the general time limit is three years from the incident.",
+      "You may be able to claim if you were injured in a Scottish restaurant, pub or café because the venue failed to take reasonable care, for example over spills, floors, stairs, lighting, hot food, glassware or allergens. The duty comes from the Occupiers' Liability (Scotland) Act 1960. The general time limit is three years from the incident.",
     sections: [
       {
         heading: "The venue's duty",
@@ -530,7 +530,7 @@ export const publicPlaceChildren: PillarChild[] = [
       "The general time limit is three years, with different rules for children.",
     ],
     answerBox:
-      "You may be able to claim for a sports or leisure injury in Scotland if it was caused by someone else's negligence, such as an unsafe facility or equipment, inadequate supervision or instruction, or careless conduct beyond the accepted risks of the game. Participants accept the ordinary risks of a sport, but not carelessness by others. A notice or waiver cannot exclude liability for personal injury caused by negligence on business premises. The general time limit is three years.",
+      "You may be able to claim for a sports or leisure injury in Scotland if someone else's negligence caused it, such as unsafe facilities or equipment, poor supervision or conduct beyond the normal risks of the game. A sign or waiver cannot exclude business liability for negligently caused personal injury. The general time limit is three years.",
     sections: [
       {
         heading: "Risks you accept and risks you do not",
