@@ -811,8 +811,9 @@ const articles: Record<string, ReactNode> = {
         <li><strong>Court of Session</strong> — Scotland&apos;s supreme civil court, based in Edinburgh, which handles higher-value and more complex personal injury cases, with specialist Judges.</li>
       </ul>
       <p>
-        Claims handled under the Personal Injury Court at Hamilton Sheriff Court can include cases of
-        significant value that would previously have required to be raised in the Court of Session.
+        The All-Scotland Sheriff Personal Injury Court sits at Edinburgh Sheriff Court and has
+        jurisdiction across the whole of Scotland. It hears personal injury cases of significant value
+        that would previously have been raised in the Court of Session.
       </p>
 
       <h2>What to Expect If Your Case Goes to Court</h2>
