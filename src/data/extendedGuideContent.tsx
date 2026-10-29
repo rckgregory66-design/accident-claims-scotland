@@ -84,6 +84,7 @@ const guideData: Record<string, Guide> = {
       commonSources.limitation,
     ],
     parent: { href: "/road-traffic-accident-claims-scotland", label: "Road traffic accident claims" },
+    seeAlso: [{ href: "/cycling-accident-claims-scotland", label: "Cycling accident claims: overview, causes and time limit" }],
   },
   "motorcycle-accident-claims-scotland": {
     answer:
@@ -103,6 +104,7 @@ const guideData: Record<string, Guide> = {
       commonSources.limitation,
     ],
     parent: { href: "/road-traffic-accident-claims-scotland", label: "Road traffic accident claims" },
+    seeAlso: [{ href: "/motorcycle-accident-claims-scotland", label: "Motorcycle accident claims: overview, causes and time limit" }],
   },
   "asbestos-claims-scotland": {
     answer:

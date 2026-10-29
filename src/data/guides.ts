@@ -254,8 +254,8 @@ export const guides: Guide[] = [
   },
   {
     slug: "cycling-accident-claims-scotland",
-    title: "Cycling Accident Claims in Scotland",
-    description: "How to claim compensation after a cycling accident in Scotland — collisions with motor vehicles, road defects, helmet use and the claims process.",
+    title: "Cycling Accident Claim Guide Scotland: Evidence and Helmets",
+    description: "Evidence to keep after a cycling accident in Scotland: bike and camera footage, road defects, helmet arguments and identifying who is responsible. See the main cycling claims page for the overview.",
     category: "Road Accidents",
     datePublished: "2025-10-01",
     dateModified: "2026-07-29",
@@ -263,8 +263,8 @@ export const guides: Guide[] = [
   },
   {
     slug: "motorcycle-accident-claims-scotland",
-    title: "Motorcycle Accident Claims in Scotland",
-    description: "A guide to claiming compensation after a motorcycle accident in Scotland — common causes, injuries, protective equipment and what affects your claim.",
+    title: "Motorcycle Accident Claim Guide Scotland: Filtering and Evidence",
+    description: "Evidence and liability issues in Scottish motorcycle claims: filtering, junction collisions, preserving the bike and helmet, and serious-injury losses. See the main motorcycle claims page for the overview.",
     category: "Road Accidents",
     datePublished: "2025-10-10",
     dateModified: "2026-07-29",

@@ -325,6 +325,10 @@ export const roadTrafficPages: RoadTrafficPage[] = [
     ],
     "related": [
       {
+        "label": "Motorcycle claim guide: filtering, evidence and equipment",
+        "href": "/guides/motorcycle-accident-claims-scotland"
+      },
+      {
         "label": "Serious road traffic injury claims",
         "href": "/serious-road-traffic-injury-claims-scotland"
       },
@@ -425,6 +429,10 @@ export const roadTrafficPages: RoadTrafficPage[] = [
       }
     ],
     "related": [
+      {
+        "label": "Cycling claim guide: evidence and helmet arguments",
+        "href": "/guides/cycling-accident-claims-scotland"
+      },
       {
         "label": "Road defect accident claims",
         "href": "/road-defect-accident-claims-scotland"
