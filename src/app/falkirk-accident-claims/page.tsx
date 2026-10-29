@@ -2,7 +2,7 @@ import type { Metadata } from "next";
 import LocationPageTemplate from "@/components/LocationPageTemplate";
 
 export const metadata: Metadata = {
-  title: "Falkirk Accident Claims | Personal Injury Claim Information for Falkirk",
+  title: "Falkirk Accident Claims | Personal Injury Claim Information",
   description: "Information on personal injury, workplace accident and medical negligence claims in Falkirk: courts, time limits and next steps. General information, not legal advice.",
   alternates: { canonical: "/falkirk-accident-claims" },
   robots: { index: false, follow: true },

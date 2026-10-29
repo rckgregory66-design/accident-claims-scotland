@@ -70,7 +70,7 @@ export default function LocationPageTemplate({
             <h2>Personal Injury Claims in {city}</h2>
             <p>{localContext}</p>
 
-            <h2>Claim Types Handled in {city}</h2>
+            <h2>Claim Types Covered in {city}</h2>
             <p>People in {city} may seek advice about a range of personal injury and accident compensation claims:</p>
             <ul>
               {CLAIM_TYPES.map((ct) => (

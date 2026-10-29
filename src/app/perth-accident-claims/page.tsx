@@ -2,7 +2,7 @@ import type { Metadata } from "next";
 import LocationPageTemplate from "@/components/LocationPageTemplate";
 
 export const metadata: Metadata = {
-  title: "Perth Accident Claims | Personal Injury Claim Information for Perth",
+  title: "Perth Accident Claims | Personal Injury Claim Information",
   description: "Information on personal injury, workplace accident and medical negligence claims in Perth: courts, time limits and next steps. General information, not legal advice.",
   alternates: { canonical: "/perth-accident-claims" },
   robots: { index: false, follow: true },

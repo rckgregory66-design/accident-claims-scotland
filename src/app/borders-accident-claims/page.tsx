@@ -2,7 +2,7 @@ import type { Metadata } from "next";
 import LocationPageTemplate from "@/components/LocationPageTemplate";
 
 export const metadata: Metadata = {
-  title: "Borders Accident Claims | Personal Injury Claim Information for Scottish Borders",
+  title: "Borders Accident Claims | Personal Injury Claim Information",
   description: "Information on personal injury, workplace and medical negligence claims in the Scottish Borders: courts, time limits and next steps. General information, not legal advice.",
   alternates: { canonical: "/borders-accident-claims" },
   robots: { index: false, follow: true },

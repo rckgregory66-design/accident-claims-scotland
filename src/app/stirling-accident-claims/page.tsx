@@ -2,7 +2,7 @@ import type { Metadata } from "next";
 import LocationPageTemplate from "@/components/LocationPageTemplate";
 
 export const metadata: Metadata = {
-  title: "Stirling Accident Claims | Personal Injury Claim Information for Stirling",
+  title: "Stirling Accident Claims | Personal Injury Claim Information",
   description: "Information on personal injury, workplace accident and medical negligence claims in Stirling: courts, time limits and next steps. General information, not legal advice.",
   alternates: { canonical: "/stirling-accident-claims" },
   robots: { index: false, follow: true },
