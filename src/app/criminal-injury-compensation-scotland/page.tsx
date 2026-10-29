@@ -5,12 +5,12 @@ import { childSubpageLinks } from "@/data/pillarChildren";
 const CHILD = "/criminal-injury-compensation-scotland";
 
 export const metadata: Metadata = {
-  title: "Criminal Injury Compensation Scotland — CICA Claims Guide",
+  title: "Criminal Injuries Compensation Scotland: CICA Claims Guide",
   description:
-    "Criminal injury compensation for victims of violence in Scotland. CICA tariff scheme, eligibility, two-year time limit, and what to do if compensation is refused. Free enquiry.",
+    "Criminal injuries compensation in Scotland: who can claim from the CICA, the two-year time limit, tariff awards, reviews, appeals and why claims are refused.",
   alternates: { canonical: "/criminal-injury-compensation-scotland" },
   openGraph: {
-    title: "Criminal Injury Compensation Scotland — CICA Claims Guide",
+    title: "Criminal Injuries Compensation Scotland: CICA Claims Guide",
     description: "Claim criminal injury compensation in Scotland through the CICA. Free enquiry, sensitive support.",
     url: "/criminal-injury-compensation-scotland",
   },
@@ -42,6 +42,21 @@ const faqs = [
     answer:
       "Applications to the CICA must generally be made within two years of the date of the crime. There are very limited exceptions — for example, for historic childhood abuse claims, or where the applicant was a child at the time of the offence. Do not delay — seek advice immediately.",
   },
+  {
+    question: "Do I need a solicitor to claim from the CICA?",
+    answer:
+      "No. GOV.UK states that you do not have to use a legal adviser to apply, and that if you choose to use one you cannot claim the cost back from the CICA. Applying is free. Some people still take advice where the injury is serious, the facts are disputed or a decision needs to be challenged, and Victim Support Scotland offers free support with the process.",
+  },
+  {
+    question: "Should I accept the CICA's first decision?",
+    answer:
+      "You do not have to. If you disagree with the decision, you can ask for a review in writing within 56 days. A different claims officer looks at the claim again, and the award can go up, go down or stay the same. If you still disagree after the review, you can appeal to the First-tier Tribunal (Criminal Injuries Compensation) within 90 days of the review decision. Because a review can reduce an award, it is worth checking the reasons for the decision carefully before asking for one.",
+  },
+  {
+    question: "Why would the CICA refuse or reduce a claim?",
+    answer:
+      "The most common reasons are: the crime was not reported to the police as soon as reasonably practicable, or you did not cooperate with the investigation; your own conduct contributed to the incident; you have unspent criminal convictions; the application was made outside the two-year time limit without a qualifying exception; the injury is not listed in the Scheme's tariff; or you have already received compensation for the same injury from another source. The CICA is a scheme of last resort, so other compensation for the same injury is deducted.",
+  },
 ];
 
 export default function CriminalInjuryPage() {
@@ -50,7 +65,7 @@ export default function CriminalInjuryPage() {
       metaUrl="/criminal-injury-compensation-scotland"
       dateModified="2026-10-29"
       breadcrumbs={[{ label: "Criminal Injury Compensation Scotland" }]}
-      h1="Criminal Injury Compensation Scotland"
+      h1="Criminal Injuries Compensation in Scotland"
       intro="If you have been injured as a victim of violent crime in Scotland — including assault, domestic abuse, sexual violence or other offences — you may be entitled to apply for compensation through the Criminal Injuries Compensation Authority (CICA). This page provides general information about that process."
       tldr={[
         "Victims of violent crime in Scotland can claim through the CICA without a criminal conviction.",
