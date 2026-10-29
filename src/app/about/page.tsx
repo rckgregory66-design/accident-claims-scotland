@@ -35,8 +35,10 @@ export default function AboutPage() {
       <section className="max-w-4xl mx-auto px-4 sm:px-6 py-12 prose-legal">
         <div className="answer-box">
           <p className="text-blue-800">
-            {SITE.name} publishes general information about accident and personal injury claims in Scotland.
-            The website does not provide individual legal advice and does not identify itself as a regulated law firm.
+            {SITE.name} publishes general information about accident and personal injury claims in Scotland,
+            including time limits, evidence, funding and compensation. It is run by Ola Consultants Ltd. It is
+            not a law firm, does not give legal advice on individual cases and is not regulated by the Law
+            Society of Scotland.
           </p>
         </div>
 

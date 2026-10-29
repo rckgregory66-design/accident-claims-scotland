@@ -45,7 +45,7 @@ export const medicalNegligenceChildren: PillarChild[] = [
       "The general time limit is three years from the injury or date of knowledge.",
     ],
     answerBox:
-      "You may have a surgical negligence claim in Scotland if the surgery or after-care fell below the standard expected of a reasonably competent practitioner and this caused you avoidable harm, or if you were not told about material risks or reasonable alternatives. A known complication alone is not enough. Independent expert evidence is normally essential, and the general time limit is three years from the date of the injury or date of knowledge.",
+      "You may have a surgical negligence claim in Scotland if the surgery or aftercare fell below the standard of a reasonably competent practitioner and caused avoidable harm, or if material risks or alternatives were not explained. A known complication alone is not enough. Independent expert evidence is normally essential. The general time limit is three years.",
     sections: [
       {
         heading: "Complication or negligence?",
@@ -164,7 +164,7 @@ export const medicalNegligenceChildren: PillarChild[] = [
       "A complaint and a claim are separate, with different time limits.",
     ],
     answerBox:
-      "You may be able to claim for hospital negligence in Scotland if hospital staff failed to provide care of the standard expected of a reasonably competent practitioner and this caused you avoidable harm. The claim is usually made against the NHS health board responsible, and independent expert evidence is normally needed. The general time limit is three years from the injury or date of knowledge, and a complaint does not stop that clock.",
+      "You may be able to claim for hospital negligence in Scotland if staff fell below the standard of a reasonably competent practitioner and this caused you avoidable harm. Claims are usually made against the responsible NHS health board and need independent expert evidence. The time limit is generally three years, and making a complaint does not pause it.",
     sections: [
       {
         heading: "Where hospital care can go wrong",
@@ -283,7 +283,7 @@ export const medicalNegligenceChildren: PillarChild[] = [
       "The general time limit is three years from the injury or date of knowledge.",
     ],
     answerBox:
-      "A misdiagnosis claim in Scotland needs two things: proof that the diagnosis fell below the standard of a reasonably competent practitioner, meaning a doctor of ordinary skill acting with ordinary care would not have made the error; and proof that the error caused you avoidable harm, meaning earlier or correct diagnosis would have led to a better outcome. The general time limit is three years from the injury or date of knowledge.",
+      "A misdiagnosis claim in Scotland needs two things. First, proof that the diagnosis fell below the standard of a reasonably competent practitioner acting with ordinary care. Second, proof that the error caused avoidable harm, meaning a correct or earlier diagnosis would have led to a better outcome. The general time limit is three years from the date of knowledge.",
     sections: [
       {
         heading: "Types of diagnostic error",
@@ -401,7 +401,7 @@ export const medicalNegligenceChildren: PillarChild[] = [
       "A signed consent form is not conclusive proof of proper consent.",
     ],
     answerBox:
-      "In Scotland a doctor must take reasonable care to ensure that a patient is aware of any material risks of a recommended treatment and of any reasonable alternatives. This is the Montgomery test, from Montgomery v Lanarkshire Health Board (2015). To claim, you must show that a material risk or alternative was not properly explained, that you would have chosen differently if it had been, and that the risk then materialised and caused harm.",
+      "In Scotland, a doctor must take reasonable care to ensure you know about any material risks of a recommended treatment and any reasonable alternatives. This is the Montgomery test (Montgomery v Lanarkshire Health Board, 2015). To claim, you must show a material risk was not explained, you would have chosen differently, and the risk caused harm.",
     sections: [
       {
         heading: "The Montgomery case",
@@ -514,7 +514,7 @@ export const medicalNegligenceChildren: PillarChild[] = [
       "Neither a complaint nor a candour process stops the three-year limitation period.",
     ],
     answerBox:
-      "In Scotland, an NHS complaint asks the health board to explain and put things right. It is separate from a negligence claim, which seeks compensation and has its own three-year time limit. Complaints should normally be made within 6 months of the event or of finding out about it, and no later than 12 months after the event unless there is good reason. A complaint does not stop the limitation clock for a claim.",
+      "An NHS complaint in Scotland asks the health board to explain and put things right. It is separate from a negligence claim for compensation. Complaints should normally be made within 6 months of the event or of finding out about it. A negligence claim has its own three-year time limit, and a complaint does not pause it.",
     sections: [
       {
         heading: "Making an NHS complaint",
@@ -617,7 +617,7 @@ export const medicalNegligenceChildren: PillarChild[] = [
       "Time limits for a family claim generally run from the date of death or the date of knowledge.",
     ],
     answerBox:
-      "In Scotland, close relatives of someone who died because of negligent medical care can bring a claim under the Damages (Scotland) Act 2011. Recoverable amounts can include loss of financial support, funeral expenses, and, for immediate family, compensation for distress, grief and sorrow and loss of society. The family must prove the care fell below the standard expected and that it caused the death. The general time limit is three years from the death or date of knowledge.",
+      "Close relatives of someone who died because of negligent medical care in Scotland can claim under the Damages (Scotland) Act 2011. Claims can cover lost financial support, funeral costs and, for immediate family, grief and loss of society. The family must prove the care was substandard and caused the death. The general time limit is three years.",
     sections: [
       {
         heading: "Who can claim",

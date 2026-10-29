@@ -54,7 +54,7 @@ export const seriousInjuryChildren: PillarChild[] = [
       "The general time limit is three years, with special rules for children and adults lacking capacity.",
     ],
     answerBox:
-      "You may be able to claim for a brain injury in Scotland if it was caused by someone else's negligence or, in some cases, by a violent crime. Claims depend on medical and neuropsychological evidence of the injury and its long-term effects, evidence from family and colleagues about changes in behaviour and function, and assessment of care and work capacity. The general time limit is three years from the injury or date of knowledge.",
+      "You may be able to claim for a brain injury in Scotland if someone else's negligence caused it. Claims rely on medical and neuropsychological evidence, accounts from family and colleagues of changes in behaviour, and assessment of care and work capacity. A violent crime may support a CICA application instead. The general time limit is three years.",
     sections: [
       {
         heading: "Types of brain injury",
@@ -174,7 +174,7 @@ export const seriousInjuryChildren: PillarChild[] = [
       "The general time limit is three years from the injury or date of knowledge.",
     ],
     answerBox:
-      "You may be able to claim for a spinal injury in Scotland if it was caused by someone else's negligence, for example in a road, work or public place accident or through negligent medical care. Claims are among the most complex because they value a lifetime of care, accommodation, equipment and lost income. The general time limit is three years from the injury or date of knowledge, and provisional damages or periodical payments may be relevant.",
+      "You may be able to claim for a spinal injury in Scotland if someone else's negligence caused it, for example in a road, work or public place accident or through medical care. These claims value a lifetime of care, accommodation, equipment and lost income, so provisional damages or periodical payments may apply. The general time limit is three years.",
     sections: [
       {
         heading: "Spinal injury care in Scotland",
@@ -286,7 +286,7 @@ export const seriousInjuryChildren: PillarChild[] = [
       "The general time limit is three years from the injury or date of knowledge.",
     ],
     answerBox:
-      "You may be able to claim for an amputation in Scotland if the limb was lost, or had to be removed, because of someone else's negligence, such as a workplace, road or medical error. A claim values the loss itself, lifetime prosthetic and therapy costs, adaptations, care and lost earnings. The general time limit is three years from the injury or date of knowledge.",
+      "You may be able to claim for an amputation in Scotland if someone else's negligence caused the limb loss, for example at work, on the road or in medical care. Compensation covers the loss itself, lifetime prosthetic and therapy costs, home adaptations, care and lost earnings. The general time limit is three years from the injury or date of knowledge.",
     sections: [
       {
         heading: "How amputations arise",
@@ -396,7 +396,7 @@ export const seriousInjuryChildren: PillarChild[] = [
       "The general time limit is three years from the injury or date of knowledge.",
     ],
     answerBox:
-      "You may be able to claim for a serious burn in Scotland if it was caused by someone else's negligence, such as an employer failing to control a workplace hazard, an occupier failing to maintain premises, or a defective product. Claims can cover the injury, scarring, psychological effects, future surgery and lost earnings. The general time limit is three years from the injury or date of knowledge.",
+      "You may be able to claim for a serious burn in Scotland if someone else's negligence caused it, for example an employer failing to control a workplace hazard, an occupier failing to maintain premises, or a defective product. Compensation can cover the injury, scarring, psychological effects, future surgery and lost earnings. The general time limit is three years.",
     sections: [
       {
         heading: "How serious burns happen",
@@ -513,7 +513,7 @@ export const seriousInjuryChildren: PillarChild[] = [
       "The general time limit is three years from the injury or date of knowledge.",
     ],
     answerBox:
-      "You may be able to claim for CRPS in Scotland if it developed after an injury or treatment caused by someone else's negligence. The NHS describes CRPS as a poorly understood condition, usually triggered by an injury, with severe, long-lasting pain, usually in one limb. Because diagnosis is clinical and can be hard, claims turn on specialist medical evidence of the diagnosis, its cause and its prognosis. The general time limit is three years.",
+      "You may be able to claim for complex regional pain syndrome (CRPS) in Scotland if it followed an injury or treatment caused by someone else's negligence. CRPS causes severe, long-lasting pain, usually in one limb, and is diagnosed clinically. Claims depend on specialist evidence of the diagnosis, its cause and prognosis. The general time limit is three years.",
     sections: [
       {
         heading: "What CRPS is",
@@ -622,7 +622,7 @@ export const seriousInjuryChildren: PillarChild[] = [
       "The right choice depends on the person's needs, and needs specialist financial and legal advice.",
     ],
     answerBox:
-      "In Scotland, the personal injury discount rate used to turn future losses into a lump sum is set under the Damages (Investment Returns and Periodical Payments) (Scotland) Act 2019, with the Government Actuary reporting on the rate to be used. The same Act gives Scottish courts power to order damages to be paid wholly or partly as periodical payments. Which route suits a person depends on their injury, needs and financial circumstances.",
+      "In Scotland, the discount rate that converts future losses into a lump sum is set under the Damages (Investment Returns and Periodical Payments) (Scotland) Act 2019, after a Government Actuary review. The same Act lets courts order damages as regular periodical payments instead. Which suits you depends on your injury, needs and financial circumstances.",
     sections: [
       {
         heading: "Why a discount rate is needed",
@@ -728,7 +728,7 @@ export const seriousInjuryChildren: PillarChild[] = [
       "Special limitation rules can apply to adults lacking capacity, so take advice.",
     ],
     answerBox:
-      "In Scotland, the Adults with Incapacity (Scotland) Act 2000 provides for adults who cannot make some or all decisions because of illness, injury, learning disability or a related condition. A guardianship or intervention order can give someone legal authority over the adult's welfare, property and financial affairs, and may be needed to raise or settle a compensation claim and to manage the money. Capacity is assessed for each decision.",
+      "Under the Adults with Incapacity (Scotland) Act 2000, an adult who cannot make some decisions after a serious injury can have a guardian or intervention order appointed. That person gains legal authority over welfare, property or finances, which may be needed to raise or settle a claim and manage the compensation. Capacity is assessed decision by decision.",
     sections: [
       {
         heading: "What capacity means",

@@ -636,9 +636,10 @@ const articles: Record<string, ReactNode> = {
       <div className="answer-box">
         <p className="font-semibold text-blue-900 mb-1">Quick answer</p>
         <p className="text-blue-800">
-          Yes. In Scotland, being partly at fault for your accident does not automatically prevent you from
-          claiming compensation. Your award will be reduced to reflect your share of responsibility —
-          this is called contributory negligence.
+          Yes. In Scotland, being partly at fault does not stop you claiming compensation. Under the Law
+          Reform (Contributory Negligence) Act 1945, your award is reduced by your share of responsibility.
+          For example, if you were found 25% to blame, you would receive 75% of the full value. The other
+          party must prove your share.
         </p>
       </div>
 

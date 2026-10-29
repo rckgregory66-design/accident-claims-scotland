@@ -42,7 +42,7 @@ export const industrialDiseaseChildren: PillarChild[] = [
       "Family members can claim after a death, and a claim already under way can generally continue.",
     ],
     answerBox:
-      "Yes. A person diagnosed with mesothelioma in Scotland can usually claim damages from an employer, or its insurer, whose negligence exposed them to asbestos, even if the exposure was decades ago. The general limitation period is three years from the date of knowledge, usually diagnosis. If the employer and its insurer cannot be traced, the Diffuse Mesothelioma Payment Scheme may pay compensation, but it generally has to be claimed within 12 months of diagnosis.",
+      "Yes. Someone diagnosed with mesothelioma in Scotland can usually claim from an employer, or its insurer, that negligently exposed them to asbestos, even decades ago. The time limit is generally three years from the date of knowledge, usually diagnosis. If no employer or insurer can be traced, the Diffuse Mesothelioma Payment Scheme may pay, normally if claimed within 12 months.",
     sections: [
       {
         heading: "What mesothelioma is and why the delay matters",
@@ -178,7 +178,7 @@ export const industrialDiseaseChildren: PillarChild[] = [
       "Plaques are not cancer, but they show past asbestos exposure, so provisional damages can matter.",
     ],
     answerBox:
-      "In Scotland, asbestos-related pleural plaques are a personal injury that is not negligible and are actionable harm under section 1 of the Damages (Asbestos-related Conditions) (Scotland) Act 2009, even if they cause no symptoms. You can claim damages if you can prove that a negligent employer or other responsible person exposed you to asbestos and that the exposure caused the plaques. The general time limit is three years from the date of knowledge.",
+      "In Scotland, asbestos-related pleural plaques are actionable harm under section 1 of the Damages (Asbestos-related Conditions) (Scotland) Act 2009, even without symptoms. You can claim if you prove a negligent employer or other responsible person exposed you to asbestos and that this caused the plaques. The general time limit is three years from the date of knowledge.",
     sections: [
       {
         heading: "What pleural plaques are",
@@ -287,7 +287,7 @@ export const industrialDiseaseChildren: PillarChild[] = [
       "The general time limit is three years from the date of knowledge.",
     ],
     answerBox:
-      "Yes. In Scotland asbestosis is a personal injury that is not negligible, and section 2 of the Damages (Asbestos-related Conditions) (Scotland) Act 2009 confirms it is actionable harm even if it has not yet caused impairment. You can claim against an employer or other responsible person if you can prove negligent exposure to asbestos that caused the condition. The general limitation period is three years from the date of knowledge, and the employer's insurer can usually be traced if the company has closed.",
+      "Yes. Asbestosis is actionable harm in Scotland under section 2 of the Damages (Asbestos-related Conditions) (Scotland) Act 2009, even before it causes impairment. You must prove negligent asbestos exposure by an employer or other responsible person caused it. The time limit is generally three years from the date of knowledge. Closed employers' insurers can usually be traced.",
     sections: [
       {
         heading: "What asbestosis is",
@@ -394,7 +394,7 @@ export const industrialDiseaseChildren: PillarChild[] = [
       "The general time limit is three years from the date of knowledge.",
     ],
     answerBox:
-      "In Scotland, asbestos-related pleural thickening is a personal injury which is not negligible and is actionable harm under section 2 of the Damages (Asbestos-related Conditions) (Scotland) Act 2009, even if it has not yet impaired your physical condition. You can claim if you can prove that a negligent employer or other responsible person exposed you to asbestos and that this caused the condition. The general time limit is three years from the date of knowledge.",
+      "In Scotland, asbestos-related pleural thickening is actionable harm under section 2 of the Damages (Asbestos-related Conditions) (Scotland) Act 2009, even before it impairs your physical condition. You can claim if you prove a negligent employer or other responsible person exposed you to asbestos and caused the condition. The general time limit is three years from the date of knowledge.",
     sections: [
       {
         heading: "What pleural thickening is",
@@ -501,7 +501,7 @@ export const industrialDiseaseChildren: PillarChild[] = [
       "The general time limit is three years from the date of knowledge.",
     ],
     answerBox:
-      "You may be able to claim for a repetitive strain injury in Scotland if your condition was caused or materially worsened by work and your employer was negligent, for example by failing to assess the risk, provide suitable equipment, allow breaks or act on complaints. Since 1 October 2013 a breach of health and safety regulations does not of itself give a right to damages, so the claim usually rests on negligence. The general time limit is three years from the date of knowledge.",
+      "You may be able to claim for repetitive strain injury in Scotland if work caused or worsened it and your employer was negligent, for example by not assessing the risk, providing suitable equipment or allowing breaks. Since October 2013, breaching safety regulations is not enough on its own, so negligence must be proved. The general time limit is three years.",
     sections: [
       {
         heading: "What RSI means in claims",
@@ -625,7 +625,7 @@ export const industrialDiseaseChildren: PillarChild[] = [
       "For mesothelioma only, a government payment scheme exists if neither employer nor insurer can be traced.",
     ],
     answerBox:
-      "If your employer has closed, you can often still claim against its employers' liability insurer. Employers have generally been legally required to insure since 1972. The Employers' Liability Tracing Office database helps identify the insurer, and the Third Parties (Rights against Insurers) Act 2010 allows a claim against the insurer of an insolvent or dissolved company. If the insurer has failed, the Financial Services Compensation Scheme may pay valid claims, and a separate scheme exists for mesothelioma where nobody can be traced.",
+      "If your employer has closed, you can often claim against its employers' liability insurer, compulsory since 1972. The Employers' Liability Tracing Office helps find the insurer, and the Third Parties (Rights against Insurers) Act 2010 lets you claim against it directly. If the insurer has failed, the Financial Services Compensation Scheme may pay valid claims.",
     sections: [
       {
         heading: "Why the insurer matters",

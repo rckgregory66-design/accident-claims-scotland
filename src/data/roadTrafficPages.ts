@@ -160,7 +160,7 @@ export const roadTrafficPages: RoadTrafficPage[] = [
     title: "Serious Road Traffic Injury Claims in Scotland",
     description: "Scottish road claims involving brain, spinal, amputation, multiple fracture and other life-changing injuries, rehabilitation and future needs.",
     category: "Serious road injuries",
-    answer: "A serious road-injury claim must plan for the injured person’s lifetime needs, not merely compensate the initial diagnosis. Liability evidence, early rehabilitation, interim funding, multidisciplinary experts and a properly tested future-loss model are central.",
+    answer: "A serious road-injury claim in Scotland must plan for the injured person's lifetime needs, not just the first diagnosis. That means securing liability evidence, early rehabilitation, interim payments where liability is admitted, and evidence from several medical and care experts to value future loss. Court proceedings must normally start within three years, unless the injured person is a child.",
     keyPoints: ["Do not settle before prognosis and future needs are reliable.", "Case management and rehabilitation may begin before final settlement.", "Care provided by family should be recorded.", "Accommodation, equipment and transport may require specialist evidence.", "Capacity and financial-management arrangements may need consideration."],
     sections: [
       { heading: "Building the multidisciplinary case", paragraphs: ["The evidence may include neurology, neuropsychology, orthopaedics, psychiatry, rehabilitation, occupational therapy, care, accommodation, assistive technology and employment experts. The right disciplines depend on functional consequences, not just diagnostic labels."] },
@@ -232,7 +232,7 @@ export const roadTrafficPages: RoadTrafficPage[] = [
     title: "Child Road Accident Claims in Scotland",
     description: "Scottish road claims involving children as passengers, pedestrians or cyclists, including responsibility, evidence, court approval and future needs.",
     category: "Children’s road claims",
-    answer: "A parent or appropriate representative can investigate a road-accident claim for an injured child. Liability must reflect the child’s age and understanding, and any settlement should protect the child’s interests and account for education, development and future needs.",
+    answer: "A parent or guardian can pursue a road-accident claim for an injured child in Scotland. Liability takes account of the child's age and understanding. The three-year time limit does not start until the child turns 16, but evidence fades, so act early. A settlement must protect the child's long-term education, care and earning needs.",
     keyPoints: ["Adult standards should not simply be applied to a young child.", "A parent can usually seek advice before the child turns 16.", "Evidence should address education and development.", "Serious injuries may require long-term reassessment.", "Settlement and management of funds require child-specific safeguards."],
     sections: [
       { heading: "Children as pedestrians, cyclists and passengers", paragraphs: ["The evidence should reflect the child’s height, visibility, route, supervision, developmental understanding and the driver’s duty to anticipate vulnerable road users. Child-restraint evidence may be relevant in passenger cases."] },
@@ -381,7 +381,7 @@ export const roadTrafficPages: RoadTrafficPage[] = [
     "title": "Cycling Accident Claims in Scotland",
     "description": "Scottish cycling accident claims: collisions with vehicles, dooring, road defects, evidence, contributory negligence and the three-year time limit.",
     "category": "Cycling accidents",
-    "answer": "A cyclist injured in Scotland may claim where a driver, a roads authority or another responsible party failed to take reasonable care. Common causes include vehicles turning across a cyclist's path, opening car doors, close passes and road defects. Helmets are not a legal requirement for cyclists in Scotland, but evidence about protective equipment can still be raised in a dispute.",
+    "answer": "A cyclist injured in Scotland may claim where a driver, roads authority or other party failed to take reasonable care. Common causes are vehicles turning across the cyclist, opened car doors, close passes and road defects. Helmets are not legally required, but an insurer may still argue that not wearing one increased the injury.",
     "keyPoints": [
       "Cyclists are vulnerable road users in the Highway Code, which sets out how drivers should behave around them.",
       "Dooring, close passes, left- and right-turn collisions and road defects are common causes.",
@@ -482,7 +482,7 @@ export const roadTrafficPages: RoadTrafficPage[] = [
     "title": "Bus Accident Claims in Scotland",
     "description": "Scottish bus accident claims: injuries to passengers and other road users, bus operators, CCTV, evidence, losses and time limits.",
     "category": "Bus accidents",
-    "answer": "A passenger injured on a bus in Scotland, or someone hit by a bus, may claim where the operator, the driver or another road user failed to take reasonable care. Typical incidents include sudden braking, falls while boarding or alighting, doors closing on passengers and collisions with other vehicles. Buses usually carry CCTV, which can be overwritten quickly, so request it early.",
+    "answer": "A bus passenger, or someone hit by a bus, may claim in Scotland where the operator, driver or another road user failed to take reasonable care. Common incidents are sudden braking, falls while boarding or alighting, doors closing on passengers and collisions. Bus CCTV is often overwritten quickly, so ask for it early.",
     "keyPoints": [
       "Bus operators and drivers owe a duty of care to passengers.",
       "Falls from sudden braking, door injuries and collisions are common claims.",

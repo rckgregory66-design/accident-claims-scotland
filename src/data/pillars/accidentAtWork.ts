@@ -36,7 +36,7 @@ export const accidentAtWorkChildren: PillarChild[] = [
       "The general time limit is three years from the date of the injury or date of knowledge.",
     ],
     answerBox:
-      "You may be able to claim if you were injured in a Scottish factory or manufacturing plant because your employer failed to take reasonable care, for example by not guarding machinery, not maintaining equipment, not training you, or not providing suitable protective equipment. The claim normally rests on negligence, and health and safety regulations are strong evidence of the standard expected. The general time limit is three years.",
+      "You may be able to claim if you were injured in a Scottish factory because your employer failed to take reasonable care, for example over machine guarding, maintenance, training or protective equipment. The claim usually rests on negligence, with health and safety regulations as strong evidence of the expected standard. The general time limit is three years.",
     sections: [
       {
         heading: "The employer's duties in a manufacturing setting",
@@ -159,7 +159,7 @@ export const accidentAtWorkChildren: PillarChild[] = [
       "The general time limit is three years, and children are treated differently.",
     ],
     answerBox:
-      "You may be able to claim for a farm accident in Scotland if someone else failed to take reasonable care. An employee can normally claim against the farm business and its employers' liability insurer. A self-employed farmer or family worker needs to identify a responsible party such as a contractor, supplier, landlord or another occupier. The general time limit is three years from the date of the injury or date of knowledge.",
+      "You may be able to claim for a farm accident in Scotland if someone failed to take reasonable care. An employee normally claims against the farm business and its employers' liability insurer. A self-employed farmer or family worker must identify another responsible party, such as a contractor, supplier or landlord. The general time limit is three years.",
     sections: [
       {
         heading: "Why farm accidents are different",
@@ -280,7 +280,7 @@ export const accidentAtWorkChildren: PillarChild[] = [
       "The general time limit is three years from the date of injury or date of knowledge.",
     ],
     answerBox:
-      "You may be able to claim for a warehouse accident in Scotland if your employer or the operator of the site failed to take reasonable care, for example over forklift traffic management, training, manual handling, racking, floor conditions or work at height. Agency workers can claim, and the responsible party may be the agency, the site operator or both. The general time limit is three years.",
+      "You may be able to claim for a warehouse accident in Scotland if your employer or the site operator failed to take reasonable care, for example over forklift traffic, training, lifting, racking, floors or work at height. Agency workers can claim too, against the agency, the site operator or both. The general time limit is three years.",
     sections: [
       {
         heading: "The main warehouse hazards",
@@ -389,7 +389,7 @@ export const accidentAtWorkChildren: PillarChild[] = [
       "The general time limit is three years, with extra time rules for product claims.",
     ],
     answerBox:
-      "If you were injured at work by defective equipment in Scotland, you may be able to claim against your employer and, separately, against the manufacturer, supplier or maintenance contractor. Under the Employers' Liability (Defective Equipment) Act 1969, an employer can be treated as liable where equipment it provided was defective because of a third party's fault, whether or not that party is identified. The general time limit is three years.",
+      "If defective work equipment injured you in Scotland, you may claim against your employer, and separately against a manufacturer, supplier or maintenance contractor. Under the Employers' Liability (Defective Equipment) Act 1969, your employer can be liable for a defect caused by a third party, even an unidentified one. The general time limit is three years.",
     sections: [
       {
         heading: "What employers must do about equipment",
@@ -501,7 +501,7 @@ export const accidentAtWorkChildren: PillarChild[] = [
       "Photograph the area and your footwear straight away, and report the accident.",
     ],
     answerBox:
-      "You may be able to claim for a slip or trip at work in Scotland if your employer failed to take reasonable care to keep floors and walkways safe, for example by leaving spills, obstructions, poor lighting or icy areas unmanaged. The Workplace (Health, Safety and Welfare) Regulations 1992 set standards for floors and traffic routes and are strong evidence of what a reasonable employer should do. The general time limit is three years.",
+      "You may be able to claim for a slip or trip at work in Scotland if your employer failed to take reasonable care to keep floors and walkways safe, such as leaving spills, obstructions, poor lighting or ice. The Workplace Regulations 1992 are strong evidence of the expected standard. The general time limit is three years.",
     sections: [
       {
         heading: "What the law expects of employers",
@@ -623,7 +623,7 @@ export const accidentAtWorkChildren: PillarChild[] = [
       "In Scotland a death in the course of employment generally leads to a mandatory Fatal Accident Inquiry.",
     ],
     answerBox:
-      "You should report an accident at work to your employer as soon as possible and make sure it is recorded in the accident book. Separately, the employer or another responsible person must report deaths, specified serious injuries, injuries causing more than seven days' incapacity, certain diseases and dangerous occurrences to the Health and Safety Executive under RIDDOR. Failing to report does not stop you claiming, but a prompt record makes your account easier to prove.",
+      "Report an accident at work to your employer as soon as possible and make sure it is recorded in the accident book. Separately, your employer must report deaths, specified injuries, over-seven-day injuries and certain diseases to the HSE under RIDDOR. A missing report does not stop you claiming, but a prompt record helps prove what happened.",
     sections: [
       {
         heading: "Step one: tell your employer and get it recorded",

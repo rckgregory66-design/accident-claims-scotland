@@ -111,11 +111,10 @@ export default function HowToClaimPage() {
         <div className="answer-box">
           <p className="font-semibold text-blue-900 mb-1">How do accident claims work in Scotland?</p>
           <p className="text-blue-800">
-            In Scotland, a personal injury claim follows a structured process beginning with a free initial
-            enquiry. Most claims are resolved through negotiation between solicitors and insurers —
-            without the need for a court hearing. Your solicitor handles the process on your behalf, keeping
-            you informed at every stage. The process typically takes several months to several years
-            depending on the complexity of your claim.
+            A personal injury claim in Scotland usually starts with gathering evidence and notifying the party
+            at fault or their insurer. Most claims settle by negotiation without a court hearing; court action
+            is raised if liability is denied or no fair offer is made. Simple claims can take months and complex
+            claims years. Court proceedings must normally start within three years.
           </p>
         </div>
 

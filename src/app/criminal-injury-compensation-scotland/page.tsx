@@ -32,7 +32,7 @@ const faqs = [
   {
     question: "How much compensation can I claim through the CICA?",
     answer:
-      "CICA awards are made according to the tariff in the Criminal Injuries Compensation Scheme. Awards range from £1,000 for less serious injuries to £500,000 or more for the most serious cases. The tariff sets out fixed amounts for different types of injury. The CICA may also pay loss of earnings and special expenses in qualifying cases.",
+      "CICA awards are made according to the tariff in the Criminal Injuries Compensation Scheme. Awards range from £1,000 for less serious injuries to £500,000 for the most serious cases. The tariff sets out fixed amounts for different types of injury. The CICA may also pay loss of earnings and special expenses in qualifying cases.",
   },
   {
     question: "What is the time limit for a CICA claim in Scotland?",
@@ -53,7 +53,7 @@ export default function CriminalInjuryPage() {
         "Victims of violent crime in Scotland can claim through the CICA without a criminal conviction.",
         "The CICA time limit is two years from the crime — shorter than standard personal injury claims.",
         "You must have reported the crime to the police and cooperated with any investigation.",
-        "CICA awards follow a fixed tariff, ranging from £1,000 to £500,000+.",
+        "CICA awards follow a fixed tariff, ranging from £1,000 to £500,000.",
         "A civil claim against the perpetrator or a negligent third party may also be possible.",
       ]}
       answerBox="In Scotland, victims of violent crime may be eligible to claim compensation through the Criminal Injuries Compensation Scheme, administered by the CICA. Claims must generally be made within two years of the crime. You do not need a criminal conviction to claim, but you must have reported the crime to the police and cooperated with any investigation."
