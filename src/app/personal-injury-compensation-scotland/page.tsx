@@ -114,6 +114,12 @@ export default function CompensationGuidePage() {
             "In straightforward claims where liability is admitted early, interim payments may be available and settlement can be reached within months. In complex cases involving serious injury, the claim may take two to five years or more — partly because it is important not to finalise a settlement before the full impact of your injury is known. Your solicitor will advise on the appropriate timing of settlement in your case.",
         },
         {
+          heading: "Can You Claim in the First Place?",
+          content:
+            "Compensation is only assessed once a claim is established. Who can claim, what has to be proved and the time limit are covered in our main guide:",
+          linkedList: [{ text: "Personal injury claims in Scotland", href: "/personal-injury-claims-scotland" }],
+        },
+        {
           heading: "Important Disclaimer",
           content:
             "The information in this guide is for general information purposes only. No guarantee of any specific level of compensation is made or implied. The value of any personal injury claim in Scotland depends entirely on the facts, evidence and legal principles applicable to that specific case. Your solicitor will give you an honest assessment of your claim based on the evidence — not an inflated estimate.",
