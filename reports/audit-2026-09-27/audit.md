@@ -25,7 +25,7 @@ Site: https://accident-claims-scotland.com. Builds on `reports/audit-2026-09-20/
 | 11 | Cloudflare Early Hint preloads a 404 image | Recommended | **Fixed** (`! Link` in `_headers`; verify after deploy) |
 | 12 | Two noindex location pages are orphaned | Recommended | **Fixed** (added to `LOCATIONS`, still noindex) |
 | 13 | Articles have no named author or reviewer, and the Organization has no `logo` or `sameAs` | Recommended (YMYL E-E-A-T) | Open (needs real data) |
-| 14 | Weak internal linking to 8 detail pages (1 inlink each) | Recommended | **Fixed for 6** (solicitor-approved links); 2 pages still need a link |
+| 14 | Weak internal linking to 8 detail pages (1 inlink each) | Recommended | **Fixed** (all 8, solicitor-approved links) |
 | 15 | FAQPage, HowTo, Speakable and llms.txt: what to expect from each | Informational | No change |
 
 Checked and found correct: every indexable URL has one H1 and a self-referencing canonical. Every sitemap URL returns a built page, and no noindex page is in the sitemap. All JSON-LD parses. All 112 URLs in `llms.txt` resolve. Critical content and links are in the initial HTML, so nothing depends on client-side rendering. Lighthouse lab results: LCP 0.40 s, CLS 0, total blocking time is negligible, and the SEO score is 100. robots.txt matches the stated policy (details under item 15).
@@ -84,7 +84,7 @@ Checked and found correct: every indexable URL has one H1 and a self-referencing
 
   **Shipped 27 Sep after solicitor review of these links.** In the three JSX guides (`guideContent.tsx`), each link is a one-line sentence under the relevant heading. The four data guides (`extendedGuideContent.tsx`) use a new optional `seeAlso` field, rendered as a "Related claim pages" list. The added text only points to the page and adds no legal statement. Result: each of the six targets now has 2 or more inlinks (occupational dermatitis has 3).
 
-  **Still open:** `/child-road-accident-claims-scotland` and `/needlestick-injury-claims-scotland` were in the list of 8 but this table gave them no guide link, so they still have 1 inlink each. Proposed pairs for the solicitor to approve: `/guides/road-traffic-accident-claims-scotland` → child road accident claims, and `/guides/accident-at-work-claim-scotland` → needlestick injury claims.
+  **Closed 29 Oct (solicitor-approved):** `/guides/road-traffic-accident-claims-scotland` now links to child road accident claims, and `/guides/accident-at-work-claim-scotland` links to needlestick injury claims. All eight pages now have at least two inlinks.
 
 ### Page-type intent map (reference)
 
