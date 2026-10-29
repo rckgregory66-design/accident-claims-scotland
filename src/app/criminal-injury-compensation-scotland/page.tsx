@@ -1,5 +1,8 @@
 import type { Metadata } from "next";
 import ClaimPageTemplate from "@/components/ClaimPageTemplate";
+import { childSubpageLinks } from "@/data/pillarChildren";
+
+const CHILD = "/criminal-injury-compensation-scotland";
 
 export const metadata: Metadata = {
   title: "Criminal Injury Compensation Scotland — CICA Claims Guide",
@@ -32,7 +35,7 @@ const faqs = [
   {
     question: "How much compensation can I claim through the CICA?",
     answer:
-      "CICA awards are made according to the tariff in the Criminal Injuries Compensation Scheme. Awards range from £1,000 for less serious injuries to £500,000 for the most serious cases. The tariff sets out fixed amounts for different types of injury. The CICA may also pay loss of earnings and special expenses in qualifying cases.",
+      "CICA awards are made according to the tariff in the Criminal Injuries Compensation Scheme. Injury payments under the tariff range from £1,000 to £250,000, depending on the type and severity of the injury. The CICA may also pay loss of earnings and special expenses in qualifying cases. The maximum total award, including those payments, is £500,000.",
   },
   {
     question: "What is the time limit for a CICA claim in Scotland?",
@@ -45,7 +48,7 @@ export default function CriminalInjuryPage() {
   return (
     <ClaimPageTemplate
       metaUrl="/criminal-injury-compensation-scotland"
-      dateModified="2026-06-16"
+      dateModified="2026-10-29"
       breadcrumbs={[{ label: "Criminal Injury Compensation Scotland" }]}
       h1="Criminal Injury Compensation Scotland"
       intro="If you have been injured as a victim of violent crime in Scotland — including assault, domestic abuse, sexual violence or other offences — you may be entitled to apply for compensation through the Criminal Injuries Compensation Authority (CICA). This page provides general information about that process."
@@ -53,7 +56,7 @@ export default function CriminalInjuryPage() {
         "Victims of violent crime in Scotland can claim through the CICA without a criminal conviction.",
         "The CICA time limit is two years from the crime — shorter than standard personal injury claims.",
         "You must have reported the crime to the police and cooperated with any investigation.",
-        "CICA awards follow a fixed tariff, ranging from £1,000 to £500,000.",
+        "Injury payments follow a fixed tariff from £1,000 to £250,000; the maximum total award is £500,000.",
         "A civil claim against the perpetrator or a negligent third party may also be possible.",
       ]}
       answerBox="In Scotland, victims of violent crime may be eligible to claim compensation through the Criminal Injuries Compensation Scheme, administered by the CICA. Claims must generally be made within two years of the crime. You do not need a criminal conviction to claim, but you must have reported the crime to the police and cooperated with any investigation."
@@ -78,19 +81,19 @@ export default function CriminalInjuryPage() {
           heading: "Types of Crime Covered",
           content: "The scheme covers a wide range of violent crimes, including:",
           linkedList: [
-            { text: "Assault and common assault", href: "/assault-injury-claim-scotland" },
+            { text: "Assault", href: `${CHILD}/assault-claims` },
             { text: "Domestic abuse and domestic violence", href: "/domestic-abuse-injury-claim-scotland" },
-            { text: "Sexual assault and rape", href: "/sexual-assault-injury-claim-scotland" },
-            { text: "Robbery and mugging", href: "/robbery-injury-claim-scotland" },
-            { text: "Knife crime and serious assault", href: "/knife-crime-injury-claim-scotland" },
-            { text: "Hate crime injuries", href: "/hate-crime-injury-claim-scotland" },
-            { text: "Criminal injuries compensation — how to apply", href: "/criminal-injury-compensation-scotland" },
+            { text: "Sexual assault and rape", href: `${CHILD}/sexual-assault-claims` },
+            { text: "Robbery and mugging", href: `${CHILD}/robbery-claims` },
+            { text: "Knife crime and stabbings", href: `${CHILD}/knife-crime-claims` },
+            { text: "Hate crime injuries", href: `${CHILD}/hate-crime-claims` },
+            { text: "Childhood physical or sexual abuse", href: "/child-abuse-injury-claim-scotland" },
           ],
         },
         {
           heading: "How CICA Awards Are Calculated",
           content:
-            "CICA awards are made according to the tariff in the Criminal Injuries Compensation Scheme. The tariff sets out fixed amounts for different types and levels of injury. Awards range from £1,000 for relatively minor injuries to significantly higher amounts for serious physical or psychological harm. In qualifying cases, the CICA may also pay loss of earnings and special expenses such as treatment costs. The scheme is separate from civil litigation.",
+            "CICA awards are made according to the tariff in the Criminal Injuries Compensation Scheme. The tariff sets out fixed amounts for different types and levels of injury. Injury payments range from £1,000 to £250,000 for the most serious injuries, such as complete paralysis. In qualifying cases, the CICA may also pay loss of earnings and special expenses such as care costs, up to a maximum total award of £500,000. The scheme is separate from civil litigation.",
         },
         {
           heading: "The Application Process",
@@ -111,12 +114,8 @@ export default function CriminalInjuryPage() {
       subpages={{
         title: "Types of Criminal Injury Claim",
         pages: [
-          { label: "Assault Claims", href: "/assault-injury-claim-scotland", desc: "Physical assault and common assault" },
+          ...childSubpageLinks("criminal-injury-compensation-scotland"),
           { label: "Domestic Abuse Claims", href: "/domestic-abuse-injury-claim-scotland", desc: "Domestic violence injuries" },
-          { label: "Sexual Assault Claims", href: "/sexual-assault-injury-claim-scotland", desc: "Sexual violence and rape" },
-          { label: "Criminal Injuries Compensation", href: "/criminal-injury-compensation-scotland", desc: "CICA scheme and eligibility" },
-          { label: "Knife Crime Claims", href: "/knife-crime-injury-claim-scotland", desc: "Stab wounds and blade injuries" },
-          { label: "Hate Crime Claims", href: "/hate-crime-injury-claim-scotland", desc: "Racially and otherwise motivated crime" },
           { label: "Child Abuse Compensation", href: "/child-abuse-injury-claim-scotland", desc: "Historic abuse, institutional abuse" },
         ],
       }}
@@ -130,6 +129,8 @@ export default function CriminalInjuryPage() {
         { label: "Criminal Injuries Compensation Authority (CICA) — official scheme administrator", url: "https://www.gov.uk/government/organisations/criminal-injuries-compensation-authority" },
         { label: "Criminal Injuries Compensation Scheme 2012 — the governing tariff scheme", url: "https://www.gov.uk/government/publications/criminal-injuries-compensation-scheme-2012" },
         { label: "GOV.UK — how to apply to CICA", url: "https://www.gov.uk/claim-compensation-criminal-injury" },
+        { label: "GOV.UK — how much you can get (injury payments and maximum award)", url: "https://www.gov.uk/claim-compensation-criminal-injury/how-much-you-can-get" },
+        { label: "CICA — Criminal injuries compensation: a guide", url: "https://www.gov.uk/guidance/criminal-injuries-compensation-a-guide" },
       ]}
       related={[
         { label: "Personal Injury Claims Scotland", href: "/personal-injury-claims-scotland" },
