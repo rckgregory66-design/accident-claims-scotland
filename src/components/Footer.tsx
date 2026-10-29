@@ -115,7 +115,7 @@ export default function Footer() {
             <strong className="text-gray-400">Disclaimer:</strong> This website provides general information only and does not constitute legal advice. Each claim depends on its own facts, evidence, liability, causation and applicable time limits. Time limits apply and delay may bar your claim. No guarantee of outcome or compensation amount is made or implied.
           </p>
           <p className="text-xs text-gray-400">
-            © {new Date().getFullYear()} {SITE.name}.
+            © {new Date().getFullYear()} {SITE.name}. Operated by Ola Consultants Ltd, registered in England and Wales, company number 14446269.
           </p>
         </div>
       </div>
