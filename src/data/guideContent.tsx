@@ -162,6 +162,12 @@ const articles: Record<string, ReactNode> = {
         <li>Construction and site accidents</li>
         <li>Factory and warehouse accidents</li>
       </ul>
+      <p>
+        Healthcare and other workers injured by a used needle or sharp can read{" "}
+        <Link href="/needlestick-injury-claims-scotland" className="text-red-700 font-medium hover:underline">
+          needlestick injury claims in Scotland
+        </Link>.
+      </p>
 
       <h2>Will I Lose My Job If I Claim?</h2>
       <p>

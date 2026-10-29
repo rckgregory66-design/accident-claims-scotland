@@ -46,6 +46,7 @@ const guideData: Record<string, Guide> = {
       commonSources.court,
     ],
     parent: { href: "/road-traffic-accident-claims-scotland", label: "Road traffic accident service overview" },
+    seeAlso: [{ href: "/child-road-accident-claims-scotland", label: "Child road accident claims in Scotland" }],
   },
   "whiplash-claims-scotland": {
     answer:
