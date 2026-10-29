@@ -53,12 +53,21 @@ export default function PrivacyPolicyPage() {
         <p>We use your personal data to:</p>
         <ul>
           <li>Respond to your enquiry and make an initial assessment of the information supplied</li>
-          <li>Contact you about the enquiry and, where appropriate, discuss its onward handling</li>
+          <li>Contact you about the enquiry and, where appropriate, forward it to Thompsons Solicitors (see below)</li>
           <li>Comply with legal obligations</li>
         </ul>
         <p>
           We do not sell your personal data to third parties. We do not share your data with marketing
           companies.
+        </p>
+
+        <h2>Passing your enquiry to Thompsons Solicitors</h2>
+        <p>
+          Ola Consultants Ltd may forward the details you submit to Thompsons Solicitors, a separate firm
+          of solicitors, so that they can consider contacting you about your enquiry. This website is not
+          part of Thompsons Solicitors. Once your enquiry has been passed on, Thompsons Solicitors will be
+          responsible for the information it receives and will explain how it uses it. Forwarding does not
+          mean Thompsons Solicitors has accepted your case or that you have instructed them.
         </p>
 
         <h2>Enquiry Delivery Providers</h2>

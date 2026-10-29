@@ -62,7 +62,7 @@ export default function ClaimForm({ variant = "inline", title }: Props) {
           Your enquiry was accepted for delivery to the website operator. A reply is not guaranteed, and no solicitor has been instructed.
         </p>
         <ol className="text-sm text-green-900 space-y-2 list-decimal pl-5">
-          <li>Your enquiry has been emailed to the website operator.</li>
+          <li>Your enquiry has been emailed to the website operator, who may forward it to Thompsons Solicitors.</li>
           <li>You may be contacted by phone or email using the details you provided, but there is no guarantee of a reply.</li>
           <li>Keep a note of any deadline information — time limits keep running.</li>
           <li>If a time limit may be imminent, seek urgent independent advice from a qualified Scottish solicitor.</li>
@@ -139,8 +139,8 @@ export default function ClaimForm({ variant = "inline", title }: Props) {
         <div className="flex items-start gap-3">
           <input id="cf-consent" name="consent" value="yes" type="checkbox" required className="mt-1 h-4 w-4" />
           <label htmlFor="cf-consent" className="text-sm text-gray-700">
-            I consent to this information being emailed for the purpose of responding to my enquiry, in
-            accordance with the <Link href="/privacy-policy" className="text-red-700 underline">Privacy Policy</Link>.
+            I consent to this information being emailed to the website operator, who may forward it to Thompsons
+            Solicitors, a separate firm of solicitors, so that they can respond to my enquiry, in accordance with the <Link href="/privacy-policy" className="text-red-700 underline">Privacy Policy</Link>.
           </label>
         </div>
         {status === "error" && <p role="alert" className="rounded-lg bg-red-50 border border-red-300 p-3 text-sm text-red-900">{error}</p>}

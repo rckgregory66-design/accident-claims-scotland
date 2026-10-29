@@ -54,6 +54,14 @@ export default function AboutPage() {
           advice from a suitably qualified Scottish solicitor.
         </p>
 
+        <h2>What happens to enquiries</h2>
+        <p>
+          Enquiries sent through the form are emailed to Ola Consultants Ltd, which may forward them to
+          Thompsons Solicitors, a separate firm of solicitors. This website is not part of Thompsons
+          Solicitors, and forwarding an enquiry does not mean it has been accepted as a case. See the
+          <Link href="/privacy-policy"> privacy policy</Link> for how personal data is handled.
+        </p>
+
         <h2>How the content is prepared</h2>
         <p>
           Pages are written for a Scottish audience, separated by claim type and checked against primary or

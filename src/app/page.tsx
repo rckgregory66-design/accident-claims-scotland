@@ -84,7 +84,7 @@ export default function HomePage() {
               <p className="text-gray-300 text-base leading-relaxed mb-8">
                 Accident Claims Scotland is an information website run by Ola Consultants Ltd. It is not a
                 law firm and does not give legal advice. If you send an enquiry, your details are emailed to
-                the website operator; sending one does not create a solicitor-client relationship or stop a
+                the website operator, who may forward it to Thompsons Solicitors, a separate firm of solicitors. Sending one does not create a solicitor-client relationship or stop a
                 time limit.
               </p>
             </div>

@@ -65,9 +65,9 @@ export default function ContactPage() {
             <div className="card">
               <h3 className="font-bold text-[#0f2044] mb-2">What happens next?</h3>
               <ol className="text-sm text-gray-700 space-y-2">
-                <li className="flex gap-2"><span className="font-bold text-[#0f2044]">1.</span> Your enquiry is sent securely through this website</li>
-                <li className="flex gap-2"><span className="font-bold text-[#0f2044]">2.</span> You may be contacted using the details you provide</li>
-                <li className="flex gap-2"><span className="font-bold text-[#0f2044]">3.</span> Any assessment of your claim is carried out by the person or firm that contacts you</li>
+                <li className="flex gap-2"><span className="font-bold text-[#0f2044]">1.</span> Your enquiry is sent securely to the website operator</li>
+                <li className="flex gap-2"><span className="font-bold text-[#0f2044]">2.</span> The operator may forward it to Thompsons Solicitors, a separate firm of solicitors; this website is not part of Thompsons</li>
+                <li className="flex gap-2"><span className="font-bold text-[#0f2044]">3.</span> You may then be contacted using the details you provided. Any assessment of your claim is carried out by the person or firm that contacts you, not by this website</li>
                 <li className="flex gap-2"><span className="font-bold text-[#0f2044]">4.</span> You can ask questions and decide whether to proceed; there is no obligation</li>
               </ol>
             </div>
