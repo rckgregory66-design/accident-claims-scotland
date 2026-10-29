@@ -45,7 +45,7 @@ behaviour is decided, and update the cookie policy first.
 6. Content updates, delivery failures (compare worker 5xx and Resend dashboard with received emails), Lighthouse/accessibility changes (lab data, separate from field CWV).
 
 Baseline: compare the 28 days before deployment with each following 28 days, and year-on-year if data exists;
-note seasonality and small samples. **Deployment date: not yet deployed.** Each month, pick the next three
+note seasonality and small samples. **Deployment date: 29 Oct 2026** (main at ac9ad13; anchor fix ed5094b). Live form delivery confirmed by a test enquiry the same day. Each month, pick the next three
 improvements from observed bottlenecks.
 
 ## Crawler policy
