@@ -64,7 +64,7 @@ export default function SelfEmployedInjuryPage() {
         "Loss of earnings is assessed by reference to pre-accident profits and financial records.",
         "Time limit: three years from the accident or date of knowledge.",
       ]}
-      answerBox="In Scotland, self-employed workers who are injured through the negligence or breach of duty of another party — such as a principal contractor, site owner or occupier — can bring a personal injury claim. Employment status affects who you claim against, not whether you can claim. A free enquiry will assess your situation."
+      answerBox="In Scotland, self-employed workers who are injured through the negligence or breach of duty of another party — such as a principal contractor, site owner or occupier — can bring a personal injury claim. Employment status affects who you claim against, not whether you can claim."
       sections={[
         {
           heading: "Why Self-Employed Workers Can Still Claim",

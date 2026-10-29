@@ -56,7 +56,7 @@ export default function CriminalInjuryPage() {
         "CICA awards follow a fixed tariff, ranging from £1,000 to £500,000+.",
         "A civil claim against the perpetrator or a negligent third party may also be possible.",
       ]}
-      answerBox="In Scotland, victims of violent crime may be eligible to claim compensation through the Criminal Injuries Compensation Scheme, administered by the CICA. Claims must generally be made within two years of the crime. You do not need a criminal conviction to claim, but you must have reported the crime to the police and cooperated with any investigation. A free enquiry will assess your eligibility."
+      answerBox="In Scotland, victims of violent crime may be eligible to claim compensation through the Criminal Injuries Compensation Scheme, administered by the CICA. Claims must generally be made within two years of the crime. You do not need a criminal conviction to claim, but you must have reported the crime to the police and cooperated with any investigation."
       sections={[
         {
           heading: "What is the Criminal Injuries Compensation Scheme?",

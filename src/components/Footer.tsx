@@ -111,10 +111,10 @@ export default function Footer() {
       {/* Disclaimer bar */}
       <div className="border-t border-white/10 bg-[#060e1f]">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-6">
-          <p className="text-xs text-gray-500 leading-relaxed mb-3">
+          <p className="text-xs text-gray-400 leading-relaxed mb-3">
             <strong className="text-gray-400">Disclaimer:</strong> This website provides general information only and does not constitute legal advice. Each claim depends on its own facts, evidence, liability, causation and applicable time limits. Time limits apply and delay may bar your claim. No guarantee of outcome or compensation amount is made or implied.
           </p>
-          <p className="text-xs text-gray-500">
+          <p className="text-xs text-gray-400">
             © {new Date().getFullYear()} {SITE.name}.
           </p>
         </div>

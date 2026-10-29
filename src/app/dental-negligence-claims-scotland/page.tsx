@@ -64,7 +64,7 @@ export default function DentalNegligencePage() {
         "Time limit: three years from the date of treatment or date of knowledge.",
         "Compensation covers remedial dental costs, pain and any lasting injury.",
       ]}
-      answerBox="In Scotland, dental negligence claims arise where a dentist fails to meet the standard of a reasonably competent practitioner, causing harm to the patient. Both NHS and private dental claims are available. The time limit is generally three years from the treatment date or date of knowledge. A free enquiry will assess your circumstances — no obligation."
+      answerBox="In Scotland, dental negligence claims arise where a dentist fails to meet the standard of a reasonably competent practitioner, causing harm to the patient. Both NHS and private dental claims are available. The time limit is generally three years from the treatment date or date of knowledge."
       sections={[
         {
           heading: "What Is Dental Negligence?",

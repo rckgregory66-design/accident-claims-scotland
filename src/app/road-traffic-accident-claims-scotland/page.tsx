@@ -57,7 +57,7 @@ export default function RoadTrafficAccidentPage() {
         "Contributory negligence (e.g. not wearing a seatbelt) reduces but does not bar your claim.",
         "Compensation covers pain and suffering, earnings loss, medical costs and vehicle damage.",
       ]}
-      answerBox="In Scotland, you can make a road traffic accident claim if you were injured within the last three years and the accident was caused by another driver's negligence or a road defect. Claims can be made even if the other driver was uninsured. A free enquiry will assess your circumstances — no obligation."
+      answerBox="In Scotland, you can make a road traffic accident claim if you were injured within the last three years and the accident was caused by another driver's negligence or a road defect. Claims can be made even if the other driver was uninsured."
       sections={[
         {
           heading: "Road Traffic Accident Claims in Scotland",

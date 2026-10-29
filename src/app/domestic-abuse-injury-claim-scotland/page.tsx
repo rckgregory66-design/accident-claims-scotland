@@ -64,7 +64,7 @@ export default function DomesticAbuseInjuryPage() {
         "Time limit: two years from the incident or end of the abuse — shorter than standard personal injury.",
         "Your address and identity can be protected during the process — your abuser is not told.",
       ]}
-      answerBox="In Scotland, victims of domestic abuse who have suffered physical or psychological injury can apply for criminal injury compensation through the CICA. No criminal conviction is required, but the abuse must have been reported to the police. The time limit is generally two years. Claims are handled in complete confidence. A free, sensitive enquiry will assess your eligibility."
+      answerBox="In Scotland, victims of domestic abuse who have suffered physical or psychological injury can apply for criminal injury compensation through the CICA. No criminal conviction is required, but the abuse must have been reported to the police. The time limit is generally two years."
       sections={[
         {
           heading: "The Criminal Injuries Compensation Scheme — Domestic Abuse",
