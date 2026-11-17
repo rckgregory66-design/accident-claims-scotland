@@ -1,7 +1,7 @@
 "use client";
 import { useState } from "react";
 import Link from "next/link";
-import { NAV_LINKS } from "@/data/siteConfig";
+import { NAV_LINKS, PHONE } from "@/data/siteConfig";
 
 export default function Header() {
   const [mobileOpen, setMobileOpen] = useState(false);
@@ -13,8 +13,11 @@ export default function Header() {
       <div className="bg-[#0a1630] text-sm text-gray-300 px-4 py-1.5">
         <div className="max-w-7xl mx-auto flex justify-between items-center">
           <span className="hidden sm:block">Accident claims information for Scotland</span>
-          <div className="flex items-center ml-auto">
-            <span>Information site, not a law firm</span>
+          <div className="flex items-center gap-3 ml-auto">
+            <a href={PHONE.href} className="text-white font-semibold hover:text-yellow-300">
+              {PHONE.display}
+            </a>
+            <span className="hidden sm:inline">Information site, not a law firm</span>
           </div>
         </div>
       </div>
@@ -81,10 +84,17 @@ export default function Header() {
           </nav>
 
           {/* Desktop CTA */}
-          <div className="hidden lg:block">
+          <div className="hidden lg:flex items-center gap-3">
+            <a
+              href={PHONE.href}
+              className="bg-red-700 hover:bg-red-800 text-white font-semibold px-5 py-2.5 rounded-lg text-sm transition-colors shadow-sm"
+              aria-label={`Call ${PHONE.display}`}
+            >
+              {PHONE.display}
+            </a>
             <Link
               href="/contact"
-              className="bg-red-700 hover:bg-red-800 text-white font-semibold px-5 py-2.5 rounded-lg text-sm transition-colors shadow-sm"
+              className="text-gray-200 hover:text-white text-sm font-medium underline-offset-2 hover:underline"
             >
               Send an enquiry
             </Link>
@@ -152,10 +162,17 @@ export default function Header() {
                 )}
               </div>
             ))}
-            <div className="pt-3">
+            <div className="pt-3 space-y-2">
+              <a
+                href={PHONE.href}
+                className="block bg-red-700 text-white text-center font-semibold py-3 rounded-lg text-sm"
+                aria-label={`Call ${PHONE.display}`}
+              >
+                {PHONE.display}
+              </a>
               <Link
                 href="/contact"
-                className="block bg-red-700 text-white text-center font-semibold py-3 rounded-lg text-sm"
+                className="block text-center text-gray-200 font-semibold py-2 rounded-lg text-sm hover:text-white"
                 onClick={() => setMobileOpen(false)}
               >
                 Send an enquiry

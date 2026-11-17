@@ -84,9 +84,9 @@ export default function HomePage() {
                 medical negligence, industrial disease and workplace accident claims across Scotland.
               </p>
               <p className="text-gray-300 text-base leading-relaxed mb-8">
-                Accident Claims Scotland is an information website run by Ola Consultants Ltd. It is not a
-                law firm and does not give legal advice. If you send an enquiry, your details are emailed to
-                the website operator, who may forward it to Thompsons Solicitors, a separate firm of solicitors. Sending one does not create a solicitor-client relationship or stop a
+                Accident Claims Scotland is an information website run by OLA Consultants Ltd. It is not a
+                law firm and does not give legal advice. We are not a firm of solicitors — enquiries are passed to Thompsons Scotland LLP, regulated by the Law Society of Scotland. If you send an enquiry, your details are emailed to
+                the website operator, who may forward it to Thompsons Scotland LLP, a separate firm of solicitors. Sending one does not create a solicitor-client relationship or stop a
                 time limit.
               </p>
             </div>

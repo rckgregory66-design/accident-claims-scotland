@@ -1,8 +1,9 @@
 import type { Metadata } from "next";
+import Link from "next/link";
 import Breadcrumbs from "@/components/Breadcrumbs";
 import JsonLd from "@/components/JsonLd";
 import { breadcrumbSchema, servicePageSchema } from "@/lib/schema";
-import { SITE } from "@/data/siteConfig";
+import { PHONE, REGISTERED_OFFICE, SITE } from "@/data/siteConfig";
 
 export const metadata: Metadata = {
   title: "Accessibility Statement | Accident Claims Scotland",
@@ -50,7 +51,9 @@ export default function AccessibilityPage() {
         <h2>Contact Us About Accessibility</h2>
         <p>
           If you have difficulty accessing any part of this website or would like content in a different
-          format, use the website contact page. Direct contact details will be added when confirmed.
+          format, call{" "}
+          <a href={PHONE.href}>{PHONE.display}</a>
+          {" "}or use the website <Link href="/contact">contact page</Link>. Registered office: {REGISTERED_OFFICE.display}.
         </p>
 
         <h2>Reporting Problems</h2>

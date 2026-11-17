@@ -3,7 +3,7 @@ import ClaimForm from "@/components/ClaimForm";
 import Breadcrumbs from "@/components/Breadcrumbs";
 import JsonLd from "@/components/JsonLd";
 import { breadcrumbSchema, servicePageSchema } from "@/lib/schema";
-import { SITE } from "@/data/siteConfig";
+import { OPERATOR, PHONE, REGISTERED_OFFICE, SITE } from "@/data/siteConfig";
 
 export const metadata: Metadata = {
   title: "Contact Accident Claims Scotland | Send an Enquiry",
@@ -46,10 +46,22 @@ export default function ContactPage() {
           {/* Contact details */}
           <div className="space-y-6">
             <div className="card">
-              <h3 className="font-bold text-[#0f2044] text-lg mb-2">Online Enquiries</h3>
+              <h3 className="font-bold text-[#0f2044] text-lg mb-2">Call or send an enquiry</h3>
+              <p className="text-sm text-gray-700 mb-3">
+                Prefer to talk about a claim?{" "}
+                <a href={PHONE.href} className="text-red-700 font-semibold hover:underline">
+                  {PHONE.display}
+                </a>
+                . Calls are answered on UK business days. You can also use the enquiry form on this page.
+              </p>
+              <p className="text-sm text-gray-700 mb-3">
+                Registered office: {REGISTERED_OFFICE.display}.
+              </p>
+              <p className="text-sm text-gray-700 mb-3">
+                We are not a firm of solicitors — enquiries are passed to Thompsons Scotland LLP, regulated by the Law Society of Scotland.
+              </p>
               <p className="text-sm text-gray-700">
-                Use the enquiry form on this page. Telephone, email and office details will be added when
-                the receiving provider has been confirmed.
+                {OPERATOR.legalName} publishes this website and is the data controller for enquiries you submit. Enquiries go to Thompsons Scotland LLP, regulated by the Law Society of Scotland (reg. no. 31477). You are not obliged to instruct them.
               </p>
             </div>
 
@@ -66,7 +78,7 @@ export default function ContactPage() {
               <h3 className="font-bold text-[#0f2044] mb-2">What happens next?</h3>
               <ol className="text-sm text-gray-700 space-y-2">
                 <li className="flex gap-2"><span className="font-bold text-[#0f2044]">1.</span> Your enquiry is sent securely to the website operator</li>
-                <li className="flex gap-2"><span className="font-bold text-[#0f2044]">2.</span> The operator may forward it to Thompsons Solicitors, a separate firm of solicitors; this website is not part of Thompsons</li>
+                <li className="flex gap-2"><span className="font-bold text-[#0f2044]">2.</span> The operator may forward it to Thompsons Scotland LLP, a separate firm of solicitors regulated by the Law Society of Scotland; this website is not part of Thompsons Scotland LLP</li>
                 <li className="flex gap-2"><span className="font-bold text-[#0f2044]">3.</span> You may then be contacted using the details you provided. Any assessment of your claim is carried out by the person or firm that contacts you, not by this website</li>
                 <li className="flex gap-2"><span className="font-bold text-[#0f2044]">4.</span> You can ask questions and decide whether to proceed; there is no obligation</li>
               </ol>

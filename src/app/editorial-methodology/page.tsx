@@ -39,7 +39,7 @@ export default function EditorialMethodologyPage() {
         </div>
 
         <h2>Scope and responsibility</h2>
-        <p>The website is operated by Ola Consultants Ltd as a Scottish accident-claims marketing and information resource. It is not currently presented as a regulated law firm. Published material is general information and does not establish a solicitor-client relationship.</p>
+        <p>The website is operated by OLA Consultants Ltd as a Scottish accident-claims marketing and information resource. It is not currently presented as a regulated law firm. Published material is general information and does not establish a solicitor-client relationship.</p>
 
         <h2>Source hierarchy</h2>
         <p>We prefer sources in the following order:</p>

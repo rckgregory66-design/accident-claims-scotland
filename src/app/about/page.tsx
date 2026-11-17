@@ -4,7 +4,7 @@ import CtaSection from "@/components/CtaSection";
 import Breadcrumbs from "@/components/Breadcrumbs";
 import JsonLd from "@/components/JsonLd";
 import { breadcrumbSchema, servicePageSchema } from "@/lib/schema";
-import { SITE } from "@/data/siteConfig";
+import { OPERATOR, PHONE, REFERRAL_FIRM, REGISTERED_OFFICE, SITE } from "@/data/siteConfig";
 
 export const metadata: Metadata = {
   title: "About Us | Accident Claims Scotland",
@@ -18,7 +18,7 @@ export default function AboutPage() {
     <>
       <JsonLd data={[
         breadcrumbSchema([{ name: "Home", url: SITE.url }, { name: "About Us", url: `${SITE.url}/about` }], "/about"),
-        servicePageSchema({ name: "About Accident Claims Scotland", url: "/about", description: "About the Accident Claims Scotland information website, operated by Ola Consultants Ltd, covering personal injury and accident claims in Scotland.", dateModified: "2026-10-29" }),
+        servicePageSchema({ name: "About Accident Claims Scotland", url: "/about", description: "About the Accident Claims Scotland information website, operated by OLA Consultants Ltd, covering personal injury and accident claims in Scotland.", dateModified: "2026-10-29" }),
       ]} />
       <Breadcrumbs crumbs={[{ label: "About Us" }]} />
 
@@ -35,7 +35,7 @@ export default function AboutPage() {
         <div className="answer-box">
           <p className="text-blue-800">
             {SITE.name} publishes general information about accident and personal injury claims in Scotland,
-            including time limits, evidence, funding and compensation. It is run by Ola Consultants Ltd. It is
+            including time limits, evidence, funding and compensation. It is run by {OPERATOR.legalName}. It is
             not a law firm, does not give legal advice on individual cases and is not regulated by the Law
             Society of Scotland.
           </p>
@@ -47,20 +47,35 @@ export default function AboutPage() {
           disease and workplace accident claims in Scotland.
         </p>
         <p>
-          The website is operated by Ola Consultants Ltd (registered in England and Wales, company number 14446269). It is being prepared as a marketing and information
-          resource for Scottish solicitors, but is not currently presented as a regulated law firm. Firm,
-          solicitor and regulatory details will be added only when they can be verified.
+          The website is operated by {OPERATOR.legalName} (registered in England and Wales, company number {OPERATOR.companyNumber}), registered office {REGISTERED_OFFICE.display}. We are not a firm of solicitors — enquiries are passed to Thompsons Scotland LLP, regulated by the Law Society of Scotland.
         </p>
         <p>
           The content explains general Scots-law concepts and common claims processes. Individual cases require
           advice from a suitably qualified Scottish solicitor.
         </p>
 
+        <h2>Who handles claims</h2>
+        <p>
+          We do not carry out legal work. Enquiries made through this site are passed to:
+        </p>
+        <ul>
+          <li><strong>{REFERRAL_FIRM.name}</strong></li>
+          <li>Regulated by: Law Society of Scotland (reg. no. {REFERRAL_FIRM.registrationNumber})</li>
+          <li>Registered in Scotland: company no. {REFERRAL_FIRM.companyNumber}</li>
+          <li>Registered office: {REFERRAL_FIRM.registeredOffice}</li>
+        </ul>
+        <p>
+          You are under no obligation to instruct them. You can approach any solicitor you like, and you can check that any Scottish solicitor holds a current practising certificate using the Law Society of Scotland&apos;s Find a Solicitor register.
+        </p>
+        <p>
+          {OPERATOR.legalName} publishes this site and has a commercial arrangement with Thompsons Scotland LLP for enquiries introduced through it. It costs you nothing, it does not affect the advice you are given, and you are free to instruct any solicitor you choose.
+        </p>
+
         <h2>What happens to enquiries</h2>
         <p>
-          Enquiries sent through the form are emailed to Ola Consultants Ltd, which may forward them to
-          Thompsons Solicitors, a separate firm of solicitors. This website is not part of Thompsons
-          Solicitors, and forwarding an enquiry does not mean it has been accepted as a case. See the
+          Enquiries sent through the form are emailed to {OPERATOR.legalName}, which may forward them to
+          Thompsons Scotland LLP, a separate firm of solicitors regulated by the Law Society of Scotland. This website is not part of Thompsons
+          Scotland LLP, and forwarding an enquiry does not mean it has been accepted as a case. See the
           <Link href="/privacy-policy"> privacy policy</Link> for how personal data is handled.
         </p>
 
@@ -88,8 +103,8 @@ export default function AboutPage() {
 
         <h2>Corrections and feedback</h2>
         <p>
-          If you believe a page is inaccurate, out of date or unclear, use the <Link href="/contact">contact page</Link>
-          and identify the page and passage concerned. Website and privacy concerns can also be raised through the
+          If you spot something on this site that is wrong or out of date, write to {OPERATOR.legalName} at {REGISTERED_OFFICE.display}. We review every report and correct the page where needed. Please do not send details of an injury this way; for a claim, use the <Link href="/contact">enquiry form</Link>.
+          You can also use the <Link href="/contact">contact page</Link> and identify the page and passage concerned. Website and privacy concerns can also be raised through the
           routes described in our <Link href="/complaints">complaints information</Link> and <Link href="/privacy-policy">privacy policy</Link>.
         </p>
         <p>
@@ -120,8 +135,10 @@ export default function AboutPage() {
 
         <h2>Contact Us</h2>
         <p>
-          For general website contact information, visit the{" "}
-          <Link href="/contact">contact page</Link>.
+          Call{" "}
+          <a href={PHONE.href}>{PHONE.display}</a>
+          , or visit the{" "}
+          <Link href="/contact">contact page</Link>. Registered office: {REGISTERED_OFFICE.display}.
         </p>
       </section>
 

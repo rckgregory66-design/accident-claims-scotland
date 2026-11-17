@@ -2,7 +2,7 @@ import type { Metadata } from "next";
 import Breadcrumbs from "@/components/Breadcrumbs";
 import JsonLd from "@/components/JsonLd";
 import { breadcrumbSchema, servicePageSchema } from "@/lib/schema";
-import { SITE } from "@/data/siteConfig";
+import { OPERATOR, REGISTERED_OFFICE, SITE } from "@/data/siteConfig";
 
 export const metadata: Metadata = {
   title: "Privacy Policy | Accident Claims Scotland",
@@ -26,12 +26,12 @@ export default function PrivacyPolicyPage() {
       <div className="max-w-4xl mx-auto px-4 sm:px-6 py-10 prose-legal">
         <h2>Who We Are</h2>
         <p>
-          This privacy notice applies to {SITE.name}. The website is operated by Ola Consultants Ltd,
+          This privacy notice applies to {SITE.name}. The website is operated by {OPERATOR.legalName},
           which is the data controller for information submitted through this website. Data-protection
           enquiries can be sent to rckgregory66@gmail.com.
         </p>
         <p>
-          Ola Consultants Ltd is not presented on this website as a firm of solicitors. Submitting an
+          {OPERATOR.legalName} is not presented on this website as a firm of solicitors. Submitting an
           enquiry does not create a solicitor-client relationship.
         </p>
 
@@ -53,7 +53,7 @@ export default function PrivacyPolicyPage() {
         <p>We use your personal data to:</p>
         <ul>
           <li>Respond to your enquiry and make an initial assessment of the information supplied</li>
-          <li>Contact you about the enquiry and, where appropriate, forward it to Thompsons Solicitors (see below)</li>
+          <li>Contact you about the enquiry and, where appropriate, forward it to Thompsons Scotland LLP (see below)</li>
           <li>Comply with legal obligations</li>
         </ul>
         <p>
@@ -61,19 +61,19 @@ export default function PrivacyPolicyPage() {
           companies.
         </p>
 
-        <h2>Passing your enquiry to Thompsons Solicitors</h2>
+        <h2>Passing your enquiry to Thompsons Scotland LLP</h2>
         <p>
-          Ola Consultants Ltd may forward the details you submit to Thompsons Solicitors, a separate firm
+          {OPERATOR.legalName} may forward the details you submit to Thompsons Scotland LLP, a separate firm
           of solicitors, so that they can consider contacting you about your enquiry. This website is not
-          part of Thompsons Solicitors. Once your enquiry has been passed on, Thompsons Solicitors will be
+          part of Thompsons Scotland LLP. Once your enquiry has been passed on, Thompsons Scotland LLP will be
           responsible for the information it receives and will explain how it uses it. Forwarding does not
-          mean Thompsons Solicitors has accepted your case or that you have instructed them.
+          mean Thompsons Scotland LLP has accepted your case or that you have instructed them.
         </p>
 
         <h2>Enquiry Delivery Providers</h2>
         <p>
           Enquiries are processed through Cloudflare, which hosts and protects the website, and Resend,
-          which delivers the enquiry by email to Ola Consultants Ltd. These providers act as data
+          which delivers the enquiry by email to {OPERATOR.legalName}. These providers act as data
           processors for this delivery. Their processing may involve infrastructure outside the United
           Kingdom, subject to the contractual safeguards made available by those providers.
         </p>
@@ -108,7 +108,7 @@ export default function PrivacyPolicyPage() {
           <li>Withdraw consent at any time</li>
         </ul>
         <p>
-          To exercise these rights, contact Ola Consultants Ltd at rckgregory66@gmail.com.
+          To exercise these rights, contact {OPERATOR.legalName} at rckgregory66@gmail.com.
         </p>
 
         <h2>Complaints</h2>
@@ -119,7 +119,8 @@ export default function PrivacyPolicyPage() {
 
         <h2>Contact</h2>
         <p>
-          Data controller: Ola Consultants Ltd<br />
+          Data controller: {OPERATOR.legalName}<br />
+          Registered office: {REGISTERED_OFFICE.display}<br />
           Email: rckgregory66@gmail.com
         </p>
       </div>

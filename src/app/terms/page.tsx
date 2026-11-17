@@ -2,7 +2,7 @@ import type { Metadata } from "next";
 import Breadcrumbs from "@/components/Breadcrumbs";
 import JsonLd from "@/components/JsonLd";
 import { breadcrumbSchema, servicePageSchema } from "@/lib/schema";
-import { SITE } from "@/data/siteConfig";
+import { OPERATOR, PHONE, REGISTERED_OFFICE, SITE } from "@/data/siteConfig";
 
 export const metadata: Metadata = {
   title: "Terms of Use | Accident Claims Scotland",
@@ -70,7 +70,9 @@ export default function TermsPage() {
 
         <h2>Contact</h2>
         <p>
-          Contact details for questions about these terms will be added when the website operator details are confirmed.
+          If you have any questions about these terms, please call us on{" "}
+          <a href={PHONE.href}>{PHONE.display}</a>.
+          Published by {OPERATOR.legalName} (company no. {OPERATOR.companyNumber}), registered office {REGISTERED_OFFICE.display}.
         </p>
       </div>
     </>

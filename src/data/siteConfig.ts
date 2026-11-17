@@ -7,6 +7,43 @@ export const SITE = {
     "Scottish accident-claim information covering personal injury, medical negligence, industrial disease and related compensation claims.",
 };
 
+/** Display, tel: and schema forms of the site phone number. Use only these. */
+export const PHONE = {
+  display: "0141 566 8059",
+  href: "tel:+441415668059",
+  // Schema form as published on personal-injury-claims-scotland.co.uk (no spaces).
+  schema: "+441415668059",
+} as const;
+
+/** Registered office of the operator, as published on personal-injury-claims-scotland.co.uk. */
+export const REGISTERED_OFFICE = {
+  streetAddress: "3 Sharrow Lane",
+  addressLocality: "Sheffield",
+  postalCode: "S11 8AE",
+  addressCountry: "GB",
+  display: "3 Sharrow Lane, Sheffield, England, S11 8AE",
+} as const;
+
+/** Operator company details, as published on personal-injury-claims-scotland.co.uk. */
+export const OPERATOR = {
+  legalName: "OLA Consultants Ltd",
+  companyNumber: "14446269",
+  companiesHouseUrl:
+    "https://find-and-update.company-information.service.gov.uk/company/14446269",
+} as const;
+
+/**
+ * Partner solicitor firm named on personal-injury-claims-scotland.co.uk.
+ * Law Society of Scotland registration applies to this firm, not to the website operator.
+ */
+export const REFERRAL_FIRM = {
+  name: "Thompsons Scotland LLP",
+  regulator: "the Law Society of Scotland",
+  registrationNumber: "31477",
+  companyNumber: "SO307922",
+  registeredOffice: "70 Wellington Street, Glasgow, G2 6UA",
+} as const;
+
 export const NAV_LINKS = [
   {
     label: "Claim Types",
