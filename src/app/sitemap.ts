@@ -82,12 +82,12 @@ export default function sitemap(): MetadataRoute.Sitemap {
     { url: `${SITE.url}/accessibility`, changeFrequency: "yearly" as const, priority: 0.3 },
   ];
 
-  // Only the two location pages with distinct, substantial local content are
-  // indexable. The other useful navigation pages remain noindex and therefore
-  // must not be advertised in the sitemap.
+  // Only location pages with distinct, substantial local content are indexable.
+  // Other city navigation pages remain noindex and must not appear in the sitemap.
   const locationPages = [
     "glasgow-accident-claims",
     "edinburgh-accident-claims",
+    "aberdeen-accident-claims",
   ].map((slug) => ({
     url: `${SITE.url}/${slug}`,
     changeFrequency: "monthly" as const,

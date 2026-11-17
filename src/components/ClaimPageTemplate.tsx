@@ -11,7 +11,7 @@ import LocationLinks from "./LocationLinks";
 import RelatedGuides from "./RelatedGuides";
 import SubpageGrid from "./SubpageGrid";
 import { articleSchema, breadcrumbSchema, faqSchema, servicePageSchema } from "@/lib/schema";
-import { SITE } from "@/data/siteConfig";
+import { REVIEWER, SITE } from "@/data/siteConfig";
 import { resolveInternalHref } from "@/lib/internalLinks";
 
 export interface RelatedLink { label: string; href: string; }
@@ -48,6 +48,7 @@ interface Props {
   guideSlugs?: string[];
   locationClaimType?: string;
   authoritativeSources?: AuthoritativeSource[];
+  belowSections?: ReactNode;
 }
 
 export default function ClaimPageTemplate({
@@ -68,6 +69,7 @@ export default function ClaimPageTemplate({
   guideSlugs,
   locationClaimType,
   authoritativeSources,
+  belowSections,
 }: Props) {
   const crumbsForSchema = [
     { name: "Home", url: SITE.url },
@@ -188,6 +190,8 @@ export default function ClaimPageTemplate({
               </div>
             ))}
 
+            {belowSections}
+
             {/* Location cross-links */}
             <LocationLinks claimType={locationClaimType} />
 
@@ -246,7 +250,8 @@ export default function ClaimPageTemplate({
                 This page provides general information and is not individual legal advice.
               </p>
               <p className="mt-2">
-                Reviewed for Scottish scope and official-source alignment. Last updated {new Intl.DateTimeFormat("en-GB", { day: "numeric", month: "long", year: "numeric" }).format(new Date(`${dateModified}T12:00:00Z`))}.{" "}
+                Reviewed for Scottish scope and official-source alignment. Last updated {new Intl.DateTimeFormat("en-GB", { day: "numeric", month: "long", year: "numeric" }).format(new Date(`${dateModified}T12:00:00Z`))}.
+                {REVIEWER.name.trim() ? ` Reviewed by ${REVIEWER.name}${REVIEWER.role ? `, ${REVIEWER.role}` : ""}.` : ""}{" "}
                 <Link href="/editorial-methodology" className="font-semibold underline">Read our publishing standards and source methodology</Link>.
               </p>
             </div>

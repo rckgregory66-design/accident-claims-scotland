@@ -1,5 +1,6 @@
 import type { Metadata } from "next";
 import LocationPageTemplate from "@/components/LocationPageTemplate";
+import { LOCATION_EXTRAS } from "@/data/locationLocalContent";
 
 export const metadata: Metadata = {
   title: "Edinburgh Accident Claims | Personal Injury Claim Information",
@@ -39,6 +40,9 @@ export default function EdinburghPage() {
       intro="If you have been injured in Edinburgh or the Lothians and the accident was not your fault, you may be entitled to claim compensation. This page explains personal injury, medical negligence, workplace accident and industrial disease claims relevant to Edinburgh residents."
       localContext="Edinburgh is Scotland's capital city and a major centre for finance, tourism, public services and healthcare. Accidents in Edinburgh range from road traffic incidents on the City Bypass and inner city routes to workplace accidents in the construction, hospitality and financial services sectors. NHS Lothian, one of Scotland's largest health boards, operates major facilities including the Royal Infirmary of Edinburgh and Western General Hospital. The Court of Session — Scotland's highest civil court — is based in Edinburgh, making it the centre of Scots personal injury law at the highest level."
       faqs={faqs}
+      localContent={LOCATION_EXTRAS["edinburgh-accident-claims"].localContent}
+      sources={LOCATION_EXTRAS["edinburgh-accident-claims"].sources}
+      dateModified={LOCATION_EXTRAS["edinburgh-accident-claims"].dateModified}
     />
   );
 }

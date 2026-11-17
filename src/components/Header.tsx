@@ -2,6 +2,8 @@
 import { useState } from "react";
 import Link from "next/link";
 import { NAV_LINKS, PHONE } from "@/data/siteConfig";
+import CallbackForm from "@/components/CallbackForm";
+import WhatsAppButton from "@/components/WhatsAppButton";
 
 export default function Header() {
   const [mobileOpen, setMobileOpen] = useState(false);
@@ -14,10 +16,12 @@ export default function Header() {
         <div className="max-w-7xl mx-auto flex justify-between items-center">
           <span className="hidden sm:block">Accident claims information for Scotland</span>
           <div className="flex items-center gap-3 ml-auto">
-            <a href={PHONE.href} className="text-white font-semibold hover:text-yellow-300">
+            <a href={PHONE.href} data-track="header_topbar" className="text-white font-semibold hover:text-yellow-300">
               {PHONE.display}
             </a>
-            <span className="hidden sm:inline">Information site, not a law firm</span>
+            <CallbackForm compact location="header_topbar" />
+            <WhatsAppButton className="hidden sm:inline text-sm text-white" />
+            <span className="hidden md:inline">Information site, not a law firm</span>
           </div>
         </div>
       </div>
@@ -165,10 +169,18 @@ export default function Header() {
             <div className="pt-3 space-y-2">
               <a
                 href={PHONE.href}
+                data-track="header_mobile"
                 className="block bg-red-700 text-white text-center font-semibold py-3 rounded-lg text-sm"
                 aria-label={`Call ${PHONE.display}`}
               >
                 {PHONE.display}
+              </a>
+              <a
+                href="#request-callback"
+                className="block text-center text-gray-200 font-semibold py-2 rounded-lg text-sm hover:text-white"
+                onClick={() => setMobileOpen(false)}
+              >
+                Request a callback
               </a>
               <Link
                 href="/contact"
@@ -177,6 +189,9 @@ export default function Header() {
               >
                 Send an enquiry
               </Link>
+              <div className="flex justify-center">
+                <WhatsAppButton className="text-sm text-gray-300" />
+              </div>
             </div>
           </nav>
       </div>

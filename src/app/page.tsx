@@ -9,6 +9,11 @@ import JsonLd from "@/components/JsonLd";
 import { faqSchema, breadcrumbSchema, servicePageSchema } from "@/lib/schema";
 import { CLAIM_TYPES, LOCATIONS, SITE } from "@/data/siteConfig";
 import { FigureCard } from "@/components/visual";
+import RagAnswerCapsule from "@/components/RagAnswerCapsule";
+import ScotsClaimProcess from "@/components/ScotsClaimProcess";
+import TrustBlock from "@/components/TrustBlock";
+import PageMetaBar from "@/components/PageMetaBar";
+import CallbackForm from "@/components/CallbackForm";
 
 export const metadata: Metadata = {
   title: "Accident Claims Scotland | Personal Injury Claims and Time Limits",
@@ -113,6 +118,13 @@ export default function HomePage() {
               injury was serious enough to claim and was caused by someone else. Time under 16 does not count.
               You must prove fault and that it caused your injury.
             </p>
+          </div>
+          <div className="max-w-3xl mt-6 space-y-4">
+            {faqs.slice(0, 4).map((faq) => (
+              <RagAnswerCapsule key={faq.question} question={faq.question} answer={faq.answer} />
+            ))}
+            <PageMetaBar dateModified="2026-10-29" />
+            <TrustBlock />
           </div>
         </div>
       </section>
@@ -286,6 +298,29 @@ export default function HomePage() {
             <span className="bg-gray-50 border border-gray-200 text-gray-500 font-medium px-5 py-2.5 rounded-lg text-sm">
               + all of Scotland
             </span>
+          </div>
+        </div>
+      </section>
+
+      {/* SCOTS LAW PROCESS — additional sourced depth for accident/injury claims Scotland */}
+      <section className="section-pad bg-white border-t border-gray-100">
+        <div className="container-max">
+          <div className="max-w-3xl">
+            <p className="text-gray-700 mb-6">
+              If you are looking for information about accident claims in Scotland or injury claims in Scotland, start with the{" "}
+              <Link href="/personal-injury-claims-scotland" className="text-red-700 font-semibold underline">personal injury claims guide</Link>,
+              the{" "}
+              <Link href="/personal-injury-claim-time-limits-scotland" className="text-red-700 font-semibold underline">three-year time limit</Link>,
+              how{" "}
+              <Link href="/no-win-no-fee-solicitors-scotland" className="text-red-700 font-semibold underline">no win, no fee funding</Link>
+              {" "}works, and the{" "}
+              <Link href="/compensation-calculator-scotland" className="text-red-700 font-semibold underline">compensation planner</Link>.
+              The points below summarise the Scottish courts, the limitation period, the pre-action protocol and the statutory success-fee caps.
+            </p>
+            <ScotsClaimProcess />
+            <div className="mt-8">
+              <CallbackForm location="homepage" />
+            </div>
           </div>
         </div>
       </section>

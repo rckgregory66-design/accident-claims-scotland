@@ -8,7 +8,7 @@ import { PHONE } from "@/data/siteConfig";
 export default function MobileStickyCta() {
   const onContact = usePathname()?.replace(/\/$/, "") === "/contact";
   return (
-    <div className={`mobile-sticky grid border-t border-gray-200 shadow-lg ${onContact ? "grid-cols-1" : "grid-cols-3"}`}>
+    <div className={`mobile-sticky grid border-t border-gray-200 shadow-lg ${onContact ? "grid-cols-1" : "grid-cols-4"}`}>
       <a
         href={PHONE.href}
         onClick={() => trackEvent("cta_click", { location: "mobile_sticky_call" })}
@@ -19,6 +19,13 @@ export default function MobileStickyCta() {
       </a>
       {onContact ? null : (
         <>
+          <a
+            href="#request-callback"
+            onClick={() => trackEvent("cta_click", { location: "mobile_sticky_callback" })}
+            className="bg-white text-[#0f2044] text-center py-3.5 font-semibold text-sm flex items-center justify-center gap-2 border-x border-gray-200"
+          >
+            Request a callback
+          </a>
           <Link
             href="/#claim-checker"
             onClick={() => trackEvent("cta_click", { location: "mobile_sticky_checker" })}
