@@ -1,4 +1,4 @@
-import { PHONE, SITE } from "@/data/siteConfig";
+import { OPERATOR, PHONE, REGISTERED_OFFICE, SITE } from "@/data/siteConfig";
 
 export function organizationSchema() {
   return {
@@ -8,6 +8,22 @@ export function organizationSchema() {
     name: SITE.name,
     url: SITE.url,
     telephone: PHONE.schema,
+    address: {
+      "@type": "PostalAddress",
+      streetAddress: REGISTERED_OFFICE.streetAddress,
+      addressLocality: REGISTERED_OFFICE.addressLocality,
+      postalCode: REGISTERED_OFFICE.postalCode,
+      addressCountry: REGISTERED_OFFICE.addressCountry,
+    },
+    contactPoint: [
+      {
+        "@type": "ContactPoint",
+        contactType: "customer service",
+        telephone: PHONE.schema,
+        areaServed: { "@type": "AdministrativeArea", name: "Scotland" },
+        availableLanguage: "en-GB",
+      },
+    ],
     logo: {
       "@type": "ImageObject",
       "@id": `${SITE.url}/#logo`,
@@ -22,10 +38,22 @@ export function organizationSchema() {
     parentOrganization: {
       "@type": "Organization",
       "@id": `${SITE.url}/#operator`,
-      name: "Ola Consultants Ltd",
-      legalName: "Ola Consultants Ltd",
-      identifier: { "@type": "PropertyValue", propertyID: "Companies House", value: "14446269" },
-      sameAs: "https://find-and-update.company-information.service.gov.uk/company/14446269",
+      name: OPERATOR.legalName,
+      legalName: OPERATOR.legalName,
+      identifier: {
+        "@type": "PropertyValue",
+        name: "UK Companies House company number",
+        value: OPERATOR.companyNumber,
+        url: OPERATOR.companiesHouseUrl,
+      },
+      sameAs: OPERATOR.companiesHouseUrl,
+      address: {
+        "@type": "PostalAddress",
+        streetAddress: REGISTERED_OFFICE.streetAddress,
+        addressLocality: REGISTERED_OFFICE.addressLocality,
+        postalCode: REGISTERED_OFFICE.postalCode,
+        addressCountry: REGISTERED_OFFICE.addressCountry,
+      },
     },
     areaServed: { "@type": "Country", name: "Scotland", sameAs: "https://www.wikidata.org/wiki/Q22" },
     knowsAbout: [

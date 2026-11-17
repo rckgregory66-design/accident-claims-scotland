@@ -198,7 +198,7 @@ export default function ClaimChecker() {
                 <p className="text-blue-800">{timeLimitNote(when)}</p>
               </div>
               <p className="text-sm text-gray-600 mb-5">
-                Sending an enquiry is free and carries no obligation. This website is not a law firm. The operator may forward your enquiry to Thompsons Solicitors, a separate firm. Submitting it does not create a solicitor-client relationship or stop a time limit.
+                Sending an enquiry is free and carries no obligation. This website is not a law firm. The operator may forward your enquiry to Thompsons Scotland LLP, a separate firm regulated by the Law Society of Scotland. Submitting it does not create a solicitor-client relationship or stop a time limit.
               </p>
               <div className="flex flex-wrap gap-3">
                 <button type="button" onClick={goToForm} className="btn-primary">

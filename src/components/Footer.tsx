@@ -1,5 +1,5 @@
 import Link from "next/link";
-import { SITE, LOCATIONS, PHONE } from "@/data/siteConfig";
+import { SITE, LOCATIONS, OPERATOR, PHONE, REGISTERED_OFFICE } from "@/data/siteConfig";
 
 export default function Footer() {
   const claimTypes = [
@@ -47,10 +47,14 @@ export default function Footer() {
             <p className="text-sm text-gray-400 mt-3 leading-relaxed">
               General information about personal injury and accident claims in Scotland.
             </p>
-            <div className="mt-5 space-y-1.5 text-sm">
+            <div className="mt-5 space-y-2 text-sm">
               <a href={PHONE.href} className="text-white font-semibold hover:text-yellow-300">
                 {PHONE.display}
               </a>
+              <p className="text-gray-400 leading-relaxed">{REGISTERED_OFFICE.display}</p>
+              <p className="text-gray-400 leading-relaxed">
+                We are not a firm of solicitors — enquiries are passed to Thompsons Scotland LLP, regulated by the Law Society of Scotland.
+              </p>
             </div>
           </div>
 
@@ -149,7 +153,7 @@ export default function Footer() {
             <strong className="text-gray-400">Disclaimer:</strong> This website provides general information only and does not constitute legal advice. Each claim depends on its own facts, evidence, liability, causation and applicable time limits. Time limits apply and delay may bar your claim. No guarantee of outcome or compensation amount is made or implied.
           </p>
           <p className="text-xs text-gray-400">
-            © {new Date().getFullYear()} {SITE.name}. Operated by Ola Consultants Ltd, registered in England and Wales, company number 14446269.
+            © {new Date().getFullYear()} {SITE.name}. Published by {OPERATOR.legalName} (company no. {OPERATOR.companyNumber}), registered office {REGISTERED_OFFICE.display}.
           </p>
         </div>
       </div>
