@@ -5,11 +5,11 @@ import { CheckList } from "@/components/visual";
 export const metadata: Metadata = {
   title: "Personal Injury Compensation Scotland | How Much Is My Claim Worth?",
   description:
-    "Understand what personal injury compensation covers in Scotland. General damages, wage loss, medical costs, care needs and more. No guarantee of amount — free honest assessment.",
+    "Understand what personal injury compensation covers in Scotland. Solatium, wage loss, medical costs, care needs and more. No amount is guaranteed. General information only, not a valuation or legal advice.",
   alternates: { canonical: "/personal-injury-compensation-scotland" },
   openGraph: {
     title: "Personal Injury Compensation Scotland | How Much Is My Claim Worth?",
-    description: "What personal injury compensation covers in Scotland. Honest assessment  Information only.",
+    description: "What personal injury compensation covers in Scotland. No amount is guaranteed. General information only, not a valuation or legal advice.",
     url: "/personal-injury-compensation-scotland",
   },
 };

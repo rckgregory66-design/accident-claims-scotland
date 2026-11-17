@@ -3,12 +3,12 @@ import Link from "next/link";
 import ClaimPageTemplate from "@/components/ClaimPageTemplate";
 
 export const metadata: Metadata = {
-  title: "Road Traffic Accident Claims Scotland — Compensation Guide",
+  title: "Road Traffic Accident Claims in Scotland | Cars, Cyclists and Pedestrians",
   description:
     "Injured in a road accident in Scotland? Information on car, motorcycle, cycling, pedestrian and whiplash claims under Scots law. Information on the three-year time limit.",
   alternates: { canonical: "/road-traffic-accident-claims-scotland" },
   openGraph: {
-    title: "Road Traffic Accident Claims Scotland — Compensation Guide",
+    title: "Road Traffic Accident Claims in Scotland | Cars, Cyclists and Pedestrians",
     description: "Injured in a road traffic accident in Scotland? Information only, not legal advice.",
     url: "/road-traffic-accident-claims-scotland",
   },
