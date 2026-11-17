@@ -98,12 +98,12 @@ export default function ClaimPageTemplate({
       <Breadcrumbs crumbs={breadcrumbs} />
 
       {/* Hero */}
-      <section className="bg-[#0f2044] py-14 px-4 sm:px-6">
+      <section className="bg-[#0f2044] py-14 sm:py-16 px-4 sm:px-6">
         <div className="max-w-7xl mx-auto">
-          <h1 className="text-3xl sm:text-4xl lg:text-5xl font-bold text-white leading-tight mb-4 max-w-4xl">
+          <h1 className="text-3xl sm:text-4xl lg:text-5xl font-bold text-white leading-tight mb-5 max-w-4xl">
             {h1}
           </h1>
-          <p className="text-gray-300 text-lg max-w-3xl leading-relaxed">{intro}</p>
+          <p className="text-gray-300 text-lg leading-relaxed max-w-[40rem]">{intro}</p>
           <div className="flex flex-wrap gap-4 mt-7">
             <Link
               href="/contact"
@@ -153,7 +153,7 @@ export default function ClaimPageTemplate({
 
             {/* Sections */}
             {sections.map((sec, i) => (
-              <div key={i}>
+              <div key={i} className="content-section">
                 <h2>{sec.heading}</h2>
                 {typeof sec.content === "string" ? (
                   <p>{sec.content}</p>

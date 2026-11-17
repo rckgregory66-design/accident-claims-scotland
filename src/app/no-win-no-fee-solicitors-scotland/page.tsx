@@ -1,5 +1,6 @@
 import type { Metadata } from "next";
 import ClaimPageTemplate from "@/components/ClaimPageTemplate";
+import { CheckList, MoreDetail } from "@/components/visual";
 
 export const metadata: Metadata = {
   title: "No Win No Fee Claims Scotland — How Funding Works",
@@ -80,8 +81,18 @@ export default function NoWinNoFeePage() {
         },
         {
           heading: "What Will I Actually Receive?",
-          content:
-            "The amount you receive after a successful claim depends on the amount of compensation awarded or agreed and any deductions under your funding arrangement. Your solicitor will explain the likely deductions clearly before you proceed, so you understand what your net compensation is likely to be. For a personal injury success fee agreement made on or after 27 April 2020, Scottish regulations cap the success fee, including VAT, at 20% of the first £100,000 of the financial benefit, 10% of the part from £100,000 to £500,000 and 2.5% of any part above £500,000. As an illustration only, on £50,000 the most a success fee could be is £10,000; on £150,000 it is £25,000 (£20,000 plus £5,000). These are ceilings, not standard fees, and the agreement may set a lower figure. How future loss and periodical payments are counted follows section 6 of the 2018 Act, so ask for a worked example using your own figures. Outlays, expert reports and any insurance premium are separate from the success fee, so ask who pays them.",
+          content: (
+            <>
+              <p>
+                The amount you receive after a successful claim depends on the amount of compensation awarded or agreed and any deductions under your funding arrangement. Your solicitor will explain the likely deductions clearly before you proceed, so you understand what your net compensation is likely to be.
+              </p>
+              <MoreDetail summary="The legal caps and a worked example">
+                <p>
+                  For a personal injury success fee agreement made on or after 27 April 2020, Scottish regulations cap the success fee, including VAT, at 20% of the first £100,000 of the financial benefit, 10% of the part from £100,000 to £500,000 and 2.5% of any part above £500,000. As an illustration only, on £50,000 the most a success fee could be is £10,000; on £150,000 it is £25,000 (£20,000 plus £5,000). These are ceilings, not standard fees, and the agreement may set a lower figure. How future loss and periodical payments are counted follows section 6 of the 2018 Act, so ask for a worked example using your own figures. Outlays, expert reports and any insurance premium are separate from the success fee, so ask who pays them.
+                </p>
+              </MoreDetail>
+            </>
+          ),
         },
         {
           heading: "Alternative Funding Options in Scotland",
@@ -99,14 +110,20 @@ export default function NoWinNoFeePage() {
         },
         {
           heading: "Questions to Ask Before You Agree",
-          content: "Ask the provider to confirm every material term in writing, including:",
-          list: [
-            "Whether the agreement is a speculative fee agreement, damages-based agreement or another arrangement",
-            "Which fees, outlays, insurance premiums or other deductions may be taken after success",
-            "What you could have to pay if the claim ends, is withdrawn or an offer is rejected",
-            "Whether legal-expenses insurance, a trade union scheme or legal aid should be considered first",
-            "How complaints, cancellation and changing solicitor are handled",
-          ],
+          content: (
+            <>
+              <p>Ask the provider to confirm every material term in writing, including:</p>
+              <CheckList
+                items={[
+                  "Whether the agreement is a speculative fee agreement, damages-based agreement or another arrangement",
+                  "Which fees, outlays, insurance premiums or other deductions may be taken after success",
+                  "What you could have to pay if the claim ends, is withdrawn or an offer is rejected",
+                  "Whether legal-expenses insurance, a trade union scheme or legal aid should be considered first",
+                  "How complaints, cancellation and changing solicitor are handled",
+                ]}
+              />
+            </>
+          ),
         },
         {
           heading: "Scottish Rules and Independent Checks",

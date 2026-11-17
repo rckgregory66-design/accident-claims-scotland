@@ -1,5 +1,6 @@
 import type { Metadata } from "next";
 import ClaimPageTemplate from "@/components/ClaimPageTemplate";
+import { CheckList } from "@/components/visual";
 
 export const metadata: Metadata = {
   title: "Personal Injury Compensation Scotland | How Much Is My Claim Worth?",
@@ -65,20 +66,27 @@ export default function CompensationGuidePage() {
         },
         {
           heading: "Special Damages: Your Financial Losses",
-          content:
-            "Special damages cover the financial losses you have suffered and will suffer in the future as a result of your injury. These are calculated on the evidence and must be supported by receipts, payslips and other documentation where possible.",
-          list: [
-            "Past loss of earnings — income lost while you were unable to work or had reduced earnings",
-            "Future loss of earnings — if your injury affects your earning capacity long-term",
-            "Medical treatment costs — private physiotherapy, consultations, medication",
-            "Rehabilitation costs — occupational therapy, cognitive rehabilitation, physiotherapy",
-            "Care and assistance — provided by professional carers or family members",
-            "Travel costs — to and from medical appointments",
-            "Home adaptations — ramps, handrails, stairlifts, adapted bathrooms",
-            "Specialist equipment — wheelchairs, prosthetics, assistive technology",
-            "Pension loss — where your injury affects your retirement income",
-            "Future care needs — ongoing care costs calculated over your lifetime",
-          ],
+          content: (
+            <>
+              <p>
+                Special damages cover the financial losses you have suffered and will suffer in the future as a result of your injury. These are calculated on the evidence and must be supported by receipts, payslips and other documentation where possible.
+              </p>
+              <CheckList
+                items={[
+                  "Past loss of earnings — income lost while you were unable to work or had reduced earnings",
+                  "Future loss of earnings — if your injury affects your earning capacity long-term",
+                  "Medical treatment costs — private physiotherapy, consultations, medication",
+                  "Rehabilitation costs — occupational therapy, cognitive rehabilitation, physiotherapy",
+                  "Care and assistance — provided by professional carers or family members",
+                  "Travel costs — to and from medical appointments",
+                  "Home adaptations — ramps, handrails, stairlifts, adapted bathrooms",
+                  "Specialist equipment — wheelchairs, prosthetics, assistive technology",
+                  "Pension loss — where your injury affects your retirement income",
+                  "Future care needs — ongoing care costs calculated over your lifetime",
+                ]}
+              />
+            </>
+          ),
         },
         {
           heading: "How Serious Injury Compensation is Calculated",
@@ -97,16 +105,22 @@ export default function CompensationGuidePage() {
         },
         {
           heading: "What Factors Affect the Value of My Claim?",
-          content: "The key factors that affect the value of a personal injury claim in Scotland include:",
-          list: [
-            "The nature and severity of your injuries",
-            "The duration of your recovery and any permanent disability",
-            "Your age and how the injury affects your future life and career",
-            "The financial losses you have suffered and are likely to suffer in the future",
-            "Whether you were partly responsible for the accident",
-            "The strength of the medical evidence",
-            "Whether liability is admitted or disputed",
-          ],
+          content: (
+            <>
+              <p>The key factors that affect the value of a personal injury claim in Scotland include:</p>
+              <CheckList
+                items={[
+                  "The nature and severity of your injuries",
+                  "The duration of your recovery and any permanent disability",
+                  "Your age and how the injury affects your future life and career",
+                  "The financial losses you have suffered and are likely to suffer in the future",
+                  "Whether you were partly responsible for the accident",
+                  "The strength of the medical evidence",
+                  "Whether liability is admitted or disputed",
+                ]}
+              />
+            </>
+          ),
         },
         {
           heading: "How Long Until I Receive Compensation?",

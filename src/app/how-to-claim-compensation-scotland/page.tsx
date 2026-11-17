@@ -125,19 +125,20 @@ export default function HowToClaimPage() {
           .
         </p>
 
-        <div className="space-y-8 mt-10">
+        <div className="space-y-0 mt-10">
           {steps.map((step) => (
             <div key={step.n} className="flex gap-5">
-              <div className="flex-shrink-0">
+              <div className="flex-shrink-0 flex flex-col items-center">
                 <div className="w-10 h-10 rounded-full bg-[#0f2044] text-white flex items-center justify-center font-bold text-lg">
                   {step.n}
                 </div>
+                {step.n < steps.length ? <span aria-hidden="true" className="w-px flex-1 bg-gray-200 my-1" /> : null}
               </div>
-              <div>
+              <div className="pb-8">
                 <h2 className="text-xl font-bold text-[#0f2044] mb-2">
                   Step {step.n}: {step.title}
                 </h2>
-                <p className="text-gray-700 leading-relaxed">{step.detail}</p>
+                <p className="text-gray-700 leading-relaxed max-w-[68ch]">{step.detail}</p>
               </div>
             </div>
           ))}

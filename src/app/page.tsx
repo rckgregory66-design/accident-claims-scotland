@@ -7,6 +7,7 @@ import CtaSection from "@/components/CtaSection";
 import JsonLd from "@/components/JsonLd";
 import { faqSchema, breadcrumbSchema, servicePageSchema } from "@/lib/schema";
 import { CLAIM_TYPES, LOCATIONS, SITE } from "@/data/siteConfig";
+import { FigureCard } from "@/components/visual";
 
 export const metadata: Metadata = {
   title: "Accident Claims Scotland | Personal Injury Claim Information",
@@ -199,16 +200,16 @@ export default function HomePage() {
                   ))}
                 </ul>
               </div>
-              <div className="warning-box">
+              <FigureCard figure="3 years" label="Usual time limit">
                 <p className="font-semibold text-amber-800 mb-1">Time limits apply</p>
-                <p className="text-amber-700 text-sm">
+                <p>
                   In Scotland, most personal injury claims must be made within three years of the accident
                   or the date of knowledge. Do not delay: take advice from a Scottish solicitor as early as you can.
                 </p>
                 <Link href="/personal-injury-claim-time-limits-scotland" className="text-amber-800 font-medium text-sm underline mt-2 inline-block">
                   Learn about time limits →
                 </Link>
-              </div>
+              </FigureCard>
             </div>
           </div>
         </div>
