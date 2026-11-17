@@ -7,6 +7,13 @@ export const SITE = {
     "Scottish accident-claim information covering personal injury, medical negligence, industrial disease and related compensation claims.",
 };
 
+/** Display, tel: and schema forms of the site phone number. Use only these. */
+export const PHONE = {
+  display: "0141 566 8059",
+  href: "tel:+441415668059",
+  schema: "+44 141 566 8059",
+} as const;
+
 export const NAV_LINKS = [
   {
     label: "Claim Types",

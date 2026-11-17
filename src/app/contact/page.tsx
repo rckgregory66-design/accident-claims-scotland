@@ -3,7 +3,7 @@ import ClaimForm from "@/components/ClaimForm";
 import Breadcrumbs from "@/components/Breadcrumbs";
 import JsonLd from "@/components/JsonLd";
 import { breadcrumbSchema, servicePageSchema } from "@/lib/schema";
-import { SITE } from "@/data/siteConfig";
+import { PHONE, SITE } from "@/data/siteConfig";
 
 export const metadata: Metadata = {
   title: "Contact Accident Claims Scotland | Send an Enquiry",
@@ -46,10 +46,16 @@ export default function ContactPage() {
           {/* Contact details */}
           <div className="space-y-6">
             <div className="card">
-              <h3 className="font-bold text-[#0f2044] text-lg mb-2">Online Enquiries</h3>
+              <h3 className="font-bold text-[#0f2044] text-lg mb-2">Call or send an enquiry</h3>
+              <p className="text-sm text-gray-700 mb-3">
+                Call{" "}
+                <a href={PHONE.href} className="text-red-700 font-semibold hover:underline">
+                  {PHONE.display}
+                </a>
+                , or use the enquiry form on this page.
+              </p>
               <p className="text-sm text-gray-700">
-                Use the enquiry form on this page. Telephone, email and office details will be added when
-                the receiving provider has been confirmed.
+                Email and office details will be added when they are confirmed.
               </p>
             </div>
 

@@ -1,5 +1,5 @@
 import Link from "next/link";
-import { SITE, LOCATIONS } from "@/data/siteConfig";
+import { SITE, LOCATIONS, PHONE } from "@/data/siteConfig";
 
 export default function Footer() {
   const claimTypes = [
@@ -48,6 +48,9 @@ export default function Footer() {
               General information about personal injury and accident claims in Scotland.
             </p>
             <div className="mt-5 space-y-1.5 text-sm">
+              <a href={PHONE.href} className="text-white font-semibold hover:text-yellow-300">
+                {PHONE.display}
+              </a>
             </div>
           </div>
 

@@ -1,4 +1,4 @@
-import { SITE } from "@/data/siteConfig";
+import { PHONE, SITE } from "@/data/siteConfig";
 
 export function organizationSchema() {
   return {
@@ -7,6 +7,7 @@ export function organizationSchema() {
     "@id": `${SITE.url}/#organization`,
     name: SITE.name,
     url: SITE.url,
+    telephone: PHONE.schema,
     logo: {
       "@type": "ImageObject",
       "@id": `${SITE.url}/#logo`,
