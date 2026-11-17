@@ -9,9 +9,9 @@ import { breadcrumbSchema, faqSchema, howToSchema } from "@/lib/schema";
 import { SITE } from "@/data/siteConfig";
 
 export const metadata: Metadata = {
-  title: "How to Claim Compensation Scotland | Personal Injury Claim Process",
+  title: "How to Claim Compensation in Scotland | Step-by-Step Process",
   description:
-    "Step-by-step guide to making a personal injury compensation claim in Scotland. How accident claims work, what to expect and how to get started.",
+    "Step-by-step guide to making a personal injury compensation claim in Scotland. How accident claims work, time limits, what to expect and how to get started.",
   alternates: { canonical: "/how-to-claim-compensation-scotland" },
 };
 

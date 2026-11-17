@@ -1,6 +1,7 @@
 import type { Metadata } from "next";
 import Link from "next/link";
 import ClaimForm from "@/components/ClaimForm";
+import ClaimChecker from "@/components/ClaimChecker";
 import FAQ from "@/components/FAQ";
 import TrustBar from "@/components/TrustBar";
 import CtaSection from "@/components/CtaSection";
@@ -9,9 +10,9 @@ import { faqSchema, breadcrumbSchema, servicePageSchema } from "@/lib/schema";
 import { CLAIM_TYPES, LOCATIONS, SITE } from "@/data/siteConfig";
 
 export const metadata: Metadata = {
-  title: "Accident Claims Scotland | Personal Injury Claim Information",
+  title: "Accident Claims Scotland | Personal Injury Claims and Time Limits",
   description:
-    "How personal injury claims work in Scotland: the three-year time limit, evidence, no win no fee funding and compensation. Plain-English guidance on Scots law. Not a law firm.",
+    "Personal injury and accident claims in Scotland: the three-year time limit, evidence, no win no fee funding and compensation. Plain-English guidance on Scots law. Not a law firm.",
   alternates: { canonical: "/" },
 };
 
@@ -95,6 +96,8 @@ export default function HomePage() {
           </div>
         </div>
       </section>
+
+      <ClaimChecker />
 
       <TrustBar />
 

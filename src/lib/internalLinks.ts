@@ -2,6 +2,7 @@ import { publishedGuides } from "@/data/guides";
 import { CLAIM_TYPES, LOCATIONS, NAV_LINKS } from "@/data/siteConfig";
 import { roadTrafficPageSlugs } from "@/data/roadTrafficPages";
 import { childPath, pillarChildren } from "@/data/pillarChildren";
+import { LEGACY_REDIRECTS } from "@/data/legacyRedirects.js";
 
 // Indexable pages that are not in the main navigation or claim-type lists.
 const LONG_TAIL_ROUTES = [
@@ -59,7 +60,10 @@ export function resolveInternalHref(href: string): string | null {
   const [pathname, hash] = href.split("#");
   if (STATIC_ROUTES.has(pathname)) return href;
 
-  const guideRoute = GUIDE_ROUTES.get(pathname) ?? GUIDE_ALIASES.get(pathname);
-  if (!guideRoute) return null;
-  return hash ? `${guideRoute}#${hash}` : guideRoute;
+  const mapped =
+    GUIDE_ROUTES.get(pathname) ??
+    GUIDE_ALIASES.get(pathname) ??
+    (LEGACY_REDIRECTS as Record<string, string>)[pathname];
+  if (!mapped) return null;
+  return hash ? `${mapped}#${hash}` : mapped;
 }

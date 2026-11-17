@@ -42,25 +42,31 @@ export default function Header() {
                   onMouseEnter={() => setOpenDropdown(link.label)}
                   onMouseLeave={() => setOpenDropdown(null)}
                 >
-                  <button className="text-gray-200 hover:text-white px-3 py-2 text-sm font-medium flex items-center gap-1 rounded transition-colors hover:bg-white/10">
+                  <button
+                    className="text-gray-200 hover:text-white px-3 py-2 text-sm font-medium flex items-center gap-1 rounded transition-colors hover:bg-white/10"
+                    aria-expanded={openDropdown === link.label}
+                    aria-controls={`nav-${link.label.toLowerCase().replace(/\s+/g, "-")}`}
+                  >
                     {link.label}
                     <svg className="w-3.5 h-3.5 mt-0.5" fill="none" viewBox="0 0 24 24" stroke="currentColor">
                       <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M19 9l-7 7-7-7" />
                     </svg>
                   </button>
-                  {openDropdown === link.label && (
-                    <div className="absolute top-full left-0 bg-white shadow-xl rounded-lg py-2 w-64 mt-0.5 border border-gray-100 z-50">
-                      {link.children.map((child) => (
-                        <Link
-                          key={child.href}
-                          href={child.href}
-                          className="block px-4 py-2.5 text-sm text-gray-700 hover:bg-red-50 hover:text-red-700 transition-colors"
-                        >
-                          {child.label}
-                        </Link>
-                      ))}
-                    </div>
-                  )}
+                  <div
+                    id={`nav-${link.label.toLowerCase().replace(/\s+/g, "-")}`}
+                    className={`absolute top-full left-0 bg-white shadow-xl rounded-lg py-2 w-64 mt-0.5 border border-gray-100 z-50 ${openDropdown === link.label ? "" : "hidden"}`}
+                    hidden={openDropdown !== link.label}
+                  >
+                    {link.children.map((child) => (
+                      <Link
+                        key={child.href}
+                        href={child.href}
+                        className="block px-4 py-2.5 text-sm text-gray-700 hover:bg-red-50 hover:text-red-700 transition-colors"
+                      >
+                        {child.label}
+                      </Link>
+                    ))}
+                  </div>
                 </div>
               ) : (
                 <Link
@@ -105,20 +111,23 @@ export default function Header() {
         </div>
       </div>
 
-      {/* Mobile menu */}
-      {mobileOpen && (
-        <div className="lg:hidden bg-[#0a1630] border-t border-white/10 pb-4">
+      {/* Mobile menu: always in the HTML so crawlers see the same links; hidden until opened. */}
+      <div
+        className={`lg:hidden bg-[#0a1630] border-t border-white/10 pb-4 ${mobileOpen ? "" : "hidden"}`}
+        hidden={!mobileOpen}
+      >
           <nav id="mobile-nav" className="px-4 pt-2 space-y-1">
             {NAV_LINKS.map((link) => (
               <div key={link.label}>
                 {link.children ? (
-                  <details className="group">
-                    <summary className="text-gray-200 px-3 py-2.5 text-sm font-medium flex justify-between items-center rounded cursor-pointer hover:bg-white/10">
+                  <div>
+                    <Link
+                      href={link.href}
+                      className="block px-3 py-2.5 text-sm text-gray-200 hover:text-white rounded hover:bg-white/10 font-medium"
+                      onClick={() => setMobileOpen(false)}
+                    >
                       {link.label}
-                      <svg className="w-4 h-4" fill="none" viewBox="0 0 24 24" stroke="currentColor">
-                        <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M19 9l-7 7-7-7" />
-                      </svg>
-                    </summary>
+                    </Link>
                     <div className="pl-4 mt-1 space-y-1">
                       {link.children.map((child) => (
                         <Link
@@ -131,7 +140,7 @@ export default function Header() {
                         </Link>
                       ))}
                     </div>
-                  </details>
+                  </div>
                 ) : (
                   <Link
                     href={link.href}
@@ -153,8 +162,7 @@ export default function Header() {
               </Link>
             </div>
           </nav>
-        </div>
-      )}
+      </div>
     </header>
   );
 }

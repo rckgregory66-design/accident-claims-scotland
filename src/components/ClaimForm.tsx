@@ -3,6 +3,7 @@
 import Link from "next/link";
 import { useState, useRef, useEffect } from "react";
 import { trackEvent } from "@/lib/events";
+import { readCheckerPrefill } from "@/components/ClaimChecker";
 
 const CLAIM_TYPES = [
   "Road traffic accident",
@@ -27,10 +28,19 @@ export default function ClaimForm({ variant = "inline", title }: Props) {
   const isHero = variant === "hero";
   const successRef = useRef<HTMLDivElement>(null);
   const startedRef = useRef(false);
+  const typeRef = useRef<HTMLSelectElement>(null);
 
   useEffect(() => {
     if (status === "sent") successRef.current?.focus();
   }, [status]);
+
+  useEffect(() => {
+    const params = new URLSearchParams(window.location.search);
+    const fromQuery = params.get("claimType") ?? "";
+    const fromChecker = readCheckerPrefill()?.claimType ?? "";
+    const match = CLAIM_TYPES.find((type) => type.toLowerCase() === (fromQuery || fromChecker).toLowerCase());
+    if (match && typeRef.current) typeRef.current.value = match;
+  }, []);
 
   async function handleSubmit(event: React.FormEvent<HTMLFormElement>) {
     event.preventDefault();
@@ -77,7 +87,7 @@ export default function ClaimForm({ variant = "inline", title }: Props) {
   }
 
   return (
-    <div className={isHero ? "" : "bg-white rounded-xl shadow-md border border-gray-100 p-6 sm:p-8"}>
+    <div id="enquiry-form" className={isHero ? "scroll-mt-24" : "scroll-mt-24 bg-white rounded-xl shadow-md border border-gray-100 p-6 sm:p-8"}>
       {title ? (
         <h2 className="text-2xl font-bold text-[#0f2044] mb-2">{title}</h2>
       ) : (
@@ -117,7 +127,7 @@ export default function ClaimForm({ variant = "inline", title }: Props) {
         <div className="grid grid-cols-1 sm:grid-cols-2 gap-4">
           <div>
             <label className="form-label" htmlFor="cf-type">Type of claim *</label>
-            <select id="cf-type" name="claimType" required className="form-input">
+            <select id="cf-type" name="claimType" required className="form-input" ref={typeRef}>
               <option value="">Select claim type</option>
               {CLAIM_TYPES.map((type) => <option key={type} value={type}>{type}</option>)}
             </select>

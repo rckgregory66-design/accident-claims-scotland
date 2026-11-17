@@ -106,6 +106,37 @@ export default function Footer() {
             </div>
           </div>
         </div>
+        <div className="mt-10 pt-8 border-t border-white/10">
+          <h3 className="text-white font-semibold mb-4">More claims information</h3>
+          <ul className="flex flex-wrap gap-x-5 gap-y-2 text-sm">
+            {[
+              { label: "Compensation calculator", href: "/compensation-calculator-scotland" },
+              { label: "Stress at work", href: "/stress-at-work-claims-scotland" },
+              { label: "School accidents", href: "/school-accident-claims-scotland" },
+              { label: "Manual handling", href: "/manual-handling-injury-claims-scotland" },
+              { label: "Needlestick injuries", href: "/needlestick-injury-claims-scotland" },
+              { label: "Self-employed injuries", href: "/self-employed-injury-claims-scotland" },
+              { label: "Delayed diagnosis", href: "/delayed-diagnosis-claims-scotland" },
+              { label: "Dental negligence", href: "/dental-negligence-claims-scotland" },
+              { label: "Hospital infection", href: "/hospital-infection-claims-scotland" },
+              { label: "Shop accidents", href: "/shop-accident-claims-scotland" },
+              { label: "Hotel accidents", href: "/hotel-accident-claims-scotland" },
+              { label: "Occupational asthma", href: "/occupational-asthma-claims-scotland" },
+              { label: "Occupational dermatitis", href: "/occupational-dermatitis-claims-scotland" },
+              { label: "Domestic abuse injury", href: "/domestic-abuse-injury-claim-scotland" },
+              { label: "Child abuse injury", href: "/child-abuse-injury-claim-scotland" },
+              { label: "Contributory negligence", href: "/contributory-negligence-road-accident-scotland" },
+              { label: "Dog bite claims", href: "/dog-bite-claims-scotland" },
+              { label: "Falls from height", href: "/work-at-height-fall-claims-scotland" },
+            ].map((l) => (
+              <li key={l.href}>
+                <Link href={l.href} className="hover:text-white transition-colors">
+                  {l.label}
+                </Link>
+              </li>
+            ))}
+          </ul>
+        </div>
       </div>
 
       {/* Disclaimer bar */}
