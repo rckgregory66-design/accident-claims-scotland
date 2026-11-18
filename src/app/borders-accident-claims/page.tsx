@@ -1,5 +1,6 @@
 import type { Metadata } from "next";
 import LocationPageTemplate from "@/components/LocationPageTemplate";
+import { LOCATION_EXTRAS } from "@/data/locationLocalContent";
 
 export const metadata: Metadata = {
   title: "Borders Accident Claims | Personal Injury Claim Information",
@@ -34,6 +35,9 @@ export default function BordersPage() {
       intro="If you have been injured in the Scottish Borders and the accident was not your fault, you may be entitled to claim compensation. This page explains personal injury, workplace accident, medical negligence and industrial disease claims relevant to Scottish Borders residents."
       localContext="The Scottish Borders is a predominantly rural area covering towns including Hawick, Galashiels, Jedburgh, Kelso, Peebles and Selkirk. The local economy includes agriculture, manufacturing, textiles, tourism and public services. Road traffic accidents on the A68, A7 and other rural routes are a common source of personal injury claims. The Borders General Hospital, operated by NHS Borders, is the main acute hospital for the region. Jedburgh Sheriff Court serves the Borders area for civil and personal injury cases."
       faqs={faqs}
+      localContent={LOCATION_EXTRAS["borders-accident-claims"].localContent}
+      sources={LOCATION_EXTRAS["borders-accident-claims"].sources}
+      dateModified={LOCATION_EXTRAS["borders-accident-claims"].dateModified}
     />
   );
 }

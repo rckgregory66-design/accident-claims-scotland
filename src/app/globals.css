@@ -124,3 +124,8 @@ button:focus-visible {
   header, footer, .mobile-sticky, .skip-link, .no-print, nav, details { display: none !important; }
   body { background: #fff; color: #000; }
 }
+
+
+/* Site-wide callback form: in the HTML for no-JS use, shown when the Request a callback link is followed. */
+.callback-panel { display: none; }
+.callback-panel:target { display: block; }

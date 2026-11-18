@@ -1,5 +1,6 @@
 import type { Metadata } from "next";
 import LocationPageTemplate from "@/components/LocationPageTemplate";
+import { LOCATION_EXTRAS } from "@/data/locationLocalContent";
 
 export const metadata: Metadata = {
   title: "Dundee Accident Claims | Personal Injury Claim Information",
@@ -20,8 +21,11 @@ export default function DundeePage() {
       city="Dundee"
       slug="dundee-accident-claims"
       intro="If you have been injured in Dundee or the surrounding area and the accident was not your fault, you may be entitled to claim compensation. This page explains personal injury, medical negligence, workplace accident and industrial disease claims relevant to Dundee residents."
-      localContext="This page provides general information about personal injury and accident compensation claims relevant to people in Dundee and the wider area, including accidents on local roads, in workplaces, in public places or during medical treatment."
+      localContext="Dundee stands on the north bank of the Firth of Tay. Personal injury claims from the city and surrounding area often involve collisions on the A90 and A92, accidents in workplaces around the harbour, construction, manufacturing, health and retail, alleged negligent treatment provided by NHS Tayside including at Ninewells Hospital, and public-place accidents. Dundee Sheriff Court and Justice of the Peace Court is listed by the Scottish Courts and Tribunals Service; claims may also, where the rules allow, be raised in the All-Scotland Sheriff Personal Injury Court in Edinburgh."
       faqs={faqs}
+      localContent={LOCATION_EXTRAS["dundee-accident-claims"].localContent}
+      sources={LOCATION_EXTRAS["dundee-accident-claims"].sources}
+      dateModified={LOCATION_EXTRAS["dundee-accident-claims"].dateModified}
     />
   );
 }

@@ -1,5 +1,6 @@
 import type { Metadata } from "next";
 import LocationPageTemplate from "@/components/LocationPageTemplate";
+import { LOCATION_EXTRAS } from "@/data/locationLocalContent";
 
 export const metadata: Metadata = {
   title: "Falkirk Accident Claims | Personal Injury Claim Information",
@@ -22,6 +23,9 @@ export default function FalkirkPage() {
       intro="If you have been injured in Falkirk or the surrounding area and the accident was not your fault, you may be entitled to claim compensation. This page explains personal injury, medical negligence, workplace accident and industrial disease claims relevant to Falkirk residents."
       localContext="This page provides general information about personal injury and accident compensation claims relevant to people in Falkirk and the wider area, including accidents on local roads, in workplaces, in public places or during medical treatment."
       faqs={faqs}
+      localContent={LOCATION_EXTRAS["falkirk-accident-claims"].localContent}
+      sources={LOCATION_EXTRAS["falkirk-accident-claims"].sources}
+      dateModified={LOCATION_EXTRAS["falkirk-accident-claims"].dateModified}
     />
   );
 }

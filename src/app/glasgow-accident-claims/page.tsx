@@ -1,5 +1,6 @@
 import type { Metadata } from "next";
 import LocationPageTemplate from "@/components/LocationPageTemplate";
+import { LOCATION_EXTRAS } from "@/data/locationLocalContent";
 
 export const metadata: Metadata = {
   title: "Glasgow Accident Claims | Personal Injury Claim Information",
@@ -39,6 +40,9 @@ export default function GlasgowPage() {
       intro="If you have been injured in an accident in Glasgow or the Greater Glasgow area that was not your fault, you may be entitled to claim compensation. This page explains personal injury, workplace accident, medical negligence and industrial disease claims relevant to Glasgow residents."
       localContext="Glasgow is Scotland's largest city and a major centre for commerce, industry, healthcare and transport. Personal injury claims arising in Glasgow cover a wide range of circumstances — from road traffic accidents on the M8, M77 and city centre streets, to workplace accidents in the construction, manufacturing, healthcare and logistics sectors. Glasgow's major hospitals, including the Queen Elizabeth University Hospital, NHS Greater Glasgow and Clyde sites, and Stobhill Hospital, are among the facilities where medical negligence claims can arise. Glasgow Sheriff Court at Carlton Place handles personal injury claims for the Glasgow Sheriffdom."
       faqs={faqs}
+      localContent={LOCATION_EXTRAS["glasgow-accident-claims"].localContent}
+      sources={LOCATION_EXTRAS["glasgow-accident-claims"].sources}
+      dateModified={LOCATION_EXTRAS["glasgow-accident-claims"].dateModified}
     />
   );
 }

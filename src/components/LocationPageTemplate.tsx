@@ -1,3 +1,4 @@
+import type { ReactNode } from "react";
 import Link from "next/link";
 import ClaimForm from "./ClaimForm";
 import CtaSection from "./CtaSection";
@@ -5,6 +6,9 @@ import FAQ from "./FAQ";
 import Breadcrumbs from "./Breadcrumbs";
 import JsonLd from "./JsonLd";
 import { breadcrumbSchema, faqSchema, locationPageSchema } from "@/lib/schema";
+import RagAnswerCapsule from "./RagAnswerCapsule";
+import PageMetaBar from "./PageMetaBar";
+import TrustBlock from "./TrustBlock";
 import { SITE, CLAIM_TYPES } from "@/data/siteConfig";
 
 interface Props {
@@ -14,6 +18,9 @@ interface Props {
   localContext: string;
   claimTypes?: string[];
   faqs: { question: string; answer: string }[];
+  localContent?: ReactNode;
+  sources?: { label: string; url: string }[];
+  dateModified?: string;
 }
 
 export default function LocationPageTemplate({
@@ -22,6 +29,9 @@ export default function LocationPageTemplate({
   intro,
   localContext,
   faqs,
+  localContent,
+  sources,
+  dateModified = "2026-10-29",
 }: Props) {
   const fundingFaq = {
     question: `Can I find a no win, no fee solicitor for an accident claim in ${city}?`,
@@ -66,9 +76,17 @@ export default function LocationPageTemplate({
                 industrial disease and workplace accident claims that may be relevant to people in {city}.
               </p>
             </div>
+            <div className="space-y-4 not-prose mb-8">
+              {allFaqs.slice(0, 3).map((faq) => (
+                <RagAnswerCapsule key={faq.question} question={faq.question} answer={faq.answer} />
+              ))}
+              <PageMetaBar dateModified={dateModified} />
+              <TrustBlock />
+            </div>
 
             <h2>Personal Injury Claims in {city}</h2>
             <p>{localContext}</p>
+            {localContent}
 
             <h2>Claim Types Covered in {city}</h2>
             <p>People in {city} may seek advice about a range of personal injury and accident compensation claims:</p>
@@ -116,6 +134,18 @@ export default function LocationPageTemplate({
               </li>
             </ul>
 
+            {sources && sources.length > 0 && (
+              <div className="mt-8 p-5 bg-gray-50 rounded-xl border border-gray-200 not-prose">
+                <h3 className="font-bold text-[#0f2044] mb-3 text-sm">Sources used on this page</h3>
+                <ul className="space-y-1.5">
+                  {sources.map((source) => (
+                    <li key={source.url} className="text-sm">
+                      <a href={source.url} target="_blank" rel="noopener noreferrer" className="text-red-700 hover:underline">{source.label}</a>
+                    </li>
+                  ))}
+                </ul>
+              </div>
+            )}
             <div className="mt-8 p-4 bg-blue-50 border border-blue-100 rounded-lg not-prose text-sm text-blue-800">
               <p>
                 This page provides general information for people in {city} and is not individual legal advice.

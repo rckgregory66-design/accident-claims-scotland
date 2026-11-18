@@ -142,3 +142,34 @@ export const TRUST_BADGES = [
   { icon: "✓", text: "Not a law firm" },
   { icon: "✓", text: "Sending an enquiry is free" },
 ];
+
+/** Enquiry Worker endpoint used by the enquiry and callback forms. */
+export const ENQUIRY_WORKER_URL =
+  "https://accident-claims-scotland-enquiries.rckgregory66.workers.dev";
+
+/**
+ * WhatsApp / chat button. Leave blank to keep the button visible but disabled.
+ * When a number is published, set the digits including the country code, with no + or spaces
+ * (for example 441415668059). The button then links to https://wa.me/{number}.
+ */
+export const WHATSAPP_NUMBER = "";
+export const WHATSAPP_HREF = WHATSAPP_NUMBER ? `https://wa.me/${WHATSAPP_NUMBER}` : "";
+
+/** Reviewer shown on “reviewed by” fields. Leave name empty to keep the line hidden. */
+export const REVIEWER = {
+  name: "",
+  role: "",
+} as const;
+
+/**
+ * Trust block fields. The TrustBlock component renders nothing until at least one
+ * of these is filled, so no invented solicitor name, review or case example can go live.
+ */
+export const TRUST = {
+  panelSolicitorName: "",
+  panelSolicitorRegulator: "",
+  reviews: [] as { quote: string; attribution: string; sourceUrl: string }[],
+  caseExamples: [] as { title: string; summary: string; sourceUrl: string }[],
+};
+
+export const CALLBACK_TIMES = ["Morning", "Afternoon", "Evening", "Anytime"] as const;

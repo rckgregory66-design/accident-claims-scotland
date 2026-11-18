@@ -2,7 +2,14 @@
 // No analytics tool is installed. When one is connected later it can listen for "acs:event" on window.
 // Only the allow-listed names and parameter keys below can be sent; never pass names, phone numbers,
 // emails, postcodes, dates, free text or checklist selections.
-export type AcsEventName = "cta_click" | "form_start" | "form_submit_success" | "form_submit_error";
+export type AcsEventName =
+  | "cta_click"
+  | "form_start"
+  | "form_submit_success"
+  | "form_submit_error"
+  | "tel_click"
+  | "callback_submit_success"
+  | "estimator_complete";
 type Params = { location?: string; variant?: string; reason?: "network" | "rejected" | "server" };
 
 export function trackEvent(name: AcsEventName, params: Params = {}) {

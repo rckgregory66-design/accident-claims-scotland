@@ -1,5 +1,6 @@
 import type { Metadata } from "next";
 import ClaimPageTemplate from "@/components/ClaimPageTemplate";
+import ScotsClaimProcess from "@/components/ScotsClaimProcess";
 
 export const metadata: Metadata = {
   title: "Personal Injury Claims Scotland — Time Limits, Proof and Funding",
@@ -143,9 +144,15 @@ export default function PersonalInjuryPage() {
       ]}
       locationClaimType="personal injury claims"
       faqs={faqs}
+      answerCapsules={faqs}
+      belowSections={<ScotsClaimProcess />}
       authoritativeSources={[
         { label: "Prescription and Limitation (Scotland) Act 1973 — governing time-limit statute", url: "https://www.legislation.gov.uk/ukpga/1973/52/contents" },
         { label: "Scottish Courts and Tribunals — National Personal Injury Court", url: "https://www.scotcourts.gov.uk/courts-and-tribunals/sheriff-and-justice-of-the-peace-courts/national-personal-injury-court/" },
+        { label: "The All-Scotland Sheriff Court (Sheriff Personal Injury Court) Order 2015", url: "https://www.legislation.gov.uk/ssi/2015/213" },
+        { label: "Act of Sederunt (Sheriff Court Rules Amendment) (Personal Injury Pre-Action Protocol) 2016", url: "https://www.legislation.gov.uk/ssi/2016/215" },
+        { label: "Civil Litigation (Expenses and Group Proceedings) (Scotland) Act 2018 (Success Fee Agreements) Regulations 2020", url: "https://www.legislation.gov.uk/ssi/2020/110/made" },
+        { label: "Civil Litigation (Expenses and Group Proceedings) (Scotland) Act 2018", url: "https://www.legislation.gov.uk/asp/2018/10/contents" },
         { label: "NHS inform — your health rights", url: "https://www.nhsinform.scot/care-support-and-rights/health-rights/" },
       ]}
       related={[

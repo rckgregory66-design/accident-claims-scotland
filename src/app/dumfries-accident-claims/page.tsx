@@ -1,5 +1,6 @@
 import type { Metadata } from "next";
 import LocationPageTemplate from "@/components/LocationPageTemplate";
+import { LOCATION_EXTRAS } from "@/data/locationLocalContent";
 
 export const metadata: Metadata = {
   title: "Dumfries Accident Claims | Personal Injury Claim Information",
@@ -34,6 +35,9 @@ export default function DumfriesPage() {
       intro="If you have been injured in Dumfries or the wider Galloway area and the accident was not your fault, you may be entitled to claim compensation. This page explains personal injury, workplace accident, medical negligence and industrial disease claims relevant to Dumfries and Galloway residents."
       localContext="Dumfries and Galloway is a large region in south-west Scotland covering Dumfries, Stranraer, Castle Douglas, Annan, Lockerbie and the surrounding rural areas. The local economy includes agriculture, food production, tourism, construction and public services. Road traffic accidents on the A75, A76 and other major routes are common. Dumfries and Galloway Royal Infirmary is the main acute hospital for the region, operated by NHS Dumfries and Galloway. Dumfries Sheriff Court handles civil and personal injury cases for the sheriffdom."
       faqs={faqs}
+      localContent={LOCATION_EXTRAS["dumfries-accident-claims"].localContent}
+      sources={LOCATION_EXTRAS["dumfries-accident-claims"].sources}
+      dateModified={LOCATION_EXTRAS["dumfries-accident-claims"].dateModified}
     />
   );
 }

@@ -2,6 +2,9 @@ import type { Metadata } from "next";
 import Link from "next/link";
 import Breadcrumbs from "@/components/Breadcrumbs";
 import CompensationPlanner from "@/components/CompensationPlanner";
+import CompensationGuide from "@/components/CompensationGuide";
+import PageMetaBar from "@/components/PageMetaBar";
+import RagAnswerCapsule from "@/components/RagAnswerCapsule";
 import FAQ from "@/components/FAQ";
 import JsonLd from "@/components/JsonLd";
 import { breadcrumbSchema, faqSchema, servicePageSchema } from "@/lib/schema";
@@ -40,7 +43,14 @@ export default function CompensationCalculatorPage() {
       </section>
       <div className="mx-auto max-w-5xl px-4 py-12 sm:px-6">
         <div id="direct-answer" className="answer-box mb-8"><p className="text-blue-900">A Scottish personal injury claim is valued from evidence, not a single tariff. Injury severity and duration matter, but earnings, care, treatment and future needs can be equally important. Use this planner to identify possible gaps before reading the detailed compensation guide.</p></div>
+        <div className="mb-8 space-y-4">
+          {faqs.map((faq) => (
+            <RagAnswerCapsule key={faq.question} question={faq.question} answer={faq.answer} />
+          ))}
+        </div>
+        <PageMetaBar dateModified="2026-10-29" />
         <CompensationPlanner />
+        <CompensationGuide />
         <div className="prose-legal mt-12">
           <h2>How Scottish personal injury compensation is assessed</h2>
           <p>Solatium compensates pain, suffering and loss of amenity. Separate patrimonial losses may cover the financial effect of the injury. The final assessment depends on proof, causation and the extent to which another party is legally responsible.</p>

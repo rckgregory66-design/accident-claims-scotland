@@ -1,5 +1,6 @@
 import type { Metadata } from "next";
 import LocationPageTemplate from "@/components/LocationPageTemplate";
+import { LOCATION_EXTRAS } from "@/data/locationLocalContent";
 
 export const metadata: Metadata = {
   title: "Stirling Accident Claims | Personal Injury Claim Information",
@@ -22,6 +23,9 @@ export default function StirlingPage() {
       intro="If you have been injured in Stirling or the surrounding area and the accident was not your fault, you may be entitled to claim compensation. This page explains personal injury, medical negligence, workplace accident and industrial disease claims relevant to Stirling residents."
       localContext="This page provides general information about personal injury and accident compensation claims relevant to people in Stirling and the wider area, including accidents on local roads, in workplaces, in public places or during medical treatment."
       faqs={faqs}
+      localContent={LOCATION_EXTRAS["stirling-accident-claims"].localContent}
+      sources={LOCATION_EXTRAS["stirling-accident-claims"].sources}
+      dateModified={LOCATION_EXTRAS["stirling-accident-claims"].dateModified}
     />
   );
 }
